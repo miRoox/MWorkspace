@@ -1,0 +1,3767 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    183007,       3759]
+NotebookOptionsPosition[    176695,       3650]
+NotebookOutlinePosition[    177051,       3666]
+CellTagsIndexPosition[    177008,       3663]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"BeginPackage", "[", "\"\<MWorkspace`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.7429458315564365`*^9, 3.742945852896657*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"bd400c80-0d41-42cb-8d56-30495a60309f"],
+
+Cell[BoxData["\<\"MWorkspace`\"\>"], "Output",
+ CellChangeTimes->{3.74296617526403*^9, 3.742966753856124*^9, 
+  3.7429678314477587`*^9, 3.7429686368338237`*^9, 3.7429694788739853`*^9, 
+  3.7429706058544455`*^9, 3.742978573790185*^9, 3.7430270537521544`*^9, 
+  3.7430274257154293`*^9, 3.74303305559344*^9, 3.743035729487378*^9, 
+  3.7430357873326864`*^9, 3.7430360259093323`*^9, 3.743037412792658*^9, 
+  3.7430375713837285`*^9, 3.743037758452428*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"44f2f586-ba9d-41bd-8013-9b1aedb009ab"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Begin", "[", "\"\<`Private`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.7429468546779556`*^9, 3.742946870554864*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"a41c9340-04d5-41ae-a481-7578515f3a6e"],
+
+Cell[BoxData["\<\"MWorkspace`Private`\"\>"], "Output",
+ CellChangeTimes->{3.7430270541391764`*^9, 3.743027426101452*^9, 
+  3.7430330560224648`*^9, 3.743035729651387*^9, 3.7430357877557106`*^9, 
+  3.7430360263163557`*^9, 3.743037412892663*^9, 3.7430375718217535`*^9, 
+  3.7430377588954535`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"88d87e9f-c83c-4268-920a-88b012f261e1"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "Title"}], "=", "\"\<Workspace\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "New"}], "=", "\"\<New Symbol\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "Edit"}], "=", "\"\<Edit Selection\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "Import"}], "=", "\"\<Import Data\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "Export"}], "=", "\"\<Export Selection\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "Delete"}], "=", 
+   "\"\<Clear or Remove Selection\>\""}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "Name"}], "=", "\"\<Name\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "Meta"}], "=", "\"\<Meta\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "Value"}], "=", "\"\<Value\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "IgnoreReadProtected"}], "=", 
+   "\"\<Ignore symbols with ReadProtected attribute.\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "IgnoreProtected"}], "=", 
+   "\"\<Ignore symbols with Protected attribute.\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "IgnoreLocked"}], "=", 
+   "\"\<Ignore symbols with Locked attribute.\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "IgnoreTemporary"}], "=", 
+   "\"\<Ignore symbols with Temporary attribute.\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "IgnoreNoValue"}], "=", 
+   "\"\<Ignore symbols without any value.\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "NoSym"}], "=", "\"\<No Symbol Found\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`Palette", "::", "Refresh"}], "=", "\"\<Manual Refresh\>\""}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.7429560881380796`*^9, 3.742956107505187*^9}, {
+   3.7429561396290245`*^9, 3.7429561867967224`*^9}, {3.7429573711704645`*^9, 
+   3.7429573790809174`*^9}, {3.742957538599041*^9, 3.74295756795172*^9}, {
+   3.7429588072616043`*^9, 3.7429588248716116`*^9}, {3.7429598601208243`*^9, 
+   3.7429598623249507`*^9}, {3.742964799012313*^9, 3.7429649138198795`*^9}, {
+   3.742964977361514*^9, 3.742964989790225*^9}, 3.7429662924317317`*^9, {
+   3.7429696391171513`*^9, 3.742969672770076*^9}, 3.7429697058609686`*^9, {
+   3.742978387442527*^9, 3.742978430351981*^9}, {3.743034040054748*^9, 
+   3.7430340510733786`*^9}, {3.7430353981324253`*^9, 3.743035543021713*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"102aec74-8443-4d47-93db-2ba6314d7c3a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"`NewIcon", "=", 
+  RowBox[{"ImageResize", "[", 
+   RowBox[{
+    GraphicsBox[
+     TagBox[RasterBox[CompressedData["
+1:eJztmklu3DgUhj3DszzBE2zLs+FRHja9E3qZlYA0ek0kaHfQGzfgNNDISkfQ
+EXSEOoKOUEfQEeoIL/9rvDJohlSpymJ1AoTAF4aP/3v8o5JYtJyDj3+//3Ns
+ZGTk8zT+eP/h31+fnz98+W0Jg9+fPv/16enxj3dP/zx+enz+5eM4grfCBCCi
+n3wH+GoPDw+hr9q+/d/f3weAuPdR37f/u7s7BYh7H/V9+7+9vc0Bce+jvm//
+Nzc3JSDufdT36f/6+joEpNH4c+zT/9XVlQKk0fgzUNf/5eVlB6Sg9j4CbQZI
+I+sjN5D1OlW6uv4vLi5SQKADal1H6ArJ6VLUzFOyDuekTfg/Pz8PQAeQUICo
+Rw6Z9NBHUrer5/UqP+9+7v+zszMFyMB6fRAPLVrG+gxzHYu25+fc7/N7enpa
+ADJog8jQxRYdExu6SPJNXa17bQD/0cnJCTl4uV74e+zQxJpGuWqZ16Mp/9yO
+j49TQA6UaGLHfCzzqqJG5TP7Vv/cjo6O2oAcJKL5Zk7iSUVuux8fg/o/PDyM
+Dg4OyMF/ZwX0LSPeknjpyuW6w/AvPtT+/j45SDAf6zEZJ64crtevh7eeH8Iw
+VIAs5DKfyTiTce7QD3S2aOL8g7WTvb29EpCGdf/juKErOX/QtQfxv7u7G4K4
+ixZPQA4KYL2POS7zrEu0eKxR+5zay//Ozk4IFMhAAchBC8TWIo7Geslz1Sxk
+XV7f+m8y/W9vbwdAgRyUgPrk1RkT41TiqRHPBqhdii/2F5j+t7a2QkBvRfdZ
+J/4GQvP6IxYAtbm5mYMSUJ+8uv4YpxJPjXg2QG32k7M/9mm7f8wGfbixsaFA
+BgpADlqgr/uf9ZLnqlnIunw9a93/NdcNZe1Y97y+vp6AHBTAuv9wXOZZl2g1
+Y43G9p86bW1tLQElIA3r/s9xQ8d5Q93/9ba6uqoAWchlPpNxJuPcoR/69+/K
+yooC5CABsRGLJe7KGdr5Z3l5OQLkoBRNy4i3JF5W5A7l/Lm0tNQG5CARzTdz
+Ek8qcr2f/4MgSAE5UKKJHfOxzKuKGt5+/lpYWIgA2VhcXFSaLnboXvZb1rtq
+8To+/M/PzxeADNrmeojFFh3z6juO8zjfomv8/cPc3JwCZGD9rLF+aNGyL+t3
+E9ex6Bt7/zM7OxuADiChAJWfsaZ9oYc+krpdPa/XyPu3mZmZFBDogFr7NHSF
+5HSpdU9wfVmHcxp5/zk9Pd0BKaj9/hnaDJBG7ffPvI6sV/l7D5/v/6emphQg
+jf/t/f8gDX7DyclJ6sLjptfw/fuviYmJEhD3Pur79j8+Pp4D4t5Hfd/+x8bG
+FCDufdT37X90dJT3K5K+8ebbv7Sh/P+HH5WvGhAo6Q==
+       "], {{0, 48}, {48, 0}}, {0, 255},
+       ColorFunction->RGBColor],
+      BoxForm`ImageTag["Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+         "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+       Association[
+        "XMP" -> Association[
+          "DublinCoreSchema" -> 
+           Association[
+            "Creator" -> "Alexander Kiselev", "Description" -> 
+             "This is the icon from Gentleface.com free icons set.", "Rights" -> 
+             "Creative Commons Attribution Non-Commercial No Derivatives", 
+             "Subject" -> "icon, pictogram", "Title" -> 
+             "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+           Association[
+            "CreatorContactInfo" -> 
+             Association[
+              "CreatorContactInfo" -> 
+               Association[
+                "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", "CiAdrCtry" -> 
+                 "Czech Republic", "CiEmailWork" -> "ka@gentleface.com", 
+                 "CiUrlWork" -> "www.gentleface.com"]], "IntellectualGenre" -> 
+             "pictogram"], "PhotoshopSchema" -> 
+           Association[
+            "AuthorsPosition" -> "Art Director", "Credit" -> 
+             "www.gentleface.com", "DateCreated" -> 
+             DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], "BasicSchema" -> 
+           Association[
+            "MetadataDate" -> 
+             DateObject[{2010, 1, 3, 21, 33, 41.}, "Instant", "Gregorian", 
+               8.]], "MediaManagementSchema" -> 
+           Association[
+            "DocumentID" -> "xmp.did:D48A0D48A7F8DE11821CE4B2C7E36D70", 
+             "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:D48A0D48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+             "xmp.iid:D48A0D48A7F8DE11821CE4B2C7E36D70", "OriginalDocumentID" -> 
+             "xmp.did:D48A0D48A7F8DE11821CE4B2C7E36D70"], 
+           "RightsManagementSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:D48A0D48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "UsageTerms" -> 
+             "Creative Commons Attribution Non-Commercial No Derivatives"], 
+           "PagedTextSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:D48A0D48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]]]]]],
+      Selectable->False],
+     DefaultBaseStyle->"ImageGraphics",
+     ImageSizeRaw->{48, 48},
+     PlotRange->{{0, 48}, {0, 48}}], ",", "16"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7429888906232743`*^9, 3.7429889054131203`*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"cf8e7358-2ce8-4fdb-8b5a-6e9d836e6de8"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJx1UzmLU1EUvm9JXvY9k30lCVmZTqYVRBAUZdTCgMUEXxaZJJIZEBv9BxY2
+Ws2ECcI4oCBIFJNAQBsrmcI0opWlgSm0GCzefCfcJyHohfPOud8731nuuTdV
+627WRcbYjgmfza3753u9rQfXXdjc7Oy0Gh31zqXOrtpQexs1CaCLiwyZz+ds
+NBqx8Xi80MsymUyE6XQqruK672w2Y8PhkK0sSiFy+5zT6by7ggu6Y7VaXcSS
+ZZmZTCbZaDSKgiAwg8GgABPi8Xi3Uql8xJ4woyiKpJnZbLYQp9lsUh0UTwDX
+nM1m971e7zU9Pvj7pVLpRJIkhfYWiyWdy+VeuN3uddrX6/VFb1Qb5fV4PFfL
+5bIWjUafKopiSqVS7wuFgmaz2fDLc6tYLP5OJBLPEW/BAZ9xvoh6FIoRCoWe
+5fN5itGPxWKvM5nMaTAYvIe8Wjqd/oH6XejDQMe/xGfUGy30wcLhcD+ZTP7y
++Xxdl8t1G30cQz7b7fbcsq+qqnR+EvYb6LsL2UP+d4FA4Aj1biNWGvkqqP8i
+sEPU8cbv97+EPEQPl1utlhUzNsDeRs4P4J5Aa5Cf4FTBL0HXECMM7oz+wedP
+JBI5Bva43W6v6fXTPNC/gjkGHA7HLmr/hDldAB5HLUOc+R7OP4NcDvLV69fP
+H5iRDPBvoA8NfX/F3TkC7zviHRCG/gcLZ0mS+fkJ+vnTTCAxcMjvG6/9Lbga
+7AxyHyCmhviN/8xPRr2H+N9HHx5eyyvwTrE389k0rFbrDDpJd47yL91fE/B1
+sik+tAjoEfhfCINIhMMnhjwxfn+Ff7wfkT9NWlcgT7gt8zf0d9H7oTdIfdBb
+oPtM9pJYIWvcFrgWKS/Zg8GAnQEW7skG
+    "], {{0, 16}, {16, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag["Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+      "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+    Association[
+     "XMP" -> Association[
+       "DublinCoreSchema" -> 
+        Association[
+         "Creator" -> "Alexander Kiselev", "Description" -> 
+          "This is the icon from Gentleface.com free icons set.", "Rights" -> 
+          "Creative Commons Attribution Non-Commercial No Derivatives", 
+          "Subject" -> "icon, pictogram", "Title" -> 
+          "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+        Association[
+         "CreatorContactInfo" -> 
+          Association[
+           "CreatorContactInfo" -> 
+            Association[
+             "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", "CiAdrCtry" -> 
+              "Czech Republic", "CiEmailWork" -> "ka@gentleface.com", 
+              "CiUrlWork" -> "www.gentleface.com"]], "IntellectualGenre" -> 
+          "pictogram"], "PhotoshopSchema" -> 
+        Association[
+         "AuthorsPosition" -> "Art Director", "Credit" -> 
+          "www.gentleface.com", "DateCreated" -> 
+          DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], "BasicSchema" -> 
+        Association[
+         "MetadataDate" -> 
+          DateObject[{2010, 1, 3, 21, 33, 41.}, "Instant", "Gregorian", 8.]], 
+        "MediaManagementSchema" -> 
+        Association[
+         "DocumentID" -> "xmp.did:D48A0D48A7F8DE11821CE4B2C7E36D70", 
+          "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:D48A0D48A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+          "xmp.iid:D48A0D48A7F8DE11821CE4B2C7E36D70", "OriginalDocumentID" -> 
+          "xmp.did:D48A0D48A7F8DE11821CE4B2C7E36D70"], 
+        "RightsManagementSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:D48A0D48A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "UsageTerms" -> 
+          "Creative Commons Attribution Non-Commercial No Derivatives"], 
+        "PagedTextSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:D48A0D48A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]]]]]],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSizeRaw->{16, 16},
+  PlotRange->{{0, 16}, {0, 16}}]], "Output",
+ CellChangeTimes->{3.743027054231182*^9, 3.7430274261864567`*^9, 
+  3.74303305611047*^9, 3.7430357297043905`*^9, 3.743035787829715*^9, 
+  3.7430360264013605`*^9, 3.7430374129336653`*^9, 3.7430375719287596`*^9, 
+  3.7430377589814587`*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"590b7a80-d912-4b88-9ed5-c80e822dc6df"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"`EditIcon", "=", 
+  RowBox[{"ImageResize", "[", 
+   RowBox[{
+    GraphicsBox[
+     TagBox[RasterBox[CompressedData["
+1:eJzN2k1OIkEYBmD+VBC1AQ2gKAhiVBALWM2OzHJWJE5mXdEMY2YjCU4ymRVH
+8Ah9BI7QR+gjcIQ6wjeviQump4Giq7rLSh4Sqr6uvBVIB6q6/ji+/5GIxWIv
+abzcP/z+PJk8/Pmaw5tvzy8/n55H3788/xo9jSafHpPo7L5Lxcy2fr8/BBdo
+gQMDw9HWtl6vx4FW4KYzLmvdbpcDSbBNZ/U2xhgH2sCHWcPd3R0HCsAFy2T2
+TqfDgRS4YGQNt7e3HEgDASzK7O12mwNJciRqBESyhlarxYEk8Q2vCfX+enNz
+w4EkCBgEvDaUz+H6+poDSRDgm0Fyjpnu7FdXV0MgSc6aufi6OXRmv7y8ZCCA
+NrDye4xxZ9X1urI3m00GAigA3zXIzKkj+8XFBQMBpIB75hxIzDlXzd5oNBgI
+IA34+5xcsn6qkr1erzMQQBo5knWuSvbz83MGAsgAF/kD/xaq1WoMBJABLvIH
+zl6tVhkIIANmyB84+9nZGQMBZIDS/5jT01MGAsgApeyVSoWBADJAKfvJyYkF
+AsgApezHx8cWuEAGKGUvl8sWuEAGKGUvlUoWuEAGKGUvFosWuEAGKO/1HB0d
+2UAGaNmnOjw8FEAR05K9UCgwoIhp2x/M5/NjoKggu9Lvd2/L5XIzoIho37+x
+LEsARUB79oODgxqQxyuMffpVhLJvtr+/z4EWva1p2VhAoe357e3t2UAL5p5x
+7hnfVKj7ldlsdg604L/7Gvq4p0ZWqNl3d3drQB7jJbXcp3aV0M/hMpkMB/JY
+eoaJMdun3k8kZ4jpdNoG8vDdW0X/AGY+9V6RnX/u7OzMgXzYMIAxzEAsqfOK
+LPv29nYNSKNIz523trY4kAYODKPM/taSyaQNtKlUKuXAFIw+q5BIJOZA6yCz
+A1P4UM9WxONxWsJF7lcYgtGz7zVNwNs5hovMrzCEj5z3n/YXCX1q2Q==
+       "], {{0, 48}, {48, 0}}, {0, 255},
+       ColorFunction->RGBColor],
+      BoxForm`ImageTag["Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+         "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+       Association[
+        "XMP" -> Association[
+          "DublinCoreSchema" -> 
+           Association[
+            "Creator" -> "Alexander Kiselev", "Description" -> 
+             "This is the icon from Gentleface.com free icons set.", "Rights" -> 
+             "Creative Commons Attribution Non-Commercial No Derivatives", 
+             "Subject" -> "icon, pictogram", "Title" -> 
+             "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+           Association[
+            "CreatorContactInfo" -> 
+             Association[
+              "CreatorContactInfo" -> 
+               Association[
+                "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", "CiAdrCtry" -> 
+                 "Czech Republic", "CiEmailWork" -> "ka@gentleface.com", 
+                 "CiUrlWork" -> "www.gentleface.com"]], "IntellectualGenre" -> 
+             "pictogram"], "PhotoshopSchema" -> 
+           Association[
+            "AuthorsPosition" -> "Art Director", "Credit" -> 
+             "www.gentleface.com", "DateCreated" -> 
+             DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], "BasicSchema" -> 
+           Association[
+            "MetadataDate" -> 
+             DateObject[{2010, 1, 3, 21, 33, 42.}, "Instant", "Gregorian", 
+               8.]], "MediaManagementSchema" -> 
+           Association[
+            "DocumentID" -> "xmp.did:BC0F5B48A7F8DE11821CE4B2C7E36D70", 
+             "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:BC0F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+             "xmp.iid:BC0F5B48A7F8DE11821CE4B2C7E36D70", "OriginalDocumentID" -> 
+             "xmp.did:BC0F5B48A7F8DE11821CE4B2C7E36D70"], 
+           "RightsManagementSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:BC0F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "UsageTerms" -> 
+             "Creative Commons Attribution Non-Commercial No Derivatives"], 
+           "PagedTextSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:BC0F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]]]]]],
+      Selectable->False],
+     DefaultBaseStyle->"ImageGraphics",
+     ImageSizeRaw->{48, 48},
+     PlotRange->{{0, 48}, {0, 48}}], ",", "16"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7429889083042855`*^9, 3.7429889217760563`*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"5aa2e633-d6f7-4869-a335-8fb311c67c97"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJyNk8trE1EUxu88kkya1ySEkPfk/U4IbZBuunDptiKuWxpLNxESIYgLNy5c
+uvYPEGx37jSg4kJ3XXfVKgr+A6XUTjrH78gEhjiNDvxy7z3nft85uXemuPtw
++4EshJho+Nnemd4ej3ce39WxuDeaHOyPhnt3Ro+G+8Px5q6CoG6jitWPJEns
+Kjwej9ZqtY4Gg8Ec4yusQ3Ze+ZfW6/WuNZvNWb/fp16vRzy22+3jSCRi/Efd
+tVqtNut2u9TpdKher39B/e/sg9jXcDhcv0ErQeutVCrvsJ8ajcZ1tVr9qCiK
+CIVC6/A5RYzjJ8tyRlVVpVAoHKE2lcvlX/CxwLdAILAuy7IoFosfsDbhSW7a
+fD5/CB3Bw8ReAlapVOLxJ3KfeQ49JZPJZw6tzNpMJnMIHWGfCciBtZgbhsHa
+F/x/HHUFYq+z2SzBwwTkwlUul6NYLPbcrssGMnyURCLxMpVKse8VIBfMdDpN
+uq4vtKpdW+AenkBP8Xj8EtASFphzHmf/lxb3JeFdOI5Go2RjLc3n6Jdw9k8d
+PUuLQ8d9xKC/hPcb9PEDELgGFjCRI7/fP3XT/mlEVbegJRyBwaDOGTCZYDBI
+Pp9voXX9XPCeTeE/h8999LKB/e81TSOGc6u0tv4T4L2Eb4XHc3jN0Mueo+cb
+HxzfBXgLJuAWQkFHWl6l5ec3QYukSg==
+    "], {{0, 16}, {16, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag["Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+      "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+    Association[
+     "XMP" -> Association[
+       "DublinCoreSchema" -> 
+        Association[
+         "Creator" -> "Alexander Kiselev", "Description" -> 
+          "This is the icon from Gentleface.com free icons set.", "Rights" -> 
+          "Creative Commons Attribution Non-Commercial No Derivatives", 
+          "Subject" -> "icon, pictogram", "Title" -> 
+          "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+        Association[
+         "CreatorContactInfo" -> 
+          Association[
+           "CreatorContactInfo" -> 
+            Association[
+             "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", "CiAdrCtry" -> 
+              "Czech Republic", "CiEmailWork" -> "ka@gentleface.com", 
+              "CiUrlWork" -> "www.gentleface.com"]], "IntellectualGenre" -> 
+          "pictogram"], "PhotoshopSchema" -> 
+        Association[
+         "AuthorsPosition" -> "Art Director", "Credit" -> 
+          "www.gentleface.com", "DateCreated" -> 
+          DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], "BasicSchema" -> 
+        Association[
+         "MetadataDate" -> 
+          DateObject[{2010, 1, 3, 21, 33, 42.}, "Instant", "Gregorian", 8.]], 
+        "MediaManagementSchema" -> 
+        Association[
+         "DocumentID" -> "xmp.did:BC0F5B48A7F8DE11821CE4B2C7E36D70", 
+          "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:BC0F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+          "xmp.iid:BC0F5B48A7F8DE11821CE4B2C7E36D70", "OriginalDocumentID" -> 
+          "xmp.did:BC0F5B48A7F8DE11821CE4B2C7E36D70"], 
+        "RightsManagementSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:BC0F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "UsageTerms" -> 
+          "Creative Commons Attribution Non-Commercial No Derivatives"], 
+        "PagedTextSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:BC0F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]]]]]],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSizeRaw->{16, 16},
+  PlotRange->{{0, 16}, {0, 16}}]], "Output",
+ CellChangeTimes->{3.7430270542611837`*^9, 3.743027426218458*^9, 
+  3.743033056152472*^9, 3.7430357297393923`*^9, 3.743035787860717*^9, 
+  3.7430360264323626`*^9, 3.743037412961667*^9, 3.743037571955761*^9, 
+  3.74303775901346*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"6cd488e3-540c-4594-a1b7-23d1e3a4485c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"`ImportIcon", "=", 
+  RowBox[{"ImageResize", "[", 
+   RowBox[{
+    GraphicsBox[
+     TagBox[RasterBox[CompressedData["
+1:eJzN2UluGkEUBmAmY0AMBWYSBtPg2UwNbLLNMltHOYCtOFY2xLIjRdn5Bj5C
+HYEjcIQ+0svfEkhWp9pUV1ep+0mfJTu8+v/nLD24/3X7I5VIJF5y+HJ79+fz
+8/Pd368M33xbvfx8XD18/7L6/fD48PzpPo0f2luZxMezXC4ZvMLTno/GbhaL
+BQMHaItH3Ul25vM5AwfII/Y32LbNwAHyEdsbptMpm81mDtAesbthMpkw9HeA
+JMXmhvF4zNDfAQoo8htGoxFDfwdIUaQ3oP8rUBg3NzeR3YDsJ6Cwrq+vA9+A
+nTdYh73BzQYK6+rqSvoG97O7vbD93bm8vORAGuy9wZulo787FxcXHEgD3xtE
+GZ5/l83YAPO+f35+zoE0+O8Gv7c9nwmSsRH9js7OzjiQBlzmTU92oAy//+fT
+01MOpMF6y/czntxA7/v1d2c4HHIg0zyZyruiGQwGHMgkT57yrt9YlsWBTNmT
+bX2UL9PfnX6/z4FMkMi2VXffz8nJCQfSTTJbeff99Ho9DqSTZK7yrne63S4H
+0kUyU3lXNMfHxxxIB8k85V2/6XQ6a6CwJLOUd/2m3W6vgcKSzFLeFU2r1eJA
+OkjmKe96p9lsciBdJDOVd99Po9HgQDpJ5irv7qZer3Mg3SSzlXfdOTo64kAm
+SOYr79ZqtTcgUyQ7KO9Wq9U1kCGOZAfhvsxuHIYxRiJR95KdSqVCIlH3kp1y
+uUwiQd8plUokYqKzidxisUgiJjqbyC0UCiRiorOJ3Hw+TyImOpvIzeVy5MMy
+UHuXafnlBn3r8PCQfHCwdHfHm/b2bWFu0Pey2SzFSdD+BwcHFCdB+2cyGYqT
+oP3T6TTFSdD+qVRqAxQTwr9ffDTJZJLBBihibgf2Dy/vdjs=
+       "], {{0, 48}, {48, 0}}, {0, 255},
+       ColorFunction->RGBColor],
+      BoxForm`ImageTag[
+      "Byte", ColorSpace -> "RGB", Interleaving -> True, MetaInformation -> 
+       Association[
+        "XMP" -> Association[
+          "DublinCoreSchema" -> 
+           Association[
+            "Creator" -> "Gentleface custom toolbar icons design", 
+             "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+             "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+             "custom icon design, toolbar icons, custom icons, interface \
+design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+           Association[
+            "CreatorContactInfo" -> 
+             Association[
+              "CreatorContactInfo" -> 
+               Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+           "BasicSchema" -> 
+           Association[
+            "MetadataDate" -> 
+             DateObject[{2011, 1, 25, 13, 55, 11.}, "Instant", "Gregorian", 
+               8.]], "MediaManagementSchema" -> 
+           Association[
+            "DocumentID" -> "xmp.did:35A48E588228E011989CC0A1AD02B5C2", 
+             "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:35A48E588228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", "Gregorian",
+                    8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+             "xmp.iid:35A48E588228E011989CC0A1AD02B5C2", "OriginalDocumentID" -> 
+             "xmp.did:35A48E588228E011989CC0A1AD02B5C2"], 
+           "RightsManagementSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:35A48E588228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", "Gregorian",
+                    8.], "Changed" -> "/metadata"]], "Marked" -> True, 
+             "UsageTerms" -> 
+             "Creative Commons Attribution-NonCommercial license"], 
+           "PagedTextSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:35A48E588228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", "Gregorian",
+                    8.], "Changed" -> "/metadata"]]]], "Comments" -> 
+         Association["Software" -> "Adobe ImageReady"]]],
+      Selectable->False],
+     DefaultBaseStyle->"ImageGraphics",
+     ImageSizeRaw->{48, 48},
+     PlotRange->{{0, 48}, {0, 48}}], ",", "16"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7429889248442316`*^9, 3.7429889409001503`*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"134b8977-7cb0-4607-ad36-0e9b0ed18465"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJyNk8tqGzEUhudiO74xnhlfazy26wvY2Bg73mSbZbcpfYCEuqEbF5xC6DYQ
+mGW7zEvkNdJdnqA0u6YbTylOKJmM1P8MUlGKKRV8OdLR+Y+kf5znR+8O3hia
+pp2k8efg8HR/tTr88NLG4tXy5O3xcvH6xfL94nix2jsykbQFCS0eZjKZ1CaT
+ycd2u31GCV3XaUvX/mMkEgltNBpdzGYzPp/PebPZ9Lf00LfMYwaDwSeczdHj
+AYTT6ZQ3Gg3Zg65riLkm5+qo1+tn0HH0CYfDIaM4Ho858r6sSaVSFbzt0jTN
+kmEYFrAFcdNareZDx3u9Xtjv9xlFWler1XNo651O5xo5hrd66HOD+c9utxuA
+K2ljpVLxoeWoDQEDEfZp/R31vNVqfYO+DX9IH9IeIXyIe5RKJR/1VMuAGiPP
+8wLc16X75/P5XeTuwKPiKXmlua57jtoHeBgBJiL5QXpHeJnFek15xcpYD4/y
+8OMWRAoMXqyFXkcsYh0gL/X0XXRonxWLxWt4wcvl8hPwtg3OdcX5DtYB5eXv
+AMOwLOsS9984jnMLAsGaom3bX1BjST3lUKven3rQ9/VAi86iOgVL3pP2cFZQ
+KBSkXhcNMtls9gZ8lX5sG1SXy+XW+A5P9Bh2Op2+y2QyDF5Mxbl/7oF9wsbe
+DHX3IPpL7+B/cQM4uAcB+CGiOv8latTziR28/QpwwET8F59/AyynpsI=
+    "], {{0, 16}, {16, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag[
+   "Byte", ColorSpace -> "RGB", Interleaving -> True, MetaInformation -> 
+    Association[
+     "XMP" -> Association[
+       "DublinCoreSchema" -> 
+        Association[
+         "Creator" -> "Gentleface custom toolbar icons design", "Description" -> 
+          "Wireframe mono toolbar icons", "Rights" -> 
+          "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+          "custom icon design, toolbar icons, custom icons, interface design, \
+ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+        Association[
+         "CreatorContactInfo" -> 
+          Association[
+           "CreatorContactInfo" -> 
+            Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+        "BasicSchema" -> 
+        Association[
+         "MetadataDate" -> 
+          DateObject[{2011, 1, 25, 13, 55, 11.}, "Instant", "Gregorian", 8.]],
+         "MediaManagementSchema" -> 
+        Association[
+         "DocumentID" -> "xmp.did:35A48E588228E011989CC0A1AD02B5C2", 
+          "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:35A48E588228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+          "xmp.iid:35A48E588228E011989CC0A1AD02B5C2", "OriginalDocumentID" -> 
+          "xmp.did:35A48E588228E011989CC0A1AD02B5C2"], 
+        "RightsManagementSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:35A48E588228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "Marked" -> True, 
+          "UsageTerms" -> 
+          "Creative Commons Attribution-NonCommercial license"], 
+        "PagedTextSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:35A48E588228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]]]], "Comments" -> 
+      Association["Software" -> "Adobe ImageReady"]]],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSizeRaw->{16, 16},
+  PlotRange->{{0, 16}, {0, 16}}]], "Output",
+ CellChangeTimes->{3.743027054286185*^9, 3.74302742624846*^9, 
+  3.7430330561884737`*^9, 3.7430357297703943`*^9, 3.7430357878927183`*^9, 
+  3.7430360264653645`*^9, 3.743037412990669*^9, 3.7430375720117645`*^9, 
+  3.7430377590424623`*^9},
+ CellLabel->"Out[21]=",ExpressionUUID->"67aaeed0-fa42-4b75-847e-f52ecf0c6c65"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"`ExportIcon", "=", 
+  RowBox[{"ImageResize", "[", 
+   RowBox[{
+    GraphicsBox[
+     TagBox[RasterBox[CompressedData["
+1:eJztlEtOYlEQhpFHAOVxFFQE1IuCgg8gMOlpD3tqpxegadr0BI120umZO3AJ
+ZwksgSXcJVXXSbBzGqs499wHMLCSzwRu1f9/OLiNu4ebH/FYLPacwT83t78/
+Pz3d/vkq8MO38fPP+/Ho+5fxr9H96OnTXQK/7M9Ixj7mY9ZvBoPBZDgcQhRg
+trsE/1cEoiJqfzX9fl8iEAXL8FfT6/UkAmGzLH813W5XIhAmy/RXc319LREI
+i2X7q7m6upIIhMEq/NVcXl5OEAjKqvw7nc7k4uICgqJnttttgUwxGwIgTe7Y
+IQN2/EPPPT8/nyIQAKO72gnY8R969tnZGQTA6K52Ana8Q89vtVrgE6O72gmQ
+z6J3NJtN8IHRXe34zDai95yenoIlRne14yPXM3rXyckJMEjEMbnOT6PRkAsy
+Q2GuDxis3R3HkQvyQkPvPD4+Bgpbd7yRXJYlkxnsjt57dHQEFDbuuC+5HEuk
+l0y9+/DwECi8uuOu5DIsefde4LL1nXq9DhRe3HFPcveWsO80qkN/XqvVgMLk
+jjuSu7XE+D6e79KfVatVoFiUh88ld2eJ0Z3q1L8/ODgACi6nUqk8cjeWeHbX
+XF+RyZwPUCzwf+FuLLB252Zvbw8ouP39/X2Bz13uzgOhuavZ3d0FCsNvFrjj
+crcLCNVdTblcBgoPdwJxuXsCo7uXnfkplUpA4fFWIC6XoWH0Ujtee/XZ2dkB
+Cot7gbhcDmJ0Vzu2vW+zvb0NFJYZAnGJHKO7EEL67Z3dA4WPHDWulmF0LxaL
+MmhvoVAACtucmY9AXpBHD70yjN58Pg8UfvxX0ZvL5YAiCucoere2toAiCuco
+ejc3N4EiCucoerPZLDA4EWi/dTpcr21WJpMBinQ6LREnbHfM7KtsrtdHHqwT
+tv6pVArWCVv/ZDIJ64StfyKRgDXDsfGPx+NTBNaEqe3/f2NjQyBTBFaMchC2
+/n8BcbnBvQ==
+       "], {{0, 48}, {48, 0}}, {0, 255},
+       ColorFunction->RGBColor],
+      BoxForm`ImageTag[
+      "Byte", ColorSpace -> "RGB", Interleaving -> True, MetaInformation -> 
+       Association[
+        "XMP" -> Association[
+          "DublinCoreSchema" -> 
+           Association[
+            "Creator" -> "Gentleface custom toolbar icons design", 
+             "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+             "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+             "custom icon design, toolbar icons, custom icons, interface \
+design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+           Association[
+            "CreatorContactInfo" -> 
+             Association[
+              "CreatorContactInfo" -> 
+               Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+           "BasicSchema" -> 
+           Association[
+            "MetadataDate" -> 
+             DateObject[{2011, 1, 25, 13, 55, 13.}, "Instant", "Gregorian", 
+               8.]], "MediaManagementSchema" -> 
+           Association[
+            "DocumentID" -> "xmp.did:0A1046598228E011989CC0A1AD02B5C2", 
+             "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:0A1046598228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 13}, "Instant", "Gregorian",
+                    8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+             "xmp.iid:0A1046598228E011989CC0A1AD02B5C2", "OriginalDocumentID" -> 
+             "xmp.did:0A1046598228E011989CC0A1AD02B5C2"], 
+           "RightsManagementSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:0A1046598228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 13}, "Instant", "Gregorian",
+                    8.], "Changed" -> "/metadata"]], "Marked" -> True, 
+             "UsageTerms" -> 
+             "Creative Commons Attribution-NonCommercial license"], 
+           "PagedTextSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:0A1046598228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 13}, "Instant", "Gregorian",
+                    8.], "Changed" -> "/metadata"]]]], "Comments" -> 
+         Association["Software" -> "Adobe ImageReady"]]],
+      Selectable->False],
+     DefaultBaseStyle->"ImageGraphics",
+     ImageSizeRaw->{48, 48},
+     PlotRange->{{0, 48}, {0, 48}}], ",", "16"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.742988943978326*^9, 3.742988959031187*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"433a3271-d329-4867-b795-1525006afd28"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJyFU8tu00AUtcd51I5lO2+Td6JEeSoJWbFlybaID2hFqNgEKa2Eyr5SKpEP
+AD6in0FX/QW2IAFOQW0UjD2ca41DFfGwdHLn3nvOnTt3JvXDF/vPmCRJx3v4
+2T94+XA+Pzh9bMF5Mjt+fjSbPn00O5keTecPDhUELYGI9M9PVhTFYIxpsDps
+iISwWsjbAZNlmdHX6XQuJpPJZjgcfhmNRtfACnDG4/FqMBh8uFPjj/vH4/F7
+vV7vCnyOGhzaAORDf0N9oDfq0wJMAmJGJBKx0QMdVYpGo3q/3/8IeCGg9bvd
+rkP6Vqv1HnCAFXCNntf5fP401Nu2fQbuj3a77QE+WXA48YWeC2yazeZ38JfQ
+BgdAnXPwOeI+sLXgeo1GI9DXarWf9Xr9Rtf1EXwzPHw2m10QF3kXeR/WgyX/
+E7S8Uql8xj56uVzmxWLxK9bbWaZSqUW1WuXIuYBPlnzEzzCPAvhXpINGLRQK
+HD1TLxn4cjKZfF0qlTjiLuCTJR/x87A+5ptDfxc061wux7F2IE3RuTOZzDuc
+myO+AVzU5qZpLraXKuYqPpZOp6kv0ieDAGMS9nqDOpyAuSyETkokEq+Qt8N3
+RnHLsqh+qKe4QjUMw3gL/lLsE9U0bUlc8MIZB5eE+hw8mp/614coy3vgueB9
+29WrquoBt3h7Y+Qs6kNYmkea1sjdx/5r8JxdPe6DE2Kx2BrWAVbCbtciR7xb
+ut67epz1EuD/gS/sJbUs/f6vSr8AEt6vXw==
+    "], {{0, 16}, {16, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag[
+   "Byte", ColorSpace -> "RGB", Interleaving -> True, MetaInformation -> 
+    Association[
+     "XMP" -> Association[
+       "DublinCoreSchema" -> 
+        Association[
+         "Creator" -> "Gentleface custom toolbar icons design", "Description" -> 
+          "Wireframe mono toolbar icons", "Rights" -> 
+          "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+          "custom icon design, toolbar icons, custom icons, interface design, \
+ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+        Association[
+         "CreatorContactInfo" -> 
+          Association[
+           "CreatorContactInfo" -> 
+            Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+        "BasicSchema" -> 
+        Association[
+         "MetadataDate" -> 
+          DateObject[{2011, 1, 25, 13, 55, 13.}, "Instant", "Gregorian", 8.]],
+         "MediaManagementSchema" -> 
+        Association[
+         "DocumentID" -> "xmp.did:0A1046598228E011989CC0A1AD02B5C2", 
+          "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:0A1046598228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 13}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+          "xmp.iid:0A1046598228E011989CC0A1AD02B5C2", "OriginalDocumentID" -> 
+          "xmp.did:0A1046598228E011989CC0A1AD02B5C2"], 
+        "RightsManagementSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:0A1046598228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 13}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "Marked" -> True, 
+          "UsageTerms" -> 
+          "Creative Commons Attribution-NonCommercial license"], 
+        "PagedTextSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:0A1046598228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 13}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]]]], "Comments" -> 
+      Association["Software" -> "Adobe ImageReady"]]],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSizeRaw->{16, 16},
+  PlotRange->{{0, 16}, {0, 16}}]], "Output",
+ CellChangeTimes->{3.743027054314186*^9, 3.743027426279462*^9, 
+  3.743033056220476*^9, 3.7430357298063965`*^9, 3.7430357879217205`*^9, 
+  3.743036026496366*^9, 3.7430374130176706`*^9, 3.743037572038766*^9, 
+  3.7430377590724635`*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"888ac001-992c-4193-af05-3349144ce0e8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"`DeleteIcon", "=", 
+  RowBox[{"ImageResize", "[", 
+   RowBox[{
+    GraphicsBox[
+     TagBox[RasterBox[CompressedData["
+1:eJzVmstqGmEYhj3UY9TxhGejxvP5sOpOuuyqkNJ1SGgauknBFEqvppeQS5hL
+yiW8/acYGOF76QTyhZmBR/Dl0f/RxeDC3s2Py2+RUCj0kDQPl9e/PhwO178/
+582TL/cP3+/ub79+vP95e3d7eH8TNePmyDsDgH+85NrtdleGRwNeEef9rl7S
+8dzutX+73VoG2wBFHp1zXqN/s9lYhr3hk+GP4cmAN+DpeJ5z7t5L/3q9tgy2
+AQHA6bTc/avVyjYgQNju/uVyiaDh7l8sFgga7v75fI6g4e6fzWYIGu7+6XSK
+oOHun0wmtgEB4uT+Mx6PLYNtQABwOk/u/8/XaDTqDIdD+BUvvx8GgwH8ipf+
+fr8Pv+Kl/+LiAhLm9ftn3nJ346W/1+tBgjnaO3NYf7fbhQRztHfmsP5OpwMJ
+5mjvzGH95+fnkGCO9s4c1t9utyHBHO2dOay/1WpBgjnaO3NYf7PZhARztHfm
+sP5GowEJ5mjvzGH99XodEszR3pnD+mu1GiSYo70zh/VXq1VIMEd7Zw7rr1Qq
+kGCO9s4c1l8ulyHBHO2dOay/VCpBgjnaO3NYf7FYhARztHfmsP5CoQAJ5mjv
+zGH9+XweEszR3pnD+i3LggRztHfmsP5cLgcJ5mjvzGH92WwWEszR3pnD+jOZ
+DCSYo70zh/WfnZ1BgjnaO3NYfzqdhgRztHfmsP5UKgUJ5mjvzGH9yWQSEszR
+3pnD+hOJBCSYo70zh/XH43H4FS/9sVgMfsVLfzQahV/x0h+JROBXzGfo/K8/
+HA7bBvgQ28v3bzzn/x+OCx9hH7tO+v8CAb5Plw==
+       "], {{0, 48}, {48, 0}}, {0, 255},
+       ColorFunction->RGBColor],
+      BoxForm`ImageTag["Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+         "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+       Association[
+        "XMP" -> Association[
+          "DublinCoreSchema" -> 
+           Association[
+            "Creator" -> "Alexander Kiselev", "Description" -> 
+             "This is the icon from Gentleface.com free icons set.", "Rights" -> 
+             "Creative Commons Attribution Non-Commercial No Derivatives", 
+             "Subject" -> "icon, pictogram", "Title" -> 
+             "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+           Association[
+            "CreatorContactInfo" -> 
+             Association[
+              "CreatorContactInfo" -> 
+               Association[
+                "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", "CiAdrCtry" -> 
+                 "Czech Republic", "CiEmailWork" -> "ka@gentleface.com", 
+                 "CiUrlWork" -> "www.gentleface.com"]], "IntellectualGenre" -> 
+             "pictogram"], "PhotoshopSchema" -> 
+           Association[
+            "AuthorsPosition" -> "Art Director", "Credit" -> 
+             "www.gentleface.com", "DateCreated" -> 
+             DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], "BasicSchema" -> 
+           Association[
+            "MetadataDate" -> 
+             DateObject[{2010, 1, 3, 21, 33, 41.}, "Instant", "Gregorian", 
+               8.]], "MediaManagementSchema" -> 
+           Association[
+            "DocumentID" -> "xmp.did:3CB50248A7F8DE11821CE4B2C7E36D70", 
+             "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:3CB50248A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+             "xmp.iid:3CB50248A7F8DE11821CE4B2C7E36D70", "OriginalDocumentID" -> 
+             "xmp.did:3CB50248A7F8DE11821CE4B2C7E36D70"], 
+           "RightsManagementSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:3CB50248A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "UsageTerms" -> 
+             "Creative Commons Attribution Non-Commercial No Derivatives"], 
+           "PagedTextSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:3CB50248A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]]]]]],
+      Selectable->False],
+     DefaultBaseStyle->"ImageGraphics",
+     ImageSizeRaw->{48, 48},
+     PlotRange->{{0, 48}, {0, 48}}], ",", "16"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7429889634984426`*^9, 3.7429890036497393`*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"cb7e5101-49c4-460b-a2ad-ffc914b17447"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJyNkktrGmEYhcf7XaYqKrqQ4gUdQVG7CAUDXQYKTU1HMIXSpI5DCZmCKZSC
+FP9Bgl111016sa0uQqBelqK/outuCg0kgTbV+XpeMBCGCWRxPOPMec53vb39
+otIwchy3Z8dPZevVvWZz6/UGjz+isvdcVqT6mvJSkqXmyrYJL/mlzNB4POYM
+BoPD7Xbf8vv9d7LZ7HGxWGSFQkGF2FLqUj8ikcgGskEwHlmWuel0KkSj0Z+l
+UumEuHw+z3K53LWiDLKnYE7a7bYym83u45m+qYIgqBh/DjFI1Thpgcwc2QUx
+4D9OJhMhGAz+Ii6dTrObCNl/YP62Wq3d4XDImUymJ+hliUTiTyqVukgmk/Nr
+fAGdU9ZisfQlSeIGg4EB2/ggk8mwcDj8HnuoYI+O4Ts6/p3neZGy2L/Der1O
+PEeHhn6Gb/sOh+MRsp/sdvu61gOBwFeMu0JZMB+u8A/j8Tjxb51O56bP5/uC
+nqqO92022yplL3laP/GxWIx5vd4OxqmhpwsXdbxntVrLlNXydB64Fx3019DT
+hYs63sP8y5Qlnvbvkg+FQgxz76C/5nK5unBR6+jvmc3mMmW1PPaGYY4d9G9i
+rV14Vevo7+GsVymr5bE2hjEO0F/FXD/DKzr+zWg03qWshl/3eDx0J96h/xl6
++vCnOn4Efo2yYA6JH41GxD/GHIk/wzjn8Av4mZ5DvykL5ugKX8T7U9wpdgOp
+yBL/ptFocP8BBdUVSg==
+    "], {{0, 16}, {16, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag["Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+      "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+    Association[
+     "XMP" -> Association[
+       "DublinCoreSchema" -> 
+        Association[
+         "Creator" -> "Alexander Kiselev", "Description" -> 
+          "This is the icon from Gentleface.com free icons set.", "Rights" -> 
+          "Creative Commons Attribution Non-Commercial No Derivatives", 
+          "Subject" -> "icon, pictogram", "Title" -> 
+          "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+        Association[
+         "CreatorContactInfo" -> 
+          Association[
+           "CreatorContactInfo" -> 
+            Association[
+             "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", "CiAdrCtry" -> 
+              "Czech Republic", "CiEmailWork" -> "ka@gentleface.com", 
+              "CiUrlWork" -> "www.gentleface.com"]], "IntellectualGenre" -> 
+          "pictogram"], "PhotoshopSchema" -> 
+        Association[
+         "AuthorsPosition" -> "Art Director", "Credit" -> 
+          "www.gentleface.com", "DateCreated" -> 
+          DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], "BasicSchema" -> 
+        Association[
+         "MetadataDate" -> 
+          DateObject[{2010, 1, 3, 21, 33, 41.}, "Instant", "Gregorian", 8.]], 
+        "MediaManagementSchema" -> 
+        Association[
+         "DocumentID" -> "xmp.did:3CB50248A7F8DE11821CE4B2C7E36D70", 
+          "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:3CB50248A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+          "xmp.iid:3CB50248A7F8DE11821CE4B2C7E36D70", "OriginalDocumentID" -> 
+          "xmp.did:3CB50248A7F8DE11821CE4B2C7E36D70"], 
+        "RightsManagementSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:3CB50248A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "UsageTerms" -> 
+          "Creative Commons Attribution Non-Commercial No Derivatives"], 
+        "PagedTextSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:3CB50248A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]]]]]],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSizeRaw->{16, 16},
+  PlotRange->{{0, 16}, {0, 16}}]], "Output",
+ CellChangeTimes->{3.743027054341188*^9, 3.7430274263144636`*^9, 
+  3.743033056254478*^9, 3.743035729843398*^9, 3.7430357879547224`*^9, 
+  3.7430360265273676`*^9, 3.743037413043672*^9, 3.743037572070768*^9, 
+  3.743037759098465*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"b7f0297b-0cb4-4c16-bc19-32bca69431d2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"`RefreshIcon", "=", 
+  RowBox[{"ImageResize", "[", 
+   RowBox[{
+    GraphicsBox[
+     TagBox[RasterBox[CompressedData["
+1:eJzt2UtO21AUBuCQBAhv85wBN7zfGJh06A47i6g6v6DSqhNqQaWqs+zAS/AS
+vIS7BC/BS/ASTv8rmSokvtfXr3SSI31VG9v/+RNZLo/u48/7b81Go/HawR/3
+D78/vrw8/Pls4R9fnl9/fH9++vrp+dfT96eXD48tvGgn2o1q5vb2loELAYR3
+d3eURh5LzpHnsorWF56bmxsOshMVgWuFzBh3b9u2OUTYTVWQWdAz2NuDoGjv
+6+trBgIZVAdkB2Cl7LXksbfzinS/urrqQQxUM7nD1u3N2/3y8pIDjZkLXtqx
+PN0vLi44kKEIvOT9OkNkjpecY5qXyrT7+fl5D8iAj1wnx2fi4BphmD3CZMfZ
+2RmDGEgjRJ5x75TPx0FGlLFjhEn26empANLwYeRZkXdkBsQZu97Jyjw5OeFA
+Gn7Z3skeBiJj14is3OPj4whIoZLuyOEQa/Yo6XKPjo44kEIIpe6Zw8NDCxmB
+ZkemjPwQSMEp2Z1BrMk3oso/ODhgQAql7xtk2BBrdhhR5e/v77tACk7Z/skO
+CzgIzS4tVXa32w329vYoRVRF9+FBLoO+zFfsTaXpL4BSeHX0H9rtgA+xosM/
+qgzGWACUgtfdf6CDJfeBUHRR9t/d3bUhBhoQjqt7Sh8GfYgGO+mu2dnZsbe3
+t30Q+LsLpb9GqGLQw0l61X4vT2Yyk5lM3tna2vLAB+d/d5GDHhb0QSS9bN35
+m5ubNCCC/sbGBhtT3bQ+4VCnGH2U7wHHSEGsr69zGNv/ZdjJFV2UPz9EP8oQ
+g7+2tubU3R97PEUHoboGvSiHCPqrq6usjv5Jftpe5fdR6EJFWJYlgEMl9xdi
+HM0+V3MdlbGyshKD9hlhMsgINHuY5joqSfZX5pvM8vKyo8nXfi2Pa6mEAErd
+P0tLSxaEmh1cd/3i4iIVEGOnNtd0kOVr9mR+D76wsEA5CeSyKrojy8/YxbMy
+5ufnKYcYSj9vZAb4GbuUz/zBmZubo5wicIp2l9dCmLFDfk7MJK/T6VBBAozf
+hzwXfMPszN9Lvs3s7CyVFIEHHJwhPDkW5cjjpt3lzMzMUAoPXMWxOuXqLmd6
+epoGxNAbOGYnr1HN3u3NM+12mxIBjDxb5GvJMaqJAFaku5xWqxVA5nuX50AE
+VBGZxYv2LjrNZpODACoolBnj7j08U1NTDFwIIARSCJNz5Lmsit1/AUL0mIs=
+
+       "], {{0, 48}, {48, 0}}, {0, 255},
+       ColorFunction->RGBColor],
+      BoxForm`ImageTag[
+      "Byte", ColorSpace -> "RGB", Interleaving -> True, MetaInformation -> 
+       Association[
+        "XMP" -> Association[
+          "DublinCoreSchema" -> 
+           Association[
+            "Creator" -> "Gentleface custom toolbar icons design", 
+             "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+             "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+             "custom icon design, toolbar icons, custom icons, interface \
+design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+           Association[
+            "CreatorContactInfo" -> 
+             Association[
+              "CreatorContactInfo" -> 
+               Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+           "BasicSchema" -> 
+           Association[
+            "MetadataDate" -> 
+             DateObject[{2011, 1, 25, 13, 55, 9.}, "Instant", "Gregorian", 
+               8.]], "MediaManagementSchema" -> 
+           Association[
+            "DocumentID" -> "xmp.did:134F23578228E011989CC0A1AD02B5C2", 
+             "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:134F23578228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 9}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+             "xmp.iid:134F23578228E011989CC0A1AD02B5C2", "OriginalDocumentID" -> 
+             "xmp.did:134F23578228E011989CC0A1AD02B5C2"], 
+           "RightsManagementSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:134F23578228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 9}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "Marked" -> True, 
+             "UsageTerms" -> 
+             "Creative Commons Attribution-NonCommercial license"], 
+           "PagedTextSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:134F23578228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 9}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]]]], "Comments" -> 
+         Association["Software" -> "Adobe ImageReady"]]],
+      Selectable->False],
+     DefaultBaseStyle->"ImageGraphics",
+     ImageSizeRaw->{48, 48},
+     PlotRange->{{0, 48}, {0, 48}}], ",", "16"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.74297707028319*^9, 3.7429770916964145`*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"1e0fad4b-e4a9-4d1e-a163-16036ba5313c"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJxtUktLG1EUnplk8ppH3mDeGfIaEpOQZNNtl21BwdKVq2hTKYYUYqF0p4Lg
+3h/gL3AptOBKSn9DVqV7QVejEo2330nuhHHqhS9z73fOd865342x9WXjkyQI
+wl4APxv9b6/H4/739xEcPoz2Pu+MBh/fjL4OdgbjV1sekBEOr/BsUQVBURSj
+XC4f9Hq9SafTYQTag9tHrGAnB4PBFVEUZdrjS2WFXC43RL7V7XYZ195zMOIA
+K5PJbGez2WG73b6SJEmzteB3W60WazabrFarnScSibVwOFwixOPxdfQ/azQa
+8zjlmaZpQa+QNhQKmfV6/Q5gmOHY63XdDCudTm8ifovaU2hn1Wr1BnoV/an3
+CfiZYRg/PJ75OBJ4LwE5UrFYPKLa0LBKpfKE70OpVLomPeCB7i/FMOvbhR2i
+PYBIgFcF3Kefz+cvcI9H1GDQTHl/MZVKnSL2C3Prtua/CywK0/usJpPJQ8x8
+iXNo+XhYjp4vSOc+iw5iOR/fL0PAs1xXzNmLxKFYLHap6/qh3+9fddVya0X4
+q8OL39Fo9FRcLBX7Kd6YAY/w8ALv2YcXBZcX5KkYCATeQc/Q8w+09E4qel9D
+9wA8AQz1mKZpRxTnOgLlCuB/RiKRGXw84XVV9LvBmbipqqq36LH5kvfgjxFn
+wB3uYfKQAt4CmA34cIb4OmwqEbBfA3eO/8E8LsvyLteSzxrOV8gZAtvYWz6f
+j3Hcc5CGYFGeQ0tLxmwrjjkLwD76TgDGMQF3ABg8bfl+/wC5gY4U
+    "], {{0, 16}, {16, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag[
+   "Byte", ColorSpace -> "RGB", Interleaving -> True, MetaInformation -> 
+    Association[
+     "XMP" -> Association[
+       "DublinCoreSchema" -> 
+        Association[
+         "Creator" -> "Gentleface custom toolbar icons design", "Description" -> 
+          "Wireframe mono toolbar icons", "Rights" -> 
+          "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+          "custom icon design, toolbar icons, custom icons, interface design, \
+ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+        Association[
+         "CreatorContactInfo" -> 
+          Association[
+           "CreatorContactInfo" -> 
+            Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+        "BasicSchema" -> 
+        Association[
+         "MetadataDate" -> 
+          DateObject[{2011, 1, 25, 13, 55, 9.}, "Instant", "Gregorian", 8.]], 
+        "MediaManagementSchema" -> 
+        Association[
+         "DocumentID" -> "xmp.did:134F23578228E011989CC0A1AD02B5C2", 
+          "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:134F23578228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 9}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+          "xmp.iid:134F23578228E011989CC0A1AD02B5C2", "OriginalDocumentID" -> 
+          "xmp.did:134F23578228E011989CC0A1AD02B5C2"], 
+        "RightsManagementSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:134F23578228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 9}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "Marked" -> True, 
+          "UsageTerms" -> 
+          "Creative Commons Attribution-NonCommercial license"], 
+        "PagedTextSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:134F23578228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 9}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]]]], "Comments" -> 
+      Association["Software" -> "Adobe ImageReady"]]],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSizeRaw->{16, 16},
+  PlotRange->{{0, 16}, {0, 16}}]], "Output",
+ CellChangeTimes->{3.7429785743682184`*^9, 3.74302705437719*^9, 
+  3.7430274263474655`*^9, 3.74303305628848*^9, 3.7430357298774004`*^9, 
+  3.7430357879877243`*^9, 3.7430360265563693`*^9, 3.7430374130746737`*^9, 
+  3.743037572098769*^9, 3.7430377591554685`*^9},
+ CellLabel->"Out[24]=",ExpressionUUID->"aae7f78b-7ae8-4a0d-a9f5-3edb3f84bf86"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"`ReadProtectedIcon", "=", 
+  RowBox[{"ImageResize", "[", 
+   RowBox[{
+    GraphicsBox[
+     TagBox[RasterBox[CompressedData["
+1:eJztmUluI1cMhj3PAz3Pdnme7bK9yVJZZmd0kP3rRjuNbJyCO0CQnW7gI9QR
+fAQdgUfQEXSEl59JSWDTT6WSrE5gQAQ+o/hI/vyfocGAdz/9/uHXgb6+vq9j
++PHh458/Pj19/OtnQvLL49ffvjw+fP7p8Y+HLw9PP3waxGGcMdTXi170ohe9
+sHF3d0egDBJ5/r/9tBM3Nzd0e3vLwGck/7WHOI5LmjbmCDDu4BXl7+Xz6uoq
+Bsn19XUKGPgWSE8qMyAyWhTQkLyrr5/Ly8sIlEEVO/0bcEqTAJu65F3zfn5+
+Hl1cXKTAdwGndAk5m7rkXfF+dnYWgRR7fJdwSpsAm7rkXfF+cnKSnJ6e1oAv
+QAU8w48DJUNSryltwhkbDZY7vdX38fExgQp2+BZIjxMvHeiz0WKtg7oDL9Lb
+jvbR0VEMqsDnUIFuqR1dpU+AjR5rn8idqomXuIj2wcFBCdQODw99Exg09Y3Z
+CDwDVjOxqpOp1TVJ9Ti7VzyB3Dvs7+874JuB+XKL+XJgxqk6ATY9LHdSPVGe
+B/EY2r23t1cCvgk1kHt31NPAXGPX7u4uIWdTl/zVazvzUsvxU9L9URTFoAZ8
+AJbded7Rc2/nMONUnUSnHV2pBWbqiNd/fp/b29u0s7NTBT7AC2j53g/MN7xn
++mzqXFCXMg8hb1XR3traSoEPkLbSl0BfrOeg6VRN9Nnosuwtoq10mnrc3Nz0
+AQp5l0BvouYa3jc2Ngg5G13JO/puEk8hr9hjqcruorroLWdzDe/r6+sE2Oiy
+1kXdyWwbeyjz9o3ftbW1EK6lYBbSq/tXV1cJORs9ycnMyPl9m3teecW+KvCW
+lZWVwneoB2YIsNGSnFSPU7WooK4LeRTvy8vL98A3ofAdlpaWCP1s5lnuVO8R
+PVWrFNE1M5b7bLcDPsTi4mK51Q70EGAzKzmpHrujVEA3aeZLPOvehYWFZ+Cb
+8DI/Px98T8s56mz6We6ktJ2uy13yfGeaaY6f4Ocj5lLgQ8zNzTH45m8I5CTn
+ppf1XVF3qlYDue9Z2RHQ1OR+tss+IvIhpFbvo3+DTY/ckVRPDCrgRWZ1LRTo
+S0CtyP68mJ2ddaAGvKIxOzMzQ4BNXfKOvpugVQroWQp5V5rx9PR0FXg8N2aR
+E2A5V7DcqV3fmItAarQsVfHSrrbE1NQUgcbrdXJyUnIGXiF5Ye+iARxmKkYn
+xEs72nkxMTFBgIFXsPhRPS7rSUEZlDLk+RlUzHwzatAt/N3cKsbGxmh8fJyB
+V0je8I5nZ+qd8qx13xqjo6MEGHfwCslJ9ThT74QURN3yLTE8PEwjIyMMvELy
+hnc8l0y9HUQr0XrdiqGhIQKMO3iF5K924SwCDqSgYmY0laxHeqNue9YxODiY
+AK9g8G7+jzAwMOCAz2DwbrzXo7+/34EEvDvvvehFL3rxveNvT7V6tw==
+       "], {{0, 48}, {48, 0}}, {0, 255},
+       ColorFunction->RGBColor],
+      BoxForm`ImageTag[
+      "Byte", ColorSpace -> "RGB", Interleaving -> True, MetaInformation -> 
+       Association[
+        "XMP" -> Association[
+          "DublinCoreSchema" -> 
+           Association[
+            "Creator" -> "Gentleface custom toolbar icons design", 
+             "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+             "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+             "custom icon design, toolbar icons, custom icons, interface \
+design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+           Association[
+            "CreatorContactInfo" -> 
+             Association[
+              "CreatorContactInfo" -> 
+               Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+           "BasicSchema" -> 
+           Association[
+            "MetadataDate" -> 
+             DateObject[{2011, 1, 25, 13, 55, 11.}, "Instant", "Gregorian", 
+               8.]], "MediaManagementSchema" -> 
+           Association[
+            "DocumentID" -> "xmp.did:D08378588228E011989CC0A1AD02B5C2", 
+             "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", "Gregorian",
+                    8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+             "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "OriginalDocumentID" -> 
+             "xmp.did:D08378588228E011989CC0A1AD02B5C2"], 
+           "RightsManagementSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", "Gregorian",
+                    8.], "Changed" -> "/metadata"]], "Marked" -> True, 
+             "UsageTerms" -> 
+             "Creative Commons Attribution-NonCommercial license"], 
+           "PagedTextSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", "Gregorian",
+                    8.], "Changed" -> "/metadata"]]]], "Comments" -> 
+         Association["Software" -> "Adobe ImageReady"]]],
+      Selectable->False],
+     DefaultBaseStyle->"ImageGraphics",
+     ImageSizeRaw->{48, 48},
+     PlotRange->{{0, 48}, {0, 48}}], ",", "16"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.742946913954346*^9, 3.7429469192796507`*^9}, 
+   3.742947416591095*^9},
+ CellLabel->"In[25]:=",ExpressionUUID->"e10b983f-0a4e-4df7-962d-ba81eecd60e2"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJx9U0trE1EYnWeSmUySyftlHoVkyAOSIWjsQlApLooW6yQK9VVSjFVaI6YF
+zQ8Q3LspbgWXbt34B7oqIm6FKnYldNUiCF7PF25hGNJeOHNnvu+cc7/v3jtz
+a8+dx5IgCFsBPJzBy6vj8WDSM/Fxe7T1dH00fLQ42h6uD8fzazKCJocinDlE
+DIlA766499urkTln1pCnD1k+NcdNiOM3DCNLwLtGoFy5XF61bfujJE2XEN1a
+n8+nZrPZe7Va7XOr1TrudDqMAP5hMpmsI7fU7XZZPp9foTp5b1NtLBZbqNfr
+39rtNms2m7+LxeJb8O8WCoVJKpW6k8vlepTD7ASDwZRrL4R0Or0BLbMs6xjc
+TVVVFXBK0O8EAgEN3pfhyZC7jjruNxoNBs0T0sbjcadSqTD09QW9WhTz+/1W
+tVolzivw+/BliUSiR7lQKDQP7lfSkBZ1/kU/e1hT53snQ/Maue1IJHKpVCox
+rL+MfIS2iDiKouikIW0mkzkgoE6b9+QD14D2FjgsHA5fMU1zAmyc9EtcaH6R
+DrW2Udsfgq7rD+js0HsfvTLU6gAvUMsu4ippwVkC94j40Nr83M7Dfx+5TXjf
+iEajTNO0a+RFOTprnH8Ovu/AY6jtJ+IX3WdAHMSWsYcMvn30MMD8BvMzeH6C
+llEOvu/hlXbdG9JLiD0En2FvbsLrHN6/A/8oBt8f8NkB54Lrvp7ccZGv/wH1
+rvKYwuMGh+DRnfb/uH29QxFc/8iMIXq0ogczx3+cu2+H
+    "], {{0, 16}, {16, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag[
+   "Byte", ColorSpace -> "RGB", Interleaving -> True, MetaInformation -> 
+    Association[
+     "XMP" -> Association[
+       "DublinCoreSchema" -> 
+        Association[
+         "Creator" -> "Gentleface custom toolbar icons design", "Description" -> 
+          "Wireframe mono toolbar icons", "Rights" -> 
+          "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+          "custom icon design, toolbar icons, custom icons, interface design, \
+ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+        Association[
+         "CreatorContactInfo" -> 
+          Association[
+           "CreatorContactInfo" -> 
+            Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+        "BasicSchema" -> 
+        Association[
+         "MetadataDate" -> 
+          DateObject[{2011, 1, 25, 13, 55, 11.}, "Instant", "Gregorian", 8.]],
+         "MediaManagementSchema" -> 
+        Association[
+         "DocumentID" -> "xmp.did:D08378588228E011989CC0A1AD02B5C2", 
+          "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+          "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "OriginalDocumentID" -> 
+          "xmp.did:D08378588228E011989CC0A1AD02B5C2"], 
+        "RightsManagementSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "Marked" -> True, 
+          "UsageTerms" -> 
+          "Creative Commons Attribution-NonCommercial license"], 
+        "PagedTextSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]]]], "Comments" -> 
+      Association["Software" -> "Adobe ImageReady"]]],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSizeRaw->{16, 16},
+  PlotRange->{{0, 16}, {0, 16}}]], "Output",
+ CellChangeTimes->{3.7429661757100554`*^9, 3.7429667543821535`*^9, 
+  3.742967831896784*^9, 3.7429686373278522`*^9, 3.7429694790229945`*^9, 
+  3.742970606311472*^9, 3.7429785744072204`*^9, 3.743027054411192*^9, 
+  3.7430274263794675`*^9, 3.7430330563214817`*^9, 3.743035729907402*^9, 
+  3.7430357880217257`*^9, 3.743036026585371*^9, 3.743037413099675*^9, 
+  3.7430375721257706`*^9, 3.7430377591824703`*^9},
+ CellLabel->"Out[25]=",ExpressionUUID->"e30108c5-2ffe-439e-909b-aadb398d7d32"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"`LockedIcon", "=", 
+  RowBox[{"ImageResize", "[", 
+   RowBox[{
+    GraphicsBox[
+     TagBox[RasterBox[CompressedData["
+1:eJztmUtu2lAUhqG8EWBAvBGYh3gjAow6Qx12FClVxyhRadQJlUilqqMshSWw
+BJbgJWQJLOHvuaoHobKpfY/NbaVe6Ut0wP7uR4QscNoPX+8+vwkEAk9x+nF3
+//3dbnf/40OWho/bpy+P282n99tvm8fN7u1DiB6cm4QJAP/5S3G7lsvlitgT
+BgELDPP5lRuv3/2LxWJNvBBwgTh+rbJ/Pp9rxJEAA3G+du3+m1/rRMADhOfm
+Wv2z2UwnTgQ8RPj0a/RPp1ODgA8YfvdPJpNnAn/gSC1rYmW+3pU57x2c++xX
+/3g81ogTARtOtP/FayM9r9Nxh0sOsY8f/aPRaE3ABuP3fS8tOn5/wXV2XfWq
+fzgcHglYQXvaXj/sFp33YuM7+NE/GAxgw95tu+lb2zn96O/3+7DB1eeBV76V
+ndOP/l6vBxtcv3dMn2bn9KO/2+3CCpl2N06v+judDqzg9DtxetXfbrdhBaff
+idOr/larBSs4/U6cXvXrug4rOP1OnF71N5tNWMHpd+L0qr/RaMAKTr8Tp1f9
+9XodVnD6nTg5/bVazSCgEEO2n87Vq9UqVMP5+1cqFaiG018ul6EaTn+pVIJq
+OP3FYhGq4fQXCgWohtOfz+ehGk5/LpeDJCfae02sxG8xy7o4/dlsFpKcfacU
+s6yL069pGmSw+qwg6+L0ZzIZSHJ2L1PMsi5OfzqdhiQGoZkOzZylXJz+VCoF
+BgfTceB4OP3JZBIMbk3HLcfD6U8kEpDk9Pr9L2ZZF6c/Ho9DkrN7imKWdXH6
+Y7EYJDnrF7Osi9MfjUahGk5/JBKBajj94XAYquH0h0IhqIbTHwwGoRpOPy3x
+P00oRPr+yb/AT3W/Q0w=
+       "], {{0, 48}, {48, 0}}, {0, 255},
+       ColorFunction->RGBColor],
+      BoxForm`ImageTag["Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+         "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+       Association[
+        "XMP" -> Association[
+          "DublinCoreSchema" -> 
+           Association[
+            "Creator" -> "Alexander Kiselev", "Description" -> 
+             "This is the icon from Gentleface.com free icons set.", "Rights" -> 
+             "Creative Commons Attribution Non-Commercial No Derivatives", 
+             "Subject" -> "icon, pictogram", "Title" -> 
+             "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+           Association[
+            "CreatorContactInfo" -> 
+             Association[
+              "CreatorContactInfo" -> 
+               Association[
+                "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", "CiAdrCtry" -> 
+                 "Czech Republic", "CiEmailWork" -> "ka@gentleface.com", 
+                 "CiUrlWork" -> "www.gentleface.com"]], "IntellectualGenre" -> 
+             "pictogram"], "PhotoshopSchema" -> 
+           Association[
+            "AuthorsPosition" -> "Art Director", "Credit" -> 
+             "www.gentleface.com", "DateCreated" -> 
+             DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], "BasicSchema" -> 
+           Association[
+            "MetadataDate" -> 
+             DateObject[{2010, 1, 3, 21, 33, 42.}, "Instant", "Gregorian", 
+               8.]], "MediaManagementSchema" -> 
+           Association[
+            "DocumentID" -> "xmp.did:C00F5B48A7F8DE11821CE4B2C7E36D70", 
+             "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+             "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "OriginalDocumentID" -> 
+             "xmp.did:C00F5B48A7F8DE11821CE4B2C7E36D70"], 
+           "RightsManagementSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "UsageTerms" -> 
+             "Creative Commons Attribution Non-Commercial No Derivatives"], 
+           "PagedTextSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]]]]]],
+      Selectable->False],
+     DefaultBaseStyle->"ImageGraphics",
+     ImageSizeRaw->{48, 48},
+     PlotRange->{{0, 48}, {0, 48}}], ",", "16"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7429469305912976`*^9, 3.7429469346375294`*^9}, 
+   3.7429474158700542`*^9},
+ CellLabel->"In[26]:=",ExpressionUUID->"c134a3b5-4c12-45b0-b722-602430016299"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJyNk8trGlEUxmec8RVFjfhIFAxiQZSIigrdlWyKutQovio+qjFdWEgCpdD/
+oNBVaeuupdBK6KrdFBW6iaB05bp/RHdtkxnn9juDliRNocLnPXPP97vnnjPq
+bz3MdTUcxx0b8JVrPto7Omo+ztvwUOgfHx70O/cz/ZPOQefodkvApm0lEVIU
+hWOMcYvFghuPx6pGoxE3nU698/n8zmw224PCk8lE3UeeJy8xxEqSpMbpdJrH
+cXQLnc1me+bz+X74/X5G2tnZYW63e4LcLYi8GmKIXfOlUkkQRZELhULPU6kU
+i8fjbHd3dxoOhz8i/p5IJFgymfym1WrtxWKRB8Nf4jW5XI6ODsdiMRln/PJ6
+vS1BEDie5zmz2ewPBAJfkWMbGxsn5AUjXuLFFV+IRCIM3i/EUT9Y9RTg/o1o
+NKoYDIbhTXw+nycgj/tSr+/A6SDDSlrcQc3pdLr38Gr+Uf9uMBhkDofjDXft
+YzQa1Rx6en2tPs1CwPw8mN9TzFtxOp1n8Beg0koFq9Wq5jC/s3K5nCSGWFmW
+RZp/o9GoYTYMc5O2t7eZx+O5ItqjHHm63e4nYohd89VqdR+9yVtbWxLqK+iB
+VuZyuRhWmUQ5eJR2uz28gS9gTtS7tLm5uYSYxWL5gLk9QSxD6pnkwV1P1zx6
+UPlKpVLAmJjdbpfASeiX4V0dYiZuxOfYU5C7IE+9Xj9d/f7+8JifyhOLHmWT
+yUT8EPe9RzHtUY48tVrtLx7191GL6v6E/xySwL/V6/UPKIYuKEce8MPrfCaT
+qdHZ/6NsNvt5zS+XS/W/NBgMongvg16v94rWlSh+sX5G7iWt+DSJIfY3qHKe
+ag==
+    "], {{0, 16}, {16, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag["Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+      "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+    Association[
+     "XMP" -> Association[
+       "DublinCoreSchema" -> 
+        Association[
+         "Creator" -> "Alexander Kiselev", "Description" -> 
+          "This is the icon from Gentleface.com free icons set.", "Rights" -> 
+          "Creative Commons Attribution Non-Commercial No Derivatives", 
+          "Subject" -> "icon, pictogram", "Title" -> 
+          "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+        Association[
+         "CreatorContactInfo" -> 
+          Association[
+           "CreatorContactInfo" -> 
+            Association[
+             "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", "CiAdrCtry" -> 
+              "Czech Republic", "CiEmailWork" -> "ka@gentleface.com", 
+              "CiUrlWork" -> "www.gentleface.com"]], "IntellectualGenre" -> 
+          "pictogram"], "PhotoshopSchema" -> 
+        Association[
+         "AuthorsPosition" -> "Art Director", "Credit" -> 
+          "www.gentleface.com", "DateCreated" -> 
+          DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], "BasicSchema" -> 
+        Association[
+         "MetadataDate" -> 
+          DateObject[{2010, 1, 3, 21, 33, 42.}, "Instant", "Gregorian", 8.]], 
+        "MediaManagementSchema" -> 
+        Association[
+         "DocumentID" -> "xmp.did:C00F5B48A7F8DE11821CE4B2C7E36D70", 
+          "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+          "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "OriginalDocumentID" -> 
+          "xmp.did:C00F5B48A7F8DE11821CE4B2C7E36D70"], 
+        "RightsManagementSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "UsageTerms" -> 
+          "Creative Commons Attribution Non-Commercial No Derivatives"], 
+        "PagedTextSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]]]]]],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSizeRaw->{16, 16},
+  PlotRange->{{0, 16}, {0, 16}}]], "Output",
+ CellChangeTimes->{3.7429661757340565`*^9, 3.7429667544101553`*^9, 
+  3.742967831927786*^9, 3.7429686373518534`*^9, 3.7429694790479956`*^9, 
+  3.742970606340473*^9, 3.742978574443222*^9, 3.7430270544461937`*^9, 
+  3.7430274264114695`*^9, 3.7430330563544836`*^9, 3.743035729939404*^9, 
+  3.743035788053728*^9, 3.743036026618373*^9, 3.743037413128677*^9, 
+  3.7430375721557727`*^9, 3.7430377592094717`*^9},
+ CellLabel->"Out[26]=",ExpressionUUID->"6c45bfd8-7200-40d4-a331-612f03dca860"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"`ProtectedIcon", "=", 
+  RowBox[{"ImageResize", "[", 
+   RowBox[{
+    GraphicsBox[
+     TagBox[RasterBox[CompressedData["
+1:eJzNmUlu40YYhT3PAz3PNj3PNm1vsmSW2QkdZM9utNPIxhHcAYLseAMdgUfQ
+EXSEOgKPwCP8eRVUGb8LrGKJktp5wNdQv396smS37T788uen30eGhoa+T+GP
+T5///vn19fM/vwb4y28v3//49vL89ZeXv56/Pb/+9GUUZqQYG6rW4+NjAGKQ
+gBRkoKPIn56eqBfkDrYvUzcSdTPwiPhODw8PAUhABuRu+khkBpVFZnI+nyiK
+Wuih/zMyoyM/eZCDDshAqohroucztTP3yWDLf3d3RyWI+/v7FMSg6/djt5I3
+1K1U3i7LZJu9vb0lDfrkfDjovFWSGWQWns3We3NzQxpHTwgaIAVt0AE5n/Uk
+V7NttSt2PQ+fbNfX16Qx/AhkIOc9fcb6eenKxnV1dUUa5oXcHxACOD+3yrKZ
+ury8JI3NHwAFiFzZXdm4Li4uSGPzB0CjKrsrG9f5+TlpbH6fSRxZUp9sXGdn
+Z6Sx+X0kc+SIXRlsc6enp6Sx+X3Cmh21EBSuDLbZk5MT0tj8PmDNfnx8HKAu
+qjI45klj83tE2G5LHR0ddXwyOOZJY/N7QADr1/jDw8PMnPHJZuwgjc2viQDW
+7GEYtsrmfLIZe0hj82sggDX7wcFBYpv1yca1v79PGpvfJQL5rNlRT1zzPtm4
+9vb2SGPzu0DgljU76knVDp9sXLu7u6Sx+Z4I3LFmRz3x2eOTjWtnZ4c0Nt+D
+Dm5Ys6MegcJnl082ru3tbdLY/Aqs/zapPREofPf5ZNPa2toKATFiViMPnNlR
+j0Dhues/2Gxc5pva3NwkRmzxy3BmRz0Chceed7D5uMw3tbGxkQNSpMwXzDdJ
+bfuk1tfXI/QUjnkbb99ryBvMzx23MkAKwfwm8zmJK/va2lqEnsIyW0WT3RfM
+t77WuNcAxIiUH4CC+fJx7Mq+uroaGzPdIOcC/TEwas6f13A3B6RoMz9VngBh
+xY6E7ahDyna1mW9972itrKwkgDTLy8ux8gPQrBgfQv+7+Rrk8pbaFRu1pOq+
+mhNAZqelpaUceP3eEH2pnuuBWO0K5G3mO392MHJEgDRBEDi/PkrJHj5Tk6Zj
+X+XvWIw8KSDN4uJiUtYHPwSC99YkYzsTo5Z2k11rYWGhA4gRG/UmKIyeOmRs
+Z2zUOnWyq13B/Py8AKQowNvriMcZq9UlY/sidUPXhMxQN7/aGc7NzRWAFPLx
+23PA44zVuiVjeyLzjrzdS3a+e3Z2tgCkkI9jVm+ymhdyRs/LXeZ+/jHqh2Zm
+ZiJQAGIkrN4oqZchexpsLimp9zW71vT0dAQEIEaL1cOSOkfWQtbfKqkPJLvW
+1NRUAAQgRlv6rKdl1CUtY0fbqAu+Y5CanJwMQAaIkU9MTESsJ5aeIta+7FEe
+n5W7fkh2LmRpAjJIHf1pSX/l91SD1Pj4eAwKQAwxNjb29lrIx9IzeuRM/IHR
+34R8AWgDMkgVpi97f/j7pUqjo6MJKABZkLXko3O6NDIyEoI2IAPphR+dz1fD
+w8MNkCu8/o+ujv4F1C0jnw==
+       "], {{0, 48}, {48, 0}}, {0, 255},
+       ColorFunction->RGBColor],
+      BoxForm`ImageTag[
+      "Byte", ColorSpace -> "RGB", Interleaving -> True, MetaInformation -> 
+       Association[
+        "XMP" -> Association[
+          "DublinCoreSchema" -> 
+           Association[
+            "Creator" -> "Gentleface custom toolbar icons design", 
+             "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+             "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+             "custom icon design, toolbar icons, custom icons, interface \
+design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+           Association[
+            "CreatorContactInfo" -> 
+             Association[
+              "CreatorContactInfo" -> 
+               Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+           "BasicSchema" -> 
+           Association[
+            "MetadataDate" -> 
+             DateObject[{2011, 1, 25, 13, 55, 8.}, "Instant", "Gregorian", 
+               8.]], "MediaManagementSchema" -> 
+           Association[
+            "DocumentID" -> "xmp.did:A86FAC568228E011989CC0A1AD02B5C2", 
+             "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+             "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "OriginalDocumentID" -> 
+             "xmp.did:A86FAC568228E011989CC0A1AD02B5C2"], 
+           "RightsManagementSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "Marked" -> True, 
+             "UsageTerms" -> 
+             "Creative Commons Attribution-NonCommercial license"], 
+           "PagedTextSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]]]], "Comments" -> 
+         Association["Software" -> "Adobe ImageReady"]]],
+      Selectable->False],
+     DefaultBaseStyle->"ImageGraphics",
+     ImageSizeRaw->{48, 48},
+     PlotRange->{{0, 48}, {0, 48}}], ",", "16"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.742946942588984*^9, 3.742946949181361*^9}, 
+   3.742947414675986*^9, {3.742978956448072*^9, 3.7429789653305798`*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"b48235cb-38b1-4249-bd7f-267d2fa0f6ab"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJxtk01PU1EQhm/vLVDa0g/a8tmWFtoibROb0DZGVyaayEJNMP4AiAiYiKaY
+aFf+BzXGlWFJ3BkXLtSFxoWKaKKJRCGwUCnWha5EKe3xGTwkhHiTlzt3zvvM
+nDOnxMcvjZ43DcOYdfBndOzq0VJprHzGx8fZmdnpyZmJcyMzVyYmJ0qHxi2S
+Pi07svF0dnYeHxwcvFMsFt8ODw9X8/n8Jvq1T5usbRQKhQXxCiOsaZquXC6n
+MpnMYjgcng4Gg8cCgUARHUQ5LYnz6FRfX185m82+EUZYy7K8iURi1eFwuLq7
+uy8kk8n76APaQBV5s/5laGhoraura8SQfdvtjlQqtQbvRb7+/v7llpaWA3ga
+6XRa8d7RbszeFP5nePywzqampujAwMDqLh+LxVbIJeLx+Dq+bXqKGvTd4luR
+fwXnx2tEo9Hb1MnBfBJWFIlEdnjOVqWuYj8NVEOKGkucLSL75nw3JE+tuDC7
+fE9Pzwq5BPOrUkPRY0ve9FhyuVxxYZldWer19vZWxCuMsMzPz11I/yT1q6xv
+U0cRLzqdzpiwfr//Iv2ErZP/Jl5hdH8PuUpra2s+FAp9pa7q6Oh4Tt2QsD6f
+b0pyzL6Gr4FnHW+B73Wu3y0e7vxdW1vbFH1usc+HsE7Jezyey9RSMHX0h54K
+z03xwryHF5vBfE7C/WCuYZtOut3u63hUe3t7HdVYl3iD3vJb+g5z2vj3mNp/
+l7qv5Y6Y2Rz7VvT/jWper1fin83NzUV8T9HcHlb6WdIW7hEze4zvBPFHpLSW
+mdkRej8gfqK3aGnW0G9T8pxhHr3gjg7reF7HC+ieZs09rLGnhk3/vq/R7zNn
+mRRJLLn9vv88Nr0v+b/OwL4USazXrf3sX4QUulw=
+    "], {{0, 16}, {16, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag[
+   "Byte", ColorSpace -> "RGB", Interleaving -> True, MetaInformation -> 
+    Association[
+     "XMP" -> Association[
+       "DublinCoreSchema" -> 
+        Association[
+         "Creator" -> "Gentleface custom toolbar icons design", "Description" -> 
+          "Wireframe mono toolbar icons", "Rights" -> 
+          "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+          "custom icon design, toolbar icons, custom icons, interface design, \
+ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+        Association[
+         "CreatorContactInfo" -> 
+          Association[
+           "CreatorContactInfo" -> 
+            Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+        "BasicSchema" -> 
+        Association[
+         "MetadataDate" -> 
+          DateObject[{2011, 1, 25, 13, 55, 8.}, "Instant", "Gregorian", 8.]], 
+        "MediaManagementSchema" -> 
+        Association[
+         "DocumentID" -> "xmp.did:A86FAC568228E011989CC0A1AD02B5C2", 
+          "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+          "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "OriginalDocumentID" -> 
+          "xmp.did:A86FAC568228E011989CC0A1AD02B5C2"], 
+        "RightsManagementSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "Marked" -> True, 
+          "UsageTerms" -> 
+          "Creative Commons Attribution-NonCommercial license"], 
+        "PagedTextSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]]]], "Comments" -> 
+      Association["Software" -> "Adobe ImageReady"]]],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSizeRaw->{16, 16},
+  PlotRange->{{0, 16}, {0, 16}}]], "Output",
+ CellChangeTimes->{3.7429661757580585`*^9, 3.742966754434157*^9, 
+  3.742967831958788*^9, 3.742968637379855*^9, 3.742969479074997*^9, 
+  3.7429706063714747`*^9, 3.7429785744992256`*^9, 3.7430270544721956`*^9, 
+  3.7430274264454713`*^9, 3.7430330563874855`*^9, 3.7430357299694057`*^9, 
+  3.7430357880847297`*^9, 3.743036026650375*^9, 3.7430374131556787`*^9, 
+  3.7430375721877747`*^9, 3.7430377592464733`*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"14440b7f-cf4f-452e-aff6-536ae6085834"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"`TemporaryIcon", "=", 
+  RowBox[{"ImageResize", "[", 
+   RowBox[{
+    GraphicsBox[
+     TagBox[RasterBox[CompressedData["
+1:eJzNmUlu5DYUhj3PgzzPdnmeDdneZMksszM6yF7diLuRjVNwBwiy4w3qCDpC
+HaGOoCPoCDzCy8+A6jwzrCqKpbbygM+DyPf/v0oSJcuHn37/8HlkaGjo6xS+
+fPj454+vrx//+jnCL7+8fP3ty8vzrz+9/PH85fn1h0+j2Bgbxoaqq4eHB/X4
++Ejd0OMV2lVeyEf9qDtjr7q/v6d+1J2xV8VxTAxptkm+veaIPevu7o4KfLb/
+3+r29pYY0myTfHvNEXvWzc0N9aPujL0K+ZrX19cdQA5SPV53xn51dXUlATkQ
+dWfrVZeXlwJIkAFy0DbjcYB2CyiQVJn54uJCgBRQSRRogYaHh63/NGju8/Nz
+ATqAKiAFzv0wY/b8Tmju09PT6OzsrAXIgQIpaALhoGnGlasX2m+ubTPX5VH6
+/NN1cnISwyMDZNEBpY6pnm/6bK02fCJ8Tx1jeh+Dsh8fH8fQVYAYORB99lkA
+if4nrdFlPLd0bZ9iW1D2o6OjGN4KECMFkcd+S6tP66Rak82JjB51Qbn23acO
+Dw8jkMOPGEmJfZdW7zeg2wYNNjdxzFN8X8tWo9HQHsTwzq4L86XV/wboKyDY
+/MQab4VmPzg4eEI/MdKyGuiRloYT7cV6UmusEZJ/f38/Ry8Z9M99z3e70COZ
+Rjcyrq1/Nn7/jCNH6c9tb28vAVQADVFWw+hIruMgg/Z/PhftZ81rlPHd3d3N
+ABmC73folUzHJkOursdU+7K53sdgZ2cnBsQIft5Ar7S0CvTn0/N81L5svvd7
+i+3t7SYgw0DvO9AvmVZBhjxe15L2Z33Cp2dra6sDyFD62rG0JNPSZMjhvQ5o
+f9YrfXo2NzcVIMNAfy+hXzKtDJRaw7Q/62/79GxsbBBDBAX/V0sanQyUXn+1
+P8vitY6sr68TQ5QO/VZLggyUzm76BcuS+fSsra0RQ4T4Mi0BgrKz/m95fHpW
+V1eJIUK9qyjtz7LkPj0rKyvEEN85Yr8sgmXxOv+Xl5cVIEOt72u0P8vilX9p
+aakDSBNF0UDr/6Cl/YssQHr2tIDOTouLi7X+v0H7F1mA13MMegSggoWFhYHf
+t4SU9uU5gPc6ht4c6Ow0Pz8f/Pw5SGnfIgPwuvcWNTc3JwExxHeK2c1fcH/s
+Syl/9ESzs7MKkCEHwfehMqV9jF/hHXT8Z2ZmJCDGu6xF2of7Ir8I1Zqens4A
+MZLqkjr9Esuv1Hnv0IunpqYUIEZSUdw3pXUtH/3ZDXzOTk5OJoAsUlDJ9aB1
+jB7XVyD4vZVdExMTCSCLHIgBdYXR4boKVJa9qPHx8QQoQBYdUOoep+ebPlsr
+B5VnL2psbCwGGSAHCqSjo6NNIBw09biZ5+pvg3dZo5FFAgWoAnLw7s8oIyMj
+EZAgBxRABpL3zu2q4eFhAVqgAxQgB7kZb4JKz/G/AcYw+Qk=
+       "], {{0, 48}, {48, 0}}, {0, 255},
+       ColorFunction->RGBColor],
+      BoxForm`ImageTag[
+      "Byte", ColorSpace -> "RGB", Interleaving -> True, MetaInformation -> 
+       Association[
+        "XMP" -> Association[
+          "DublinCoreSchema" -> 
+           Association[
+            "Creator" -> "Gentleface custom toolbar icons design", 
+             "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+             "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+             "custom icon design, toolbar icons, custom icons, interface \
+design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+           Association[
+            "CreatorContactInfo" -> 
+             Association[
+              "CreatorContactInfo" -> 
+               Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+           "BasicSchema" -> 
+           Association[
+            "MetadataDate" -> 
+             DateObject[{2011, 1, 25, 13, 55, 7.}, "Instant", "Gregorian", 
+               8.]], "MediaManagementSchema" -> 
+           Association[
+            "DocumentID" -> "xmp.did:4CA348568228E011989CC0A1AD02B5C2", 
+             "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+             "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "OriginalDocumentID" -> 
+             "xmp.did:4CA348568228E011989CC0A1AD02B5C2"], 
+           "RightsManagementSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "Marked" -> True, 
+             "UsageTerms" -> 
+             "Creative Commons Attribution-NonCommercial license"], 
+           "PagedTextSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+                 DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]]]], "Comments" -> 
+         Association["Software" -> "Adobe ImageReady"]]],
+      Selectable->False],
+     DefaultBaseStyle->"ImageGraphics",
+     ImageSizeRaw->{48, 48},
+     PlotRange->{{0, 48}, {0, 48}}], ",", "16"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7429469560007515`*^9, 3.742946963469178*^9}, 
+   3.7429474140539503`*^9},
+ CellLabel->"In[28]:=",ExpressionUUID->"47db886f-2750-4e04-9618-069e7e9013c2"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJx1k8trU0EUxm/vvXk0r94k5kneIYQkSGgjYncK3dSFSEU3rlqMQZAIqSCB
+KiR/gAs3/QtErAsXPuhGN24UQShdiAi6EpqKiJWaZfzNZS6ONg58d3LO+b7z
+mJkU126sXNU1TVv38llZvXWm11vtX7AwLnbXr3W67SvL3ZvtTrt3as3AaUmY
+2pE1Iz6GYcw1m839Vqs1Fruw1biyH9GzDNM0E/V6fZROpzvs+8LGr0vdf7VA
+l0m0SqXytNFojNkfCVsu04lP61v4w+Hw2WKx+KRWq30CB9VqdQf7cSQSWbIT
+mOYcOd8kEonral2Xy6XDu49mL5lMDoPB4Ml4PL4ILsHtk+djJpPZLBQKr+D8
+CIVCC45W1M3lclvod71eb9xpCm2/XC5/5Rw2o9Ho6Xw+/5baE7/fX5QUe15q
+nS+VSodutzss55gV5xWLxQbUm5BjQk8Dj8fjo8YX9ItSa4jaqVTqtWVZt2VO
+l3NOzLyRzWaF9h5zC784nyHzbEuu0M8SH9H3vHIHpuTehbvF/Tu9zsA7Af89
+OpfsNUSfe/jLykz2ffh8vuOyrv0uhA9eBf5nbMuZlT5HzK7Wn7bsvPBa8D+g
+czsB7uIdeTeU+f/SqH54d+C/kG/I7omclwOBwC/mDCtcXYGtFXF4P3kry875
+Of1yN9tgR9f1Y1Ob1/UY8V3wQOlN0/68IS95n4HvcAfY8yAHFrCH+L+Bh/J/
+pM6lqb+Jn4P/EhyCMTgAz/Ev/csV6ze+D2LP
+    "], {{0, 16}, {16, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag[
+   "Byte", ColorSpace -> "RGB", Interleaving -> True, MetaInformation -> 
+    Association[
+     "XMP" -> Association[
+       "DublinCoreSchema" -> 
+        Association[
+         "Creator" -> "Gentleface custom toolbar icons design", "Description" -> 
+          "Wireframe mono toolbar icons", "Rights" -> 
+          "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+          "custom icon design, toolbar icons, custom icons, interface design, \
+ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+        Association[
+         "CreatorContactInfo" -> 
+          Association[
+           "CreatorContactInfo" -> 
+            Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+        "BasicSchema" -> 
+        Association[
+         "MetadataDate" -> 
+          DateObject[{2011, 1, 25, 13, 55, 7.}, "Instant", "Gregorian", 8.]], 
+        "MediaManagementSchema" -> 
+        Association[
+         "DocumentID" -> "xmp.did:4CA348568228E011989CC0A1AD02B5C2", 
+          "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+          "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "OriginalDocumentID" -> 
+          "xmp.did:4CA348568228E011989CC0A1AD02B5C2"], 
+        "RightsManagementSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "Marked" -> True, 
+          "UsageTerms" -> 
+          "Creative Commons Attribution-NonCommercial license"], 
+        "PagedTextSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+              DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]]]], "Comments" -> 
+      Association["Software" -> "Adobe ImageReady"]]],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSizeRaw->{16, 16},
+  PlotRange->{{0, 16}, {0, 16}}]], "Output",
+ CellChangeTimes->{3.7429661757840595`*^9, 3.742966754464158*^9, 
+  3.742967831984789*^9, 3.7429686374028563`*^9, 3.742969479101999*^9, 
+  3.7429706063984766`*^9, 3.7429785745302277`*^9, 3.743027054503197*^9, 
+  3.743027426481473*^9, 3.7430330564234877`*^9, 3.7430357299994073`*^9, 
+  3.7430357881177316`*^9, 3.743036026682377*^9, 3.7430374131816797`*^9, 
+  3.743037572214776*^9, 3.743037759273475*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"e2279ff9-7913-4355-8d58-2d12dd0205c8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"`NoValueIcon", "=", 
+  RowBox[{"ImageResize", "[", 
+   RowBox[{
+    GraphicsBox[
+     TagBox[RasterBox[CompressedData["
+1:eJztmUlOG0EYhcE2YBCozDzTmHkSHVhlm2VWSERZW6AQlA1IECnKKXwEH4Ej
++Ah1lDrCn/dIWSLIVT2524v0L30gqPrfe9W4u6tE8/bx+ntlZGTkuY4v1ze/
+Pj093fz+0sAPXx+ef9w/3H37/PDz7v7u6eNtFb/8YKkBESkpKSkZClnq8vIy
+BAa0UvS2bG+YKUTKuri4CIEBYukk6G2/6aNGoWsIwzAABsg7ukB5+hR46dNH
+raCI7Ofn5wpoIA60p9fbR+08s5+dnSmggXhwfo44FtFL7dzWcHp6qoF4iLwH
+OCdCw/n3y1LHx8edk5MT8RD7/uVcnxa9Bpn96OioA8RDYr88NPvV4eFhG4iH
+bgbtboR2O0v2/f39FhAP+uDgIPX9xl5qRHgkfjey9vb2WkA80Dfzs4Ia1Irw
+SrSGnZ2dKyAe9O7u7sCec9SiZoTnVRytZrMZAgPEAX0G/oymJrU9vszk3Wds
+b2+HwABxwLHc3vPUjuHfdw1bW1sBMEAcmCAIct9n0SMqB7O+7dnc3FRAA3Fg
+QGF7RHpZT1ceZn39DK+vryuggTgwGxsbhe/R6UlvTy5mVmtraxqIA/YP5XzB
+ojczePLp1dVVIv1YWVkxYGj56c0MrnzMjnG1vLysgTgwoPA10NN6u3K9Zrdz
+1dLSkgbiwIDC1kAv6+nKw+v9zztocXExWFhYMEAccCz3NdAjKgez9uudn58P
+gQHigGO5vb+grWL4e6/h3NxcODs7a4A40GDg+wdqWm2Xr2G2OFqNRuMKiAcN
+BrYGallNn2es/VuvlFItIB40yLwG9bd0hFeqM8DMzEwLiAcNUq+BvVbD55Eq
+e6+mp6fbQDykPj+i9yVCO9P5sVdTU1MdIB4Sn7Xz0PTV5ORkB4iH2H6D1EpS
+9XpdA3ExMTER6cs5Pg165JHdeqvx8XENxINzDRyL6NX0yCu/zaDGxsY0EAfO
+6xfVR+08s/eqVqsF1WrVAHlHF2PODBzjnD59hppFZO9VpVIJgQFiiX3Pce6b
+PmoM5YwxOjpKX4Pvid8xtsdYjdQ17P+/lZSU/L/8AW/6l7U=
+       "], {{0, 48}, {48, 0}}, {0, 255},
+       ColorFunction->RGBColor],
+      BoxForm`ImageTag["Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+         "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+       Association[
+        "XMP" -> Association[
+          "DublinCoreSchema" -> 
+           Association[
+            "Creator" -> "Alexander Kiselev", "Description" -> 
+             "This is the icon from Gentleface.com free icons set.", "Rights" -> 
+             "Creative Commons Attribution Non-Commercial No Derivatives", 
+             "Subject" -> "icon, pictogram", "Title" -> 
+             "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+           Association[
+            "CreatorContactInfo" -> 
+             Association[
+              "CreatorContactInfo" -> 
+               Association[
+                "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", "CiAdrCtry" -> 
+                 "Czech Republic", "CiEmailWork" -> "ka@gentleface.com", 
+                 "CiUrlWork" -> "www.gentleface.com"]], "IntellectualGenre" -> 
+             "pictogram"], "PhotoshopSchema" -> 
+           Association[
+            "AuthorsPosition" -> "Art Director", "Credit" -> 
+             "www.gentleface.com", "DateCreated" -> 
+             DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], "BasicSchema" -> 
+           Association[
+            "MetadataDate" -> 
+             DateObject[{2010, 1, 3, 21, 33, 43.}, "Instant", "Gregorian", 
+               8.]], "MediaManagementSchema" -> 
+           Association[
+            "DocumentID" -> "xmp.did:EE08CF48A7F8DE11821CE4B2C7E36D70", 
+             "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 43}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+             "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "OriginalDocumentID" -> 
+             "xmp.did:EE08CF48A7F8DE11821CE4B2C7E36D70"], 
+           "RightsManagementSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 43}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]], "UsageTerms" -> 
+             "Creative Commons Attribution Non-Commercial No Derivatives"], 
+           "PagedTextSchema" -> 
+           Association[
+            "History" -> 
+             Association[
+              "History[1]" -> 
+               Association[
+                "Action" -> "saved", "InstanceID" -> 
+                 "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                 DateObject[{2010, 1, 3, 21, 33, 43}, "Instant", "Gregorian", 
+                   8.], "Changed" -> "/metadata"]]]]]],
+      Selectable->False],
+     DefaultBaseStyle->"ImageGraphics",
+     ImageSizeRaw->{48, 48},
+     PlotRange->{{0, 48}, {0, 48}}], ",", "16"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7429469712166214`*^9, 3.742946975633874*^9}, 
+   3.742947413368911*^9, 3.7429598690913377`*^9},
+ CellLabel->"In[29]:=",ExpressionUUID->"899f3a28-b304-4502-b9a5-b20ab94a8b4f"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJylk09OwkAUxqctFCGQFoSAKQg1hQVwAHfEpUtRDyARjRtMwMR4F07ADdiq
+JBiXsmDHCYBwgvH76oCV+GfhJK/z5nu/b9q+ad3WbfNKF0L0dnBpXtwfdbsX
+D6c2Fued3s11p3153LlrX7e7hy0Doq0ihJBSboeO0NT8m+bHcrkMhrZYLMRq
+tRLz+XyjM6fGGpmgx7ZtP5LJpGFZlnBd12s0GqNKpXIGTWMgP4H2zBoZsmuf
+Gnx7YZrmXrVandTrdel53pPSdeSP1FgjE/ToGJqm0WuBG9dqNYn7vWK9q6nB
+nBprZMjSQy+3CIVCZqlUGoKR5XL5LR6PO9wbDPf270ONNTJk6aHXMAyRz+cH
+eDfqM3BF9XyG+ByG2qNIhiw99OZyuX6hUJCO40yj0ejBN94ve5AhSw+9mUym
+j1lms9lpJBL500+GLD30sgU4j0E6nZaIGXrz4/Ojtk+GLD0f7fPbaCYSiSHO
+VuJM38LhsBM4Ix+ixhoZsvSwpnos0AsrFouN0SOJ+RXrzfkxh/aiamOy9KzP
+Zn0PjD3sO0FI1DbfD3NqrJEJetbfIcJQ37GXSqVGmM+w1hjMleYFWcb2/7O1
+/i6+MP/9f98B1KMboQ==
+    "], {{0, 16}, {16, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag["Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+      "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+    Association[
+     "XMP" -> Association[
+       "DublinCoreSchema" -> 
+        Association[
+         "Creator" -> "Alexander Kiselev", "Description" -> 
+          "This is the icon from Gentleface.com free icons set.", "Rights" -> 
+          "Creative Commons Attribution Non-Commercial No Derivatives", 
+          "Subject" -> "icon, pictogram", "Title" -> 
+          "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+        Association[
+         "CreatorContactInfo" -> 
+          Association[
+           "CreatorContactInfo" -> 
+            Association[
+             "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", "CiAdrCtry" -> 
+              "Czech Republic", "CiEmailWork" -> "ka@gentleface.com", 
+              "CiUrlWork" -> "www.gentleface.com"]], "IntellectualGenre" -> 
+          "pictogram"], "PhotoshopSchema" -> 
+        Association[
+         "AuthorsPosition" -> "Art Director", "Credit" -> 
+          "www.gentleface.com", "DateCreated" -> 
+          DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], "BasicSchema" -> 
+        Association[
+         "MetadataDate" -> 
+          DateObject[{2010, 1, 3, 21, 33, 43.}, "Instant", "Gregorian", 8.]], 
+        "MediaManagementSchema" -> 
+        Association[
+         "DocumentID" -> "xmp.did:EE08CF48A7F8DE11821CE4B2C7E36D70", 
+          "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 43}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+          "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "OriginalDocumentID" -> 
+          "xmp.did:EE08CF48A7F8DE11821CE4B2C7E36D70"], 
+        "RightsManagementSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 43}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]], "UsageTerms" -> 
+          "Creative Commons Attribution Non-Commercial No Derivatives"], 
+        "PagedTextSchema" -> 
+        Association[
+         "History" -> 
+          Association[
+           "History[1]" -> 
+            Association[
+             "Action" -> "saved", "InstanceID" -> 
+              "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "When" -> 
+              DateObject[{2010, 1, 3, 21, 33, 43}, "Instant", "Gregorian", 
+                8.], "Changed" -> "/metadata"]]]]]],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSizeRaw->{16, 16},
+  PlotRange->{{0, 16}, {0, 16}}]], "Output",
+ CellChangeTimes->{3.742966175807061*^9, 3.74296675449216*^9, 
+  3.7429678320127907`*^9, 3.7429686374258575`*^9, 3.7429694791290007`*^9, 
+  3.742970606429478*^9, 3.7429785745602293`*^9, 3.7430270545311985`*^9, 
+  3.7430274265134754`*^9, 3.7430330564574895`*^9, 3.743035730033409*^9, 
+  3.7430357881537333`*^9, 3.743036026718379*^9, 3.743037413210682*^9, 
+  3.743037572242778*^9, 3.743037759303477*^9},
+ CellLabel->"Out[29]=",ExpressionUUID->"485ffc3c-a8bf-4d51-9942-b58c8e781f64"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"`HBox", "[", 
+   RowBox[{
+    RowBox[{"{", "items__", "}"}], ",", 
+    RowBox[{"opt", ":", 
+     RowBox[{"OptionsPattern", "[", "Grid", "]"}]}]}], "]"}], ":=", 
+  RowBox[{"Grid", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"{", "items", "}"}], "}"}], ",", "opt"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"`VBox", "[", 
+   RowBox[{
+    RowBox[{"{", "items__", "}"}], ",", 
+    RowBox[{"opt", ":", 
+     RowBox[{"OptionsPattern", "[", "Grid", "]"}]}]}], "]"}], ":=", 
+  RowBox[{"Grid", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"{", "items", "}"}], "}"}], "\[Transpose]"}], ",", "opt"}], 
+   "]"}]}]}], "Input",
+ CellChangeTimes->{{3.742947499385831*^9, 3.7429475002308793`*^9}, {
+  3.7429563553583636`*^9, 3.742956357423482*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"b3e73e1e-78a0-43ed-b800-6709b8055f4f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"`GetHead", "[", "name_String", "]"}], ":=", 
+  RowBox[{"First", "[", 
+   RowBox[{
+    RowBox[{"ToExpression", "[", 
+     RowBox[{
+     "\"\<Cases[OwnValues[\>\"", "<>", "name", "<>", 
+      "\"\<],HoldPattern[HoldPattern[_]\[RuleDelayed]var_]\[RuleDelayed]Head[\
+Unevaluated[var]]]\>\""}], "]"}], ",", 
+    RowBox[{"Head", "@", 
+     RowBox[{"Symbol", "[", "name", "]"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{3.7429470951227083`*^9, 3.7429474188832264`*^9},
+ CellLabel->"In[32]:=",ExpressionUUID->"6d8f8805-131f-4c7a-9198-1ae30b23f9d7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"`GetOwnValue", "[", "name_String", "]"}], ":=", 
+  RowBox[{"First", "[", 
+   RowBox[{
+    RowBox[{"ToExpression", "[", 
+     RowBox[{
+     "\"\<Cases[OwnValues[\>\"", "<>", "name", "<>", 
+      "\"\<],HoldPattern[HoldPattern[_]\[RuleDelayed]var_]\[RuleDelayed]\
+HoldForm[var]]\>\""}], "]"}], ",", "Null"}], "]"}]}]], "Input",
+ CellChangeTimes->{3.742947097997873*^9, 3.742947419848282*^9},
+ CellLabel->"In[33]:=",ExpressionUUID->"aba9361d-9792-48de-98f4-d6b30e93acee"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"`NoAttributeQ", "[", "attr_", "]"}], "[", "name_String", "]"}], ":=", 
+  RowBox[{"!", 
+   RowBox[{"MemberQ", "[", 
+    RowBox[{
+     RowBox[{"Attributes", "[", "name", "]"}], ",", "attr"}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.7429675870897818`*^9, 3.7429676470732126`*^9}},
+ CellLabel->"In[34]:=",ExpressionUUID->"0659f9e6-28ec-40f2-8540-662bd6803b8a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"`HasValuesQ", "[", "name_String", "]"}], ":=", 
+  RowBox[{"Or", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"ToExpression", "[", 
+      RowBox[{"name", ",", "StandardForm", ",", "OwnValues"}], "]"}], "=!=", 
+     RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"ToExpression", "[", 
+      RowBox[{"name", ",", "StandardForm", ",", "UpValues"}], "]"}], "=!=", 
+     RowBox[{"{", "}"}]}], ",", 
+    RowBox[{
+     RowBox[{"ToExpression", "[", 
+      RowBox[{"name", ",", "StandardForm", ",", "DownValues"}], "]"}], "=!=", 
+     RowBox[{"{", "}"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7429562766428614`*^9, 3.7429562906136603`*^9}, {
+   3.7429582856817718`*^9, 3.742958317848612*^9}, {3.742958446661979*^9, 
+   3.74295846066478*^9}, 3.7429588407185183`*^9, {3.742959230209796*^9, 
+   3.7429593185778503`*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"36e601de-cb7e-4f07-878c-01ba29745ca7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"`ShowMeta", "[", "name_String", "]"}], ":=", 
+  RowBox[{"`HBox", "[", 
+   RowBox[{
+    RowBox[{"`AttributesIcon", "@", 
+     RowBox[{"Attributes", "[", "name", "]"}]}], "~", "Append", "~", 
+    RowBox[{"`GetHead", "[", "name", "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.742962561750349*^9, 3.7429625798123817`*^9}, {
+  3.7429627741995*^9, 3.742962798197873*^9}},
+ CellLabel->"In[36]:=",ExpressionUUID->"da2f2dcb-3891-4cf3-b987-fb247be68ab3"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"`ShowValue", "[", "name_String", "]"}], ":=", 
+  RowBox[{"With", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"own", "=", 
+      RowBox[{"`GetOwnValue", "[", "name", "]"}]}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Which", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"own", "=!=", "Null"}], ",", "own", ",", "\[IndentingNewLine]", 
+      "True", ",", 
+      RowBox[{"Definition", "@", 
+       RowBox[{"Evaluate", "@", 
+        RowBox[{"ToExpression", "[", 
+         RowBox[{"name", ",", "StandardForm", ",", "HoldPattern"}], 
+         "]"}]}]}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.742947109244516*^9, 3.742947114368809*^9}, {
+   3.7429472916029463`*^9, 3.7429472931470346`*^9}, {3.742947349678268*^9, 
+   3.742947354551547*^9}, {3.74294742068633*^9, 3.7429474379063144`*^9}, {
+   3.7429683845543942`*^9, 3.7429683872745495`*^9}, {3.7429685435514884`*^9, 
+   3.7429685508339047`*^9}, 3.742968599750703*^9, {3.742968709751994*^9, 
+   3.742968733694364*^9}, 3.742968857430441*^9},
+ CellLabel->"In[37]:=",ExpressionUUID->"26dc0612-bdba-479a-b5da-958e5d784083"],
+
+Cell[BoxData[{
+ RowBox[{"SetAttributes", "[", 
+  RowBox[{"`AttributesIcon", ",", "Listable"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`AttributesIcon", "[", "ReadProtected", "]"}], "=", 
+   RowBox[{"Tooltip", "[", 
+    RowBox[{"`ReadProtectedIcon", ",", 
+     RowBox[{"ReadProtected", "::", "usage"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`AttributesIcon", "[", "Locked", "]"}], "=", 
+   RowBox[{"Tooltip", "[", 
+    RowBox[{"`LockedIcon", ",", 
+     RowBox[{"Locked", "::", "usage"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`AttributesIcon", "[", "Protected", "]"}], "=", 
+   RowBox[{"Tooltip", "[", 
+    RowBox[{"`ProtectedIcon", ",", 
+     RowBox[{"Protected", "::", "usage"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`AttributesIcon", "[", "Temporary", "]"}], "=", 
+   RowBox[{"Tooltip", "[", 
+    RowBox[{"`TemporaryIcon", ",", 
+     RowBox[{"Temporary", "::", "usage"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"`AttributesIcon", "[", "_", "]"}], "=", "Nothing"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.7429471299437*^9, 3.7429471693239527`*^9}, {
+  3.7429474222394185`*^9, 3.742947456833397*^9}},
+ CellLabel->"In[38]:=",ExpressionUUID->"9b622772-75c7-4323-8870-8be61eb26774"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"`SymbolsPicker", "[", 
+   RowBox[{"_", ",", 
+    RowBox[{"{", "}"}], ",", 
+    RowBox[{"OptionsPattern", "[", "ListPicker", "]"}]}], "]"}], ":=", 
+  RowBox[{"TextCell", "[", 
+   RowBox[{"`Palette", "::", "NoSym"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"`SymbolsPicker", "[", 
+   RowBox[{"list_", ",", "vals_", ",", 
+    RowBox[{"opts", ":", 
+     RowBox[{"OptionsPattern", "[", "ListPicker", "]"}]}]}], "]"}], ":=", 
+  RowBox[{"ListPicker", "[", 
+   RowBox[{"list", ",", "vals", ",", "opts"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.7429692872520256`*^9, 3.7429694184355288`*^9}, {
+   3.7429696036501226`*^9, 3.7429696151477804`*^9}, 3.7429697153925138`*^9, {
+   3.7429698029265203`*^9, 3.742969803721566*^9}, {3.742970000970848*^9, 
+   3.7429700131935472`*^9}},
+ CellLabel->"In[44]:=",ExpressionUUID->"b831b7e2-7038-4ac4-b46d-731a1a7507da"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"palette", "=", 
+   RowBox[{"PaletteNotebook", "[", 
+    RowBox[{
+     RowBox[{"DynamicModule", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"refreshHelper", "=", "True"}], ",", 
+         RowBox[{"sels", "=", 
+          RowBox[{"{", "}"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"`VBox", "[", 
+        RowBox[{
+         RowBox[{"{", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"`HBox", "[", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"Button", "[", 
+               RowBox[{"`NewIcon", ",", 
+                RowBox[{"Appearance", "\[Rule]", "\"\<FramedPalette\>\""}], 
+                ",", 
+                RowBox[{"Tooltip", "\[Rule]", 
+                 RowBox[{"`Palette", "::", "New"}]}]}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Button", "[", 
+               RowBox[{"`EditIcon", ",", 
+                RowBox[{"Appearance", "\[Rule]", "\"\<FramedPalette\>\""}], 
+                ",", 
+                RowBox[{"Enabled", "\[Rule]", 
+                 RowBox[{"Dynamic", "[", 
+                  RowBox[{"sels", "=!=", 
+                   RowBox[{"{", "}"}]}], "]"}]}], ",", 
+                RowBox[{"Tooltip", "\[Rule]", 
+                 RowBox[{"`Palette", "::", "Edit"}]}]}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Button", "[", 
+               RowBox[{"`ImportIcon", ",", 
+                RowBox[{"Appearance", "\[Rule]", "\"\<FramedPalette\>\""}], 
+                ",", 
+                RowBox[{"Tooltip", "\[Rule]", 
+                 RowBox[{"`Palette", "::", "Import"}]}]}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Button", "[", 
+               RowBox[{"`ExportIcon", ",", 
+                RowBox[{"Appearance", "\[Rule]", "\"\<FramedPalette\>\""}], 
+                ",", 
+                RowBox[{"Enabled", "\[Rule]", 
+                 RowBox[{"Dynamic", "[", 
+                  RowBox[{"sels", "=!=", 
+                   RowBox[{"{", "}"}]}], "]"}]}], ",", 
+                RowBox[{"Tooltip", "\[Rule]", 
+                 RowBox[{"`Palette", "::", "Export"}]}]}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"ActionMenu", "[", 
+               RowBox[{
+                RowBox[{"Tooltip", "[", 
+                 RowBox[{"`DeleteIcon", ",", 
+                  RowBox[{"`Palette", "::", "Delete"}]}], "]"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"\"\<Remove\>\"", "\[RuleDelayed]", 
+                   RowBox[{"Remove", "@@", "sels"}]}], ",", 
+                  RowBox[{"\"\<ClearAll\>\"", "\[RuleDelayed]", 
+                   RowBox[{"ClearAll", "@@", "sels"}]}], ",", 
+                  RowBox[{"\"\<Clear\>\"", "\[RuleDelayed]", 
+                   RowBox[{"Clear", "@@", "sels"}]}]}], "}"}], ",", 
+                "\[IndentingNewLine]", 
+                RowBox[{"Appearance", "\[Rule]", "\"\<FramedPalette\>\""}], 
+                ",", 
+                RowBox[{"Enabled", "\[Rule]", 
+                 RowBox[{"Dynamic", "[", 
+                  RowBox[{"sels", "=!=", 
+                   RowBox[{"{", "}"}]}], "]"}]}]}], "]"}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Button", "[", 
+               RowBox[{"`RefreshIcon", ",", 
+                RowBox[{"refreshHelper", "=", 
+                 RowBox[{"!", "refreshHelper"}]}], ",", 
+                RowBox[{"Tooltip", "\[Rule]", 
+                 RowBox[{"`Palette", "::", "Refresh"}]}], ",", 
+                RowBox[{"Appearance", "->", "\"\<FramedPalette\>\""}]}], 
+               "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"`HBox", "[", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"Dynamic", "[", 
+               RowBox[{
+                RowBox[{"With", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"refresh", "=", "refreshHelper"}], "}"}], ",", 
+                  "\[IndentingNewLine]", 
+                  RowBox[{"PopupMenu", "[", 
+                   RowBox[{
+                    RowBox[{"Dynamic", "[", 
+                    RowBox[{"CurrentValue", "[", 
+                    RowBox[{
+                    RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"TaggingRules", ",", "\"\<CurrentContext\>\""}], 
+                    "}"}]}], "]"}], "]"}], ",", "\[IndentingNewLine]", 
+                    RowBox[{"Flatten", "[", 
+                    RowBox[{"Contexts", "/@", 
+                    RowBox[{"CurrentValue", "[", 
+                    RowBox[{
+                    RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"TaggingRules", ",", "\"\<ContextsPattern\>\""}], 
+                    "}"}]}], "]"}]}], "]"}]}], "]"}]}], "\[IndentingNewLine]",
+                  "]"}], ",", "\[IndentingNewLine]", 
+                RowBox[{"UpdateInterval", "\[Rule]", "1"}], ",", 
+                RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+                 RowBox[{"{", "refreshHelper", "}"}]}]}], 
+               "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"TogglerBar", "[", 
+               RowBox[{
+                RowBox[{"Dynamic", "[", 
+                 RowBox[{"CurrentValue", "[", 
+                  RowBox[{
+                   RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{"TaggingRules", ",", "\"\<IgnoreRules\>\""}], 
+                    "}"}]}], "]"}], "]"}], ",", "\[IndentingNewLine]", 
+                RowBox[{"{", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"`NoAttributeQ", "[", "ReadProtected", "]"}], 
+                   "\[Rule]", 
+                   RowBox[{"Tooltip", "[", 
+                    RowBox[{"`ReadProtectedIcon", ",", 
+                    RowBox[{"`Palette", "::", "IgnoreReadProtected"}]}], 
+                    "]"}]}], ",", "\[IndentingNewLine]", 
+                  RowBox[{
+                   RowBox[{"`NoAttributeQ", "[", "Protected", "]"}], 
+                   "\[Rule]", 
+                   RowBox[{"Tooltip", "[", 
+                    RowBox[{"`ProtectedIcon", ",", 
+                    RowBox[{"`Palette", "::", "IgnoreProtected"}]}], "]"}]}], 
+                  ",", "\[IndentingNewLine]", 
+                  RowBox[{
+                   RowBox[{"`NoAttributeQ", "[", "Locked", "]"}], "\[Rule]", 
+                   RowBox[{"Tooltip", "[", 
+                    RowBox[{"`LockedIcon", ",", 
+                    RowBox[{"`Palette", "::", "IgnoreLocked"}]}], "]"}]}], 
+                  ",", "\[IndentingNewLine]", 
+                  RowBox[{
+                   RowBox[{"`NoAttributeQ", "[", "Temporary", "]"}], 
+                   "\[Rule]", 
+                   RowBox[{"Tooltip", "[", 
+                    RowBox[{"`TemporaryIcon", ",", 
+                    RowBox[{"`Palette", "::", "IgnoreTemporary"}]}], "]"}]}], 
+                  ",", "\[IndentingNewLine]", 
+                  RowBox[{"`HasValuesQ", "\[Rule]", 
+                   RowBox[{"Tooltip", "[", 
+                    RowBox[{"`NoValueIcon", ",", 
+                    RowBox[{"`Palette", "::", "IgnoreNoValue"}]}], "]"}]}]}], 
+                 "\[IndentingNewLine]", "}"}], ",", 
+                RowBox[{"Appearance", "->", "\"\<FramedPalette\>\""}]}], 
+               "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"Panel", "[", 
+            RowBox[{"Dynamic", "[", 
+             RowBox[{"With", "[", 
+              RowBox[{
+               RowBox[{"{", "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"baseSize", "=", 
+                  RowBox[{"CurrentValue", "[", 
+                   RowBox[{
+                    RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "TaggingRules", ",", "\"\<Layout\>\"", ",", 
+                    "\"\<BaseSize\>\""}], "}"}]}], "]"}]}], ",", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{"nameWidth", "=", 
+                  RowBox[{"CurrentValue", "[", 
+                   RowBox[{
+                    RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "TaggingRules", ",", "\"\<Layout\>\"", ",", 
+                    "\"\<Name\>\""}], "}"}]}], "]"}]}], ",", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{"metaWidth", "=", 
+                  RowBox[{"CurrentValue", "[", 
+                   RowBox[{
+                    RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "TaggingRules", ",", "\"\<Layout\>\"", ",", 
+                    "\"\<Meta\>\""}], "}"}]}], "]"}]}], ",", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{"valueWidth", "=", 
+                  RowBox[{"CurrentValue", "[", 
+                   RowBox[{
+                    RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "TaggingRules", ",", "\"\<Layout\>\"", ",", 
+                    "\"\<Value\>\""}], "}"}]}], "]"}]}]}], "}"}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{"`VBox", "[", 
+                RowBox[{
+                 RowBox[{"{", "\[IndentingNewLine]", 
+                  RowBox[{
+                   RowBox[{"`HBox", "[", 
+                    RowBox[{"{", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"Pane", "[", 
+                    RowBox[{
+                    RowBox[{"`HBox", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"TextCell", "[", 
+                    RowBox[{"`Palette", "::", "Name"}], "]"}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"Opener", "[", 
+                    RowBox[{"Dynamic", "[", 
+                    RowBox[{"CurrentValue", "[", 
+                    RowBox[{
+                    RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"TaggingRules", ",", "\"\<NamesOrder\>\""}], 
+                    "}"}]}], "]"}], "]"}], "]"}]}], "\[IndentingNewLine]", 
+                    "}"}], "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"nameWidth", ",", "1"}], "}"}], "*", "baseSize"}],
+                     ",", 
+                    RowBox[{"Alignment", "\[Rule]", "Center"}]}], "]"}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"Pane", "[", 
+                    RowBox[{
+                    RowBox[{"TextCell", "[", 
+                    RowBox[{"`Palette", "::", "Meta"}], "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"metaWidth", ",", "1"}], "}"}], "*", "baseSize"}],
+                     ",", 
+                    RowBox[{"Alignment", "\[Rule]", "Center"}]}], "]"}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"Pane", "[", 
+                    RowBox[{
+                    RowBox[{"TextCell", "[", 
+                    RowBox[{"`Palette", "::", "Value"}], "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"valueWidth", ",", "1"}], "}"}], "*", 
+                    "baseSize"}], ",", 
+                    RowBox[{"Alignment", "\[Rule]", "Center"}]}], "]"}]}], 
+                    "\[IndentingNewLine]", "}"}], "]"}], ",", 
+                   "\[IndentingNewLine]", 
+                   RowBox[{"Dynamic", "[", 
+                    RowBox[{
+                    RowBox[{"With", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"refresh", "=", "refreshHelper"}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"ignores", "=", 
+                    RowBox[{"CurrentValue", "[", 
+                    RowBox[{
+                    RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"TaggingRules", ",", "\"\<IgnoreRules\>\""}], 
+                    "}"}]}], "]"}]}], ",", "\[IndentingNewLine]", 
+                    RowBox[{"context", "=", 
+                    RowBox[{"CurrentValue", "[", 
+                    RowBox[{
+                    RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"TaggingRules", ",", "\"\<CurrentContext\>\""}], 
+                    "}"}]}], "]"}]}], ",", "\[IndentingNewLine]", 
+                    RowBox[{"order", "=", 
+                    RowBox[{"CurrentValue", "[", 
+                    RowBox[{
+                    RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"TaggingRules", ",", "\"\<NamesOrder\>\""}], 
+                    "}"}]}], "]"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+                    RowBox[{"`SymbolsPicker", "[", 
+                    RowBox[{
+                    RowBox[{"Dynamic", "[", "sels", "]"}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"#", "->", 
+                    RowBox[{"`HBox", "[", 
+                    RowBox[{"{", "\[IndentingNewLine]", 
+                    RowBox[{
+                    RowBox[{"Pane", "[", 
+                    RowBox[{
+                    RowBox[{"TextCell", "[", "#", "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"nameWidth", ",", "1"}], "}"}], "*", 
+                    "baseSize"}]}], "]"}], ",", "\[IndentingNewLine]", 
+                    RowBox[{"Pane", "[", 
+                    RowBox[{
+                    RowBox[{"`ShowMeta", "[", "#", "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"metaWidth", ",", "1"}], "}"}], "*", 
+                    "baseSize"}]}], "]"}], ",", "\[IndentingNewLine]", 
+                    RowBox[{"Pane", "[", 
+                    RowBox[{
+                    RowBox[{"`ShowValue", "[", "#", "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"valueWidth", ",", "1"}], "}"}], "*", 
+                    "baseSize"}]}], "]"}]}], "\[IndentingNewLine]", "}"}], 
+                    "]"}]}], "&"}], ")"}], "/@", 
+                    RowBox[{
+                    RowBox[{"If", "[", 
+                    RowBox[{"order", ",", "Reverse", ",", "Identity"}], "]"}],
+                     "@", 
+                    RowBox[{"Select", "[", 
+                    RowBox[{
+                    RowBox[{"Names", "[", 
+                    RowBox[{"context", "<>", "\"\<*\>\""}], "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"And", "@@", 
+                    RowBox[{"Through", "[", 
+                    RowBox[{"ignores", "[", "#", "]"}], "]"}]}], "&"}]}], 
+                    "]"}]}]}], ",", "\[IndentingNewLine]", 
+                    RowBox[{"Appearance", "\[Rule]", "\"\<Frameless\>\""}], 
+                    ",", 
+                    RowBox[{"FieldSize", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"1.", ",", "50."}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"1.", ",", "25"}], "}"}]}], "}"}]}]}], 
+                    "\[IndentingNewLine]", "]"}]}], "]"}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"UpdateInterval", "\[Rule]", "1"}], ",", 
+                    RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+                    RowBox[{"{", "refreshHelper", "}"}]}]}], 
+                    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+                  "}"}], ",", "\[IndentingNewLine]", 
+                 RowBox[{"Dividers", "\[Rule]", 
+                  RowBox[{"{", 
+                   RowBox[{"False", ",", "Center"}], "}"}]}]}], "]"}]}], 
+              "\[IndentingNewLine]", "]"}], "]"}], "]"}]}], 
+          "\[IndentingNewLine]", "}"}], ",", 
+         RowBox[{"Alignment", "->", "Left"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], 
+      "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"WindowTitle", "\[Rule]", 
+      RowBox[{"`Palette", "::", "Title"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"TaggingRules", "\[Rule]", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"\"\<Layout\>\"", "\[Rule]", 
+         RowBox[{"{", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"\"\<BaseSize\>\"", "\[Rule]", "20"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"\"\<Name\>\"", "\[Rule]", "4"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"\"\<Meta\>\"", "\[Rule]", "5"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"\"\<Value\>\"", "\[Rule]", "8"}]}], "\[IndentingNewLine]",
+           "}"}]}], ",", "\[IndentingNewLine]", 
+        RowBox[{"\"\<CurrentContext\>\"", "\[Rule]", "\"\<Global`\>\""}], ",",
+         "\[IndentingNewLine]", 
+        RowBox[{"\"\<ContextsPattern\>\"", "->", 
+         RowBox[{"{", 
+          RowBox[{
+          "\"\<Global*\>\"", ",", "\"\<Notebook$$*\>\"", ",", 
+           "\"\<Cell$$*\>\""}], "}"}]}], ",", "\[IndentingNewLine]", 
+        RowBox[{"\"\<IgnoreRules\>\"", "\[Rule]", 
+         RowBox[{"{", "`HasValuesQ", "}"}]}], ",", "\[IndentingNewLine]", 
+        RowBox[{"\"\<NamesOrder\>\"", "\[Rule]", "False"}]}], 
+       "\[IndentingNewLine]", "}"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Magnification", "\[Rule]", "1."}]}], 
+    RowBox[{"(*", 
+     RowBox[{",", 
+      RowBox[{"DynamicUpdating", "\[Rule]", "True"}]}], "*)"}], 
+    "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{
+  3.742954860875884*^9, {3.74295503337475*^9, 3.7429550607973185`*^9}, {
+   3.7429552652550135`*^9, 3.74295526799317*^9}, {3.7429557752861853`*^9, 
+   3.7429559750696125`*^9}, {3.74295602625954*^9, 3.7429560625366154`*^9}, 
+   3.7429564005379477`*^9, {3.7429564324277716`*^9, 3.742956455928116*^9}, {
+   3.742956762888673*^9, 3.7429568351228046`*^9}, {3.742956920420683*^9, 
+   3.7429569510934377`*^9}, {3.7429569922987947`*^9, 
+   3.7429570006412716`*^9}, {3.742957216799635*^9, 3.7429573389146194`*^9}, {
+   3.7429598769257855`*^9, 3.742959879689944*^9}, 3.7429600833815947`*^9, {
+   3.7429602344392347`*^9, 3.742960278309744*^9}, 3.7429603219792414`*^9, {
+   3.742960381702657*^9, 3.7429604034929037`*^9}, {3.742960441145057*^9, 
+   3.742960505271725*^9}, {3.7429610427844687`*^9, 3.7429610456406326`*^9}, 
+   3.7429626405058537`*^9, {3.742962738482457*^9, 3.742962758598608*^9}, {
+   3.7429628089304867`*^9, 3.7429628101135545`*^9}, {3.7429629153815756`*^9, 
+   3.742962924435093*^9}, {3.7429630677832923`*^9, 3.74296306914437*^9}, {
+   3.7429631200812836`*^9, 3.7429632193479614`*^9}, {3.742963264539546*^9, 
+   3.742963331709388*^9}, {3.7429633923958592`*^9, 3.7429634464259496`*^9}, {
+   3.74296362442113*^9, 3.7429636344937067`*^9}, {3.7429636749030175`*^9, 
+   3.7429637013995333`*^9}, {3.742963771522544*^9, 3.742963824445571*^9}, {
+   3.7429638562153883`*^9, 3.7429639430083523`*^9}, {3.742964098818264*^9, 
+   3.742964113524105*^9}, {3.7429641718164396`*^9, 3.7429641764287033`*^9}, {
+   3.742964376174128*^9, 3.7429644173664837`*^9}, {3.742964451249422*^9, 
+   3.7429645295459003`*^9}, {3.742964569264172*^9, 3.7429645883172617`*^9}, 
+   3.7429646312617183`*^9, {3.7429648546244936`*^9, 3.7429648643610506`*^9}, {
+   3.742964926576609*^9, 3.742964951293023*^9}, 3.7429650024369483`*^9, {
+   3.74296584691825*^9, 3.742965857793872*^9}, {3.742965915672182*^9, 
+   3.742966119587846*^9}, {3.7429662371025667`*^9, 3.742966237187572*^9}, {
+   3.7429664364969716`*^9, 3.742966535304623*^9}, {3.7429665766539884`*^9, 
+   3.7429666882613716`*^9}, {3.7429672379908147`*^9, 
+   3.7429672429180965`*^9}, {3.74296767010753*^9, 3.7429677283558617`*^9}, {
+   3.742968434365243*^9, 3.742968456473508*^9}, {3.742968678854227*^9, 
+   3.7429686789862347`*^9}, 3.7429694659662476`*^9, {3.7429695222834682`*^9, 
+   3.742969531315985*^9}, 3.7429700193598995`*^9, {3.7429701326793814`*^9, 
+   3.742970140754843*^9}, {3.7429703433764324`*^9, 3.742970360524413*^9}, {
+   3.742977790217367*^9, 3.742977806999327*^9}, {3.742978212537523*^9, 
+   3.742978265916576*^9}, {3.7429782978054*^9, 3.7429783030587*^9}, {
+   3.742978365699283*^9, 3.742978371269602*^9}, 3.7429784437167454`*^9, {
+   3.742978868718054*^9, 3.742978868840061*^9}, 3.742983575493266*^9, {
+   3.7430251007934513`*^9, 3.7430251019405174`*^9}, {3.7430252952945766`*^9, 
+   3.743025312300549*^9}, {3.7430254581008883`*^9, 3.7430254704395943`*^9}, 
+   3.7430255891103816`*^9, {3.7430256612195063`*^9, 3.743025712231424*^9}, {
+   3.743025792972042*^9, 3.7430258156563396`*^9}, {3.7430259329450483`*^9, 
+   3.743026000396906*^9}, {3.743026130811365*^9, 3.7430262385005245`*^9}, {
+   3.743026347938784*^9, 3.743026383825837*^9}, {3.7430265918237333`*^9, 
+   3.7430266049574847`*^9}, 3.743026680319795*^9, {3.7430273779306965`*^9, 
+   3.743027392280517*^9}, {3.7430325706617036`*^9, 3.743032716204028*^9}, {
+   3.7430329536946115`*^9, 3.743032955620722*^9}, {3.7430331024251184`*^9, 
+   3.7430331226882772`*^9}, {3.7430335854487457`*^9, 
+   3.7430335946692734`*^9}, {3.743033718092333*^9, 3.743033764866008*^9}, {
+   3.7430338000270195`*^9, 3.7430338507349195`*^9}, {3.743033998386365*^9, 
+   3.7430340120321455`*^9}, {3.7430346632763944`*^9, 3.743034698412404*^9}, {
+   3.7430347529125214`*^9, 3.743034783287258*^9}, {3.7430348553323793`*^9, 
+   3.7430348888732977`*^9}, {3.743035014397477*^9, 3.7430350491024623`*^9}, {
+   3.7430350978522506`*^9, 3.743035117669384*^9}, {3.7430351491171827`*^9, 
+   3.743035181281022*^9}, {3.743035232073928*^9, 3.7430352470037813`*^9}, {
+   3.7430353863997545`*^9, 3.743035388712887*^9}, {3.743035562186809*^9, 
+   3.74303565032385*^9}, 3.743035763017296*^9, {3.7430359974647055`*^9, 
+   3.743036004444105*^9}, {3.7430365591248302`*^9, 3.743036653733242*^9}, 
+   3.743037538826866*^9, {3.7430376886084337`*^9, 3.743037706000428*^9}},
+ CellLabel->"In[46]:=",ExpressionUUID->"17f2b510-d76f-468f-be16-bc71d03aa078"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CreateWindow", "[", "palette", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.7430375441081686`*^9, 3.7430375523966427`*^9}},
+ CellLabel->"In[47]:=",ExpressionUUID->"73302a3e-3b7b-4b54-a095-0d73c9a03e08"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NotebookSave", "[", 
+   RowBox[{"palette", ",", 
+    RowBox[{"FileNameJoin", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+       "\"\<LocalPalettes/English/MWorkspacePalette.nb\>\""}], "}"}], "]"}]}],
+    "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.7430366625497465`*^9, 3.743036668613093*^9}, {
+  3.743036710732502*^9, 3.7430367418442817`*^9}, {3.7430368969411526`*^9, 
+  3.743036948239087*^9}, {3.7430373519721785`*^9, 3.743037407657364*^9}},
+ CellLabel->"In[48]:=",ExpressionUUID->"5d213812-010c-448f-83cd-baffab4bddd6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"End", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.742947009258797*^9, 3.7429470115339274`*^9}},
+ CellLabel->"In[49]:=",ExpressionUUID->"bbed90f3-49c2-4cde-a1a9-e1dec85657ab"],
+
+Cell[BoxData["\<\"MWorkspace`Private`\"\>"], "Output",
+ CellChangeTimes->{3.7429661768111186`*^9, 3.7429667749073277`*^9, 
+  3.742967848314723*^9, 3.742968638459917*^9, 3.742969480065054*^9, 
+  3.742970607470538*^9, 3.7429785758413024`*^9, 3.743027055677264*^9, 
+  3.7430274275625353`*^9, 3.7430330577475634`*^9, 3.743035731208476*^9, 
+  3.7430357893958044`*^9, 3.743036027917447*^9, 3.74303741371171*^9, 
+  3.743037573556853*^9, 3.74303776058055*^9},
+ CellLabel->"Out[49]=",ExpressionUUID->"d45f1c8f-9c3b-4cc0-ad9e-a9192f9d6417"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"EndPackage", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.742947013749054*^9, 3.7429470169252357`*^9}},
+ CellLabel->"In[50]:=",ExpressionUUID->"113628d2-9c3b-4336-8956-c7f84212e3e9"],
+
+Cell[BoxData[
+ RowBox[{"Remove", "[", "\"\<Global`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.742967028737846*^9, 3.742967043687701*^9}, {
+  3.743026260854803*^9, 3.743026263043928*^9}},
+ CellLabel->"In[51]:=",ExpressionUUID->"fd73aeb4-e4f4-428f-9394-0398d72db999"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"a", "=", "1"}]], "Input",
+ CellChangeTimes->{{3.7429678628915567`*^9, 3.74296786504168*^9}},
+ CellLabel->"In[52]:=",ExpressionUUID->"420c4242-a88d-42dc-8a01-cfb54de5623c"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.742967865418701*^9, 3.7429686385789237`*^9, 
+  3.7429694801800604`*^9, 3.7429706075645432`*^9, 3.742978575939308*^9, 
+  3.74302705577227*^9, 3.743027427671541*^9, 3.7430330578765707`*^9, 
+  3.7430357313114824`*^9, 3.743035789501811*^9, 3.743036028018453*^9, 
+  3.743037413816716*^9, 3.7430375737618647`*^9, 3.743037760694556*^9},
+ CellLabel->"Out[52]=",ExpressionUUID->"b9ae109e-1408-4a10-82e1-ea38cdbb9de4"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "x_", "]"}], ":=", "x"}]], "Input",
+ CellChangeTimes->{{3.742967895729435*^9, 3.742967899854671*^9}},
+ CellLabel->"In[53]:=",ExpressionUUID->"8cd69e2b-df67-4920-bbd9-4485befac6ad"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", "x", "}"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.742967916688634*^9, 3.7429679226749763`*^9}},
+ CellLabel->"In[54]:=",ExpressionUUID->"36731b89-774f-456f-9f14-991e10e285ea"],
+
+Cell[BoxData["x$2343"], "Output",
+ CellChangeTimes->{3.742967923113001*^9, 3.742968638637927*^9, 
+  3.742969480217063*^9, 3.742970607600545*^9, 3.742978576028313*^9, 
+  3.743027055822273*^9, 3.743027427720544*^9, 3.7430330579265738`*^9, 
+  3.743035731360485*^9, 3.7430357895498133`*^9, 3.7430360280634556`*^9, 
+  3.7430374139407234`*^9, 3.743037573803867*^9, 3.743037760843565*^9},
+ CellLabel->"Out[54]=",ExpressionUUID->"2dd1e4c2-3ff3-4839-9a93-a4c580731467"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"c", "=", 
+  RowBox[{"ArrayReshape", "[", 
+   RowBox[{
+    RowBox[{"Range", "[", "9", "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"3", ",", "3"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7429679723308163`*^9, 3.7429679735348854`*^9}, {
+  3.7429684753345866`*^9, 3.7429685213502183`*^9}, {3.7429685607394714`*^9, 
+  3.7429685708610506`*^9}},
+ CellLabel->"In[55]:=",ExpressionUUID->"98f70f1e-89d5-4414-a845-4f7900330b51"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "5", ",", "6"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "8", ",", "9"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.742967974058915*^9, {3.742968479733838*^9, 3.7429685216802373`*^9}, 
+   3.7429685712460723`*^9, 3.742968638658928*^9, 3.742969480243064*^9, 
+   3.742970607627547*^9, 3.742978576164321*^9, 3.7430270558492746`*^9, 
+   3.7430274277475457`*^9, 3.7430330579595757`*^9, 3.743035731391487*^9, 
+   3.7430357895838156`*^9, 3.7430360280914574`*^9, 3.7430374139697247`*^9, 
+   3.743037573831868*^9, 3.7430377608705664`*^9},
+ CellLabel->"Out[55]=",ExpressionUUID->"06dc2491-a3bf-4b66-a6c2-5f6ebe9c17ae"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Shallow", "[", 
+  RowBox[{
+   RowBox[{"MWorkspace`Private`GetOwnValue", "[", "\"\<c\>\"", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "6"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.742968172476264*^9, 3.7429682238362017`*^9}, 
+   3.742968323910926*^9, 3.7429685112736425`*^9, 3.742968576507373*^9},
+ CellLabel->"In[56]:=",ExpressionUUID->"0acbc3f2-6226-4ae5-a825-8684419d98ed"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "2", ",", "3"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"4", ",", "5", ",", "6"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"7", ",", "8", ",", "9"}], "}"}]}], "}"}],
+  HoldForm]], "Output",
+ CellChangeTimes->{{3.742968188862201*^9, 3.742968224226224*^9}, 
+   3.7429683249049826`*^9, {3.742968482071972*^9, 3.7429685237193537`*^9}, {
+   3.74296857330119*^9, 3.7429685768063903`*^9}, 3.7429686386819296`*^9, 
+   3.7429694802680655`*^9, 3.7429706076545486`*^9, 3.7429785761903224`*^9, 
+   3.743027055877276*^9, 3.743027427775547*^9, 3.743033057991577*^9, 
+   3.7430357314234886`*^9, 3.743035789735824*^9, 3.7430360281204586`*^9, 
+   3.7430374139997263`*^9, 3.74303757385987*^9, 3.7430377608975677`*^9},
+ CellLabel->
+  "Out[56]//Shallow=",ExpressionUUID->"f67196f7-0700-4566-881b-56358b3fabce"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", "sel", "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Grid", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Button", "[", 
+         RowBox[{"\"\<Dummy\>\"", ",", "Null", ",", 
+          RowBox[{"ImageMargins", "\[Rule]", "0"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"ActionMenu", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<\[DownPointer]\>\"", ",", "16"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"1", "\[RuleDelayed]", "1"}], "}"}], ",", 
+          RowBox[{"ImageMargins", "\[Rule]", "0"}], ",", 
+          RowBox[{"FrameMargins", "\[Rule]", "0"}], ",", 
+          RowBox[{"Appearance", "\[Rule]", "\"\<Button\>\""}]}], "]"}]}], 
+       "\[IndentingNewLine]", "}"}], "}"}], ",", 
+     RowBox[{"Spacings", "\[Rule]", "0"}]}], "]"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7429866077967043`*^9, 3.742986802122819*^9}, {
+   3.742986872828863*^9, 3.742986956242634*^9}, {3.742987111707526*^9, 
+   3.742987119372965*^9}, {3.7429878311256742`*^9, 3.7429878817895727`*^9}, {
+   3.742987962825207*^9, 3.7429879739518433`*^9}, 3.742988030639086*^9},
+ CellLabel->"In[57]:=",ExpressionUUID->"7f94d506-ee55-42d9-8a39-a737f17f6321"],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`sel$$}, 
+  TagBox[GridBox[{
+     {
+      ButtonBox["\<\"Dummy\"\>",
+       Appearance->Automatic,
+       ButtonFunction:>Null,
+       Evaluator->Automatic,
+       ImageMargins->0,
+       Method->"Preemptive"], 
+      ActionMenuBox[
+       StyleBox["\<\"\[DownPointer]\"\>",
+        StripOnInput->False,
+        FontSize->16], {"1":>1},
+       Appearance->"Button",
+       FrameMargins->0,
+       ImageMargins->0]}
+    },
+    AutoDelete->False,
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+    GridBoxSpacings->{"Columns" -> {{0}}}],
+   "Grid"],
+  DynamicModuleValues:>{}]], "Output",
+ CellChangeTimes->{3.743037414021728*^9, 3.7430375738978724`*^9, 
+  3.7430377609215693`*^9},
+ CellLabel->"Out[57]=",ExpressionUUID->"c4b88e35-98fc-4506-9288-d79bcda3e838"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TogglerBar", "[", 
+  RowBox[{
+   RowBox[{"{", "1", "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3"}], "}"}], ",", 
+   RowBox[{"Appearance", "\[Rule]", "\"\<FramedPalette\>\""}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.743025010519288*^9, 3.743025045542291*^9}, {
+   3.743025279312662*^9, 3.7430252827088566`*^9}, 3.743025724859146*^9},
+ CellLabel->"In[58]:=",ExpressionUUID->"7e60de9e-2b5e-4830-bfcb-e2b2c89bfaac"],
+
+Cell[BoxData[
+ TagBox[
+  DynamicModuleBox[{BoxForm`var$$ = {1}}, 
+   InterpretationBox[
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         SetterBox[Dynamic[
+           MemberQ[BoxForm`var$$, 1], BoxForm`TogglerBarFunction[
+           BoxForm`var$$, 1]& ], {True}, "1",
+          Appearance->"FramedPalette"], 
+         SetterBox[Dynamic[
+           MemberQ[BoxForm`var$$, 2], BoxForm`TogglerBarFunction[
+           BoxForm`var$$, 2]& ], {True}, "2",
+          Appearance->"FramedPalette"], 
+         SetterBox[Dynamic[
+           MemberQ[BoxForm`var$$, 3], BoxForm`TogglerBarFunction[
+           BoxForm`var$$, 3]& ], {True}, "3",
+          Appearance->"FramedPalette"]}
+       },
+       BaselinePosition->{1, 1},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.]}, 
+           Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}, "RowsIndexed" -> {}}],
+      Deployed->True],
+     TogglerBar[
+      Dynamic[BoxForm`var$$], {1, 2, 3}, Appearance -> "FramedPalette"]],
+    TogglerBar[BoxForm`var$$, {1, 2, 3}, Appearance -> "FramedPalette"]],
+   DynamicModuleValues:>{}],
+  Setting[#, {0}]& ]], "Output",
+ CellChangeTimes->{3.743037414045729*^9, 3.7430375739258738`*^9, 
+  3.743037760947571*^9},
+ CellLabel->"Out[58]=",ExpressionUUID->"f504e9a8-d4bb-4310-a4e6-88fce92aee29"]
+}, Open  ]]
+},
+WindowSize->{1350, 669},
+WindowMargins->{{-8, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 229, 3, 45, "Input",ExpressionUUID->"bd400c80-0d41-42cb-8d56-30495a60309f"],
+Cell[812, 27, 527, 7, 32, "Output",ExpressionUUID->"44f2f586-ba9d-41bd-8013-9b1aedb009ab"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1376, 39, 220, 3, 45, "Input",ExpressionUUID->"a41c9340-04d5-41ae-a481-7578515f3a6e"],
+Cell[1599, 44, 371, 5, 32, "Output",ExpressionUUID->"88d87e9f-c83c-4268-920a-88b012f261e1"]
+}, Open  ]],
+Cell[1985, 52, 2971, 79, 314, "Input",ExpressionUUID->"102aec74-8443-4d47-93db-2ba6314d7c3a"],
+Cell[CellGroupData[{
+Cell[4981, 135, 8517, 156, 79, "Input",ExpressionUUID->"cf8e7358-2ce8-4fdb-8b5a-6e9d836e6de8"],
+Cell[13501, 293, 7883, 148, 34, "Output",ExpressionUUID->"590b7a80-d912-4b88-9ed5-c80e822dc6df"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21421, 446, 8103, 149, 79, "Input",ExpressionUUID->"5aa2e633-d6f7-4869-a335-8fb311c67c97"],
+Cell[29527, 597, 7694, 145, 34, "Output",ExpressionUUID->"6cd488e3-540c-4594-a1b7-23d1e3a4485c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37258, 747, 4098, 84, 79, "Input",ExpressionUUID->"134b8977-7cb0-4607-ad36-0e9b0ed18465"],
+Cell[41359, 833, 3804, 81, 34, "Output",ExpressionUUID->"67aaeed0-fa42-4b75-847e-f52ecf0c6c65"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45200, 919, 4180, 86, 79, "Input",ExpressionUUID->"433a3271-d329-4867-b795-1525006afd28"],
+Cell[49383, 1007, 3842, 82, 34, "Output",ExpressionUUID->"888ac001-992c-4193-af05-3349144ce0e8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[53262, 1094, 7967, 147, 79, "Input",ExpressionUUID->"cb7e5101-49c4-460b-a2ad-ffc914b17447"],
+Cell[61232, 1243, 7744, 146, 34, "Output",ExpressionUUID->"b7f0297b-0cb4-4c16-bc19-32bca69431d2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[69013, 1394, 4410, 90, 79, "Input",ExpressionUUID->"1e0fad4b-e4a9-4d1e-a163-16036ba5313c"],
+Cell[73426, 1486, 3880, 82, 34, "Output",ExpressionUUID->"aae7f78b-7ae8-4a0d-a9f5-3edb3f84bf86"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[77343, 1573, 4686, 94, 79, "Input",ExpressionUUID->"e10b983f-0a4e-4df7-962d-ba81eecd60e2"],
+Cell[82032, 1669, 4022, 84, 34, "Output",ExpressionUUID->"e30108c5-2ffe-439e-909b-aadb398d7d32"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[86091, 1758, 8036, 149, 79, "Input",ExpressionUUID->"c134a3b5-4c12-45b0-b722-602430016299"],
+Cell[94130, 1909, 8022, 150, 34, "Output",ExpressionUUID->"6c45bfd8-7200-40d4-a331-612f03dca860"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[102189, 2064, 4814, 96, 79, "Input",ExpressionUUID->"b48235cb-38b1-4249-bd7f-267d2fa0f6ab"],
+Cell[107006, 2162, 4138, 86, 34, "Output",ExpressionUUID->"14440b7f-cf4f-452e-aff6-536ae6085834"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[111181, 2253, 4672, 94, 79, "Input",ExpressionUUID->"47db886f-2750-4e04-9618-069e7e9013c2"],
+Cell[115856, 2349, 4006, 84, 34, "Output",ExpressionUUID->"e2279ff9-7913-4355-8d58-2d12dd0205c8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[119899, 2438, 8268, 152, 79, "Input",ExpressionUUID->"899f3a28-b304-4502-b9a5-b20ab94a8b4f"],
+Cell[128170, 2592, 7791, 146, 34, "Output",ExpressionUUID->"485ffc3c-a8bf-4d51-9942-b58c8e781f64"]
+}, Open  ]],
+Cell[135976, 2741, 888, 26, 82, "Input",ExpressionUUID->"b3e73e1e-78a0-43ed-b800-6709b8055f4f"],
+Cell[136867, 2769, 576, 13, 45, "Input",ExpressionUUID->"6d8f8805-131f-4c7a-9198-1ae30b23f9d7"],
+Cell[137446, 2784, 503, 11, 45, "Input",ExpressionUUID->"aba9361d-9792-48de-98f4-d6b30e93acee"],
+Cell[137952, 2797, 411, 10, 45, "Input",ExpressionUUID->"0659f9e6-28ec-40f2-8540-662bd6803b8a"],
+Cell[138366, 2809, 957, 21, 82, "Input",ExpressionUUID->"36e601de-cb7e-4f07-878c-01ba29745ca7"],
+Cell[139326, 2832, 483, 10, 45, "Input",ExpressionUUID->"da2f2dcb-3891-4cf3-b987-fb247be68ab3"],
+Cell[139812, 2844, 1189, 25, 196, "Input",ExpressionUUID->"26dc0612-bdba-479a-b5da-958e5d784083"],
+Cell[141004, 2871, 1367, 37, 230, "Input",ExpressionUUID->"9b622772-75c7-4323-8870-8be61eb26774"],
+Cell[142374, 2910, 896, 19, 82, "Input",ExpressionUUID->"b831b7e2-7038-4ac4-b46d-731a1a7507da"],
+Cell[143273, 2931, 22852, 447, 2328, "Input",ExpressionUUID->"17f2b510-d76f-468f-be16-bc71d03aa078"],
+Cell[166128, 3380, 238, 4, 45, "Input",ExpressionUUID->"73302a3e-3b7b-4b54-a095-0d73c9a03e08"],
+Cell[166369, 3386, 609, 13, 45, "Input",ExpressionUUID->"5d213812-010c-448f-83cd-baffab4bddd6"],
+Cell[CellGroupData[{
+Cell[167003, 3403, 198, 3, 45, "Input",ExpressionUUID->"bbed90f3-49c2-4cde-a1a9-e1dec85657ab"],
+Cell[167204, 3408, 530, 7, 32, "Output",ExpressionUUID->"d45f1c8f-9c3b-4cc0-ad9e-a9192f9d6417"]
+}, Open  ]],
+Cell[167749, 3418, 205, 3, 45, "Input",ExpressionUUID->"113628d2-9c3b-4336-8956-c7f84212e3e9"],
+Cell[167957, 3423, 268, 4, 45, "Input",ExpressionUUID->"fd73aeb4-e4f4-428f-9394-0398d72db999"],
+Cell[CellGroupData[{
+Cell[168250, 3431, 195, 3, 28, "Input",ExpressionUUID->"420c4242-a88d-42dc-8a01-cfb54de5623c"],
+Cell[168448, 3436, 458, 6, 32, "Output",ExpressionUUID->"b9ae109e-1408-4a10-82e1-ea38cdbb9de4"]
+}, Open  ]],
+Cell[168921, 3445, 224, 4, 28, "Input",ExpressionUUID->"8cd69e2b-df67-4920-bbd9-4485befac6ad"],
+Cell[CellGroupData[{
+Cell[169170, 3453, 253, 5, 45, "Input",ExpressionUUID->"36731b89-774f-456f-9f14-991e10e285ea"],
+Cell[169426, 3460, 460, 6, 32, "Output",ExpressionUUID->"2dd1e4c2-3ff3-4839-9a93-a4c580731467"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[169923, 3471, 452, 10, 45, "Input",ExpressionUUID->"98f70f1e-89d5-4414-a845-4f7900330b51"],
+Cell[170378, 3483, 776, 16, 32, "Output",ExpressionUUID->"06dc2491-a3bf-4b66-a6c2-5f6ebe9c17ae"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[171191, 3504, 417, 8, 45, "Input",ExpressionUUID->"0acbc3f2-6226-4ae5-a825-8684419d98ed"],
+Cell[171611, 3514, 891, 19, 46, "Output",ExpressionUUID->"f67196f7-0700-4566-881b-56358b3fabce"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[172539, 3538, 1368, 29, 214, "Input",ExpressionUUID->"7f94d506-ee55-42d9-8a39-a737f17f6321"],
+Cell[173910, 3569, 832, 25, 46, "Output",ExpressionUUID->"c4b88e35-98fc-4506-9288-d79bcda3e838"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[174779, 3599, 460, 10, 45, "Input",ExpressionUUID->"7e60de9e-2b5e-4830-bfcb-e2b2c89bfaac"],
+Cell[175242, 3611, 1437, 36, 40, "Output",ExpressionUUID->"f504e9a8-d4bb-4310-a4e6-88fce92aee29"]
+}, Open  ]]
+}
+]
+*)
+
