@@ -1,0 +1,2644 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    136307,       2634]
+NotebookOptionsPosition[    135623,       2611]
+NotebookOutlinePosition[    136340,       2636]
+CellTagsIndexPosition[    136297,       2633]
+WindowTitle->Workspace
+WindowFrame->Palette*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ DynamicModuleBox[{MWorkspace`Private`refreshHelper$$ = True, 
+  MWorkspace`Private`sels$$ = {}}, 
+  TagBox[GridBox[{
+     {
+      TagBox[GridBox[{
+         {
+          ButtonBox[
+           TagBox[
+            TooltipBox[
+             GraphicsBox[
+              TagBox[RasterBox[CompressedData["
+1:eJx1UzmLU1EUvm9JXvY9k30lCVmZTqYVRBAUZdTCgMUEXxaZJJIZEBv9BxY2
+Ws2ECcI4oCBIFJNAQBsrmcI0opWlgSm0GCzefCfcJyHohfPOud8731nuuTdV
+627WRcbYjgmfza3753u9rQfXXdjc7Oy0Gh31zqXOrtpQexs1CaCLiwyZz+ds
+NBqx8Xi80MsymUyE6XQqruK672w2Y8PhkK0sSiFy+5zT6by7ggu6Y7VaXcSS
+ZZmZTCbZaDSKgiAwg8GgABPi8Xi3Uql8xJ4woyiKpJnZbLYQp9lsUh0UTwDX
+nM1m971e7zU9Pvj7pVLpRJIkhfYWiyWdy+VeuN3uddrX6/VFb1Qb5fV4PFfL
+5bIWjUafKopiSqVS7wuFgmaz2fDLc6tYLP5OJBLPEW/BAZ9xvoh6FIoRCoWe
+5fN5itGPxWKvM5nMaTAYvIe8Wjqd/oH6XejDQMe/xGfUGy30wcLhcD+ZTP7y
++Xxdl8t1G30cQz7b7fbcsq+qqnR+EvYb6LsL2UP+d4FA4Aj1biNWGvkqqP8i
+sEPU8cbv97+EPEQPl1utlhUzNsDeRs4P4J5Aa5Cf4FTBL0HXECMM7oz+wedP
+JBI5Bva43W6v6fXTPNC/gjkGHA7HLmr/hDldAB5HLUOc+R7OP4NcDvLV69fP
+H5iRDPBvoA8NfX/F3TkC7zviHRCG/gcLZ0mS+fkJ+vnTTCAxcMjvG6/9Lbga
+7AxyHyCmhviN/8xPRr2H+N9HHx5eyyvwTrE389k0rFbrDDpJd47yL91fE/B1
+sik+tAjoEfhfCINIhMMnhjwxfn+Ff7wfkT9NWlcgT7gt8zf0d9H7oTdIfdBb
+oPtM9pJYIWvcFrgWKS/Zg8GAnQEW7skG
+                "], {{0, 16}, {16, 0}}, {0, 255},
+                ColorFunction->RGBColor],
+               BoxForm`ImageTag[
+               "Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+                  "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+                Association[
+                 "XMP" -> Association[
+                   "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Alexander Kiselev", "Description" -> 
+                    "This is the icon from Gentleface.com free icons set.", 
+                    "Rights" -> 
+                    "Creative Commons Attribution Non-Commercial No \
+Derivatives", "Subject" -> "icon, pictogram", "Title" -> 
+                    "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", 
+                    "CiAdrCtry" -> "Czech Republic", "CiEmailWork" -> 
+                    "ka@gentleface.com", "CiUrlWork" -> 
+                    "www.gentleface.com"]], "IntellectualGenre" -> 
+                    "pictogram"], "PhotoshopSchema" -> 
+                    Association[
+                    "AuthorsPosition" -> "Art Director", "Credit" -> 
+                    "www.gentleface.com", "DateCreated" -> 
+                    DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], 
+                    "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 41.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:D48A0D48A7F8DE11821CE4B2C7E36D70", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:D48A0D48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:D48A0D48A7F8DE11821CE4B2C7E36D70", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:D48A0D48A7F8DE11821CE4B2C7E36D70"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:D48A0D48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "UsageTerms" -> 
+                    "Creative Commons Attribution Non-Commercial No \
+Derivatives"], "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:D48A0D48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]]]],
+               Selectable->False],
+              DefaultBaseStyle->"ImageGraphics",
+              ImageSizeRaw->{16, 16},
+              PlotRange->{{0, 16}, {0, 16}}],
+             "\"New Symbol\"",
+             TooltipStyle->"TextStyling"],
+            Annotation[#, "New Symbol", "Tooltip"]& ],
+           Appearance->"FramedPalette",
+           ButtonFunction:>MWorkspace`Private`NewSymbol[],
+           Evaluator->Automatic,
+           Method->"Preemptive"], 
+          ButtonBox[
+           TagBox[
+            TooltipBox[
+             GraphicsBox[
+              TagBox[RasterBox[CompressedData["
+1:eJyNk8trE1EUxu88kkya1ySEkPfk/U4IbZBuunDptiKuWxpLNxESIYgLNy5c
+uvYPEGx37jSg4kJ3XXfVKgr+A6XUTjrH78gEhjiNDvxy7z3nft85uXemuPtw
++4EshJho+Nnemd4ej3ce39WxuDeaHOyPhnt3Ro+G+8Px5q6CoG6jitWPJEns
+Kjwej9ZqtY4Gg8Ec4yusQ3Ze+ZfW6/WuNZvNWb/fp16vRzy22+3jSCRi/Efd
+tVqtNut2u9TpdKher39B/e/sg9jXcDhcv0ErQeutVCrvsJ8ajcZ1tVr9qCiK
+CIVC6/A5RYzjJ8tyRlVVpVAoHKE2lcvlX/CxwLdAILAuy7IoFosfsDbhSW7a
+fD5/CB3Bw8ReAlapVOLxJ3KfeQ49JZPJZw6tzNpMJnMIHWGfCciBtZgbhsHa
+F/x/HHUFYq+z2SzBwwTkwlUul6NYLPbcrssGMnyURCLxMpVKse8VIBfMdDpN
+uq4vtKpdW+AenkBP8Xj8EtASFphzHmf/lxb3JeFdOI5Go2RjLc3n6Jdw9k8d
+PUuLQ8d9xKC/hPcb9PEDELgGFjCRI7/fP3XT/mlEVbegJRyBwaDOGTCZYDBI
+Pp9voXX9XPCeTeE/h8999LKB/e81TSOGc6u0tv4T4L2Eb4XHc3jN0Mueo+cb
+HxzfBXgLJuAWQkFHWl6l5ec3QYukSg==
+                "], {{0, 16}, {16, 0}}, {0, 255},
+                ColorFunction->RGBColor],
+               BoxForm`ImageTag[
+               "Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+                  "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+                Association[
+                 "XMP" -> Association[
+                   "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Alexander Kiselev", "Description" -> 
+                    "This is the icon from Gentleface.com free icons set.", 
+                    "Rights" -> 
+                    "Creative Commons Attribution Non-Commercial No \
+Derivatives", "Subject" -> "icon, pictogram", "Title" -> 
+                    "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", 
+                    "CiAdrCtry" -> "Czech Republic", "CiEmailWork" -> 
+                    "ka@gentleface.com", "CiUrlWork" -> 
+                    "www.gentleface.com"]], "IntellectualGenre" -> 
+                    "pictogram"], "PhotoshopSchema" -> 
+                    Association[
+                    "AuthorsPosition" -> "Art Director", "Credit" -> 
+                    "www.gentleface.com", "DateCreated" -> 
+                    DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], 
+                    "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 42.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:BC0F5B48A7F8DE11821CE4B2C7E36D70", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:BC0F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:BC0F5B48A7F8DE11821CE4B2C7E36D70", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:BC0F5B48A7F8DE11821CE4B2C7E36D70"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:BC0F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "UsageTerms" -> 
+                    "Creative Commons Attribution Non-Commercial No \
+Derivatives"], "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:BC0F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]]]],
+               Selectable->False],
+              DefaultBaseStyle->"ImageGraphics",
+              ImageSizeRaw->{16, 16},
+              PlotRange->{{0, 16}, {0, 16}}],
+             "\"Edit Selection\"",
+             TooltipStyle->"TextStyling"],
+            Annotation[#, "Edit Selection", "Tooltip"]& ],
+           Appearance->"FramedPalette",
+           ButtonFunction:>{},
+           Enabled->Dynamic[MWorkspace`Private`sels$$ =!= {}],
+           Evaluator->None,
+           Method->"Preemptive"], 
+          ButtonBox[
+           TagBox[
+            TooltipBox[
+             GraphicsBox[
+              TagBox[RasterBox[CompressedData["
+1:eJyNk8tqGzEUhudiO74xnhlfazy26wvY2Bg73mSbZbcpfYCEuqEbF5xC6DYQ
+mGW7zEvkNdJdnqA0u6YbTylOKJmM1P8MUlGKKRV8OdLR+Y+kf5znR+8O3hia
+pp2k8efg8HR/tTr88NLG4tXy5O3xcvH6xfL94nix2jsykbQFCS0eZjKZ1CaT
+ycd2u31GCV3XaUvX/mMkEgltNBpdzGYzPp/PebPZ9Lf00LfMYwaDwSeczdHj
+AYTT6ZQ3Gg3Zg65riLkm5+qo1+tn0HH0CYfDIaM4Ho858r6sSaVSFbzt0jTN
+kmEYFrAFcdNareZDx3u9Xtjv9xlFWler1XNo651O5xo5hrd66HOD+c9utxuA
+K2ljpVLxoeWoDQEDEfZp/R31vNVqfYO+DX9IH9IeIXyIe5RKJR/1VMuAGiPP
+8wLc16X75/P5XeTuwKPiKXmlua57jtoHeBgBJiL5QXpHeJnFek15xcpYD4/y
+8OMWRAoMXqyFXkcsYh0gL/X0XXRonxWLxWt4wcvl8hPwtg3OdcX5DtYB5eXv
+AMOwLOsS9984jnMLAsGaom3bX1BjST3lUKven3rQ9/VAi86iOgVL3pP2cFZQ
+KBSkXhcNMtls9gZ8lX5sG1SXy+XW+A5P9Bh2Op2+y2QyDF5Mxbl/7oF9wsbe
+DHX3IPpL7+B/cQM4uAcB+CGiOv8latTziR28/QpwwET8F59/AyynpsI=
+                "], {{0, 16}, {16, 0}}, {0, 255},
+                ColorFunction->RGBColor],
+               BoxForm`ImageTag[
+               "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                MetaInformation -> 
+                Association[
+                 "XMP" -> Association[
+                   "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Gentleface custom toolbar icons design", 
+                    "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+                    "Creative Commons Attribution-NonCommercial license", 
+                    "Subject" -> 
+                    "custom icon design, toolbar icons, custom icons, \
+interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association["CiUrlWork" -> "http://www.gentleface.com"]]],
+                     "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 11.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:35A48E588228E011989CC0A1AD02B5C2", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:35A48E588228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:35A48E588228E011989CC0A1AD02B5C2", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:35A48E588228E011989CC0A1AD02B5C2"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:35A48E588228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], "Marked" -> 
+                    True, "UsageTerms" -> 
+                    "Creative Commons Attribution-NonCommercial license"], 
+                    "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:35A48E588228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]], 
+                  "Comments" -> 
+                  Association["Software" -> "Adobe ImageReady"]]],
+               Selectable->False],
+              DefaultBaseStyle->"ImageGraphics",
+              ImageSizeRaw->{16, 16},
+              PlotRange->{{0, 16}, {0, 16}}],
+             "\"Import Data\"",
+             TooltipStyle->"TextStyling"],
+            Annotation[#, "Import Data", "Tooltip"]& ],
+           Appearance->"FramedPalette",
+           ButtonFunction:>{},
+           Evaluator->None,
+           Method->"Preemptive"], 
+          ButtonBox[
+           TagBox[
+            TooltipBox[
+             GraphicsBox[
+              TagBox[RasterBox[CompressedData["
+1:eJyFU8tu00AUtcd51I5lO2+Td6JEeSoJWbFlybaID2hFqNgEKa2Eyr5SKpEP
+AD6in0FX/QW2IAFOQW0UjD2ca41DFfGwdHLn3nvOnTt3JvXDF/vPmCRJx3v4
+2T94+XA+Pzh9bMF5Mjt+fjSbPn00O5keTecPDhUELYGI9M9PVhTFYIxpsDps
+iISwWsjbAZNlmdHX6XQuJpPJZjgcfhmNRtfACnDG4/FqMBh8uFPjj/vH4/F7
+vV7vCnyOGhzaAORDf0N9oDfq0wJMAmJGJBKx0QMdVYpGo3q/3/8IeCGg9bvd
+rkP6Vqv1HnCAFXCNntf5fP401Nu2fQbuj3a77QE+WXA48YWeC2yazeZ38JfQ
+BgdAnXPwOeI+sLXgeo1GI9DXarWf9Xr9Rtf1EXwzPHw2m10QF3kXeR/WgyX/
+E7S8Uql8xj56uVzmxWLxK9bbWaZSqUW1WuXIuYBPlnzEzzCPAvhXpINGLRQK
+HD1TLxn4cjKZfF0qlTjiLuCTJR/x87A+5ptDfxc061wux7F2IE3RuTOZzDuc
+myO+AVzU5qZpLraXKuYqPpZOp6kv0ieDAGMS9nqDOpyAuSyETkokEq+Qt8N3
+RnHLsqh+qKe4QjUMw3gL/lLsE9U0bUlc8MIZB5eE+hw8mp/614coy3vgueB9
+29WrquoBt3h7Y+Qs6kNYmkea1sjdx/5r8JxdPe6DE2Kx2BrWAVbCbtciR7xb
+ut67epz1EuD/gS/sJbUs/f6vSr8AEt6vXw==
+                "], {{0, 16}, {16, 0}}, {0, 255},
+                ColorFunction->RGBColor],
+               BoxForm`ImageTag[
+               "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                MetaInformation -> 
+                Association[
+                 "XMP" -> Association[
+                   "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Gentleface custom toolbar icons design", 
+                    "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+                    "Creative Commons Attribution-NonCommercial license", 
+                    "Subject" -> 
+                    "custom icon design, toolbar icons, custom icons, \
+interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association["CiUrlWork" -> "http://www.gentleface.com"]]],
+                     "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 13.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:0A1046598228E011989CC0A1AD02B5C2", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:0A1046598228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 13}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:0A1046598228E011989CC0A1AD02B5C2", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:0A1046598228E011989CC0A1AD02B5C2"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:0A1046598228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 13}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], "Marked" -> 
+                    True, "UsageTerms" -> 
+                    "Creative Commons Attribution-NonCommercial license"], 
+                    "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:0A1046598228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 13}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]], 
+                  "Comments" -> 
+                  Association["Software" -> "Adobe ImageReady"]]],
+               Selectable->False],
+              DefaultBaseStyle->"ImageGraphics",
+              ImageSizeRaw->{16, 16},
+              PlotRange->{{0, 16}, {0, 16}}],
+             "\"Export Selection\"",
+             TooltipStyle->"TextStyling"],
+            Annotation[#, "Export Selection", "Tooltip"]& ],
+           Appearance->"FramedPalette",
+           ButtonFunction:>{},
+           Enabled->Dynamic[MWorkspace`Private`sels$$ =!= {}],
+           Evaluator->None,
+           Method->"Preemptive"], 
+          ActionMenuBox[
+           TagBox[
+            TooltipBox[
+             GraphicsBox[
+              TagBox[RasterBox[CompressedData["
+1:eJyNkktrGmEYhcf7XaYqKrqQ4gUdQVG7CAUDXQYKTU1HMIXSpI5DCZmCKZSC
+FP9Bgl111016sa0uQqBelqK/outuCg0kgTbV+XpeMBCGCWRxPOPMec53vb39
+otIwchy3Z8dPZevVvWZz6/UGjz+isvdcVqT6mvJSkqXmyrYJL/mlzNB4POYM
+BoPD7Xbf8vv9d7LZ7HGxWGSFQkGF2FLqUj8ikcgGskEwHlmWuel0KkSj0Z+l
+UumEuHw+z3K53LWiDLKnYE7a7bYym83u45m+qYIgqBh/DjFI1Thpgcwc2QUx
+4D9OJhMhGAz+Ii6dTrObCNl/YP62Wq3d4XDImUymJ+hliUTiTyqVukgmk/Nr
+fAGdU9ZisfQlSeIGg4EB2/ggk8mwcDj8HnuoYI+O4Ts6/p3neZGy2L/Der1O
+PEeHhn6Gb/sOh+MRsp/sdvu61gOBwFeMu0JZMB+u8A/j8Tjxb51O56bP5/uC
+nqqO92022yplL3laP/GxWIx5vd4OxqmhpwsXdbxntVrLlNXydB64Fx3019DT
+hYs63sP8y5Qlnvbvkg+FQgxz76C/5nK5unBR6+jvmc3mMmW1PPaGYY4d9G9i
+rV14Vevo7+GsVymr5bE2hjEO0F/FXD/DKzr+zWg03qWshl/3eDx0J96h/xl6
++vCnOn4Efo2yYA6JH41GxD/GHIk/wzjn8Av4mZ5DvykL5ugKX8T7U9wpdgOp
+yBL/ptFocP8BBdUVSg==
+                "], {{0, 16}, {16, 0}}, {0, 255},
+                ColorFunction->RGBColor],
+               BoxForm`ImageTag[
+               "Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+                  "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+                Association[
+                 "XMP" -> Association[
+                   "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Alexander Kiselev", "Description" -> 
+                    "This is the icon from Gentleface.com free icons set.", 
+                    "Rights" -> 
+                    "Creative Commons Attribution Non-Commercial No \
+Derivatives", "Subject" -> "icon, pictogram", "Title" -> 
+                    "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", 
+                    "CiAdrCtry" -> "Czech Republic", "CiEmailWork" -> 
+                    "ka@gentleface.com", "CiUrlWork" -> 
+                    "www.gentleface.com"]], "IntellectualGenre" -> 
+                    "pictogram"], "PhotoshopSchema" -> 
+                    Association[
+                    "AuthorsPosition" -> "Art Director", "Credit" -> 
+                    "www.gentleface.com", "DateCreated" -> 
+                    DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], 
+                    "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 41.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:3CB50248A7F8DE11821CE4B2C7E36D70", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:3CB50248A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:3CB50248A7F8DE11821CE4B2C7E36D70", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:3CB50248A7F8DE11821CE4B2C7E36D70"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:3CB50248A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "UsageTerms" -> 
+                    "Creative Commons Attribution Non-Commercial No \
+Derivatives"], "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:3CB50248A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 41}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]]]],
+               Selectable->False],
+              DefaultBaseStyle->"ImageGraphics",
+              ImageSizeRaw->{16, 16},
+              PlotRange->{{0, 16}, {0, 16}}],
+             "\"Clear or Remove Selection\"",
+             TooltipStyle->"TextStyling"],
+            
+            Annotation[#, "Clear or Remove Selection", 
+             "Tooltip"]& ], {"\<\"Remove\"\>":>(
+           Apply[Remove, MWorkspace`Private`sels$$]; 
+           MWorkspace`Private`RefreshAction[]), "\<\"ClearAll\"\>":>(
+           Apply[ClearAll, MWorkspace`Private`sels$$]; 
+           MWorkspace`Private`RefreshAction[]), "\<\"Clear\"\>":>Span[
+            Apply[Clear, MWorkspace`Private`sels$$], 
+            MWorkspace`Private`RefreshAction[]]},
+           Appearance->"FramedPalette",
+           Enabled->Dynamic[MWorkspace`Private`sels$$ =!= {}]], 
+          ButtonBox[
+           TagBox[
+            TooltipBox[
+             GraphicsBox[
+              TagBox[RasterBox[CompressedData["
+1:eJxtUktLG1EUnplk8ppH3mDeGfIaEpOQZNNtl21BwdKVq2hTKYYUYqF0p4Lg
+3h/gL3AptOBKSn9DVqV7QVejEo2330nuhHHqhS9z73fOd865342x9WXjkyQI
+wl4APxv9b6/H4/739xEcPoz2Pu+MBh/fjL4OdgbjV1sekBEOr/BsUQVBURSj
+XC4f9Hq9SafTYQTag9tHrGAnB4PBFVEUZdrjS2WFXC43RL7V7XYZ195zMOIA
+K5PJbGez2WG73b6SJEmzteB3W60WazabrFarnScSibVwOFwixOPxdfQ/azQa
+8zjlmaZpQa+QNhQKmfV6/Q5gmOHY63XdDCudTm8ifovaU2hn1Wr1BnoV/an3
+CfiZYRg/PJ75OBJ4LwE5UrFYPKLa0LBKpfKE70OpVLomPeCB7i/FMOvbhR2i
+PYBIgFcF3Kefz+cvcI9H1GDQTHl/MZVKnSL2C3Prtua/CywK0/usJpPJQ8x8
+iXNo+XhYjp4vSOc+iw5iOR/fL0PAs1xXzNmLxKFYLHap6/qh3+9fddVya0X4
+q8OL39Fo9FRcLBX7Kd6YAY/w8ALv2YcXBZcX5KkYCATeQc/Q8w+09E4qel9D
+9wA8AQz1mKZpRxTnOgLlCuB/RiKRGXw84XVV9LvBmbipqqq36LH5kvfgjxFn
+wB3uYfKQAt4CmA34cIb4OmwqEbBfA3eO/8E8LsvyLteSzxrOV8gZAtvYWz6f
+j3Hcc5CGYFGeQ0tLxmwrjjkLwD76TgDGMQF3ABg8bfl+/wC5gY4U
+                "], {{0, 16}, {16, 0}}, {0, 255},
+                ColorFunction->RGBColor],
+               BoxForm`ImageTag[
+               "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                MetaInformation -> 
+                Association[
+                 "XMP" -> Association[
+                   "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Gentleface custom toolbar icons design", 
+                    "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+                    "Creative Commons Attribution-NonCommercial license", 
+                    "Subject" -> 
+                    "custom icon design, toolbar icons, custom icons, \
+interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association["CiUrlWork" -> "http://www.gentleface.com"]]],
+                     "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 9.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:134F23578228E011989CC0A1AD02B5C2", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:134F23578228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 9}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:134F23578228E011989CC0A1AD02B5C2", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:134F23578228E011989CC0A1AD02B5C2"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:134F23578228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 9}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], "Marked" -> 
+                    True, "UsageTerms" -> 
+                    "Creative Commons Attribution-NonCommercial license"], 
+                    "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:134F23578228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 9}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]], 
+                  "Comments" -> 
+                  Association["Software" -> "Adobe ImageReady"]]],
+               Selectable->False],
+              DefaultBaseStyle->"ImageGraphics",
+              ImageSizeRaw->{16, 16},
+              PlotRange->{{0, 16}, {0, 16}}],
+             "\"Manual Refresh\"",
+             TooltipStyle->"TextStyling"],
+            Annotation[#, "Manual Refresh", "Tooltip"]& ],
+           Appearance->"FramedPalette",
+           ButtonFunction:>MWorkspace`Private`RefreshAction[],
+           Evaluator->Automatic,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]},
+     {
+      TagBox[GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            DynamicBox[ToBoxes[
+              
+              With[{MWorkspace`Private`refresh = 
+                MWorkspace`Private`refreshHelper$$}, 
+               PopupMenu[
+                Dynamic[
+                 CurrentValue[
+                  EvaluationNotebook[], {TaggingRules, "CurrentContext"}]], 
+                Flatten[
+                 Map[Contexts, 
+                  CurrentValue[
+                   EvaluationNotebook[], {TaggingRules, "ContextsPattern"}]]],
+                 Appearance -> "FramedPalette", 
+                FieldSize -> {{5., 20.}, {1., 1.}}, 
+                FrameMargins -> {{5, 0}, {1, 1}}]], StandardForm],
+             ImageSizeCache->{119., {7.25, 17.}},
+             TrackedSymbols:>{MWorkspace`Private`refreshHelper$$},
+             UpdateInterval->1],
+            "\"Current context\"",
+            TooltipStyle->"TextStyling"],
+           Annotation[#, "Current context", "Tooltip"]& ], 
+          InterpretationBox[
+           StyleBox[GridBox[{
+              {
+               SetterBox[Dynamic[
+                 MemberQ[
+                  CurrentValue[
+                   EvaluationNotebook[], {TaggingRules, "IgnoreRules"}], 
+                  MWorkspace`Private`NoAttributeQ[ReadProtected]], 
+                 BoxForm`TogglerBarFunction[
+                  CurrentValue[
+                   EvaluationNotebook[], {TaggingRules, "IgnoreRules"}], 
+                  MWorkspace`Private`NoAttributeQ[ReadProtected]]& ], {True}, 
+                TagBox[
+                 TooltipBox[
+                  GraphicsBox[
+                   TagBox[RasterBox[CompressedData["
+1:eJx9U0trE1EYnWeSmUySyftlHoVkyAOSIWjsQlApLooW6yQK9VVSjFVaI6YF
+zQ8Q3LspbgWXbt34B7oqIm6FKnYldNUiCF7PF25hGNJeOHNnvu+cc7/v3jtz
+a8+dx5IgCFsBPJzBy6vj8WDSM/Fxe7T1dH00fLQ42h6uD8fzazKCJocinDlE
+DIlA766499urkTln1pCnD1k+NcdNiOM3DCNLwLtGoFy5XF61bfujJE2XEN1a
+n8+nZrPZe7Va7XOr1TrudDqMAP5hMpmsI7fU7XZZPp9foTp5b1NtLBZbqNfr
+39rtNms2m7+LxeJb8O8WCoVJKpW6k8vlepTD7ASDwZRrL4R0Or0BLbMs6xjc
+TVVVFXBK0O8EAgEN3pfhyZC7jjruNxoNBs0T0sbjcadSqTD09QW9WhTz+/1W
+tVolzivw+/BliUSiR7lQKDQP7lfSkBZ1/kU/e1hT53snQ/Maue1IJHKpVCox
+rL+MfIS2iDiKouikIW0mkzkgoE6b9+QD14D2FjgsHA5fMU1zAmyc9EtcaH6R
+DrW2Udsfgq7rD+js0HsfvTLU6gAvUMsu4ippwVkC94j40Nr83M7Dfx+5TXjf
+iEajTNO0a+RFOTprnH8Ovu/AY6jtJ+IX3WdAHMSWsYcMvn30MMD8BvMzeH6C
+llEOvu/hlXbdG9JLiD0En2FvbsLrHN6/A/8oBt8f8NkB54Lrvp7ccZGv/wH1
+rvKYwuMGh+DRnfb/uH29QxFc/8iMIXq0ogczx3+cu2+H
+                    "], {{0, 16}, {16, 0}}, {0, 255},
+                    ColorFunction->RGBColor],
+                    BoxForm`ImageTag[
+                    "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                    MetaInformation -> 
+                    Association[
+                    "XMP" -> Association[
+                    "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Gentleface custom toolbar icons design", 
+                    "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+                    "Creative Commons Attribution-NonCommercial license", 
+                    "Subject" -> 
+                    "custom icon design, toolbar icons, custom icons, \
+interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association["CiUrlWork" -> "http://www.gentleface.com"]]],
+                     "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 11.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:D08378588228E011989CC0A1AD02B5C2", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:D08378588228E011989CC0A1AD02B5C2", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:D08378588228E011989CC0A1AD02B5C2"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], "Marked" -> 
+                    True, "UsageTerms" -> 
+                    "Creative Commons Attribution-NonCommercial license"], 
+                    "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]], 
+                    "Comments" -> 
+                    Association["Software" -> "Adobe ImageReady"]]],
+                    Selectable->False],
+                   DefaultBaseStyle->"ImageGraphics",
+                   ImageSizeRaw->{16, 16},
+                   PlotRange->{{0, 16}, {0, 16}}],
+                  "\"Ignore symbols with ReadProtected attribute.\"",
+                  TooltipStyle->"TextStyling"],
+                 
+                 Annotation[#, "Ignore symbols with ReadProtected attribute.",
+                   "Tooltip"]& ],
+                Appearance->"FramedPalette"], 
+               SetterBox[Dynamic[
+                 MemberQ[
+                  CurrentValue[
+                   EvaluationNotebook[], {TaggingRules, "IgnoreRules"}], 
+                  MWorkspace`Private`NoAttributeQ[Protected]], 
+                 BoxForm`TogglerBarFunction[
+                  CurrentValue[
+                   EvaluationNotebook[], {TaggingRules, "IgnoreRules"}], 
+                  MWorkspace`Private`NoAttributeQ[Protected]]& ], {True}, 
+                TagBox[
+                 TooltipBox[
+                  GraphicsBox[
+                   TagBox[RasterBox[CompressedData["
+1:eJxtk01PU1EQhm/vLVDa0g/a8tmWFtoibROb0DZGVyaayEJNMP4AiAiYiKaY
+aFf+BzXGlWFJ3BkXLtSFxoWKaKKJRCGwUCnWha5EKe3xGTwkhHiTlzt3zvvM
+nDOnxMcvjZ43DcOYdfBndOzq0VJprHzGx8fZmdnpyZmJcyMzVyYmJ0qHxi2S
+Pi07svF0dnYeHxwcvFMsFt8ODw9X8/n8Jvq1T5usbRQKhQXxCiOsaZquXC6n
+MpnMYjgcng4Gg8cCgUARHUQ5LYnz6FRfX185m82+EUZYy7K8iURi1eFwuLq7
+uy8kk8n76APaQBV5s/5laGhoraura8SQfdvtjlQqtQbvRb7+/v7llpaWA3ga
+6XRa8d7RbszeFP5nePywzqampujAwMDqLh+LxVbIJeLx+Dq+bXqKGvTd4luR
+fwXnx2tEo9Hb1MnBfBJWFIlEdnjOVqWuYj8NVEOKGkucLSL75nw3JE+tuDC7
+fE9Pzwq5BPOrUkPRY0ve9FhyuVxxYZldWer19vZWxCuMsMzPz11I/yT1q6xv
+U0cRLzqdzpiwfr//Iv2ErZP/Jl5hdH8PuUpra2s+FAp9pa7q6Oh4Tt2QsD6f
+b0pyzL6Gr4FnHW+B73Wu3y0e7vxdW1vbFH1usc+HsE7Jezyey9RSMHX0h54K
+z03xwryHF5vBfE7C/WCuYZtOut3u63hUe3t7HdVYl3iD3vJb+g5z2vj3mNp/
+l7qv5Y6Y2Rz7VvT/jWper1fin83NzUV8T9HcHlb6WdIW7hEze4zvBPFHpLSW
+mdkRej8gfqK3aGnW0G9T8pxhHr3gjg7reF7HC+ieZs09rLGnhk3/vq/R7zNn
+mRRJLLn9vv88Nr0v+b/OwL4USazXrf3sX4QUulw=
+                    "], {{0, 16}, {16, 0}}, {0, 255},
+                    ColorFunction->RGBColor],
+                    BoxForm`ImageTag[
+                    "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                    MetaInformation -> 
+                    Association[
+                    "XMP" -> Association[
+                    "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Gentleface custom toolbar icons design", 
+                    "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+                    "Creative Commons Attribution-NonCommercial license", 
+                    "Subject" -> 
+                    "custom icon design, toolbar icons, custom icons, \
+interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association["CiUrlWork" -> "http://www.gentleface.com"]]],
+                     "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 8.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:A86FAC568228E011989CC0A1AD02B5C2", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:A86FAC568228E011989CC0A1AD02B5C2"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], "Marked" -> 
+                    True, "UsageTerms" -> 
+                    "Creative Commons Attribution-NonCommercial license"], 
+                    "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]], 
+                    "Comments" -> 
+                    Association["Software" -> "Adobe ImageReady"]]],
+                    Selectable->False],
+                   DefaultBaseStyle->"ImageGraphics",
+                   ImageSizeRaw->{16, 16},
+                   PlotRange->{{0, 16}, {0, 16}}],
+                  "\"Ignore symbols with Protected attribute.\"",
+                  TooltipStyle->"TextStyling"],
+                 
+                 Annotation[#, "Ignore symbols with Protected attribute.", 
+                  "Tooltip"]& ],
+                Appearance->"FramedPalette"], 
+               SetterBox[Dynamic[
+                 MemberQ[
+                  CurrentValue[
+                   EvaluationNotebook[], {TaggingRules, "IgnoreRules"}], 
+                  MWorkspace`Private`NoAttributeQ[Locked]], 
+                 BoxForm`TogglerBarFunction[
+                  CurrentValue[
+                   EvaluationNotebook[], {TaggingRules, "IgnoreRules"}], 
+                  MWorkspace`Private`NoAttributeQ[Locked]]& ], {True}, 
+                TagBox[
+                 TooltipBox[
+                  GraphicsBox[
+                   TagBox[RasterBox[CompressedData["
+1:eJyNk8trGlEUxmec8RVFjfhIFAxiQZSIigrdlWyKutQovio+qjFdWEgCpdD/
+oNBVaeuupdBK6KrdFBW6iaB05bp/RHdtkxnn9juDliRNocLnPXPP97vnnjPq
+bz3MdTUcxx0b8JVrPto7Omo+ztvwUOgfHx70O/cz/ZPOQefodkvApm0lEVIU
+hWOMcYvFghuPx6pGoxE3nU698/n8zmw224PCk8lE3UeeJy8xxEqSpMbpdJrH
+cXQLnc1me+bz+X74/X5G2tnZYW63e4LcLYi8GmKIXfOlUkkQRZELhULPU6kU
+i8fjbHd3dxoOhz8i/p5IJFgymfym1WrtxWKRB8Nf4jW5XI6ODsdiMRln/PJ6
+vS1BEDie5zmz2ewPBAJfkWMbGxsn5AUjXuLFFV+IRCIM3i/EUT9Y9RTg/o1o
+NKoYDIbhTXw+nycgj/tSr+/A6SDDSlrcQc3pdLr38Gr+Uf9uMBhkDofjDXft
+YzQa1Rx6en2tPs1CwPw8mN9TzFtxOp1n8Beg0koFq9Wq5jC/s3K5nCSGWFmW
+RZp/o9GoYTYMc5O2t7eZx+O5ItqjHHm63e4nYohd89VqdR+9yVtbWxLqK+iB
+VuZyuRhWmUQ5eJR2uz28gS9gTtS7tLm5uYSYxWL5gLk9QSxD6pnkwV1P1zx6
+UPlKpVLAmJjdbpfASeiX4V0dYiZuxOfYU5C7IE+9Xj9d/f7+8JifyhOLHmWT
+yUT8EPe9RzHtUY48tVrtLx7191GL6v6E/xySwL/V6/UPKIYuKEce8MPrfCaT
+qdHZ/6NsNvt5zS+XS/W/NBgMongvg16v94rWlSh+sX5G7iWt+DSJIfY3qHKe
+ag==
+                    "], {{0, 16}, {16, 0}}, {0, 255},
+                    ColorFunction->RGBColor],
+                    BoxForm`ImageTag[
+                    "Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+                    "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+                    Association[
+                    "XMP" -> Association[
+                    "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Alexander Kiselev", "Description" -> 
+                    "This is the icon from Gentleface.com free icons set.", 
+                    "Rights" -> 
+                    "Creative Commons Attribution Non-Commercial No \
+Derivatives", "Subject" -> "icon, pictogram", "Title" -> 
+                    "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", 
+                    "CiAdrCtry" -> "Czech Republic", "CiEmailWork" -> 
+                    "ka@gentleface.com", "CiUrlWork" -> 
+                    "www.gentleface.com"]], "IntellectualGenre" -> 
+                    "pictogram"], "PhotoshopSchema" -> 
+                    Association[
+                    "AuthorsPosition" -> "Art Director", "Credit" -> 
+                    "www.gentleface.com", "DateCreated" -> 
+                    DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], 
+                    "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 42.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:C00F5B48A7F8DE11821CE4B2C7E36D70", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:C00F5B48A7F8DE11821CE4B2C7E36D70"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "UsageTerms" -> 
+                    "Creative Commons Attribution Non-Commercial No \
+Derivatives"], "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]]]],
+                    Selectable->False],
+                   DefaultBaseStyle->"ImageGraphics",
+                   ImageSizeRaw->{16, 16},
+                   PlotRange->{{0, 16}, {0, 16}}],
+                  "\"Ignore symbols with Locked attribute.\"",
+                  TooltipStyle->"TextStyling"],
+                 
+                 Annotation[#, "Ignore symbols with Locked attribute.", 
+                  "Tooltip"]& ],
+                Appearance->"FramedPalette"], 
+               SetterBox[Dynamic[
+                 MemberQ[
+                  CurrentValue[
+                   EvaluationNotebook[], {TaggingRules, "IgnoreRules"}], 
+                  MWorkspace`Private`NoAttributeQ[Temporary]], 
+                 BoxForm`TogglerBarFunction[
+                  CurrentValue[
+                   EvaluationNotebook[], {TaggingRules, "IgnoreRules"}], 
+                  MWorkspace`Private`NoAttributeQ[Temporary]]& ], {True}, 
+                TagBox[
+                 TooltipBox[
+                  GraphicsBox[
+                   TagBox[RasterBox[CompressedData["
+1:eJx1k8trU0EUxm/vvXk0r94k5kneIYQkSGgjYncK3dSFSEU3rlqMQZAIqSCB
+KiR/gAs3/QtErAsXPuhGN24UQShdiAi6EpqKiJWaZfzNZS6ONg58d3LO+b7z
+mJkU126sXNU1TVv38llZvXWm11vtX7AwLnbXr3W67SvL3ZvtTrt3as3AaUmY
+2pE1Iz6GYcw1m839Vqs1Fruw1biyH9GzDNM0E/V6fZROpzvs+8LGr0vdf7VA
+l0m0SqXytNFojNkfCVsu04lP61v4w+Hw2WKx+KRWq30CB9VqdQf7cSQSWbIT
+mOYcOd8kEonral2Xy6XDu49mL5lMDoPB4Ml4PL4ILsHtk+djJpPZLBQKr+D8
+CIVCC45W1M3lclvod71eb9xpCm2/XC5/5Rw2o9Ho6Xw+/5baE7/fX5QUe15q
+nS+VSodutzss55gV5xWLxQbUm5BjQk8Dj8fjo8YX9ItSa4jaqVTqtWVZt2VO
+l3NOzLyRzWaF9h5zC784nyHzbEuu0M8SH9H3vHIHpuTehbvF/Tu9zsA7Af89
+OpfsNUSfe/jLykz2ffh8vuOyrv0uhA9eBf5nbMuZlT5HzK7Wn7bsvPBa8D+g
+czsB7uIdeTeU+f/SqH54d+C/kG/I7omclwOBwC/mDCtcXYGtFXF4P3kry875
+Of1yN9tgR9f1Y1Ob1/UY8V3wQOlN0/68IS95n4HvcAfY8yAHFrCH+L+Bh/J/
+pM6lqb+Jn4P/EhyCMTgAz/Ev/csV6ze+D2LP
+                    "], {{0, 16}, {16, 0}}, {0, 255},
+                    ColorFunction->RGBColor],
+                    BoxForm`ImageTag[
+                    "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                    MetaInformation -> 
+                    Association[
+                    "XMP" -> Association[
+                    "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Gentleface custom toolbar icons design", 
+                    "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+                    "Creative Commons Attribution-NonCommercial license", 
+                    "Subject" -> 
+                    "custom icon design, toolbar icons, custom icons, \
+interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association["CiUrlWork" -> "http://www.gentleface.com"]]],
+                     "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 7.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:4CA348568228E011989CC0A1AD02B5C2", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:4CA348568228E011989CC0A1AD02B5C2"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], "Marked" -> 
+                    True, "UsageTerms" -> 
+                    "Creative Commons Attribution-NonCommercial license"], 
+                    "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]], 
+                    "Comments" -> 
+                    Association["Software" -> "Adobe ImageReady"]]],
+                    Selectable->False],
+                   DefaultBaseStyle->"ImageGraphics",
+                   ImageSizeRaw->{16, 16},
+                   PlotRange->{{0, 16}, {0, 16}}],
+                  "\"Ignore symbols with Temporary attribute.\"",
+                  TooltipStyle->"TextStyling"],
+                 
+                 Annotation[#, "Ignore symbols with Temporary attribute.", 
+                  "Tooltip"]& ],
+                Appearance->"FramedPalette"], 
+               SetterBox[Dynamic[
+                 MemberQ[
+                  CurrentValue[
+                   EvaluationNotebook[], {TaggingRules, "IgnoreRules"}], 
+                  MWorkspace`Private`HasValuesQ], BoxForm`TogglerBarFunction[
+                  CurrentValue[
+                   EvaluationNotebook[], {TaggingRules, "IgnoreRules"}], 
+                  MWorkspace`Private`HasValuesQ]& ], {True}, 
+                TagBox[
+                 TooltipBox[
+                  GraphicsBox[
+                   TagBox[RasterBox[CompressedData["
+1:eJylk09OwkAUxqctFCGQFoSAKQg1hQVwAHfEpUtRDyARjRtMwMR4F07ADdiq
+JBiXsmDHCYBwgvH76oCV+GfhJK/z5nu/b9q+ad3WbfNKF0L0dnBpXtwfdbsX
+D6c2Fued3s11p3153LlrX7e7hy0Doq0ihJBSboeO0NT8m+bHcrkMhrZYLMRq
+tRLz+XyjM6fGGpmgx7ZtP5LJpGFZlnBd12s0GqNKpXIGTWMgP4H2zBoZsmuf
+Gnx7YZrmXrVandTrdel53pPSdeSP1FgjE/ToGJqm0WuBG9dqNYn7vWK9q6nB
+nBprZMjSQy+3CIVCZqlUGoKR5XL5LR6PO9wbDPf270ONNTJk6aHXMAyRz+cH
+eDfqM3BF9XyG+ByG2qNIhiw99OZyuX6hUJCO40yj0ejBN94ve5AhSw+9mUym
+j1lms9lpJBL500+GLD30sgU4j0E6nZaIGXrz4/Ojtk+GLD0f7fPbaCYSiSHO
+VuJM38LhsBM4Ix+ixhoZsvSwpnos0AsrFouN0SOJ+RXrzfkxh/aiamOy9KzP
+Zn0PjD3sO0FI1DbfD3NqrJEJetbfIcJQ37GXSqVGmM+w1hjMleYFWcb2/7O1
+/i6+MP/9f98B1KMboQ==
+                    "], {{0, 16}, {16, 0}}, {0, 255},
+                    ColorFunction->RGBColor],
+                    BoxForm`ImageTag[
+                    "Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+                    "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+                    Association[
+                    "XMP" -> Association[
+                    "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Alexander Kiselev", "Description" -> 
+                    "This is the icon from Gentleface.com free icons set.", 
+                    "Rights" -> 
+                    "Creative Commons Attribution Non-Commercial No \
+Derivatives", "Subject" -> "icon, pictogram", "Title" -> 
+                    "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", 
+                    "CiAdrCtry" -> "Czech Republic", "CiEmailWork" -> 
+                    "ka@gentleface.com", "CiUrlWork" -> 
+                    "www.gentleface.com"]], "IntellectualGenre" -> 
+                    "pictogram"], "PhotoshopSchema" -> 
+                    Association[
+                    "AuthorsPosition" -> "Art Director", "Credit" -> 
+                    "www.gentleface.com", "DateCreated" -> 
+                    DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], 
+                    "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 43.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:EE08CF48A7F8DE11821CE4B2C7E36D70", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 43}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:EE08CF48A7F8DE11821CE4B2C7E36D70"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 43}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "UsageTerms" -> 
+                    "Creative Commons Attribution Non-Commercial No \
+Derivatives"], "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 43}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]]]],
+                    Selectable->False],
+                   DefaultBaseStyle->"ImageGraphics",
+                   ImageSizeRaw->{16, 16},
+                   PlotRange->{{0, 16}, {0, 16}}],
+                  "\"Ignore symbols without any value.\"",
+                  TooltipStyle->"TextStyling"],
+                 
+                 Annotation[#, "Ignore symbols without any value.", 
+                  "Tooltip"]& ],
+                Appearance->"FramedPalette"]}
+             },
+             BaselinePosition->{1, 1},
+             GridBoxSpacings->{"Columns" -> {
+                 Offset[0.27999999999999997`], {
+                  Offset[0.]}, 
+                 Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+               "Rows" -> {
+                 Offset[0.2], {
+                  Offset[0.4]}, 
+                 Offset[0.2]}, "RowsIndexed" -> {}}],
+            Deployed->True],
+           TogglerBar[
+            Dynamic[
+             CurrentValue[
+              EvaluationNotebook[], {TaggingRules, "IgnoreRules"}]], {
+            MWorkspace`Private`NoAttributeQ[ReadProtected] -> Tooltip[
+               Image[CompressedData["
+1:eJx9U0trE1EYnWeSmUySyftlHoVkyAOSIWjsQlApLooW6yQK9VVSjFVaI6YF
+zQ8Q3LspbgWXbt34B7oqIm6FKnYldNUiCF7PF25hGNJeOHNnvu+cc7/v3jtz
+a8+dx5IgCFsBPJzBy6vj8WDSM/Fxe7T1dH00fLQ42h6uD8fzazKCJocinDlE
+DIlA766499urkTln1pCnD1k+NcdNiOM3DCNLwLtGoFy5XF61bfujJE2XEN1a
+n8+nZrPZe7Va7XOr1TrudDqMAP5hMpmsI7fU7XZZPp9foTp5b1NtLBZbqNfr
+39rtNms2m7+LxeJb8O8WCoVJKpW6k8vlepTD7ASDwZRrL4R0Or0BLbMs6xjc
+TVVVFXBK0O8EAgEN3pfhyZC7jjruNxoNBs0T0sbjcadSqTD09QW9WhTz+/1W
+tVolzivw+/BliUSiR7lQKDQP7lfSkBZ1/kU/e1hT53snQ/Maue1IJHKpVCox
+rL+MfIS2iDiKouikIW0mkzkgoE6b9+QD14D2FjgsHA5fMU1zAmyc9EtcaH6R
+DrW2Udsfgq7rD+js0HsfvTLU6gAvUMsu4ippwVkC94j40Nr83M7Dfx+5TXjf
+iEajTNO0a+RFOTprnH8Ovu/AY6jtJ+IX3WdAHMSWsYcMvn30MMD8BvMzeH6C
+llEOvu/hlXbdG9JLiD0En2FvbsLrHN6/A/8oBt8f8NkB54Lrvp7ccZGv/wH1
+rvKYwuMGh+DRnfb/uH29QxFc/8iMIXq0ogczx3+cu2+H
+                "], "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                MetaInformation -> 
+                Association[
+                 "XMP" -> Association[
+                   "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Gentleface custom toolbar icons design", 
+                    "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+                    "Creative Commons Attribution-NonCommercial license", 
+                    "Subject" -> 
+                    "custom icon design, toolbar icons, custom icons, \
+interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association["CiUrlWork" -> "http://www.gentleface.com"]]],
+                     "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 11.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:D08378588228E011989CC0A1AD02B5C2", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:D08378588228E011989CC0A1AD02B5C2", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:D08378588228E011989CC0A1AD02B5C2"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], "Marked" -> 
+                    True, "UsageTerms" -> 
+                    "Creative Commons Attribution-NonCommercial license"], 
+                    "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]], 
+                  "Comments" -> 
+                  Association["Software" -> "Adobe ImageReady"]]], 
+               "Ignore symbols with ReadProtected attribute."], 
+             MWorkspace`Private`NoAttributeQ[Protected] -> Tooltip[
+               Image[CompressedData["
+1:eJxtk01PU1EQhm/vLVDa0g/a8tmWFtoibROb0DZGVyaayEJNMP4AiAiYiKaY
+aFf+BzXGlWFJ3BkXLtSFxoWKaKKJRCGwUCnWha5EKe3xGTwkhHiTlzt3zvvM
+nDOnxMcvjZ43DcOYdfBndOzq0VJprHzGx8fZmdnpyZmJcyMzVyYmJ0qHxi2S
+Pi07svF0dnYeHxwcvFMsFt8ODw9X8/n8Jvq1T5usbRQKhQXxCiOsaZquXC6n
+MpnMYjgcng4Gg8cCgUARHUQ5LYnz6FRfX185m82+EUZYy7K8iURi1eFwuLq7
+uy8kk8n76APaQBV5s/5laGhoraura8SQfdvtjlQqtQbvRb7+/v7llpaWA3ga
+6XRa8d7RbszeFP5nePywzqampujAwMDqLh+LxVbIJeLx+Dq+bXqKGvTd4luR
+fwXnx2tEo9Hb1MnBfBJWFIlEdnjOVqWuYj8NVEOKGkucLSL75nw3JE+tuDC7
+fE9Pzwq5BPOrUkPRY0ve9FhyuVxxYZldWer19vZWxCuMsMzPz11I/yT1q6xv
+U0cRLzqdzpiwfr//Iv2ErZP/Jl5hdH8PuUpra2s+FAp9pa7q6Oh4Tt2QsD6f
+b0pyzL6Gr4FnHW+B73Wu3y0e7vxdW1vbFH1usc+HsE7Jezyey9RSMHX0h54K
+z03xwryHF5vBfE7C/WCuYZtOut3u63hUe3t7HdVYl3iD3vJb+g5z2vj3mNp/
+l7qv5Y6Y2Rz7VvT/jWper1fin83NzUV8T9HcHlb6WdIW7hEze4zvBPFHpLSW
+mdkRej8gfqK3aGnW0G9T8pxhHr3gjg7reF7HC+ieZs09rLGnhk3/vq/R7zNn
+mRRJLLn9vv88Nr0v+b/OwL4USazXrf3sX4QUulw=
+                "], "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                MetaInformation -> 
+                Association[
+                 "XMP" -> Association[
+                   "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Gentleface custom toolbar icons design", 
+                    "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+                    "Creative Commons Attribution-NonCommercial license", 
+                    "Subject" -> 
+                    "custom icon design, toolbar icons, custom icons, \
+interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association["CiUrlWork" -> "http://www.gentleface.com"]]],
+                     "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 8.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:A86FAC568228E011989CC0A1AD02B5C2", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:A86FAC568228E011989CC0A1AD02B5C2"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], "Marked" -> 
+                    True, "UsageTerms" -> 
+                    "Creative Commons Attribution-NonCommercial license"], 
+                    "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]], 
+                  "Comments" -> 
+                  Association["Software" -> "Adobe ImageReady"]]], 
+               "Ignore symbols with Protected attribute."], 
+             MWorkspace`Private`NoAttributeQ[Locked] -> Tooltip[
+               Image[CompressedData["
+1:eJyNk8trGlEUxmec8RVFjfhIFAxiQZSIigrdlWyKutQovio+qjFdWEgCpdD/
+oNBVaeuupdBK6KrdFBW6iaB05bp/RHdtkxnn9juDliRNocLnPXPP97vnnjPq
+bz3MdTUcxx0b8JVrPto7Omo+ztvwUOgfHx70O/cz/ZPOQefodkvApm0lEVIU
+hWOMcYvFghuPx6pGoxE3nU698/n8zmw224PCk8lE3UeeJy8xxEqSpMbpdJrH
+cXQLnc1me+bz+X74/X5G2tnZYW63e4LcLYi8GmKIXfOlUkkQRZELhULPU6kU
+i8fjbHd3dxoOhz8i/p5IJFgymfym1WrtxWKRB8Nf4jW5XI6ODsdiMRln/PJ6
+vS1BEDie5zmz2ewPBAJfkWMbGxsn5AUjXuLFFV+IRCIM3i/EUT9Y9RTg/o1o
+NKoYDIbhTXw+nycgj/tSr+/A6SDDSlrcQc3pdLr38Gr+Uf9uMBhkDofjDXft
+YzQa1Rx6en2tPs1CwPw8mN9TzFtxOp1n8Beg0koFq9Wq5jC/s3K5nCSGWFmW
+RZp/o9GoYTYMc5O2t7eZx+O5ItqjHHm63e4nYohd89VqdR+9yVtbWxLqK+iB
+VuZyuRhWmUQ5eJR2uz28gS9gTtS7tLm5uYSYxWL5gLk9QSxD6pnkwV1P1zx6
+UPlKpVLAmJjdbpfASeiX4V0dYiZuxOfYU5C7IE+9Xj9d/f7+8JifyhOLHmWT
+yUT8EPe9RzHtUY48tVrtLx7191GL6v6E/xySwL/V6/UPKIYuKEce8MPrfCaT
+qdHZ/6NsNvt5zS+XS/W/NBgMongvg16v94rWlSh+sX5G7iWt+DSJIfY3qHKe
+ag==
+                "], "Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+                  "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+                Association[
+                 "XMP" -> Association[
+                   "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Alexander Kiselev", "Description" -> 
+                    "This is the icon from Gentleface.com free icons set.", 
+                    "Rights" -> 
+                    "Creative Commons Attribution Non-Commercial No \
+Derivatives", "Subject" -> "icon, pictogram", "Title" -> 
+                    "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", 
+                    "CiAdrCtry" -> "Czech Republic", "CiEmailWork" -> 
+                    "ka@gentleface.com", "CiUrlWork" -> 
+                    "www.gentleface.com"]], "IntellectualGenre" -> 
+                    "pictogram"], "PhotoshopSchema" -> 
+                    Association[
+                    "AuthorsPosition" -> "Art Director", "Credit" -> 
+                    "www.gentleface.com", "DateCreated" -> 
+                    DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], 
+                    "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 42.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:C00F5B48A7F8DE11821CE4B2C7E36D70", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:C00F5B48A7F8DE11821CE4B2C7E36D70"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "UsageTerms" -> 
+                    "Creative Commons Attribution Non-Commercial No \
+Derivatives"], "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]]]], 
+               "Ignore symbols with Locked attribute."], 
+             MWorkspace`Private`NoAttributeQ[Temporary] -> Tooltip[
+               Image[CompressedData["
+1:eJx1k8trU0EUxm/vvXk0r94k5kneIYQkSGgjYncK3dSFSEU3rlqMQZAIqSCB
+KiR/gAs3/QtErAsXPuhGN24UQShdiAi6EpqKiJWaZfzNZS6ONg58d3LO+b7z
+mJkU126sXNU1TVv38llZvXWm11vtX7AwLnbXr3W67SvL3ZvtTrt3as3AaUmY
+2pE1Iz6GYcw1m839Vqs1Fruw1biyH9GzDNM0E/V6fZROpzvs+8LGr0vdf7VA
+l0m0SqXytNFojNkfCVsu04lP61v4w+Hw2WKx+KRWq30CB9VqdQf7cSQSWbIT
+mOYcOd8kEonral2Xy6XDu49mL5lMDoPB4Ml4PL4ILsHtk+djJpPZLBQKr+D8
+CIVCC45W1M3lclvod71eb9xpCm2/XC5/5Rw2o9Ho6Xw+/5baE7/fX5QUe15q
+nS+VSodutzss55gV5xWLxQbUm5BjQk8Dj8fjo8YX9ItSa4jaqVTqtWVZt2VO
+l3NOzLyRzWaF9h5zC784nyHzbEuu0M8SH9H3vHIHpuTehbvF/Tu9zsA7Af89
+OpfsNUSfe/jLykz2ffh8vuOyrv0uhA9eBf5nbMuZlT5HzK7Wn7bsvPBa8D+g
+czsB7uIdeTeU+f/SqH54d+C/kG/I7omclwOBwC/mDCtcXYGtFXF4P3kry875
+Of1yN9tgR9f1Y1Ob1/UY8V3wQOlN0/68IS95n4HvcAfY8yAHFrCH+L+Bh/J/
+pM6lqb+Jn4P/EhyCMTgAz/Ev/csV6ze+D2LP
+                "], "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+                MetaInformation -> 
+                Association[
+                 "XMP" -> Association[
+                   "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Gentleface custom toolbar icons design", 
+                    "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+                    "Creative Commons Attribution-NonCommercial license", 
+                    "Subject" -> 
+                    "custom icon design, toolbar icons, custom icons, \
+interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association["CiUrlWork" -> "http://www.gentleface.com"]]],
+                     "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 7.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:4CA348568228E011989CC0A1AD02B5C2", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:4CA348568228E011989CC0A1AD02B5C2"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], "Marked" -> 
+                    True, "UsageTerms" -> 
+                    "Creative Commons Attribution-NonCommercial license"], 
+                    "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+                    DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]], 
+                  "Comments" -> 
+                  Association["Software" -> "Adobe ImageReady"]]], 
+               "Ignore symbols with Temporary attribute."], 
+             MWorkspace`Private`HasValuesQ -> Tooltip[
+               Image[CompressedData["
+1:eJylk09OwkAUxqctFCGQFoSAKQg1hQVwAHfEpUtRDyARjRtMwMR4F07ADdiq
+JBiXsmDHCYBwgvH76oCV+GfhJK/z5nu/b9q+ad3WbfNKF0L0dnBpXtwfdbsX
+D6c2Fued3s11p3153LlrX7e7hy0Doq0ihJBSboeO0NT8m+bHcrkMhrZYLMRq
+tRLz+XyjM6fGGpmgx7ZtP5LJpGFZlnBd12s0GqNKpXIGTWMgP4H2zBoZsmuf
+Gnx7YZrmXrVandTrdel53pPSdeSP1FgjE/ToGJqm0WuBG9dqNYn7vWK9q6nB
+nBprZMjSQy+3CIVCZqlUGoKR5XL5LR6PO9wbDPf270ONNTJk6aHXMAyRz+cH
+eDfqM3BF9XyG+ByG2qNIhiw99OZyuX6hUJCO40yj0ejBN94ve5AhSw+9mUym
+j1lms9lpJBL500+GLD30sgU4j0E6nZaIGXrz4/Ojtk+GLD0f7fPbaCYSiSHO
+VuJM38LhsBM4Ix+ixhoZsvSwpnos0AsrFouN0SOJ+RXrzfkxh/aiamOy9KzP
+Zn0PjD3sO0FI1DbfD3NqrJEJetbfIcJQ37GXSqVGmM+w1hjMleYFWcb2/7O1
+/i6+MP/9f98B1KMboQ==
+                "], "Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+                  "], "RGB", "XYZ"], Interleaving -> True, MetaInformation -> 
+                Association[
+                 "XMP" -> Association[
+                   "DublinCoreSchema" -> 
+                    Association[
+                    "Creator" -> "Alexander Kiselev", "Description" -> 
+                    "This is the icon from Gentleface.com free icons set.", 
+                    "Rights" -> 
+                    "Creative Commons Attribution Non-Commercial No \
+Derivatives", "Subject" -> "icon, pictogram", "Title" -> 
+                    "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CreatorContactInfo" -> 
+                    Association[
+                    "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", 
+                    "CiAdrCtry" -> "Czech Republic", "CiEmailWork" -> 
+                    "ka@gentleface.com", "CiUrlWork" -> 
+                    "www.gentleface.com"]], "IntellectualGenre" -> 
+                    "pictogram"], "PhotoshopSchema" -> 
+                    Association[
+                    "AuthorsPosition" -> "Art Director", "Credit" -> 
+                    "www.gentleface.com", "DateCreated" -> 
+                    DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], 
+                    "BasicSchema" -> 
+                    Association[
+                    "MetadataDate" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 43.}, "Instant", 
+                    "Gregorian", 8.]], "MediaManagementSchema" -> 
+                    Association[
+                    "DocumentID" -> 
+                    "xmp.did:EE08CF48A7F8DE11821CE4B2C7E36D70", "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 43}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "InstanceID" -> 
+                    "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", 
+                    "OriginalDocumentID" -> 
+                    "xmp.did:EE08CF48A7F8DE11821CE4B2C7E36D70"], 
+                    "RightsManagementSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 43}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+                    "UsageTerms" -> 
+                    "Creative Commons Attribution Non-Commercial No \
+Derivatives"], "PagedTextSchema" -> 
+                    Association[
+                    "History" -> 
+                    Association[
+                    "History[1]" -> 
+                    Association[
+                    "Action" -> "saved", "InstanceID" -> 
+                    "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                    DateObject[{2010, 1, 3, 21, 33, 43}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]]]], 
+               "Ignore symbols without any value."]}, Appearance -> 
+            "FramedPalette"]]}
+        },
+        AutoDelete->False,
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]},
+     {
+      PanelBox[
+       DynamicBox[ToBoxes[
+         With[{MWorkspace`Private`baseSize$ = CurrentValue[
+             EvaluationNotebook[], {TaggingRules, "Layout", "BaseSize"}], 
+           MWorkspace`Private`nameWidth$ = CurrentValue[
+             EvaluationNotebook[], {TaggingRules, "Layout", "Name"}], 
+           MWorkspace`Private`metaWidth$ = CurrentValue[
+             EvaluationNotebook[], {TaggingRules, "Layout", "Meta"}], 
+           MWorkspace`Private`valueWidth$ = CurrentValue[
+             EvaluationNotebook[], {TaggingRules, "Layout", "Value"}]}, 
+          MWorkspace`Private`VBox[{
+            MWorkspace`Private`HBox[{
+              Pane[
+               MWorkspace`Private`HBox[{
+                 TextCell[
+                  MessageName[MWorkspace`Private`Palette, "Name"]], 
+                 Opener[
+                  Dynamic[
+                   CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "NamesOrder"}]]]}], {
+                MWorkspace`Private`nameWidth$, 1} 
+               MWorkspace`Private`baseSize$, Alignment -> Center], 
+              Pane[
+               TextCell[
+                MessageName[MWorkspace`Private`Palette, "Meta"]], {
+                MWorkspace`Private`metaWidth$, 1} 
+               MWorkspace`Private`baseSize$, Alignment -> Center], 
+              Pane[
+               TextCell[
+                MessageName[MWorkspace`Private`Palette, "Value"]], {
+                MWorkspace`Private`valueWidth$, 1} 
+               MWorkspace`Private`baseSize$, Alignment -> Center]}], 
+            Dynamic[
+             
+             With[{MWorkspace`Private`refresh$ = 
+               MWorkspace`Private`refreshHelper$$, 
+               MWorkspace`Private`ignores$ = CurrentValue[
+                 EvaluationNotebook[], {TaggingRules, "IgnoreRules"}], 
+               MWorkspace`Private`context$ = CurrentValue[
+                 EvaluationNotebook[], {TaggingRules, "CurrentContext"}], 
+               MWorkspace`Private`order$ = CurrentValue[
+                 EvaluationNotebook[], {TaggingRules, "NamesOrder"}], 
+               MWorkspace`Private`lim$ = CurrentValue[
+                 EvaluationNotebook[], {TaggingRules, "ShowLimit"}]}, 
+              
+              With[{MWorkspace`Private`vals$ = (((
+                 MWorkspace`Private`sels$$ = 
+                  Intersection[#, MWorkspace`Private`sels$$]; #)& )[
+                  Take[#, 
+                   UpTo[MWorkspace`Private`lim$]]]& )[
+                  If[MWorkspace`Private`order$, Reverse, Identity][
+                   Select[
+                    Names[
+                    StringJoin[MWorkspace`Private`context$, "*"]], Apply[And, 
+                    Through[
+                    MWorkspace`Private`ignores$[#]]]& ]]]}, 
+               MWorkspace`Private`SymbolsPicker[
+                Dynamic[MWorkspace`Private`sels$$], 
+                Map[# -> MWorkspace`Private`HBox[{
+                    Pane[
+                    TextCell[#], {MWorkspace`Private`nameWidth$, 1} 
+                    MWorkspace`Private`baseSize$], 
+                    Pane[
+                    
+                    MWorkspace`Private`ShowMeta[#], {
+                    MWorkspace`Private`metaWidth$, 1} 
+                    MWorkspace`Private`baseSize$], 
+                    Pane[
+                    
+                    MWorkspace`Private`ShowValue[#], {
+                    MWorkspace`Private`valueWidth$, 1} 
+                    MWorkspace`Private`baseSize$]}]& , 
+                 MWorkspace`Private`vals$], Appearance -> "Frameless", 
+                FieldSize -> Dynamic[{{1., 50.}, {1., 
+                    CurrentValue[
+                    EvaluationNotebook[], {TaggingRules, "FieldLimit"}]}}]]]],
+              UpdateInterval -> 1, 
+             TrackedSymbols :> {MWorkspace`Private`refreshHelper$$}]}, 
+           Dividers -> {False, Center}]], StandardForm],
+        ImageSizeCache->{356., {17.5, 22.5}}]]}
+    },
+    AutoDelete->False,
+    GridBoxAlignment->{"Columns" -> {{Left}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Grid"],
+  DynamicModuleValues:>{},
+  Initialization:>({MWorkspace`Private`NewSymbol[] := CreateDialog[
+       DynamicModule[{MWorkspace`Private`name = ""}, 
+        Grid[{{
+           TextCell[
+            MessageName[MWorkspace`Private`NewSymbol, "NameLabel"]], 
+           InputField[
+            Dynamic[MWorkspace`Private`name], String, ContinuousAction -> 
+            True]}, {Null, 
+           MWorkspace`Private`HBox[{
+             DefaultButton[
+              Which[
+               Not[
+                StringMatchQ[MWorkspace`Private`name, 
+                 StringExpression[
+                  Alternatives[LetterCharacter, "`"], 
+                  RepeatedNull[
+                   Alternatives[WordCharacter, 
+                    StringExpression["`", 
+                    Except[EndOfString]]]]]]], 
+               Message[
+                MessageName[MWorkspace`Private`NewSymbol, "badname"], 
+                MWorkspace`Private`name], 
+               NameQ[MWorkspace`Private`name], 
+               Message[
+                MessageName[MWorkspace`Private`NewSymbol, "exists"], 
+                MWorkspace`Private`name], True, 
+               Symbol[MWorkspace`Private`name]; DialogReturn[
+                 MWorkspace`Private`RefreshAction[]]]], 
+             CancelButton[]}]}}, Alignment -> {{Right, Left}, Baseline}]], 
+       WindowTitle -> MessageName[MWorkspace`Private`NewSymbol, "Title"], 
+       Modal -> True], 
+     TagSet[MWorkspace`Private`NewSymbol, 
+      MessageName[MWorkspace`Private`NewSymbol, "badname"], 
+      "The string \"`1`\" cannot be used for a symbol name. A symbol name \
+must start with a letter followed by letters and numbers."], 
+     TagSet[MWorkspace`Private`NewSymbol, 
+      MessageName[MWorkspace`Private`NewSymbol, "exists"], 
+      "Symbol `` already exists."], 
+     TagSet[MWorkspace`Private`NewSymbol, 
+      MessageName[MWorkspace`Private`NewSymbol, "NameLabel"], "Name:"], 
+     TagSet[MWorkspace`Private`NewSymbol, 
+      MessageName[MWorkspace`Private`NewSymbol, "Title"], "New Symbol"], 
+     MWorkspace`Private`HBox[{
+        Pattern[MWorkspace`Private`items, 
+         BlankSequence[]]}, 
+       Pattern[MWorkspace`Private`opt, 
+        OptionsPattern[Grid]]] := 
+     Grid[{{MWorkspace`Private`items}}, MWorkspace`Private`opt], 
+     MWorkspace`Private`NoAttributeQ[
+       Pattern[MWorkspace`Private`attr, 
+        Blank[]]][
+       Pattern[MWorkspace`Private`name, 
+        Blank[String]]] := Not[
+       MemberQ[
+        Attributes[MWorkspace`Private`name], MWorkspace`Private`attr]], 
+     Attributes[MWorkspace`Private`HasValuesQ] = {Listable}, 
+     MWorkspace`Private`HasValuesQ[
+       Pattern[MWorkspace`Private`name, 
+        Blank[String]], 
+       Pattern[MWorkspace`Private`type, 
+        Alternatives[OwnValues, UpValues, DownValues]]] := 
+     ToExpression[
+       MWorkspace`Private`name, StandardForm, MWorkspace`Private`type] =!= {},
+      MWorkspace`Private`HasValuesQ[
+       Pattern[MWorkspace`Private`name, 
+        Blank[String]]] := Apply[Or, 
+       MWorkspace`Private`HasValuesQ[
+       MWorkspace`Private`name, {OwnValues, UpValues, DownValues}]], 
+     Attributes[MWorkspace`Private`baseSize$] = {Temporary}, 
+     Attributes[MWorkspace`Private`nameWidth$] = {Temporary}, 
+     Attributes[MWorkspace`Private`metaWidth$] = {Temporary}, 
+     Attributes[MWorkspace`Private`valueWidth$] = {Temporary}, 
+     MWorkspace`Private`VBox[{
+        Pattern[MWorkspace`Private`items, 
+         BlankSequence[]]}, 
+       Pattern[MWorkspace`Private`opt, 
+        OptionsPattern[Grid]]] := Grid[
+       Transpose[{{MWorkspace`Private`items}}], MWorkspace`Private`opt], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Context"], "Current context"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Delete"], 
+      "Clear or Remove Selection"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Edit"], "Edit Selection"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Export"], "Export Selection"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "IgnoreLocked"], 
+      "Ignore symbols with Locked attribute."], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "IgnoreNoValue"], 
+      "Ignore symbols without any value."], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "IgnoreProtected"], 
+      "Ignore symbols with Protected attribute."], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "IgnoreReadProtected"], 
+      "Ignore symbols with ReadProtected attribute."], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "IgnoreTemporary"], 
+      "Ignore symbols with Temporary attribute."], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Import"], "Import Data"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Meta"], "Meta"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Name"], "Name"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "New"], "New Symbol"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Refresh"], "Manual Refresh"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Title"], "Workspace"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Value"], "Value"], 
+     Attributes[MWorkspace`Private`refresh$] = {Temporary}, 
+     Attributes[MWorkspace`Private`ignores$] = {Temporary}, 
+     Attributes[MWorkspace`Private`context$] = {Temporary}, 
+     Attributes[MWorkspace`Private`order$] = {Temporary}, 
+     Attributes[MWorkspace`Private`lim$] = {Temporary}, 
+     Attributes[MWorkspace`Private`vals$] = {Temporary}, 
+     MWorkspace`Private`SymbolsPicker[
+       Blank[], {}, 
+       OptionsPattern[ListPicker]] := Null, MWorkspace`Private`SymbolsPicker[
+       Pattern[MWorkspace`Private`list, 
+        Blank[]], 
+       Pattern[MWorkspace`Private`vals, 
+        Blank[]], 
+       Pattern[MWorkspace`Private`opts, 
+        OptionsPattern[ListPicker]]] := 
+     ListPicker[
+      MWorkspace`Private`list, MWorkspace`Private`vals, 
+       MWorkspace`Private`opts], MWorkspace`Private`ShowMeta[
+       Pattern[MWorkspace`Private`name, 
+        Blank[String]]] := MWorkspace`Private`HBox[
+       Append[
+        MWorkspace`Private`AttributesIcon[
+         Attributes[MWorkspace`Private`name]], 
+        MWorkspace`Private`GetHead[MWorkspace`Private`name]]], 
+     Attributes[MWorkspace`Private`AttributesIcon] = {Listable}, 
+     MWorkspace`Private`AttributesIcon[Locked] = Tooltip[
+       Image[CompressedData["
+1:eJyNk8trGlEUxmec8RVFjfhIFAxiQZSIigrdlWyKutQovio+qjFdWEgCpdD/
+oNBVaeuupdBK6KrdFBW6iaB05bp/RHdtkxnn9juDliRNocLnPXPP97vnnjPq
+bz3MdTUcxx0b8JVrPto7Omo+ztvwUOgfHx70O/cz/ZPOQefodkvApm0lEVIU
+hWOMcYvFghuPx6pGoxE3nU698/n8zmw224PCk8lE3UeeJy8xxEqSpMbpdJrH
+cXQLnc1me+bz+X74/X5G2tnZYW63e4LcLYi8GmKIXfOlUkkQRZELhULPU6kU
+i8fjbHd3dxoOhz8i/p5IJFgymfym1WrtxWKRB8Nf4jW5XI6ODsdiMRln/PJ6
+vS1BEDie5zmz2ewPBAJfkWMbGxsn5AUjXuLFFV+IRCIM3i/EUT9Y9RTg/o1o
+NKoYDIbhTXw+nycgj/tSr+/A6SDDSlrcQc3pdLr38Gr+Uf9uMBhkDofjDXft
+YzQa1Rx6en2tPs1CwPw8mN9TzFtxOp1n8Beg0koFq9Wq5jC/s3K5nCSGWFmW
+RZp/o9GoYTYMc5O2t7eZx+O5ItqjHHm63e4nYohd89VqdR+9yVtbWxLqK+iB
+VuZyuRhWmUQ5eJR2uz28gS9gTtS7tLm5uYSYxWL5gLk9QSxD6pnkwV1P1zx6
+UPlKpVLAmJjdbpfASeiX4V0dYiZuxOfYU5C7IE+9Xj9d/f7+8JifyhOLHmWT
+yUT8EPe9RzHtUY48tVrtLx7191GL6v6E/xySwL/V6/UPKIYuKEce8MPrfCaT
+qdHZ/6NsNvt5zS+XS/W/NBgMongvg16v94rWlSh+sX5G7iWt+DSJIfY3qHKe
+ag==
+        "], "Byte", ColorSpace -> ColorProfileData[CompressedData["
+1:eJydlndUVNcWh8+9d3qhzTDSGXqvUgYQ6R2kV1EZZgYYygDDDIhdRFQwoohI
+UwQJChgwGorEiigWgqIC9oAEATUGo4iK5d2RtaIrL++9vPz+OOu7++x97jl7
+73PX1YhPD0mAAQBZBHQIYee4CIXs3FAZ9CFckMVPFPC4PgIRL5EnZMVDqNGb
+gg6A4u3PF6TDqFeaQCQM8XJlRkXHMPH9AAZEgAMWALA5WRkBoZ5hEm8fDzdm
+FuoEvghd6vWQZATgpol3EJMJ/j/JcjKEInSZIJQXcnlZHJTzUU7NEWVI7NMo
+0+NTJAxjJCxEN4iygoQT59n4s888O0uYmybgoizZcwY3jSvhHpS3Zot5KCP+
+KBdk83k5KN9CWTtVnMZH+Y0kNo3HzgIAI8mOtojHSULZXJIoYViIG8qLACBQ
+Er/i+K9YxFspkhzKLT0jV8hPTBIx9TkGTAs7OxbTm5eTyhOJTILYnBS2kMt0
+S0/LYAtyAZg/82fJSXLLRJNsY2FnY2NiaWrxVaL+6+TflKS28/Qy+HPNIEbf
+F9tf+aXXAcCaQXOz84stvgKAjs0AKNz9YtM+AIA0Wrf2a1+dhyHplySRKMPe
+zCwnJ8eUz+OYShL6h/6nw9/QV+8zlSz3R3qY7rwEtjhVxJTkjZOemi4WMrMy
+2Bwe0+TPTfyPA/96H8YhvASekCdAIyLQLuMLEtFyC7h8ET9dwOQL/lMR/2HY
+nzTf16ho9R8BfYUpkLlGB8ivfQBDIwMkdj86A/1RN39iBJDcvEj1ifm+/yzo
+31eFiyUD+hn5HOcWEsbkiIXZ83OSawmwgASkAR0oAjWgBfSBCbAEtsABOAMP
+4AsCQRiIBssBBySBNCAEOWAN2AgKQBHYCfaASlAD6kEjaAHHQAc4Cc6Bi+Aq
+uA4GwT0wAsbBUzANXoM5CILwEBWiQYqQOqQDGUGWEAtaDHlA/lAIFA3FQYmQ
+ABJDa6BNUBFUAlVCtVAj9D10AjoHXYYGoDvQKDQF/Q69gxGYAtNhVVgXNoNZ
+sAvsB4fBy+BEOBNeBefDO+ByuA4+ArfD5+Cr8CA8Aj+FZxCAkBEGooGYICzE
+DQlEYpAERIisQwqRMqQOaUG6kF7kJjKCPEPeYnAYGoaJMcE4YLwx4RgOJhOz
+DrMdU4k5jGnH9GBuYkYx05iPWCpWBWuEtcf6YKOwidgcbAG2DNuAbcNewA5i
+x7GvcTgcA6eHs8V546JxybjVuO24fbhW3FncAG4MN4PH4xXxRnhHfCCejRfh
+C/AV+CP4M/gb+HH8GwKZoE6wJHgSYggCQh6hjNBEOE24QZggzBFliDpEe2Ig
+kUvMJRYT64ldxGvEceIcSZakR3IkhZGSSRtJ5aQW0gXSfdJLMpmsSbYjB5P5
+5A3kcvJR8iXyKPktRY5iSHGjxFLElB2UQ5SzlDuUl1QqVZfqTI2hiqg7qI3U
+89SH1DdSNClTKR8prtR6qSqpdqkbUs+lidI60i7Sy6VXSZdJH5e+Jv1Mhiij
+K+Mmw5ZZJ1Mlc0JmWGZGliZrIRsomya7XbZJ9rLspBxeTlfOQ44rly93UO68
+3BgNoWnR3Ggc2iZaPe0CbZyOo+vRfejJ9CL6d/R++rS8nLyVfIT8Svkq+VPy
+IwyEocvwYaQyihnHGEOMdwtUF7gs4C3YtqBlwY0FswrKCs4KPIVChVaFQYV3
+ikxFD8UUxV2KHYoPlDBKhkrBSjlK+5UuKD1Tpis7KHOUC5WPKd9VgVUMVUJU
+VqscVOlTmVFVU/VSzVCtUD2v+kyNoeaslqxWqnZabUqdpr5Yna9eqn5G/QlT
+nunCTGWWM3uY0xoqGt4aYo1ajX6NOU09zXDNPM1WzQdaJC2WVoJWqVa31rS2
+unaA9hrtZu27OkQdlk6Szl6dXp1ZXT3dSN0tuh26k3oKej56q/Sa9e7rU/Wd
+9DP16/RvGeAMWAYpBvsMrhvChtaGSYZVhteMYCMbI77RPqMBY6yxnbHAuM54
+2IRi4mKSbdJsMmrKMPU3zTPtMH1upm0WY7bLrNfso7m1eap5vfk9CzkLX4s8
+iy6L3y0NLTmWVZa3FlIXei5cv7Bz4QsrIyue1X6r29Y06wDrLdbd1h9sbG2E
+Ni02U7batnG21bbDLDoriLWddckOa+dqt97upN1bext7kf0x+98cTBxSHJoc
+JhfpLeItql805qjpyHasdRxZzFwct/jA4hEnDSe2U53TI2ctZ65zg/OEi4FL
+sssRl+eu5q5C1zbXWTd7t7VuZ90Rdy/3Qvd+DzmPcI9Kj4eemp6Jns2e017W
+Xqu9znpjvf28d3kP+6j6cHwafaZ9bX3X+vb4UfxC/Sr9Hvkb+gv9uwLgAN+A
+3QH3l+gsESzpCASBPoG7Ax8E6QVlBv0YjAsOCq4KfhxiEbImpDeUFroitCn0
+dZhrWHHYvXD9cHF4d4R0RGxEY8RspHtkSeRIlFnU2qir0UrR/OjOGHxMRExD
+zMxSj6V7lo7HWscWxA4t01u2ctnl5UrLU5efWiG9gr3ieBw2LjKuKe49O5Bd
+x56J94mvjp/muHH2cp5ynbml3CmeI6+EN5HgmFCSMJnomLg7cSrJKaks6Rnf
+jV/Jf5HsnVyTPJsSmHIo5VNqZGprGiEtLu2EQE6QIuhJV0tfmT6QYZRRkDGS
+aZ+5J3Na6CdsyIKylmV1iujoz1SfWF+8WTyavTi7KvtNTkTO8ZWyKwUr+3IN
+c7flTqzyXPXtasxqzuruNRprNq4ZXeuytnYdtC5+Xfd6rfX568c3eG04vJG0
+MWXjT3nmeSV5rzZFburKV83fkD+22Wtzc4FUgbBgeIvDlpqtmK38rf3bFm6r
+2PaxkFt4pci8qKzo/XbO9ivfWHxT/s2nHQk7+ottivfvxO0U7Bza5bTrcIls
+yaqSsd0Bu9tLmaWFpa/2rNhzucyqrGYvaa9470i5f3lnhXbFzor3lUmVg1Wu
+Va3VKtXbqmf3cffd2O+8v6VGtaao5t0B/oHbtV617XW6dWUHcQezDz6uj6jv
+/Zb1bWODUkNRw4dDgkMjh0MO9zTaNjY2qTQVN8PN4uapI7FHrn/n/l1ni0lL
+bSujtegoOCo++uT7uO+Hjvkd6z7OOt7yg84P1W20tsJ2qD23fbojqWOkM7pz
+4ITvie4uh662H01/PHRS42TVKflTxadJp/NPfzqz6szM2Yyzz84lnhvrXtF9
+73zU+Vs9wT39F/wuXLroefF8r0vvmUuOl05etr984grrSsdVm6vtfdZ9bT9Z
+/9TWb9Pffs32Wud1u+tdA4sGTt9wunHupvvNi7d8bl0dXDI4MBQ+dHs4dnjk
+Nvf25J3UOy/uZt+du7fhPvZ+4QOZB2UPVR7W/Wzwc+uIzcipUffRvkehj+6N
+ccae/pL1y/vx/MfUx2UT6hONk5aTJ6c8p64/Wfpk/GnG07lnBb/K/lr9XP/5
+D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
+5LuJuZz3+PflHww+dH30+3j/U9qnT/8CDLcAuA==
+          "]], Interleaving -> True, MetaInformation -> 
+        Association[
+         "XMP" -> Association[
+           "DublinCoreSchema" -> 
+            Association[
+             "Creator" -> "Alexander Kiselev", "Description" -> 
+              "This is the icon from Gentleface.com free icons set.", 
+              "Rights" -> 
+              "Creative Commons Attribution Non-Commercial No Derivatives", 
+              "Subject" -> "icon, pictogram", "Title" -> 
+              "gentleface.com free icon set"], "IPTCCoreSchema" -> 
+            Association[
+             "CreatorContactInfo" -> 
+              Association[
+               "CreatorContactInfo" -> 
+                Association[
+                 "CiAdrCity" -> "Prague", "CiAdrPcode" -> "16000", 
+                  "CiAdrCtry" -> "Czech Republic", "CiEmailWork" -> 
+                  "ka@gentleface.com", "CiUrlWork" -> "www.gentleface.com"]], 
+              "IntellectualGenre" -> "pictogram"], "PhotoshopSchema" -> 
+            Association[
+             "AuthorsPosition" -> "Art Director", "Credit" -> 
+              "www.gentleface.com", "DateCreated" -> 
+              DateObject[{2010, 1, 1}, "Day", "Gregorian", 8.]], 
+            "BasicSchema" -> 
+            Association[
+             "MetadataDate" -> 
+              DateObject[{2010, 1, 3, 21, 33, 42.}, "Instant", "Gregorian", 
+                8.]], "MediaManagementSchema" -> 
+            Association[
+             "DocumentID" -> "xmp.did:C00F5B48A7F8DE11821CE4B2C7E36D70", 
+              "History" -> 
+              Association[
+               "History[1]" -> 
+                Association[
+                 "Action" -> "saved", "InstanceID" -> 
+                  "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                  DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian",
+                     8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+              "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", 
+              "OriginalDocumentID" -> 
+              "xmp.did:C00F5B48A7F8DE11821CE4B2C7E36D70"], 
+            "RightsManagementSchema" -> 
+            Association[
+             "History" -> 
+              Association[
+               "History[1]" -> 
+                Association[
+                 "Action" -> "saved", "InstanceID" -> 
+                  "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                  DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian",
+                     8.], "Changed" -> "/metadata"]], "UsageTerms" -> 
+              "Creative Commons Attribution Non-Commercial No Derivatives"], 
+            "PagedTextSchema" -> 
+            Association[
+             "History" -> 
+              Association[
+               "History[1]" -> 
+                Association[
+                 "Action" -> "saved", "InstanceID" -> 
+                  "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
+                  DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", "Gregorian",
+                     8.], "Changed" -> "/metadata"]]]]]], 
+       "Locked \:662f\:4e00\:79cd\:5c5e\:6027\:ff0c\:4e00\:65e6\:8d4b\:4e88\
+\:ff0c\:5c31\:963b\:6b62\:4fee\:6539\:7b26\:53f7\:7684\:4efb\:4f55\:5c5e\:6027\
+."], MWorkspace`Private`AttributesIcon[Protected] = Tooltip[
+       Image[CompressedData["
+1:eJxtk01PU1EQhm/vLVDa0g/a8tmWFtoibROb0DZGVyaayEJNMP4AiAiYiKaY
+aFf+BzXGlWFJ3BkXLtSFxoWKaKKJRCGwUCnWha5EKe3xGTwkhHiTlzt3zvvM
+nDOnxMcvjZ43DcOYdfBndOzq0VJprHzGx8fZmdnpyZmJcyMzVyYmJ0qHxi2S
+Pi07svF0dnYeHxwcvFMsFt8ODw9X8/n8Jvq1T5usbRQKhQXxCiOsaZquXC6n
+MpnMYjgcng4Gg8cCgUARHUQ5LYnz6FRfX185m82+EUZYy7K8iURi1eFwuLq7
+uy8kk8n76APaQBV5s/5laGhoraura8SQfdvtjlQqtQbvRb7+/v7llpaWA3ga
+6XRa8d7RbszeFP5nePywzqampujAwMDqLh+LxVbIJeLx+Dq+bXqKGvTd4luR
+fwXnx2tEo9Hb1MnBfBJWFIlEdnjOVqWuYj8NVEOKGkucLSL75nw3JE+tuDC7
+fE9Pzwq5BPOrUkPRY0ve9FhyuVxxYZldWer19vZWxCuMsMzPz11I/yT1q6xv
+U0cRLzqdzpiwfr//Iv2ErZP/Jl5hdH8PuUpra2s+FAp9pa7q6Oh4Tt2QsD6f
+b0pyzL6Gr4FnHW+B73Wu3y0e7vxdW1vbFH1usc+HsE7Jezyey9RSMHX0h54K
+z03xwryHF5vBfE7C/WCuYZtOut3u63hUe3t7HdVYl3iD3vJb+g5z2vj3mNp/
+l7qv5Y6Y2Rz7VvT/jWper1fin83NzUV8T9HcHlb6WdIW7hEze4zvBPFHpLSW
+mdkRej8gfqK3aGnW0G9T8pxhHr3gjg7reF7HC+ieZs09rLGnhk3/vq/R7zNn
+mRRJLLn9vv88Nr0v+b/OwL4USazXrf3sX4QUulw=
+        "], "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+        MetaInformation -> 
+        Association[
+         "XMP" -> Association[
+           "DublinCoreSchema" -> 
+            Association[
+             "Creator" -> "Gentleface custom toolbar icons design", 
+              "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+              "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+              "custom icon design, toolbar icons, custom icons, interface \
+design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+            Association[
+             "CreatorContactInfo" -> 
+              Association[
+               "CreatorContactInfo" -> 
+                Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+            "BasicSchema" -> 
+            Association[
+             "MetadataDate" -> 
+              DateObject[{2011, 1, 25, 13, 55, 8.}, "Instant", "Gregorian", 
+                8.]], "MediaManagementSchema" -> 
+            Association[
+             "DocumentID" -> "xmp.did:A86FAC568228E011989CC0A1AD02B5C2", 
+              "History" -> 
+              Association[
+               "History[1]" -> 
+                Association[
+                 "Action" -> "saved", "InstanceID" -> 
+                  "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+                  DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", "Gregorian",
+                     8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+              "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", 
+              "OriginalDocumentID" -> 
+              "xmp.did:A86FAC568228E011989CC0A1AD02B5C2"], 
+            "RightsManagementSchema" -> 
+            Association[
+             "History" -> 
+              Association[
+               "History[1]" -> 
+                Association[
+                 "Action" -> "saved", "InstanceID" -> 
+                  "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+                  DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", "Gregorian",
+                     8.], "Changed" -> "/metadata"]], "Marked" -> True, 
+              "UsageTerms" -> 
+              "Creative Commons Attribution-NonCommercial license"], 
+            "PagedTextSchema" -> 
+            Association[
+             "History" -> 
+              Association[
+               "History[1]" -> 
+                Association[
+                 "Action" -> "saved", "InstanceID" -> 
+                  "xmp.iid:A86FAC568228E011989CC0A1AD02B5C2", "When" -> 
+                  DateObject[{2011, 1, 25, 13, 55, 8}, "Instant", "Gregorian",
+                     8.], "Changed" -> "/metadata"]]]], "Comments" -> 
+          Association["Software" -> "Adobe ImageReady"]]], 
+       "Protected \
+\:662f\:4e00\:4e2a\:5c5e\:6027\:ff0c\:9632\:6b62\:548c\:4efb\:4f55\:4e00\:4e2a\
+\:7b26\:53f7\:76f8\:5173\:8054\:7684\:503c\:88ab\:4fee\:6539."], 
+     MWorkspace`Private`AttributesIcon[ReadProtected] = Tooltip[
+       Image[CompressedData["
+1:eJx9U0trE1EYnWeSmUySyftlHoVkyAOSIWjsQlApLooW6yQK9VVSjFVaI6YF
+zQ8Q3LspbgWXbt34B7oqIm6FKnYldNUiCF7PF25hGNJeOHNnvu+cc7/v3jtz
+a8+dx5IgCFsBPJzBy6vj8WDSM/Fxe7T1dH00fLQ42h6uD8fzazKCJocinDlE
+DIlA766499urkTln1pCnD1k+NcdNiOM3DCNLwLtGoFy5XF61bfujJE2XEN1a
+n8+nZrPZe7Va7XOr1TrudDqMAP5hMpmsI7fU7XZZPp9foTp5b1NtLBZbqNfr
+39rtNms2m7+LxeJb8O8WCoVJKpW6k8vlepTD7ASDwZRrL4R0Or0BLbMs6xjc
+TVVVFXBK0O8EAgEN3pfhyZC7jjruNxoNBs0T0sbjcadSqTD09QW9WhTz+/1W
+tVolzivw+/BliUSiR7lQKDQP7lfSkBZ1/kU/e1hT53snQ/Maue1IJHKpVCox
+rL+MfIS2iDiKouikIW0mkzkgoE6b9+QD14D2FjgsHA5fMU1zAmyc9EtcaH6R
+DrW2Udsfgq7rD+js0HsfvTLU6gAvUMsu4ippwVkC94j40Nr83M7Dfx+5TXjf
+iEajTNO0a+RFOTprnH8Ovu/AY6jtJ+IX3WdAHMSWsYcMvn30MMD8BvMzeH6C
+llEOvu/hlXbdG9JLiD0En2FvbsLrHN6/A/8oBt8f8NkB54Lrvp7ccZGv/wH1
+rvKYwuMGh+DRnfb/uH29QxFc/8iMIXq0ogczx3+cu2+H
+        "], "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+        MetaInformation -> 
+        Association[
+         "XMP" -> Association[
+           "DublinCoreSchema" -> 
+            Association[
+             "Creator" -> "Gentleface custom toolbar icons design", 
+              "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+              "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+              "custom icon design, toolbar icons, custom icons, interface \
+design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+            Association[
+             "CreatorContactInfo" -> 
+              Association[
+               "CreatorContactInfo" -> 
+                Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+            "BasicSchema" -> 
+            Association[
+             "MetadataDate" -> 
+              DateObject[{2011, 1, 25, 13, 55, 11.}, "Instant", "Gregorian", 
+                8.]], "MediaManagementSchema" -> 
+            Association[
+             "DocumentID" -> "xmp.did:D08378588228E011989CC0A1AD02B5C2", 
+              "History" -> 
+              Association[
+               "History[1]" -> 
+                Association[
+                 "Action" -> "saved", "InstanceID" -> 
+                  "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+                  DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], 
+              "InstanceID" -> "xmp.iid:D08378588228E011989CC0A1AD02B5C2", 
+              "OriginalDocumentID" -> 
+              "xmp.did:D08378588228E011989CC0A1AD02B5C2"], 
+            "RightsManagementSchema" -> 
+            Association[
+             "History" -> 
+              Association[
+               "History[1]" -> 
+                Association[
+                 "Action" -> "saved", "InstanceID" -> 
+                  "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+                  DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]], "Marked" -> 
+              True, "UsageTerms" -> 
+              "Creative Commons Attribution-NonCommercial license"], 
+            "PagedTextSchema" -> 
+            Association[
+             "History" -> 
+              Association[
+               "History[1]" -> 
+                Association[
+                 "Action" -> "saved", "InstanceID" -> 
+                  "xmp.iid:D08378588228E011989CC0A1AD02B5C2", "When" -> 
+                  DateObject[{2011, 1, 25, 13, 55, 11}, "Instant", 
+                    "Gregorian", 8.], "Changed" -> "/metadata"]]]], 
+          "Comments" -> Association["Software" -> "Adobe ImageReady"]]], 
+       "ReadProtected \:662f\:4e00\:4e2a\:5c5e\:6027\:ff0c\:7528\:6765\:9632\
+\:6b62\:4e0e\:4e00\:4e2a\:7b26\:53f7\:76f8\:8054\:7cfb\:7684\:503c\:88ab\:8bfb\
+\:53d6."], MWorkspace`Private`AttributesIcon[Temporary] = Tooltip[
+       Image[CompressedData["
+1:eJx1k8trU0EUxm/vvXk0r94k5kneIYQkSGgjYncK3dSFSEU3rlqMQZAIqSCB
+KiR/gAs3/QtErAsXPuhGN24UQShdiAi6EpqKiJWaZfzNZS6ONg58d3LO+b7z
+mJkU126sXNU1TVv38llZvXWm11vtX7AwLnbXr3W67SvL3ZvtTrt3as3AaUmY
+2pE1Iz6GYcw1m839Vqs1Fruw1biyH9GzDNM0E/V6fZROpzvs+8LGr0vdf7VA
+l0m0SqXytNFojNkfCVsu04lP61v4w+Hw2WKx+KRWq30CB9VqdQf7cSQSWbIT
+mOYcOd8kEonral2Xy6XDu49mL5lMDoPB4Ml4PL4ILsHtk+djJpPZLBQKr+D8
+CIVCC45W1M3lclvod71eb9xpCm2/XC5/5Rw2o9Ho6Xw+/5baE7/fX5QUe15q
+nS+VSodutzss55gV5xWLxQbUm5BjQk8Dj8fjo8YX9ItSa4jaqVTqtWVZt2VO
+l3NOzLyRzWaF9h5zC784nyHzbEuu0M8SH9H3vHIHpuTehbvF/Tu9zsA7Af89
+OpfsNUSfe/jLykz2ffh8vuOyrv0uhA9eBf5nbMuZlT5HzK7Wn7bsvPBa8D+g
+czsB7uIdeTeU+f/SqH54d+C/kG/I7omclwOBwC/mDCtcXYGtFXF4P3kry875
+Of1yN9tgR9f1Y1Ob1/UY8V3wQOlN0/68IS95n4HvcAfY8yAHFrCH+L+Bh/J/
+pM6lqb+Jn4P/EhyCMTgAz/Ev/csV6ze+D2LP
+        "], "Byte", ColorSpace -> "RGB", Interleaving -> True, 
+        MetaInformation -> 
+        Association[
+         "XMP" -> Association[
+           "DublinCoreSchema" -> 
+            Association[
+             "Creator" -> "Gentleface custom toolbar icons design", 
+              "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
+              "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+              "custom icon design, toolbar icons, custom icons, interface \
+design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
+            Association[
+             "CreatorContactInfo" -> 
+              Association[
+               "CreatorContactInfo" -> 
+                Association["CiUrlWork" -> "http://www.gentleface.com"]]], 
+            "BasicSchema" -> 
+            Association[
+             "MetadataDate" -> 
+              DateObject[{2011, 1, 25, 13, 55, 7.}, "Instant", "Gregorian", 
+                8.]], "MediaManagementSchema" -> 
+            Association[
+             "DocumentID" -> "xmp.did:4CA348568228E011989CC0A1AD02B5C2", 
+              "History" -> 
+              Association[
+               "History[1]" -> 
+                Association[
+                 "Action" -> "saved", "InstanceID" -> 
+                  "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+                  DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", "Gregorian",
+                     8.], "Changed" -> "/metadata"]], "InstanceID" -> 
+              "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", 
+              "OriginalDocumentID" -> 
+              "xmp.did:4CA348568228E011989CC0A1AD02B5C2"], 
+            "RightsManagementSchema" -> 
+            Association[
+             "History" -> 
+              Association[
+               "History[1]" -> 
+                Association[
+                 "Action" -> "saved", "InstanceID" -> 
+                  "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+                  DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", "Gregorian",
+                     8.], "Changed" -> "/metadata"]], "Marked" -> True, 
+              "UsageTerms" -> 
+              "Creative Commons Attribution-NonCommercial license"], 
+            "PagedTextSchema" -> 
+            Association[
+             "History" -> 
+              Association[
+               "History[1]" -> 
+                Association[
+                 "Action" -> "saved", "InstanceID" -> 
+                  "xmp.iid:4CA348568228E011989CC0A1AD02B5C2", "When" -> 
+                  DateObject[{2011, 1, 25, 13, 55, 7}, "Instant", "Gregorian",
+                     8.], "Changed" -> "/metadata"]]]], "Comments" -> 
+          Association["Software" -> "Adobe ImageReady"]]], 
+       "Temporary \
+\:662f\:8d4b\:7ed9\:7b26\:53f7\:7684\:4e00\:4e2a\:5c5e\:6027\:ff0c\:7531 \
+Module \:4f5c\:4e3a\:5c40\:90e8\:53d8\:91cf\:521b\:5efa."], 
+     MWorkspace`Private`AttributesIcon[
+       Blank[]] = Nothing, MWorkspace`Private`GetHead[
+       Pattern[MWorkspace`Private`name, 
+        Blank[String]]] := First[
+       ToExpression[
+        StringJoin[
+        "Cases[OwnValues[", MWorkspace`Private`name, 
+         "],HoldPattern[HoldPattern[_]\[RuleDelayed]var_]\[RuleDelayed]Head[\
+Unevaluated[var]]]"]], 
+       Head[
+        Symbol[MWorkspace`Private`name]]], MWorkspace`Private`ShowValue[
+       Pattern[MWorkspace`Private`name, 
+        Blank[String]]] := 
+     With[{MWorkspace`Private`own = 
+        MWorkspace`Private`GetOwnValue[MWorkspace`Private`name]}, 
+       Which[MWorkspace`Private`own =!= Null, MWorkspace`Private`own, True, 
+        Definition[
+         Evaluate[
+          ToExpression[
+          MWorkspace`Private`name, StandardForm, HoldPattern]]]]], 
+     MWorkspace`Private`GetOwnValue[
+       Pattern[MWorkspace`Private`name, 
+        Blank[String]]] := First[
+       ToExpression[
+        StringJoin[
+        "Cases[OwnValues[", MWorkspace`Private`name, 
+         "],HoldPattern[HoldPattern[_]\[RuleDelayed]var_]\[RuleDelayed]\
+HoldForm[var]]"]], Null]}; 
+   MWorkspace`Private`RefreshAction[] := (MWorkspace`Private`refreshHelper$$ = 
+     Not[MWorkspace`Private`refreshHelper$$]))]],ExpressionUUID->"e911e435-\
+8664-421f-90b2-d1fddfb1a70e"]
+},
+WindowSize->All,
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+WindowElements->{},
+WindowTitle->"Workspace",
+TaggingRules->{
+ "IgnoreRules" -> {MWorkspace`Private`HasValuesQ}, "NamesOrder" -> False, 
+  "Layout" -> {"BaseSize" -> 20, "Name" -> 4, "Meta" -> 5, "Value" -> 8}, 
+  "CurrentContext" -> "Global`", 
+  "ContextsPattern" -> {"Global*", "Notebook$$*", "Cell$$*"}, "ShowLimit" -> 
+  40, "FieldLimit" -> 15},
+Magnification->1.,
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
+\:65e5)",
+StyleDefinitions->"Palette.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[582, 21, 135037, 2588, 124, InheritFromParent,ExpressionUUID->"e911e435-8664-421f-90b2-d1fddfb1a70e"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
