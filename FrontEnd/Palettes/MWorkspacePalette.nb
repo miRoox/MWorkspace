@@ -10,18 +10,18 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    136307,       2634]
-NotebookOptionsPosition[    135623,       2611]
-NotebookOutlinePosition[    136340,       2636]
-CellTagsIndexPosition[    136297,       2633]
+NotebookDataLength[    144085,       2812]
+NotebookOptionsPosition[    143401,       2789]
+NotebookOutlinePosition[    144118,       2814]
+CellTagsIndexPosition[    144075,       2811]
 WindowTitle->Workspace
 WindowFrame->Palette*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[
- DynamicModuleBox[{MWorkspace`Private`refreshHelper$$ = True, 
-  MWorkspace`Private`sels$$ = {}}, 
+ DynamicModuleBox[{MWorkspace`Private`refreshHelper$$ = False, 
+  MWorkspace`Private`sels$$ = {"c"}}, 
   TagBox[GridBox[{
      {
       TagBox[GridBox[{
@@ -340,9 +340,9 @@ Derivatives"], "PagedTextSchema" ->
              TooltipStyle->"TextStyling"],
             Annotation[#, "Edit Selection", "Tooltip"]& ],
            Appearance->"FramedPalette",
-           ButtonFunction:>{},
+           ButtonFunction:>Null,
            Enabled->Dynamic[MWorkspace`Private`sels$$ =!= {}],
-           Evaluator->None,
+           Evaluator->Automatic,
            Method->"Preemptive"], 
           ButtonBox[
            TagBox[
@@ -432,8 +432,8 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
              TooltipStyle->"TextStyling"],
             Annotation[#, "Import Data", "Tooltip"]& ],
            Appearance->"FramedPalette",
-           ButtonFunction:>{},
-           Evaluator->None,
+           ButtonFunction:>MWorkspace`Private`ImportData[],
+           Evaluator->Automatic,
            Method->"Preemptive"], 
           ButtonBox[
            TagBox[
@@ -524,9 +524,9 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
              TooltipStyle->"TextStyling"],
             Annotation[#, "Export Selection", "Tooltip"]& ],
            Appearance->"FramedPalette",
-           ButtonFunction:>{},
+           ButtonFunction:>Null,
            Enabled->Dynamic[MWorkspace`Private`sels$$ =!= {}],
-           Evaluator->None,
+           Evaluator->Automatic,
            Method->"Preemptive"], 
           ActionMenuBox[
            TagBox[
@@ -809,7 +809,7 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
                  Appearance -> "FramedPalette", 
                 FieldSize -> {{5., 20.}, {1., 1.}}, 
                 FrameMargins -> {{5, 0}, {1, 1}}]], StandardForm],
-             ImageSizeCache->{119., {7.25, 17.}},
+             ImageSizeCache->{119., {8., 17.}},
              TrackedSymbols:>{MWorkspace`Private`refreshHelper$$},
              UpdateInterval->1],
             "\"Current context\"",
@@ -2026,19 +2026,15 @@ Derivatives"], "PagedTextSchema" ->
                  EvaluationNotebook[], {TaggingRules, "NamesOrder"}], 
                MWorkspace`Private`lim$ = CurrentValue[
                  EvaluationNotebook[], {TaggingRules, "ShowLimit"}]}, 
-              
-              With[{MWorkspace`Private`vals$ = (((
-                 MWorkspace`Private`sels$$ = 
-                  Intersection[#, MWorkspace`Private`sels$$]; #)& )[
-                  Take[#, 
-                   UpTo[MWorkspace`Private`lim$]]]& )[
+              With[{MWorkspace`Private`vals$ = (Take[#, 
+                  UpTo[MWorkspace`Private`lim$]]& )[
                   If[MWorkspace`Private`order$, Reverse, Identity][
                    Select[
                     Names[
                     StringJoin[MWorkspace`Private`context$, "*"]], Apply[And, 
                     Through[
                     MWorkspace`Private`ignores$[#]]]& ]]]}, 
-               MWorkspace`Private`SymbolsPicker[
+               MWorkspace`Private`ListPicker[
                 Dynamic[MWorkspace`Private`sels$$], 
                 Map[# -> MWorkspace`Private`HBox[{
                     Pane[
@@ -2061,7 +2057,7 @@ Derivatives"], "PagedTextSchema" ->
               UpdateInterval -> 1, 
              TrackedSymbols :> {MWorkspace`Private`refreshHelper$$}]}, 
            Dividers -> {False, Center}]], StandardForm],
-        ImageSizeCache->{356., {17.5, 22.5}}]]}
+        ImageSizeCache->{356., {56., 61.}}]]}
     },
     AutoDelete->False,
     GridBoxAlignment->{"Columns" -> {{Left}}},
@@ -2074,31 +2070,23 @@ Derivatives"], "PagedTextSchema" ->
            TextCell[
             MessageName[MWorkspace`Private`NewSymbol, "NameLabel"]], 
            InputField[
-            Dynamic[MWorkspace`Private`name], String, ContinuousAction -> 
+            Dynamic[MWorkspace`Private`name, If[
+              AllTrue[
+               StringSplit[#, "`", All], 
+               StringMatchQ[MWorkspace`Private`SymbolPattern]], 
+              MWorkspace`Private`name = #]& ], String, ContinuousAction -> 
             True]}, {Null, 
            MWorkspace`Private`HBox[{
              DefaultButton[
-              Which[
-               Not[
-                StringMatchQ[MWorkspace`Private`name, 
-                 StringExpression[
-                  Alternatives[LetterCharacter, "`"], 
-                  RepeatedNull[
-                   Alternatives[WordCharacter, 
-                    StringExpression["`", 
-                    Except[EndOfString]]]]]]], 
-               Message[
-                MessageName[MWorkspace`Private`NewSymbol, "badname"], 
-                MWorkspace`Private`name], 
+              If[
                NameQ[MWorkspace`Private`name], 
                Message[
                 MessageName[MWorkspace`Private`NewSymbol, "exists"], 
-                MWorkspace`Private`name], True, 
-               Symbol[MWorkspace`Private`name]; DialogReturn[
+                MWorkspace`Private`name], Evaluate[
+                  Symbol[MWorkspace`Private`name]] = 0; DialogReturn[
                  MWorkspace`Private`RefreshAction[]]]], 
              CancelButton[]}]}}, Alignment -> {{Right, Left}, Baseline}]], 
-       WindowTitle -> MessageName[MWorkspace`Private`NewSymbol, "Title"], 
-       Modal -> True], 
+       WindowTitle -> MessageName[MWorkspace`Private`NewSymbol, "Title"]], 
      TagSet[MWorkspace`Private`NewSymbol, 
       MessageName[MWorkspace`Private`NewSymbol, "badname"], 
       "The string \"`1`\" cannot be used for a symbol name. A symbol name \
@@ -2110,12 +2098,182 @@ must start with a letter followed by letters and numbers."],
       MessageName[MWorkspace`Private`NewSymbol, "NameLabel"], "Name:"], 
      TagSet[MWorkspace`Private`NewSymbol, 
       MessageName[MWorkspace`Private`NewSymbol, "Title"], "New Symbol"], 
-     MWorkspace`Private`HBox[{
+     MWorkspace`Private`SymbolPattern = StringExpression[LetterCharacter, 
+       RepeatedNull[WordCharacter]], MWorkspace`Private`HBox[{
         Pattern[MWorkspace`Private`items, 
          BlankSequence[]]}, 
        Pattern[MWorkspace`Private`opt, 
         OptionsPattern[Grid]]] := 
      Grid[{{MWorkspace`Private`items}}, MWorkspace`Private`opt], 
+     MWorkspace`Private`ImportData[] := CreateDialog[
+       DynamicModule[{
+        MWorkspace`Private`file = "", MWorkspace`Private`elems = {}, 
+         MWorkspace`Private`elem, MWorkspace`Private`name = ""}, 
+        Grid[{{
+           TextCell[
+            MessageName[MWorkspace`Private`ImportData, "FileLabel"]], 
+           MWorkspace`Private`FileNameInput[
+            Dynamic[MWorkspace`Private`file], "Open"]}, {
+           TextCell[
+            MessageName[MWorkspace`Private`ImportData, "ElementLabel"]], 
+           DynamicWrapper[
+            Dynamic[
+             MWorkspace`Private`PopupMenu[
+              Dynamic[MWorkspace`Private`elem], MWorkspace`Private`elems, 
+              MessageName[MWorkspace`Private`PopupMenu, "NoSel"]]], 
+            Quiet[
+             If[
+              FileExistsQ[MWorkspace`Private`file], 
+              
+              Module[{MWorkspace`Private`tmp = 
+                Import[MWorkspace`Private`file, "Elements"]}, 
+               MWorkspace`Private`elems = If[
+                 VectorQ[MWorkspace`Private`tmp], 
+                 MWorkspace`Private`tmp, {}]]]]]}, {
+           TextCell[
+            MessageName[MWorkspace`Private`NewSymbol, "NameLabel"]], 
+           InputField[
+            Dynamic[MWorkspace`Private`name, If[
+              AllTrue[
+               StringSplit[#, "`", All], 
+               StringMatchQ[MWorkspace`Private`SymbolPattern]], 
+              MWorkspace`Private`name = #]& ], String, ContinuousAction -> 
+            True]}, {Null, 
+           MWorkspace`Private`HBox[{
+             DefaultButton[
+              
+              Module[{MWorkspace`Private`tmp = 
+                Import[MWorkspace`Private`file, MWorkspace`Private`elem]}, 
+               If[
+                Not[
+                 FailureQ[MWorkspace`Private`tmp]], Evaluate[
+                   Symbol[
+                    MWorkspace`Private`UniqueName[MWorkspace`Private`name]]] = 
+                 MWorkspace`Private`tmp; DialogReturn[
+                  MWorkspace`Private`RefreshAction[]]]]], 
+             CancelButton[]}]}}, Alignment -> {{Right, Left}, Baseline}]], 
+       WindowTitle -> MessageName[MWorkspace`Private`ImportData, "Title"]], 
+     TagSet[MWorkspace`Private`ImportData, 
+      MessageName[MWorkspace`Private`ImportData, "ElementLabel"], "Element:"], 
+     TagSet[MWorkspace`Private`ImportData, 
+      MessageName[MWorkspace`Private`ImportData, "FileLabel"], "File:"], 
+     TagSet[MWorkspace`Private`ImportData, 
+      MessageName[MWorkspace`Private`ImportData, "Title"], "Import data"], 
+     UpSetDelayed[
+      MakeBoxes[
+       MWorkspace`Private`FileNameInput[
+        Dynamic[
+         Pattern[MWorkspace`Private`file, 
+          Blank[]]], 
+        Alternatives[
+         Pattern[MWorkspace`Private`spec, 
+          Blank[]], 
+         PatternSequence[]], 
+        Alternatives[
+         Pattern[MWorkspace`Private`patts, 
+          Blank[]], 
+         PatternSequence[]]], 
+       Pattern[FormatType, 
+        Blank[]]], 
+      Format[
+       Interpretation[
+        MWorkspace`Private`HBox[{
+          InputField[
+           Dynamic[MWorkspace`Private`file], String, FieldHint -> 
+           MessageName[MWorkspace`Private`FileNameInput, "Hint"], 
+           FieldCompletionFunction -> (FileNames[
+             StringJoin[#, "*"]]& ), ContinuousAction -> True, FieldSize -> 
+           Medium], 
+          FileNameSetter[
+           Dynamic[MWorkspace`Private`file], MWorkspace`Private`spec, 
+           MWorkspace`Private`patts, Appearance -> "...", ImageSize -> 
+           Medium]}], 
+        MWorkspace`Private`FileNameInput[
+         Dynamic[MWorkspace`Private`file], MWorkspace`Private`spec, 
+         MWorkspace`Private`patts]], FormatType]], Format[
+       MWorkspace`Private`FileNameInput[
+        Dynamic[
+         Pattern[MWorkspace`Private`file, 
+          Blank[]]], 
+        Alternatives[
+         Pattern[MWorkspace`Private`spec, 
+          Blank[]], 
+         PatternSequence[]], 
+        Alternatives[
+         Pattern[MWorkspace`Private`patts, 
+          Blank[]], 
+         PatternSequence[]]]] := Interpretation[
+       MWorkspace`Private`HBox[{
+         InputField[
+          Dynamic[MWorkspace`Private`file], String, FieldHint -> 
+          MessageName[MWorkspace`Private`FileNameInput, "Hint"], 
+          FieldCompletionFunction -> (FileNames[
+            StringJoin[#, "*"]]& ), ContinuousAction -> True, FieldSize -> 
+          Medium], 
+         FileNameSetter[
+          Dynamic[MWorkspace`Private`file], MWorkspace`Private`spec, 
+          MWorkspace`Private`patts, Appearance -> "...", ImageSize -> 
+          Medium]}], 
+       MWorkspace`Private`FileNameInput[
+        Dynamic[MWorkspace`Private`file], MWorkspace`Private`spec, 
+        MWorkspace`Private`patts]], 
+     TagSet[MWorkspace`Private`FileNameInput, 
+      MessageName[MWorkspace`Private`FileNameInput, "Hint"], "Input path..."],
+      Attributes[MakeBoxes] = {HoldAllComplete}, MWorkspace`Private`PopupMenu[
+       Dynamic[
+        Pattern[MWorkspace`Private`sel, 
+         Blank[]]], 
+       Pattern[MWorkspace`Private`vals, 
+        Blank[]], 
+       Alternatives[
+        Pattern[MWorkspace`Private`dlbl, 
+         Blank[]], 
+        PatternSequence[]], 
+       Pattern[MWorkspace`Private`opts, 
+        OptionsPattern[PopupMenu]]] := DynamicWrapper[
+       PopupMenu[
+        Dynamic[MWorkspace`Private`sel], MWorkspace`Private`vals, 
+        MWorkspace`Private`dlbl, MWorkspace`Private`opts], 
+       With[{
+        MWorkspace`Private`lvals = 
+         MWorkspace`Private`ControllerValues[MWorkspace`Private`vals]}, 
+        MWorkspace`Private`sel = If[
+          MemberQ[MWorkspace`Private`lvals, MWorkspace`Private`sel], 
+          MWorkspace`Private`sel, 
+          First[MWorkspace`Private`lvals, Null]]]], 
+     MWorkspace`Private`PopupMenu[
+       Pattern[MWorkspace`Private`list, 
+        Blank[]], 
+       Pattern[MWorkspace`Private`vals, 
+        Blank[]], 
+       Alternatives[
+        Pattern[MWorkspace`Private`dlbl, 
+         Blank[]], 
+        PatternSequence[]], 
+       Pattern[MWorkspace`Private`opts, 
+        OptionsPattern[PopupMenu]]] := 
+     PopupMenu[
+      MWorkspace`Private`list, MWorkspace`Private`vals, 
+       MWorkspace`Private`dlbl, MWorkspace`Private`opts], 
+     TagSet[MWorkspace`Private`PopupMenu, 
+      MessageName[MWorkspace`Private`PopupMenu, "NoSel"], "No Selected"], 
+     Attributes[MWorkspace`Private`ControllerValues] = {Listable}, 
+     MWorkspace`Private`ControllerValues[Delimiter] = Nothing, 
+     MWorkspace`Private`ControllerValues[Pattern[MWorkspace`Private`val, 
+         Blank[]] -> Blank[]] := MWorkspace`Private`val, 
+     MWorkspace`Private`ControllerValues[Pattern[MWorkspace`Private`val, 
+         Blank[]] :> Blank[]] := MWorkspace`Private`val, 
+     MWorkspace`Private`ControllerValues[
+       Pattern[MWorkspace`Private`val, 
+        Blank[]]] := MWorkspace`Private`val, MWorkspace`Private`UniqueName[
+       Pattern[MWorkspace`Private`name, 
+        Blank[String]]] := If[
+       NameQ[MWorkspace`Private`name], 
+       StringJoin[MWorkspace`Private`name, 
+        ToString[
+         NestWhile[# + 1& , 1, NameQ[
+           StringJoin[MWorkspace`Private`name, 
+            ToString[#]]]& ]]], MWorkspace`Private`name], 
      MWorkspace`Private`NoAttributeQ[
        Pattern[MWorkspace`Private`attr, 
         Blank[]]][
@@ -2128,15 +2286,20 @@ must start with a letter followed by letters and numbers."],
        Pattern[MWorkspace`Private`name, 
         Blank[String]], 
        Pattern[MWorkspace`Private`type, 
-        Alternatives[OwnValues, UpValues, DownValues]]] := 
+        Alternatives[
+        OwnValues, UpValues, DownValues, SubValues, FormatValues, NValues, 
+         Messages]]] := 
      ToExpression[
        MWorkspace`Private`name, StandardForm, MWorkspace`Private`type] =!= {},
       MWorkspace`Private`HasValuesQ[
        Pattern[MWorkspace`Private`name, 
         Blank[String]]] := Apply[Or, 
-       MWorkspace`Private`HasValuesQ[
-       MWorkspace`Private`name, {OwnValues, UpValues, DownValues}]], 
-     Attributes[MWorkspace`Private`baseSize$] = {Temporary}, 
+       MWorkspace`Private`HasValuesQ[MWorkspace`Private`name, 
+        Apply[List, MWorkspace`Private`ValuesPattern]]], 
+     MWorkspace`Private`ValuesPattern = 
+     Alternatives[
+      OwnValues, UpValues, DownValues, SubValues, FormatValues, NValues, 
+       Messages], Attributes[MWorkspace`Private`baseSize$] = {Temporary}, 
      Attributes[MWorkspace`Private`nameWidth$] = {Temporary}, 
      Attributes[MWorkspace`Private`metaWidth$] = {Temporary}, 
      Attributes[MWorkspace`Private`valueWidth$] = {Temporary}, 
@@ -2190,9 +2353,22 @@ must start with a letter followed by letters and numbers."],
      Attributes[MWorkspace`Private`order$] = {Temporary}, 
      Attributes[MWorkspace`Private`lim$] = {Temporary}, 
      Attributes[MWorkspace`Private`vals$] = {Temporary}, 
-     MWorkspace`Private`SymbolsPicker[
+     MWorkspace`Private`ListPicker[
        Blank[], {}, 
-       OptionsPattern[ListPicker]] := Null, MWorkspace`Private`SymbolsPicker[
+       OptionsPattern[ListPicker]] = Null, MWorkspace`Private`ListPicker[
+       Dynamic[
+        Pattern[MWorkspace`Private`list, 
+         Blank[]]], 
+       Pattern[MWorkspace`Private`vals, 
+        Blank[]], 
+       Pattern[MWorkspace`Private`opts, 
+        OptionsPattern[ListPicker]]] := DynamicWrapper[
+       ListPicker[
+        Dynamic[MWorkspace`Private`list], MWorkspace`Private`vals, 
+        MWorkspace`Private`opts], MWorkspace`Private`list = 
+       Intersection[MWorkspace`Private`list, 
+         MWorkspace`Private`ControllerValues[MWorkspace`Private`vals]]], 
+     MWorkspace`Private`ListPicker[
        Pattern[MWorkspace`Private`list, 
         Blank[]], 
        Pattern[MWorkspace`Private`vals, 
@@ -2606,8 +2782,10 @@ Unevaluated[var]]]"]],
          "],HoldPattern[HoldPattern[_]\[RuleDelayed]var_]\[RuleDelayed]\
 HoldForm[var]]"]], Null]}; 
    MWorkspace`Private`RefreshAction[] := (MWorkspace`Private`refreshHelper$$ = 
-     Not[MWorkspace`Private`refreshHelper$$]))]],ExpressionUUID->"e911e435-\
-8664-421f-90b2-d1fddfb1a70e"]
+     Not[MWorkspace`Private`refreshHelper$$]))]],
+ CellChangeTimes->{{3.7441120745150223`*^9, 
+  3.744112081867443*^9}},ExpressionUUID->"1d0c49e3-0856-4b07-92a9-\
+87d97ee4c957"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -2635,10 +2813,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[582, 21, 135037, 2588, 124, InheritFromParent,ExpressionUUID->"e911e435-8664-421f-90b2-d1fddfb1a70e"]
+Cell[582, 21, 142815, 2766, 200, InheritFromParent,ExpressionUUID->"1d0c49e3-0856-4b07-92a9-87d97ee4c957"]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
