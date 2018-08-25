@@ -10,18 +10,18 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    144085,       2812]
-NotebookOptionsPosition[    143401,       2789]
-NotebookOutlinePosition[    144118,       2814]
-CellTagsIndexPosition[    144075,       2811]
+NotebookDataLength[    145590,       2847]
+NotebookOptionsPosition[    144906,       2824]
+NotebookOutlinePosition[    145623,       2849]
+CellTagsIndexPosition[    145580,       2846]
 WindowTitle->Workspace
 WindowFrame->Palette*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[
- DynamicModuleBox[{MWorkspace`Private`refreshHelper$$ = False, 
-  MWorkspace`Private`sels$$ = {"c"}}, 
+ DynamicModuleBox[{MWorkspace`Private`refreshHelper$$ = True, 
+  MWorkspace`Private`sels$$ = {"a"}}, 
   TagBox[GridBox[{
      {
       TagBox[GridBox[{
@@ -2069,13 +2069,8 @@ Derivatives"], "PagedTextSchema" ->
         Grid[{{
            TextCell[
             MessageName[MWorkspace`Private`NewSymbol, "NameLabel"]], 
-           InputField[
-            Dynamic[MWorkspace`Private`name, If[
-              AllTrue[
-               StringSplit[#, "`", All], 
-               StringMatchQ[MWorkspace`Private`SymbolPattern]], 
-              MWorkspace`Private`name = #]& ], String, ContinuousAction -> 
-            True]}, {Null, 
+           MWorkspace`Private`SymbolNameInput[
+            Dynamic[MWorkspace`Private`name]]}, {Null, 
            MWorkspace`Private`HBox[{
              DefaultButton[
               If[
@@ -2098,13 +2093,69 @@ must start with a letter followed by letters and numbers."],
       MessageName[MWorkspace`Private`NewSymbol, "NameLabel"], "Name:"], 
      TagSet[MWorkspace`Private`NewSymbol, 
       MessageName[MWorkspace`Private`NewSymbol, "Title"], "New Symbol"], 
-     MWorkspace`Private`SymbolPattern = StringExpression[LetterCharacter, 
-       RepeatedNull[WordCharacter]], MWorkspace`Private`HBox[{
+     UpSetDelayed[
+      MakeBoxes[
+       MWorkspace`Private`SymbolNameInput[
+        Dynamic[
+         Pattern[MWorkspace`Private`name, 
+          Blank[]]]], 
+       Pattern[FormatType, 
+        Blank[]]], 
+      Format[
+       Interpretation[
+        MWorkspace`Private`HBox[{
+          InputField[
+           Dynamic[MWorkspace`Private`name, If[
+             MWorkspace`Private`ValidNameQ[#], 
+             MWorkspace`Private`name = #]& ], String, ContinuousAction -> 
+           True, FieldSize -> Medium], 
+          ActionMenu[
+          "...", {"Clear" :> (MWorkspace`Private`name = ""), 
+            "Make unique" :> (MWorkspace`Private`name = 
+             MWorkspace`Private`UniqueName[MWorkspace`Private`name])}, 
+           Appearance -> "Button", ImageSize -> Medium, Enabled -> 
+           Dynamic[MWorkspace`Private`name =!= ""]]}], 
+        MWorkspace`Private`SymbolNameInput[
+         Dynamic[MWorkspace`Private`name]]], FormatType]], Format[
+       MWorkspace`Private`SymbolNameInput[
+        Dynamic[
+         Pattern[MWorkspace`Private`name, 
+          Blank[]]]]] := Interpretation[
+       MWorkspace`Private`HBox[{
+         InputField[
+          Dynamic[MWorkspace`Private`name, If[
+            MWorkspace`Private`ValidNameQ[#], MWorkspace`Private`name = #]& ],
+           String, ContinuousAction -> True, FieldSize -> Medium], 
+         ActionMenu[
+         "...", {"Clear" :> (MWorkspace`Private`name = ""), 
+           "Make unique" :> (MWorkspace`Private`name = 
+            MWorkspace`Private`UniqueName[MWorkspace`Private`name])}, 
+          Appearance -> "Button", ImageSize -> Medium, Enabled -> 
+          Dynamic[MWorkspace`Private`name =!= ""]]}], 
+       MWorkspace`Private`SymbolNameInput[
+        Dynamic[MWorkspace`Private`name]]], 
+     Attributes[MakeBoxes] = {HoldAllComplete}, MWorkspace`Private`HBox[{
         Pattern[MWorkspace`Private`items, 
          BlankSequence[]]}, 
        Pattern[MWorkspace`Private`opt, 
         OptionsPattern[Grid]]] := 
      Grid[{{MWorkspace`Private`items}}, MWorkspace`Private`opt], 
+     MWorkspace`Private`ValidNameQ[
+       Pattern[MWorkspace`Private`name, 
+        Blank[String]]] := AllTrue[
+       StringSplit[MWorkspace`Private`name, "`", All], 
+       StringMatchQ[
+        StringExpression[LetterCharacter, 
+         RepeatedNull[WordCharacter]]]], MWorkspace`Private`UniqueName[
+       PatternTest[
+        Pattern[MWorkspace`Private`name, 
+         Blank[]], MWorkspace`Private`ValidNameQ]] := If[
+       NameQ[MWorkspace`Private`name], 
+       StringJoin[MWorkspace`Private`name, 
+        ToString[
+         NestWhile[# + 1& , 1, NameQ[
+           StringJoin[MWorkspace`Private`name, 
+            ToString[#]]]& ]]], MWorkspace`Private`name], 
      MWorkspace`Private`ImportData[] := CreateDialog[
        DynamicModule[{
         MWorkspace`Private`file = "", MWorkspace`Private`elems = {}, 
@@ -2132,13 +2183,8 @@ must start with a letter followed by letters and numbers."],
                  MWorkspace`Private`tmp, {}]]]]]}, {
            TextCell[
             MessageName[MWorkspace`Private`NewSymbol, "NameLabel"]], 
-           InputField[
-            Dynamic[MWorkspace`Private`name, If[
-              AllTrue[
-               StringSplit[#, "`", All], 
-               StringMatchQ[MWorkspace`Private`SymbolPattern]], 
-              MWorkspace`Private`name = #]& ], String, ContinuousAction -> 
-            True]}, {Null, 
+           MWorkspace`Private`SymbolNameInput[
+            Dynamic[MWorkspace`Private`name]]}, {Null, 
            MWorkspace`Private`HBox[{
              DefaultButton[
               
@@ -2219,7 +2265,7 @@ must start with a letter followed by letters and numbers."],
         MWorkspace`Private`patts]], 
      TagSet[MWorkspace`Private`FileNameInput, 
       MessageName[MWorkspace`Private`FileNameInput, "Hint"], "Input path..."],
-      Attributes[MakeBoxes] = {HoldAllComplete}, MWorkspace`Private`PopupMenu[
+      MWorkspace`Private`PopupMenu[
        Dynamic[
         Pattern[MWorkspace`Private`sel, 
          Blank[]]], 
@@ -2265,16 +2311,7 @@ must start with a letter followed by letters and numbers."],
          Blank[]] :> Blank[]] := MWorkspace`Private`val, 
      MWorkspace`Private`ControllerValues[
        Pattern[MWorkspace`Private`val, 
-        Blank[]]] := MWorkspace`Private`val, MWorkspace`Private`UniqueName[
-       Pattern[MWorkspace`Private`name, 
-        Blank[String]]] := If[
-       NameQ[MWorkspace`Private`name], 
-       StringJoin[MWorkspace`Private`name, 
-        ToString[
-         NestWhile[# + 1& , 1, NameQ[
-           StringJoin[MWorkspace`Private`name, 
-            ToString[#]]]& ]]], MWorkspace`Private`name], 
-     MWorkspace`Private`NoAttributeQ[
+        Blank[]]] := MWorkspace`Private`val, MWorkspace`Private`NoAttributeQ[
        Pattern[MWorkspace`Private`attr, 
         Blank[]]][
        Pattern[MWorkspace`Private`name, 
@@ -2782,10 +2819,8 @@ Unevaluated[var]]]"]],
          "],HoldPattern[HoldPattern[_]\[RuleDelayed]var_]\[RuleDelayed]\
 HoldForm[var]]"]], Null]}; 
    MWorkspace`Private`RefreshAction[] := (MWorkspace`Private`refreshHelper$$ = 
-     Not[MWorkspace`Private`refreshHelper$$]))]],
- CellChangeTimes->{{3.7441120745150223`*^9, 
-  3.744112081867443*^9}},ExpressionUUID->"1d0c49e3-0856-4b07-92a9-\
-87d97ee4c957"]
+     Not[MWorkspace`Private`refreshHelper$$]))]],ExpressionUUID->"98a32d53-\
+e33b-4c92-b236-16a833ef6370"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -2813,7 +2848,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[582, 21, 142815, 2766, 200, InheritFromParent,ExpressionUUID->"1d0c49e3-0856-4b07-92a9-87d97ee4c957"]
+Cell[582, 21, 144320, 2801, 200, InheritFromParent,ExpressionUUID->"98a32d53-e33b-4c92-b236-16a833ef6370"]
 }
 ]
 *)
