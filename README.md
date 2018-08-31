@@ -17,3 +17,13 @@
 - [x] 清除/移除选择部分
 - [ ] 插入推荐
 - [ ] 面板选项
+
+## 安装
+
+在[发布页面](https://github.com/miRoox/MWorkspace/releases)下载发布的`.palcet`文件，
+然后使用`PacletInstall`函数将其安装到Mathematica中。例如
+
+```mathematica
+Needs["PacletManager`"]
+PacletInstall["~/Downloads/MWorkspace-0.2.0.paclet"]
+```
