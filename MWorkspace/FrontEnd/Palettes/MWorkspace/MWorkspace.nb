@@ -10,18 +10,18 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    145590,       2847]
-NotebookOptionsPosition[    144906,       2824]
-NotebookOutlinePosition[    145623,       2849]
-CellTagsIndexPosition[    145580,       2846]
-WindowTitle->Workspace
+NotebookDataLength[    151235,       2963]
+NotebookOptionsPosition[    150492,       2939]
+NotebookOutlinePosition[    151268,       2965]
+CellTagsIndexPosition[    151225,       2962]
+WindowTitle->\:5DE5\:4F5C\:533A
 WindowFrame->Palette*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[
  DynamicModuleBox[{MWorkspace`Private`refreshHelper$$ = True, 
-  MWorkspace`Private`sels$$ = {"a"}}, 
+  MWorkspace`Private`sels$$ = {}}, 
   TagBox[GridBox[{
      {
       TagBox[GridBox[{
@@ -179,9 +179,9 @@ Derivatives"], "PagedTextSchema" ->
               DefaultBaseStyle->"ImageGraphics",
               ImageSizeRaw->{16, 16},
               PlotRange->{{0, 16}, {0, 16}}],
-             "\"New Symbol\"",
+             "\"\:65b0\:5efa\:7b26\:53f7\"",
              TooltipStyle->"TextStyling"],
-            Annotation[#, "New Symbol", "Tooltip"]& ],
+            Annotation[#, "\:65b0\:5efa\:7b26\:53f7", "Tooltip"]& ],
            Appearance->"FramedPalette",
            ButtonFunction:>MWorkspace`Private`NewSymbol[],
            Evaluator->Automatic,
@@ -336,9 +336,9 @@ Derivatives"], "PagedTextSchema" ->
               DefaultBaseStyle->"ImageGraphics",
               ImageSizeRaw->{16, 16},
               PlotRange->{{0, 16}, {0, 16}}],
-             "\"Edit Selection\"",
+             "\"\:7f16\:8f91\:9009\:62e9\"",
              TooltipStyle->"TextStyling"],
-            Annotation[#, "Edit Selection", "Tooltip"]& ],
+            Annotation[#, "\:7f16\:8f91\:9009\:62e9", "Tooltip"]& ],
            Appearance->"FramedPalette",
            ButtonFunction:>Null,
            Enabled->Dynamic[MWorkspace`Private`sels$$ =!= {}],
@@ -428,9 +428,9 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
               DefaultBaseStyle->"ImageGraphics",
               ImageSizeRaw->{16, 16},
               PlotRange->{{0, 16}, {0, 16}}],
-             "\"Import Data\"",
+             "\"\:5bfc\:5165\:6570\:636e\"",
              TooltipStyle->"TextStyling"],
-            Annotation[#, "Import Data", "Tooltip"]& ],
+            Annotation[#, "\:5bfc\:5165\:6570\:636e", "Tooltip"]& ],
            Appearance->"FramedPalette",
            ButtonFunction:>MWorkspace`Private`ImportData[],
            Evaluator->Automatic,
@@ -520,9 +520,9 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
               DefaultBaseStyle->"ImageGraphics",
               ImageSizeRaw->{16, 16},
               PlotRange->{{0, 16}, {0, 16}}],
-             "\"Export Selection\"",
+             "\"\:5bfc\:51fa\:9009\:62e9\"",
              TooltipStyle->"TextStyling"],
-            Annotation[#, "Export Selection", "Tooltip"]& ],
+            Annotation[#, "\:5bfc\:51fa\:9009\:62e9", "Tooltip"]& ],
            Appearance->"FramedPalette",
            ButtonFunction:>Null,
            Enabled->Dynamic[MWorkspace`Private`sels$$ =!= {}],
@@ -679,10 +679,10 @@ Derivatives"], "PagedTextSchema" ->
               DefaultBaseStyle->"ImageGraphics",
               ImageSizeRaw->{16, 16},
               PlotRange->{{0, 16}, {0, 16}}],
-             "\"Clear or Remove Selection\"",
+             "\"\:6e05\:9664\:6216\:79fb\:9664\:9009\:62e9\"",
              TooltipStyle->"TextStyling"],
             
-            Annotation[#, "Clear or Remove Selection", 
+            Annotation[#, "\:6e05\:9664\:6216\:79fb\:9664\:9009\:62e9", 
              "Tooltip"]& ], {"\<\"Remove\"\>":>(
            Apply[Remove, MWorkspace`Private`sels$$]; 
            MWorkspace`Private`RefreshAction[]), "\<\"ClearAll\"\>":>(
@@ -777,9 +777,9 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
               DefaultBaseStyle->"ImageGraphics",
               ImageSizeRaw->{16, 16},
               PlotRange->{{0, 16}, {0, 16}}],
-             "\"Manual Refresh\"",
+             "\"\:624b\:52a8\:5237\:65b0\"",
              TooltipStyle->"TextStyling"],
-            Annotation[#, "Manual Refresh", "Tooltip"]& ],
+            Annotation[#, "\:624b\:52a8\:5237\:65b0", "Tooltip"]& ],
            Appearance->"FramedPalette",
            ButtonFunction:>MWorkspace`Private`RefreshAction[],
            Evaluator->Automatic,
@@ -798,7 +798,7 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
               
               With[{MWorkspace`Private`refresh = 
                 MWorkspace`Private`refreshHelper$$}, 
-               PopupMenu[
+               MWorkspace`Private`PopupMenu[
                 Dynamic[
                  CurrentValue[
                   EvaluationNotebook[], {TaggingRules, "CurrentContext"}]], 
@@ -809,12 +809,12 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
                  Appearance -> "FramedPalette", 
                 FieldSize -> {{5., 20.}, {1., 1.}}, 
                 FrameMargins -> {{5, 0}, {1, 1}}]], StandardForm],
-             ImageSizeCache->{119., {8., 17.}},
+             ImageSizeCache->{119., {7.25, 17.}},
              TrackedSymbols:>{MWorkspace`Private`refreshHelper$$},
              UpdateInterval->1],
-            "\"Current context\"",
+            "\"\:5f53\:524d\:4e0a\:4e0b\:6587\"",
             TooltipStyle->"TextStyling"],
-           Annotation[#, "Current context", "Tooltip"]& ], 
+           Annotation[#, "\:5f53\:524d\:4e0a\:4e0b\:6587", "Tooltip"]& ], 
           InterpretationBox[
            StyleBox[GridBox[{
               {
@@ -911,11 +911,17 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
                    DefaultBaseStyle->"ImageGraphics",
                    ImageSizeRaw->{16, 16},
                    PlotRange->{{0, 16}, {0, 16}}],
-                  "\"Ignore symbols with ReadProtected attribute.\"",
-                  TooltipStyle->"TextStyling"],
-                 
-                 Annotation[#, "Ignore symbols with ReadProtected attribute.",
-                   "Tooltip"]& ],
+                  InterpretationBox[
+                  "\"\:5ffd\:7565\:5177\:6709 \
+\\!\\(\\*RowBox[{\\\"ReadProtected\\\"}]\\) \
+\:5c5e\:6027\:7684\:7b26\:53f7.\"", 
+                   StringForm[
+                   "\:5ffd\:7565\:5177\:6709 `1` \:5c5e\:6027\:7684\:7b26\
+\:53f7.", ReadProtected], Editable -> False]],
+                 Annotation[#, 
+                  StringForm[
+                  "\:5ffd\:7565\:5177\:6709 `1` \
+\:5c5e\:6027\:7684\:7b26\:53f7.", ReadProtected], "Tooltip"]& ],
                 Appearance->"FramedPalette"], 
                SetterBox[Dynamic[
                  MemberQ[
@@ -1012,11 +1018,16 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
                    DefaultBaseStyle->"ImageGraphics",
                    ImageSizeRaw->{16, 16},
                    PlotRange->{{0, 16}, {0, 16}}],
-                  "\"Ignore symbols with Protected attribute.\"",
-                  TooltipStyle->"TextStyling"],
-                 
-                 Annotation[#, "Ignore symbols with Protected attribute.", 
-                  "Tooltip"]& ],
+                  InterpretationBox[
+                  "\"\:5ffd\:7565\:5177\:6709 \
+\\!\\(\\*RowBox[{\\\"Protected\\\"}]\\) \:5c5e\:6027\:7684\:7b26\:53f7.\"", 
+                   StringForm[
+                   "\:5ffd\:7565\:5177\:6709 `1` \:5c5e\:6027\:7684\:7b26\
+\:53f7.", Protected], Editable -> False]],
+                 Annotation[#, 
+                  StringForm[
+                  "\:5ffd\:7565\:5177\:6709 `1` \
+\:5c5e\:6027\:7684\:7b26\:53f7.", Protected], "Tooltip"]& ],
                 Appearance->"FramedPalette"], 
                SetterBox[Dynamic[
                  MemberQ[
@@ -1179,11 +1190,16 @@ Derivatives"], "PagedTextSchema" ->
                    DefaultBaseStyle->"ImageGraphics",
                    ImageSizeRaw->{16, 16},
                    PlotRange->{{0, 16}, {0, 16}}],
-                  "\"Ignore symbols with Locked attribute.\"",
-                  TooltipStyle->"TextStyling"],
-                 
-                 Annotation[#, "Ignore symbols with Locked attribute.", 
-                  "Tooltip"]& ],
+                  InterpretationBox[
+                  "\"\:5ffd\:7565\:5177\:6709 \
+\\!\\(\\*RowBox[{\\\"Locked\\\"}]\\) \:5c5e\:6027\:7684\:7b26\:53f7.\"", 
+                   StringForm[
+                   "\:5ffd\:7565\:5177\:6709 `1` \:5c5e\:6027\:7684\:7b26\
+\:53f7.", Locked], Editable -> False]],
+                 Annotation[#, 
+                  StringForm[
+                  "\:5ffd\:7565\:5177\:6709 `1` \
+\:5c5e\:6027\:7684\:7b26\:53f7.", Locked], "Tooltip"]& ],
                 Appearance->"FramedPalette"], 
                SetterBox[Dynamic[
                  MemberQ[
@@ -1278,20 +1294,26 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
                    DefaultBaseStyle->"ImageGraphics",
                    ImageSizeRaw->{16, 16},
                    PlotRange->{{0, 16}, {0, 16}}],
-                  "\"Ignore symbols with Temporary attribute.\"",
-                  TooltipStyle->"TextStyling"],
-                 
-                 Annotation[#, "Ignore symbols with Temporary attribute.", 
-                  "Tooltip"]& ],
+                  InterpretationBox[
+                  "\"\:5ffd\:7565\:5177\:6709 \
+\\!\\(\\*RowBox[{\\\"Temporary\\\"}]\\) \:5c5e\:6027\:7684\:7b26\:53f7.\"", 
+                   StringForm[
+                   "\:5ffd\:7565\:5177\:6709 `1` \:5c5e\:6027\:7684\:7b26\
+\:53f7.", Temporary], Editable -> False]],
+                 Annotation[#, 
+                  StringForm[
+                  "\:5ffd\:7565\:5177\:6709 `1` \
+\:5c5e\:6027\:7684\:7b26\:53f7.", Temporary], "Tooltip"]& ],
                 Appearance->"FramedPalette"], 
                SetterBox[Dynamic[
                  MemberQ[
                   CurrentValue[
                    EvaluationNotebook[], {TaggingRules, "IgnoreRules"}], 
-                  MWorkspace`Private`HasValuesQ], BoxForm`TogglerBarFunction[
+                  MWorkspace`Private`HasValuesQ[All]], 
+                 BoxForm`TogglerBarFunction[
                   CurrentValue[
                    EvaluationNotebook[], {TaggingRules, "IgnoreRules"}], 
-                  MWorkspace`Private`HasValuesQ]& ], {True}, 
+                  MWorkspace`Private`HasValuesQ[All]]& ], {True}, 
                 TagBox[
                  TooltipBox[
                   GraphicsBox[
@@ -1440,10 +1462,11 @@ Derivatives"], "PagedTextSchema" ->
                    DefaultBaseStyle->"ImageGraphics",
                    ImageSizeRaw->{16, 16},
                    PlotRange->{{0, 16}, {0, 16}}],
-                  "\"Ignore symbols without any value.\"",
+                  "\"\:5ffd\:7565\:6ca1\:6709\:503c\:7684\:7b26\:53f7.\"",
                   TooltipStyle->"TextStyling"],
                  
-                 Annotation[#, "Ignore symbols without any value.", 
+                 Annotation[#, 
+                  "\:5ffd\:7565\:6ca1\:6709\:503c\:7684\:7b26\:53f7.", 
                   "Tooltip"]& ],
                 Appearance->"FramedPalette"]}
              },
@@ -1536,8 +1559,10 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
                     "Gregorian", 8.], "Changed" -> "/metadata"]]]], 
                   "Comments" -> 
                   Association["Software" -> "Adobe ImageReady"]]], 
-               "Ignore symbols with ReadProtected attribute."], 
-             MWorkspace`Private`NoAttributeQ[Protected] -> Tooltip[
+               StringForm[
+               "\:5ffd\:7565\:5177\:6709 `1` \:5c5e\:6027\:7684\:7b26\:53f7.",
+                 ReadProtected]], MWorkspace`Private`NoAttributeQ[Protected] -> 
+             Tooltip[
                Image[CompressedData["
 1:eJxtk01PU1EQhm/vLVDa0g/a8tmWFtoibROb0DZGVyaayEJNMP4AiAiYiKaY
 aFf+BzXGlWFJ3BkXLtSFxoWKaKKJRCGwUCnWha5EKe3xGTwkhHiTlzt3zvvM
@@ -1614,8 +1639,10 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
                     "Gregorian", 8.], "Changed" -> "/metadata"]]]], 
                   "Comments" -> 
                   Association["Software" -> "Adobe ImageReady"]]], 
-               "Ignore symbols with Protected attribute."], 
-             MWorkspace`Private`NoAttributeQ[Locked] -> Tooltip[
+               StringForm[
+               "\:5ffd\:7565\:5177\:6709 `1` \:5c5e\:6027\:7684\:7b26\:53f7.",
+                 Protected]], MWorkspace`Private`NoAttributeQ[Locked] -> 
+             Tooltip[
                Image[CompressedData["
 1:eJyNk8trGlEUxmec8RVFjfhIFAxiQZSIigrdlWyKutQovio+qjFdWEgCpdD/
 oNBVaeuupdBK6KrdFBW6iaB05bp/RHdtkxnn9juDliRNocLnPXPP97vnnjPq
@@ -1758,8 +1785,10 @@ Derivatives"], "PagedTextSchema" ->
                     "xmp.iid:C00F5B48A7F8DE11821CE4B2C7E36D70", "When" -> 
                     DateObject[{2010, 1, 3, 21, 33, 42}, "Instant", 
                     "Gregorian", 8.], "Changed" -> "/metadata"]]]]]], 
-               "Ignore symbols with Locked attribute."], 
-             MWorkspace`Private`NoAttributeQ[Temporary] -> Tooltip[
+               StringForm[
+               "\:5ffd\:7565\:5177\:6709 `1` \:5c5e\:6027\:7684\:7b26\:53f7.",
+                 Locked]], MWorkspace`Private`NoAttributeQ[Temporary] -> 
+             Tooltip[
                Image[CompressedData["
 1:eJx1k8trU0EUxm/vvXk0r94k5kneIYQkSGgjYncK3dSFSEU3rlqMQZAIqSCB
 KiR/gAs3/QtErAsXPuhGN24UQShdiAi6EpqKiJWaZfzNZS6ONg58d3LO+b7z
@@ -1834,8 +1863,9 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
                     "Gregorian", 8.], "Changed" -> "/metadata"]]]], 
                   "Comments" -> 
                   Association["Software" -> "Adobe ImageReady"]]], 
-               "Ignore symbols with Temporary attribute."], 
-             MWorkspace`Private`HasValuesQ -> Tooltip[
+               StringForm[
+               "\:5ffd\:7565\:5177\:6709 `1` \:5c5e\:6027\:7684\:7b26\:53f7.",
+                 Temporary]], MWorkspace`Private`HasValuesQ[All] -> Tooltip[
                Image[CompressedData["
 1:eJylk09OwkAUxqctFCGQFoSAKQg1hQVwAHfEpUtRDyARjRtMwMR4F07ADdiq
 JBiXsmDHCYBwgvH76oCV+GfhJK/z5nu/b9q+ad3WbfNKF0L0dnBpXtwfdbsX
@@ -1974,8 +2004,8 @@ Derivatives"], "PagedTextSchema" ->
                     "xmp.iid:EE08CF48A7F8DE11821CE4B2C7E36D70", "When" -> 
                     DateObject[{2010, 1, 3, 21, 33, 43}, "Instant", 
                     "Gregorian", 8.], "Changed" -> "/metadata"]]]]]], 
-               "Ignore symbols without any value."]}, Appearance -> 
-            "FramedPalette"]]}
+               "\:5ffd\:7565\:6ca1\:6709\:503c\:7684\:7b26\:53f7."]}, 
+            Appearance -> "FramedPalette"]]}
         },
         AutoDelete->False,
         GridBoxItemSize->{
@@ -2025,7 +2055,8 @@ Derivatives"], "PagedTextSchema" ->
                MWorkspace`Private`order$ = CurrentValue[
                  EvaluationNotebook[], {TaggingRules, "NamesOrder"}], 
                MWorkspace`Private`lim$ = CurrentValue[
-                 EvaluationNotebook[], {TaggingRules, "ShowLimit"}]}, 
+                 EvaluationNotebook[], {
+                 TaggingRules, "Layout", "ShowLimit"}]}, 
               With[{MWorkspace`Private`vals$ = (Take[#, 
                   UpTo[MWorkspace`Private`lim$]]& )[
                   If[MWorkspace`Private`order$, Reverse, Identity][
@@ -2053,11 +2084,14 @@ Derivatives"], "PagedTextSchema" ->
                  MWorkspace`Private`vals$], Appearance -> "Frameless", 
                 FieldSize -> Dynamic[{{1., 50.}, {1., 
                     CurrentValue[
-                    EvaluationNotebook[], {TaggingRules, "FieldLimit"}]}}]]]],
-              UpdateInterval -> 1, 
+                    EvaluationNotebook[], {
+                    TaggingRules, "Layout", "FieldLimit"}]}}]]]], 
+             UpdateInterval -> Dynamic[
+               CurrentValue[
+                EvaluationNotebook[], {TaggingRules, "RefreshInterval"}]], 
              TrackedSymbols :> {MWorkspace`Private`refreshHelper$$}]}, 
            Dividers -> {False, Center}]], StandardForm],
-        ImageSizeCache->{356., {56., 61.}}]]}
+        ImageSizeCache->{356., {26., 31.}}]]}
     },
     AutoDelete->False,
     GridBoxAlignment->{"Columns" -> {{Left}}},
@@ -2083,16 +2117,23 @@ Derivatives"], "PagedTextSchema" ->
              CancelButton[]}]}}, Alignment -> {{Right, Left}, Baseline}]], 
        WindowTitle -> MessageName[MWorkspace`Private`NewSymbol, "Title"]], 
      TagSet[MWorkspace`Private`NewSymbol, 
-      MessageName[MWorkspace`Private`NewSymbol, "badname"], 
-      "The string \"`1`\" cannot be used for a symbol name. A symbol name \
-must start with a letter followed by letters and numbers."], 
-     TagSet[MWorkspace`Private`NewSymbol, 
       MessageName[MWorkspace`Private`NewSymbol, "exists"], 
-      "Symbol `` already exists."], 
+      "Symbol `1` already exists."], 
      TagSet[MWorkspace`Private`NewSymbol, 
       MessageName[MWorkspace`Private`NewSymbol, "NameLabel"], "Name:"], 
      TagSet[MWorkspace`Private`NewSymbol, 
       MessageName[MWorkspace`Private`NewSymbol, "Title"], "New Symbol"], 
+     TagSet[MWorkspace`Private`NewSymbol, 
+      MessageName[
+      MWorkspace`Private`NewSymbol, "exists", "ChineseSimplified"], 
+      "\:7b26\:53f7 `1` \:5df2\:5b58\:5728."], 
+     TagSet[MWorkspace`Private`NewSymbol, 
+      MessageName[
+      MWorkspace`Private`NewSymbol, "NameLabel", "ChineseSimplified"], 
+      "\:540d\:79f0\:ff1a"], 
+     TagSet[MWorkspace`Private`NewSymbol, 
+      MessageName[MWorkspace`Private`NewSymbol, "Title", "ChineseSimplified"],
+       "\:65b0\:5efa\:7b26\:53f7"], 
      UpSetDelayed[
       MakeBoxes[
        MWorkspace`Private`SymbolNameInput[
@@ -2110,8 +2151,11 @@ must start with a letter followed by letters and numbers."],
              MWorkspace`Private`name = #]& ], String, ContinuousAction -> 
            True, FieldSize -> Medium], 
           ActionMenu[
-          "...", {"Clear" :> (MWorkspace`Private`name = ""), 
-            "Make unique" :> (MWorkspace`Private`name = 
+          "...", {MessageName[
+             MWorkspace`Private`SymbolNameInput, "Clear"] :> (
+             MWorkspace`Private`name = ""), 
+            MessageName[MWorkspace`Private`SymbolNameInput, "Unique"] :> (
+             MWorkspace`Private`name = 
              MWorkspace`Private`UniqueName[MWorkspace`Private`name])}, 
            Appearance -> "Button", ImageSize -> Medium, Enabled -> 
            Dynamic[MWorkspace`Private`name =!= ""]]}], 
@@ -2127,14 +2171,23 @@ must start with a letter followed by letters and numbers."],
             MWorkspace`Private`ValidNameQ[#], MWorkspace`Private`name = #]& ],
            String, ContinuousAction -> True, FieldSize -> Medium], 
          ActionMenu[
-         "...", {"Clear" :> (MWorkspace`Private`name = ""), 
-           "Make unique" :> (MWorkspace`Private`name = 
+         "...", {
+          MessageName[MWorkspace`Private`SymbolNameInput, "Clear"] :> (
+            MWorkspace`Private`name = ""), 
+           MessageName[MWorkspace`Private`SymbolNameInput, "Unique"] :> (
+            MWorkspace`Private`name = 
             MWorkspace`Private`UniqueName[MWorkspace`Private`name])}, 
           Appearance -> "Button", ImageSize -> Medium, Enabled -> 
           Dynamic[MWorkspace`Private`name =!= ""]]}], 
        MWorkspace`Private`SymbolNameInput[
         Dynamic[MWorkspace`Private`name]]], 
-     Attributes[MakeBoxes] = {HoldAllComplete}, MWorkspace`Private`HBox[{
+     TagSet[MWorkspace`Private`SymbolNameInput, 
+      MessageName[MWorkspace`Private`SymbolNameInput, "Clear"], 
+      "\:6e05\:9664"], 
+     TagSet[MWorkspace`Private`SymbolNameInput, 
+      MessageName[MWorkspace`Private`SymbolNameInput, "Unique"], 
+      "\:552f\:4e00\:5316"], Attributes[MakeBoxes] = {HoldAllComplete}, 
+     MWorkspace`Private`HBox[{
         Pattern[MWorkspace`Private`items, 
          BlankSequence[]]}, 
        Pattern[MWorkspace`Private`opt, 
@@ -2170,8 +2223,7 @@ must start with a letter followed by letters and numbers."],
            DynamicWrapper[
             Dynamic[
              MWorkspace`Private`PopupMenu[
-              Dynamic[MWorkspace`Private`elem], MWorkspace`Private`elems, 
-              MessageName[MWorkspace`Private`PopupMenu, "NoSel"]]], 
+              Dynamic[MWorkspace`Private`elem], MWorkspace`Private`elems]], 
             Quiet[
              If[
               FileExistsQ[MWorkspace`Private`file], 
@@ -2182,7 +2234,7 @@ must start with a letter followed by letters and numbers."],
                  VectorQ[MWorkspace`Private`tmp], 
                  MWorkspace`Private`tmp, {}]]]]]}, {
            TextCell[
-            MessageName[MWorkspace`Private`NewSymbol, "NameLabel"]], 
+            MessageName[MWorkspace`Private`ImportData, "NameLabel"]], 
            MWorkspace`Private`SymbolNameInput[
             Dynamic[MWorkspace`Private`name]]}, {Null, 
            MWorkspace`Private`HBox[{
@@ -2193,9 +2245,8 @@ must start with a letter followed by letters and numbers."],
                If[
                 Not[
                  FailureQ[MWorkspace`Private`tmp]], Evaluate[
-                   Symbol[
-                    MWorkspace`Private`UniqueName[MWorkspace`Private`name]]] = 
-                 MWorkspace`Private`tmp; DialogReturn[
+                   Symbol[MWorkspace`Private`name]] = MWorkspace`Private`tmp; 
+                DialogReturn[
                   MWorkspace`Private`RefreshAction[]]]]], 
              CancelButton[]}]}}, Alignment -> {{Right, Left}, Baseline}]], 
        WindowTitle -> MessageName[MWorkspace`Private`ImportData, "Title"]], 
@@ -2204,7 +2255,25 @@ must start with a letter followed by letters and numbers."],
      TagSet[MWorkspace`Private`ImportData, 
       MessageName[MWorkspace`Private`ImportData, "FileLabel"], "File:"], 
      TagSet[MWorkspace`Private`ImportData, 
-      MessageName[MWorkspace`Private`ImportData, "Title"], "Import data"], 
+      MessageName[MWorkspace`Private`ImportData, "NameLabel"], "Name:"], 
+     TagSet[MWorkspace`Private`ImportData, 
+      MessageName[MWorkspace`Private`ImportData, "Title"], "Import Data"], 
+     TagSet[MWorkspace`Private`ImportData, 
+      MessageName[
+      MWorkspace`Private`ImportData, "ElementLabel", "ChineseSimplified"], 
+      "\:5143\:7d20\:ff1a"], 
+     TagSet[MWorkspace`Private`ImportData, 
+      MessageName[
+      MWorkspace`Private`ImportData, "FileLabel", "ChineseSimplified"], 
+      "\:6587\:4ef6\:ff1a"], 
+     TagSet[MWorkspace`Private`ImportData, 
+      MessageName[
+      MWorkspace`Private`ImportData, "NameLabel", "ChineseSimplified"], 
+      "\:540d\:79f0\:ff1a"], 
+     TagSet[MWorkspace`Private`ImportData, 
+      MessageName[
+      MWorkspace`Private`ImportData, "Title", "ChineseSimplified"], 
+      "\:5bfc\:5165\:6570\:636e"], 
      UpSetDelayed[
       MakeBoxes[
        MWorkspace`Private`FileNameInput[
@@ -2264,17 +2333,20 @@ must start with a letter followed by letters and numbers."],
         Dynamic[MWorkspace`Private`file], MWorkspace`Private`spec, 
         MWorkspace`Private`patts]], 
      TagSet[MWorkspace`Private`FileNameInput, 
-      MessageName[MWorkspace`Private`FileNameInput, "Hint"], "Input path..."],
-      MWorkspace`Private`PopupMenu[
+      MessageName[MWorkspace`Private`FileNameInput, "Hint"], "Input path..."], 
+     TagSet[MWorkspace`Private`FileNameInput, 
+      MessageName[
+      MWorkspace`Private`FileNameInput, "Hint", "ChineseSimplified"], 
+      "\:8f93\:5165\:8def\:5f84\[Ellipsis]\[Ellipsis]"], 
+     MWorkspace`Private`PopupMenu[
        Dynamic[
         Pattern[MWorkspace`Private`sel, 
          Blank[]]], 
        Pattern[MWorkspace`Private`vals, 
         Blank[]], 
-       Alternatives[
+       Optional[
         Pattern[MWorkspace`Private`dlbl, 
-         Blank[]], 
-        PatternSequence[]], 
+         Blank[]], "\:672a\:9009\:62e9"], 
        Pattern[MWorkspace`Private`opts, 
         OptionsPattern[PopupMenu]]] := DynamicWrapper[
        PopupMenu[
@@ -2288,21 +2360,23 @@ must start with a letter followed by letters and numbers."],
           MWorkspace`Private`sel, 
           First[MWorkspace`Private`lvals, Null]]]], 
      MWorkspace`Private`PopupMenu[
-       Pattern[MWorkspace`Private`list, 
+       Pattern[MWorkspace`Private`sel, 
         Blank[]], 
        Pattern[MWorkspace`Private`vals, 
         Blank[]], 
-       Alternatives[
+       Optional[
         Pattern[MWorkspace`Private`dlbl, 
-         Blank[]], 
-        PatternSequence[]], 
+         Blank[]], "\:672a\:9009\:62e9"], 
        Pattern[MWorkspace`Private`opts, 
         OptionsPattern[PopupMenu]]] := 
      PopupMenu[
-      MWorkspace`Private`list, MWorkspace`Private`vals, 
+      MWorkspace`Private`sel, MWorkspace`Private`vals, 
        MWorkspace`Private`dlbl, MWorkspace`Private`opts], 
      TagSet[MWorkspace`Private`PopupMenu, 
       MessageName[MWorkspace`Private`PopupMenu, "NoSel"], "No Selected"], 
+     TagSet[MWorkspace`Private`PopupMenu, 
+      MessageName[MWorkspace`Private`PopupMenu, "NoSel", "ChineseSimplified"],
+       "\:672a\:9009\:62e9"], 
      Attributes[MWorkspace`Private`ControllerValues] = {Listable}, 
      MWorkspace`Private`ControllerValues[Delimiter] = Nothing, 
      MWorkspace`Private`ControllerValues[Pattern[MWorkspace`Private`val, 
@@ -2320,6 +2394,16 @@ must start with a letter followed by letters and numbers."],
         Attributes[MWorkspace`Private`name], MWorkspace`Private`attr]], 
      Attributes[MWorkspace`Private`HasValuesQ] = {Listable}, 
      MWorkspace`Private`HasValuesQ[
+       Pattern[MWorkspace`Private`type, 
+        Alternatives[
+         Alternatives[
+         OwnValues, UpValues, DownValues, SubValues, FormatValues, NValues, 
+          Messages], All]]][
+       Pattern[MWorkspace`Private`name, 
+        Blank[String]]] := 
+     MWorkspace`Private`HasValuesQ[
+      MWorkspace`Private`name, MWorkspace`Private`type], 
+     MWorkspace`Private`HasValuesQ[
        Pattern[MWorkspace`Private`name, 
         Blank[String]], 
        Pattern[MWorkspace`Private`type, 
@@ -2330,13 +2414,12 @@ must start with a letter followed by letters and numbers."],
        MWorkspace`Private`name, StandardForm, MWorkspace`Private`type] =!= {},
       MWorkspace`Private`HasValuesQ[
        Pattern[MWorkspace`Private`name, 
-        Blank[String]]] := Apply[Or, 
-       MWorkspace`Private`HasValuesQ[MWorkspace`Private`name, 
-        Apply[List, MWorkspace`Private`ValuesPattern]]], 
-     MWorkspace`Private`ValuesPattern = 
-     Alternatives[
+        Blank[String]], All] := Apply[Or, 
+       MWorkspace`Private`HasValuesQ[
+       MWorkspace`Private`name, MWorkspace`Private`ValuesTypes]], 
+     MWorkspace`Private`ValuesTypes = {
       OwnValues, UpValues, DownValues, SubValues, FormatValues, NValues, 
-       Messages], Attributes[MWorkspace`Private`baseSize$] = {Temporary}, 
+       Messages}, Attributes[MWorkspace`Private`baseSize$] = {Temporary}, 
      Attributes[MWorkspace`Private`nameWidth$] = {Temporary}, 
      Attributes[MWorkspace`Private`metaWidth$] = {Temporary}, 
      Attributes[MWorkspace`Private`valueWidth$] = {Temporary}, 
@@ -2356,20 +2439,11 @@ must start with a letter followed by letters and numbers."],
      TagSet[MWorkspace`Private`Palette, 
       MessageName[MWorkspace`Private`Palette, "Export"], "Export Selection"], 
      TagSet[MWorkspace`Private`Palette, 
-      MessageName[MWorkspace`Private`Palette, "IgnoreLocked"], 
-      "Ignore symbols with Locked attribute."], 
+      MessageName[MWorkspace`Private`Palette, "IgnoreByAttribute"], 
+      "Ignore symbols with `1` attribute."], 
      TagSet[MWorkspace`Private`Palette, 
       MessageName[MWorkspace`Private`Palette, "IgnoreNoValue"], 
       "Ignore symbols without any value."], 
-     TagSet[MWorkspace`Private`Palette, 
-      MessageName[MWorkspace`Private`Palette, "IgnoreProtected"], 
-      "Ignore symbols with Protected attribute."], 
-     TagSet[MWorkspace`Private`Palette, 
-      MessageName[MWorkspace`Private`Palette, "IgnoreReadProtected"], 
-      "Ignore symbols with ReadProtected attribute."], 
-     TagSet[MWorkspace`Private`Palette, 
-      MessageName[MWorkspace`Private`Palette, "IgnoreTemporary"], 
-      "Ignore symbols with Temporary attribute."], 
      TagSet[MWorkspace`Private`Palette, 
       MessageName[MWorkspace`Private`Palette, "Import"], "Import Data"], 
      TagSet[MWorkspace`Private`Palette, 
@@ -2384,7 +2458,47 @@ must start with a letter followed by letters and numbers."],
       MessageName[MWorkspace`Private`Palette, "Title"], "Workspace"], 
      TagSet[MWorkspace`Private`Palette, 
       MessageName[MWorkspace`Private`Palette, "Value"], "Value"], 
-     Attributes[MWorkspace`Private`refresh$] = {Temporary}, 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Context", "ChineseSimplified"],
+       "\:5f53\:524d\:4e0a\:4e0b\:6587"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Delete", "ChineseSimplified"], 
+      "\:6e05\:9664\:6216\:79fb\:9664\:9009\:62e9"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Edit", "ChineseSimplified"], 
+      "\:7f16\:8f91\:9009\:62e9"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Export", "ChineseSimplified"], 
+      "\:5bfc\:51fa\:9009\:62e9"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[
+      MWorkspace`Private`Palette, "IgnoreByAttribute", "ChineseSimplified"], 
+      "\:5ffd\:7565\:5177\:6709 `1` \:5c5e\:6027\:7684\:7b26\:53f7."], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[
+      MWorkspace`Private`Palette, "IgnoreNoValue", "ChineseSimplified"], 
+      "\:5ffd\:7565\:6ca1\:6709\:503c\:7684\:7b26\:53f7."], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Import", "ChineseSimplified"], 
+      "\:5bfc\:5165\:6570\:636e"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Meta", "ChineseSimplified"], 
+      "\:5143\:6570\:636e"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Name", "ChineseSimplified"], 
+      "\:540d\:79f0"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "New", "ChineseSimplified"], 
+      "\:65b0\:5efa\:7b26\:53f7"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Refresh", "ChineseSimplified"],
+       "\:624b\:52a8\:5237\:65b0"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Title", "ChineseSimplified"], 
+      "\:5de5\:4f5c\:533a"], 
+     TagSet[MWorkspace`Private`Palette, 
+      MessageName[MWorkspace`Private`Palette, "Value", "ChineseSimplified"], 
+      "\:503c"], Attributes[MWorkspace`Private`refresh$] = {Temporary}, 
      Attributes[MWorkspace`Private`ignores$] = {Temporary}, 
      Attributes[MWorkspace`Private`context$] = {Temporary}, 
      Attributes[MWorkspace`Private`order$] = {Temporary}, 
@@ -2411,10 +2525,11 @@ must start with a letter followed by letters and numbers."],
        Pattern[MWorkspace`Private`vals, 
         Blank[]], 
        Pattern[MWorkspace`Private`opts, 
-        OptionsPattern[ListPicker]]] := 
-     ListPicker[
-      MWorkspace`Private`list, MWorkspace`Private`vals, 
-       MWorkspace`Private`opts], MWorkspace`Private`ShowMeta[
+        OptionsPattern[ListPicker]]] := ListPicker[
+       Intersection[MWorkspace`Private`list, 
+        MWorkspace`Private`ControllerValues[MWorkspace`Private`vals]], 
+       MWorkspace`Private`vals, MWorkspace`Private`opts], 
+     MWorkspace`Private`ShowMeta[
        Pattern[MWorkspace`Private`name, 
         Blank[String]]] := MWorkspace`Private`HBox[
        Append[
@@ -2819,19 +2934,20 @@ Unevaluated[var]]]"]],
          "],HoldPattern[HoldPattern[_]\[RuleDelayed]var_]\[RuleDelayed]\
 HoldForm[var]]"]], Null]}; 
    MWorkspace`Private`RefreshAction[] := (MWorkspace`Private`refreshHelper$$ = 
-     Not[MWorkspace`Private`refreshHelper$$]))]],ExpressionUUID->"98a32d53-\
-e33b-4c92-b236-16a833ef6370"]
+     Not[MWorkspace`Private`refreshHelper$$]))]],ExpressionUUID->"e4cc0b3f-\
+a262-4c84-84fc-2820ffae6a71"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 WindowElements->{},
-WindowTitle->"Workspace",
-TaggingRules->{
- "IgnoreRules" -> {MWorkspace`Private`HasValuesQ}, "NamesOrder" -> False, 
-  "Layout" -> {"BaseSize" -> 20, "Name" -> 4, "Meta" -> 5, "Value" -> 8}, 
-  "CurrentContext" -> "Global`", 
-  "ContextsPattern" -> {"Global*", "Notebook$$*", "Cell$$*"}, "ShowLimit" -> 
-  40, "FieldLimit" -> 15},
+WindowTitle->"\:5de5\:4f5c\:533a",
+TaggingRules->{"IgnoreRules" -> {
+    MWorkspace`Private`HasValuesQ[All]}, "NamesOrder" -> False, 
+  "Layout" -> {
+   "BaseSize" -> 20, "Name" -> 4, "Meta" -> 5, "Value" -> 8, "ShowLimit" -> 
+    40, "FieldLimit" -> 15}, "CurrentContext" -> "Global`Information`", 
+  "ContextsPattern" -> {"Global*", "Notebook$$*", "Cell$$*"}, 
+  "RefreshInterval" -> 1},
 Magnification->1.,
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
 \:65e5)",
@@ -2848,7 +2964,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[582, 21, 144320, 2801, 200, InheritFromParent,ExpressionUUID->"98a32d53-e33b-4c92-b236-16a833ef6370"]
+Cell[591, 21, 149897, 2916, 140, InheritFromParent,ExpressionUUID->"e4cc0b3f-a262-4c84-84fc-2820ffae6a71"]
 }
 ]
 *)
