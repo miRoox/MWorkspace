@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    151145,       2961]
-NotebookOptionsPosition[    150414,       2937]
-NotebookOutlinePosition[    151178,       2963]
-CellTagsIndexPosition[    151135,       2960]
+NotebookDataLength[    151418,       2966]
+NotebookOptionsPosition[    150675,       2942]
+NotebookOutlinePosition[    151451,       2968]
+CellTagsIndexPosition[    151408,       2965]
 WindowTitle->\:5DE5\:4F5C\:533A
 WindowFrame->Palette*)
 
@@ -21,7 +21,7 @@ WindowFrame->Palette*)
 Notebook[{
 Cell[BoxData[
  DynamicModuleBox[{MWorkspace`Private`refreshHelper$$ = True, 
-  MWorkspace`Private`sels$$ = {}}, 
+  MWorkspace`Private`sels$$ = {"Global`Information`$CVSVersion"}}, 
   TagBox[GridBox[{
      {
       TagBox[GridBox[{
@@ -2069,7 +2069,9 @@ Derivatives"], "PagedTextSchema" ->
                 Dynamic[MWorkspace`Private`sels$$], 
                 Map[# -> MWorkspace`Private`HBox[{
                     Pane[
-                    TextCell[#], {MWorkspace`Private`nameWidth$, 1} 
+                    TextCell[
+                    MWorkspace`Private`ShowShort[#]], {
+                    MWorkspace`Private`nameWidth$, 1} 
                     MWorkspace`Private`baseSize$], 
                     Pane[
                     
@@ -2091,7 +2093,7 @@ Derivatives"], "PagedTextSchema" ->
                 EvaluationNotebook[], {TaggingRules, "RefreshInterval"}]], 
              TrackedSymbols :> {MWorkspace`Private`refreshHelper$$}]}, 
            Dividers -> {False, Center}]], StandardForm],
-        ImageSizeCache->{356., {17.5, 22.5}}]]}
+        ImageSizeCache->{356., {26., 31.}}]]}
     },
     AutoDelete->False,
     GridBoxAlignment->{"Columns" -> {{Left}}},
@@ -2171,8 +2173,7 @@ Derivatives"], "PagedTextSchema" ->
             MWorkspace`Private`ValidNameQ[#], MWorkspace`Private`name = #]& ],
            String, ContinuousAction -> True, FieldSize -> Medium], 
          ActionMenu[
-         "...", {
-          MessageName[MWorkspace`Private`SymbolNameInput, "Clear"] :> (
+         "...", {MessageName[MWorkspace`Private`SymbolNameInput, "Clear"] :> (
             MWorkspace`Private`name = ""), 
            MessageName[MWorkspace`Private`SymbolNameInput, "Unique"] :> (
             MWorkspace`Private`name = 
@@ -2527,7 +2528,10 @@ Derivatives"], "PagedTextSchema" ->
        Intersection[MWorkspace`Private`list, 
         MWorkspace`Private`ControllerValues[MWorkspace`Private`vals]], 
        MWorkspace`Private`vals, MWorkspace`Private`opts], 
-     MWorkspace`Private`ShowMeta[
+     MWorkspace`Private`ShowShort[
+       Pattern[MWorkspace`Private`name, 
+        Blank[String]]] := Last[
+       StringSplit[MWorkspace`Private`name, "`"]], MWorkspace`Private`ShowMeta[
        Pattern[MWorkspace`Private`name, 
         Blank[String]]] := MWorkspace`Private`HBox[
        Append[
@@ -2703,6 +2707,7 @@ mRRJLLn9vv88Nr0v+b/OwL4USazXrf3sX4QUulw=
              "Creator" -> "Gentleface custom toolbar icons design", 
               "Description" -> "Wireframe mono toolbar icons", "Rights" -> 
               "Creative Commons Attribution-NonCommercial license", "Subject" -> 
+              
               "custom icon design, toolbar icons, custom icons, interface \
 design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" -> 
             Association[
@@ -2932,8 +2937,8 @@ Unevaluated[var]]]"]],
          "],HoldPattern[HoldPattern[_]\[RuleDelayed]var_]\[RuleDelayed]\
 HoldForm[var]]"]], Null]}; 
    MWorkspace`Private`RefreshAction[] := (MWorkspace`Private`refreshHelper$$ = 
-     Not[MWorkspace`Private`refreshHelper$$]))]],ExpressionUUID->"d979d244-\
-4b35-4080-be2f-5e2bfd83237a"]
+     Not[MWorkspace`Private`refreshHelper$$]))]],ExpressionUUID->"232d1d98-\
+88ca-4095-ad92-3f5f55177efc"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -2943,7 +2948,7 @@ TaggingRules->{"IgnoreRules" -> {
     MWorkspace`Private`HasValuesQ[All]}, "NamesOrder" -> False, 
   "Layout" -> {
    "BaseSize" -> 20, "Name" -> 4, "Meta" -> 5, "Value" -> 8, "ShowLimit" -> 
-    40, "FieldLimit" -> 15}, "CurrentContext" -> "Global`", 
+    40, "FieldLimit" -> 15}, "CurrentContext" -> "Global`Information`", 
   "ContextsPattern" -> {"Global*", "Notebook$$*", "Cell$$*"}, 
   "RefreshInterval" -> 1},
 Magnification->1.,
@@ -2962,7 +2967,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[591, 21, 149819, 2914, 124, InheritFromParent,ExpressionUUID->"d979d244-4b35-4080-be2f-5e2bfd83237a"]
+Cell[591, 21, 150080, 2919, 140, InheritFromParent,ExpressionUUID->"232d1d98-88ca-4095-ad92-3f5f55177efc"]
 }
 ]
 *)
