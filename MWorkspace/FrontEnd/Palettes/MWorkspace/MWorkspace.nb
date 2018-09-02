@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    151235,       2963]
-NotebookOptionsPosition[    150492,       2939]
-NotebookOutlinePosition[    151268,       2965]
-CellTagsIndexPosition[    151225,       2962]
+NotebookDataLength[    151145,       2961]
+NotebookOptionsPosition[    150414,       2937]
+NotebookOutlinePosition[    151178,       2963]
+CellTagsIndexPosition[    151135,       2960]
 WindowTitle->\:5DE5\:4F5C\:533A
 WindowFrame->Palette*)
 
@@ -809,7 +809,7 @@ interface design, ui design, gui design, taskbar icons"], "IPTCCoreSchema" ->
                  Appearance -> "FramedPalette", 
                 FieldSize -> {{5., 20.}, {1., 1.}}, 
                 FrameMargins -> {{5, 0}, {1, 1}}]], StandardForm],
-             ImageSizeCache->{119., {7.25, 17.}},
+             ImageSizeCache->{119., {8., 17.}},
              TrackedSymbols:>{MWorkspace`Private`refreshHelper$$},
              UpdateInterval->1],
             "\"\:5f53\:524d\:4e0a\:4e0b\:6587\"",
@@ -2091,7 +2091,7 @@ Derivatives"], "PagedTextSchema" ->
                 EvaluationNotebook[], {TaggingRules, "RefreshInterval"}]], 
              TrackedSymbols :> {MWorkspace`Private`refreshHelper$$}]}, 
            Dividers -> {False, Center}]], StandardForm],
-        ImageSizeCache->{356., {26., 31.}}]]}
+        ImageSizeCache->{356., {17.5, 22.5}}]]}
     },
     AutoDelete->False,
     GridBoxAlignment->{"Columns" -> {{Left}}},
@@ -2193,12 +2193,10 @@ Derivatives"], "PagedTextSchema" ->
        Pattern[MWorkspace`Private`opt, 
         OptionsPattern[Grid]]] := 
      Grid[{{MWorkspace`Private`items}}, MWorkspace`Private`opt], 
-     MWorkspace`Private`ValidNameQ[
-       Pattern[MWorkspace`Private`name, 
-        Blank[String]]] := AllTrue[
-       StringSplit[MWorkspace`Private`name, "`", All], 
-       StringMatchQ[
-        StringExpression[LetterCharacter, 
+     MWorkspace`Private`ValidNameQ = StringMatchQ[
+       Repeated[
+        StringExpression[
+         Alternatives[StartOfString, "`"], LetterCharacter, 
          RepeatedNull[WordCharacter]]]], MWorkspace`Private`UniqueName[
        PatternTest[
         Pattern[MWorkspace`Private`name, 
@@ -2934,8 +2932,8 @@ Unevaluated[var]]]"]],
          "],HoldPattern[HoldPattern[_]\[RuleDelayed]var_]\[RuleDelayed]\
 HoldForm[var]]"]], Null]}; 
    MWorkspace`Private`RefreshAction[] := (MWorkspace`Private`refreshHelper$$ = 
-     Not[MWorkspace`Private`refreshHelper$$]))]],ExpressionUUID->"e4cc0b3f-\
-a262-4c84-84fc-2820ffae6a71"]
+     Not[MWorkspace`Private`refreshHelper$$]))]],ExpressionUUID->"d979d244-\
+4b35-4080-be2f-5e2bfd83237a"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -2945,7 +2943,7 @@ TaggingRules->{"IgnoreRules" -> {
     MWorkspace`Private`HasValuesQ[All]}, "NamesOrder" -> False, 
   "Layout" -> {
    "BaseSize" -> 20, "Name" -> 4, "Meta" -> 5, "Value" -> 8, "ShowLimit" -> 
-    40, "FieldLimit" -> 15}, "CurrentContext" -> "Global`Information`", 
+    40, "FieldLimit" -> 15}, "CurrentContext" -> "Global`", 
   "ContextsPattern" -> {"Global*", "Notebook$$*", "Cell$$*"}, 
   "RefreshInterval" -> 1},
 Magnification->1.,
@@ -2964,7 +2962,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[591, 21, 149897, 2916, 140, InheritFromParent,ExpressionUUID->"e4cc0b3f-a262-4c84-84fc-2820ffae6a71"]
+Cell[591, 21, 149819, 2914, 124, InheritFromParent,ExpressionUUID->"d979d244-4b35-4080-be2f-5e2bfd83237a"]
 }
 ]
 *)
