@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    151418,       2966]
-NotebookOptionsPosition[    150675,       2942]
-NotebookOutlinePosition[    151451,       2968]
-CellTagsIndexPosition[    151408,       2965]
+NotebookDataLength[    151386,       2966]
+NotebookOptionsPosition[    150643,       2942]
+NotebookOutlinePosition[    151419,       2968]
+CellTagsIndexPosition[    151376,       2965]
 WindowTitle->\:5DE5\:4F5C\:533A
 WindowFrame->Palette*)
 
@@ -21,7 +21,7 @@ WindowFrame->Palette*)
 Notebook[{
 Cell[BoxData[
  DynamicModuleBox[{MWorkspace`Private`refreshHelper$$ = True, 
-  MWorkspace`Private`sels$$ = {"Global`Information`$CVSVersion"}}, 
+  MWorkspace`Private`sels$$ = {}}, 
   TagBox[GridBox[{
      {
       TagBox[GridBox[{
@@ -2937,8 +2937,8 @@ Unevaluated[var]]]"]],
          "],HoldPattern[HoldPattern[_]\[RuleDelayed]var_]\[RuleDelayed]\
 HoldForm[var]]"]], Null]}; 
    MWorkspace`Private`RefreshAction[] := (MWorkspace`Private`refreshHelper$$ = 
-     Not[MWorkspace`Private`refreshHelper$$]))]],ExpressionUUID->"232d1d98-\
-88ca-4095-ad92-3f5f55177efc"]
+     Not[MWorkspace`Private`refreshHelper$$]))]],ExpressionUUID->"0e22a14c-\
+67c8-47b4-9ed8-3e7e1a83903e"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -2967,7 +2967,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[591, 21, 150080, 2919, 140, InheritFromParent,ExpressionUUID->"232d1d98-88ca-4095-ad92-3f5f55177efc"]
+Cell[591, 21, 150048, 2919, 140, InheritFromParent,ExpressionUUID->"0e22a14c-67c8-47b4-9ed8-3e7e1a83903e"]
 }
 ]
 *)
