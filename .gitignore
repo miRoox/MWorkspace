@@ -1,0 +1,6 @@
+# From IntelliJ IDEA
+.idea
+*.iml
+
+# Wolfram Language
+*.paclet

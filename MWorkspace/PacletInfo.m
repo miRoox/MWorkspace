@@ -12,13 +12,6 @@ Paclet[
 		{
 			"FrontEnd",
 			"Prepend"->True
-		},
-		{
-			"Resource",
-			"Root"->"Resources",
-			"Resources"->{
-				"PaletteGenerators"
-			}
 		}
 	}
 ]
