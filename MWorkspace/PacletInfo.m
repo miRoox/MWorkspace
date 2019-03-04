@@ -10,6 +10,10 @@ Paclet[
 	Creator->"miRoox <miRoox@outlook.com>",
 	Extensions->{
 		{
+			"Kernel",
+			"Context"->{"MWorkspace`"}
+		},
+		{
 			"FrontEnd",
 			"Prepend"->True
 		}
