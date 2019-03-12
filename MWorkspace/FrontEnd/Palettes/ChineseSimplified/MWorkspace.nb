@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     13481,        323]
-NotebookOptionsPosition[     11177,        261]
-NotebookOutlinePosition[     13469,        323]
-CellTagsIndexPosition[     13426,        320]
+NotebookDataLength[     13513,        323]
+NotebookOptionsPosition[     11208,        261]
+NotebookOutlinePosition[     13500,        323]
+CellTagsIndexPosition[     13457,        320]
 WindowTitle->\:5DE5\:4F5C\:533A
 WindowFrame->Palette*)
 
@@ -31,13 +31,13 @@ Cell[BoxData[
        Names[
         StringJoin[MWorkspace`Palette`Private`context$$, "*"]]]], 
      StandardForm],
-    ImageSizeCache->{303., {31., 36.}},
+    ImageSizeCache->{396., {151., 156.}},
     TrackedSymbols:>{MWorkspace`Palette`Private`context$$}], 
    MWorkspace`Palette`Private`context$$ = CurrentValue[
       EvaluationNotebook[], {TaggingRules, "Context"}]; CurrentValue[
       EvaluationNotebook[], {TaggingRules, "Selected"}] = 
     MWorkspace`Palette`Private`sel$$; Null,
-   ImageSizeCache->{303., {31., 36.}}],
+   ImageSizeCache->{396., {151., 156.}}],
   DynamicModuleValues:>{},
   Initialization:>({MWorkspace`Palette`Private`symbolsPicker[
        Pattern[MWorkspace`Palette`Private`sel$, 
@@ -148,8 +148,9 @@ Cell[BoxData[
        PatternTest[
         Pattern[MWorkspace`Palette`Private`name$, 
          Blank[String]], MWorkspace`Palette`Private`hasDownValueQ]] := 
-     StringJoin[MWorkspace`Palette`Private`name$, "[\[Ellipsis]]"], 
-     MWorkspace`Palette`Private`headInfo[
+     StringJoin[
+       MWorkspace`Palette`Private`shortName[MWorkspace`Palette`Private`name$],
+        "[\[Ellipsis]]"], MWorkspace`Palette`Private`headInfo[
        PatternTest[
         Pattern[MWorkspace`Palette`Private`name, 
          Blank[String]], MWorkspace`Palette`Private`noDefinitionsQ]] := 
@@ -168,10 +169,10 @@ Cell[BoxData[
         Blank[]], 
        Pattern[MWorkspace`Palette`Private`name$, 
         Blank[String]]] := 
-     With[{MWorkspace`Palette`Private`val$1550 = 
+     With[{MWorkspace`Palette`Private`val$1549 = 
         MWorkspace`Palette`Private`getValue[
          MWorkspace`Palette`Private`name$, Unevaluated]}, 
-       MWorkspace`Palette`Private`f$[MWorkspace`Palette`Private`val$1550]], 
+       MWorkspace`Palette`Private`f$[MWorkspace`Palette`Private`val$1549]], 
      MWorkspace`Palette`Private`getValue[
        Pattern[MWorkspace`Palette`Private`name$, 
         Blank[String]], 
@@ -191,10 +192,9 @@ Cell[BoxData[
      MWorkspace`Palette`Private`noDefinitionsQ[
        Pattern[MWorkspace`Palette`Private`name$, 
         Blank[String]]] := Not[
-       GeneralUtilities`HasActualDefinitionsQ[
-       MWorkspace`Palette`Private`name$]], 
-     Attributes[GeneralUtilities`HasActualDefinitionsQ] = {
-      HoldAll, ReadProtected}, MWorkspace`Palette`Private`moreOwnValueInfo[
+       GeneralUtilities`HasDefinitionsQ[MWorkspace`Palette`Private`name$]], 
+     Attributes[GeneralUtilities`HasDefinitionsQ] = {HoldAll, ReadProtected}, 
+     MWorkspace`Palette`Private`moreOwnValueInfo[
        PatternTest[
         Pattern[MWorkspace`Palette`Private`name$, 
          Blank[String]], MWorkspace`Palette`Private`hasOwnValueQ]] := 
@@ -257,7 +257,7 @@ Cell[BoxData[
  ShowStringCharacters->False,
  FontFamily:>CurrentValue["PanelFontFamily"],
  FontSize:>CurrentValue[
-  "PanelFontSize"],ExpressionUUID->"a0b01b00-a66f-498b-b1c5-45078f99fdea"]
+  "PanelFontSize"],ExpressionUUID->"4ba3b349-0dc4-493f-8825-a376895ee11a"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -322,12 +322,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[591, 21, 10582, 238, 69, InheritFromParent,ExpressionUUID->"a0b01b00-a66f-498b-b1c5-45078f99fdea",
+Cell[591, 21, 10613, 238, 309, InheritFromParent,ExpressionUUID->"4ba3b349-0dc4-493f-8825-a376895ee11a",
  PageBreakAbove->True,
  PageBreakWithin->False]
 }
 ]
 *)
-
-(* End of internal cache information *)
 

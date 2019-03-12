@@ -67,11 +67,11 @@ shortName[fullname_String]:=Last@StringSplit[fullname,"`"]
 (*Definitions/Information*)
 
 
-SetAttributes[GeneralUtilities`HasActualDefinitionsQ,ReadProtected]
+SetAttributes[GeneralUtilities`HasDefinitionsQ,ReadProtected]
 hasOwnValueQ[name_String]:=ToExpression[name,StandardForm,OwnValues]=!={}
 hasDownValueQ[name_String]:=ToExpression[name,StandardForm,DownValues]=!={}
-hasDefinitionsQ[name_String]:=GeneralUtilities`HasActualDefinitionsQ[name]
-noDefinitionsQ[name_String]:=!GeneralUtilities`HasActualDefinitionsQ[name]
+hasDefinitionsQ[name_String]:=GeneralUtilities`HasDefinitionsQ[name]
+noDefinitionsQ[name_String]:=!GeneralUtilities`HasDefinitionsQ[name]
 
 
 getValue[name_String,wrapper_:HoldForm]:=
@@ -88,7 +88,7 @@ attributeInfo[name_String]:=Row[attributeInfo1/@Attributes[name],BaselinePositio
 
 
 headInfo[name_String?hasOwnValueQ]:=getFromValue[Head,name]
-headInfo[name_String?hasDownValueQ]:=name<>"[\[Ellipsis]]"
+headInfo[name_String?hasDownValueQ]:=shortName[name]<>"[\[Ellipsis]]"
 headInfo[name_String?noDefinitionsQ]:=tr["\[LeftSkeleton]Undefined\[RightSkeleton]"]
 headInfo[name_String]:=tr["\[LeftSkeleton]Other Type\[RightSkeleton]"]
 
