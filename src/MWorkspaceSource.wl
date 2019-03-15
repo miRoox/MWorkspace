@@ -18,7 +18,6 @@ Begin["`Private`"]
 <<"TrUtils.wl"
 
 
-
 (* ::Subsection::Closed:: *)
 (*Config*)
 
@@ -167,22 +166,34 @@ symbolsPicker[sel_Dynamic,names_List]:=
 
 
 (* ::Subsection:: *)
+(*Action*)
+
+
+actionRefresh=Null
+
+
+(* ::Subsection:: *)
 (*Main Body*)
 
 
 mainBody:=
-  DynamicModule[{},
+  DynamicModule[{refreshHelper},
     DynamicWrapper[
       Dynamic[
         symbolsPicker[
           Dynamic[CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}]],
           Take[#,UpTo[15]]&@Names[CurrentValue[EvaluationNotebook[],{TaggingRules,"Context"}]<>"*"]
-        ],(*TODO: more filter, refresh*)
-        TrackedSymbols:>{}
+        ],(*TODO: more filter *)
+        TrackedSymbols:>{refreshHelper}
       ],
-      Null
+      refreshHelper=CurrentValue[EvaluationNotebook[],{TaggingRules,"RefreshHelper"}]
     ],
-    SaveDefinitions->True
+    SaveDefinitions->True,
+    Initialization:>(
+      With[{nb=EvaluationNotebook[]},
+        actionRefresh:=(CurrentValue[nb,{TaggingRules,"RefreshHelper"}]=!CurrentValue[nb,{TaggingRules,"RefreshHelper"}])
+      ];
+    )
   ]
 
 
@@ -197,7 +208,7 @@ toolbar:=
     paletteButton[imgr["ActionImport.png"],Null],
     paletteButton[imgr["ActionExport.png"],Null],
     paletteButton[imgr["ActionDelete.png"],Null],
-    paletteButton[imgr["ActionRefresh.png"],Null]
+    paletteButton[imgr["ActionRefresh.png"],actionRefresh]
   },
     Spacings->0
   ]
@@ -212,7 +223,8 @@ workspacePalette:=
     mainBody,
     TaggingRules->{
       "Selected"->{},
-      "Context"->"Global`"
+      "Context"->"Global`",
+      "RefreshHelper"->True
     },
     CellContext->"MWorkspace`Palette`Private`",
     DockedCells->Cell[BoxData@ToBoxes[toolbar],"DockedCells"],
