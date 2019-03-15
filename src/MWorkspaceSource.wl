@@ -119,12 +119,30 @@ vBox[{items__},opt:OptionsPattern[Grid]]:=Grid[{{items}}\[Transpose],opt]
 (*Palette Components*)
 
 
-(* ::Subsection::Closed:: *)
-(*Palette Button*)
+(* ::Subsection:: *)
+(*Action*)
 
 
-SetAttributes[paletteButton,HoldRest]
-paletteButton[lbl_,act_,opt:OptionsPattern[Button]]:=Button[lbl,act,Appearance->"FramedPalette",opt]
+actionRefresh=Null
+
+
+(* ::Subsection:: *)
+(*Palette Buttons*)
+
+
+newButton:=Button[imgr["ActionNew.png"],Null,Appearance->"FramedPalette"]
+editButton:=Button[imgr["ActionEdit.png"],Null,Appearance->"FramedPalette"]
+importButton:=Button[imgr["ActionImport.png"],Null,Appearance->"FramedPalette"]
+exportButton:=Button[imgr["ActionExport.png"],Null,Appearance->"FramedPalette"]
+deleteButton:=
+  ActionMenu[imgr["ActionDelete.png"],{
+    tr["Clear"]:>Clear@@CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}],
+    tr["ClearAll"]:>ClearAll@@CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}],
+    tr["Remove"]:>Remove@@CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}]
+  },
+    Appearance->"FramedPalette"
+  ]
+refreshButton:=Button[imgr["ActionRefresh.png"],actionRefresh,Appearance->"FramedPalette"]
 
 
 (* ::Subsection::Closed:: *)
@@ -166,13 +184,6 @@ symbolsPicker[sel_Dynamic,names_List]:=
 
 
 (* ::Subsection:: *)
-(*Action*)
-
-
-actionRefresh=Null
-
-
-(* ::Subsection:: *)
 (*Main Body*)
 
 
@@ -203,12 +214,12 @@ mainBody:=
 
 toolbar:=
   hBox[{(*todo: context, filter, actions, config, etc. *)
-    paletteButton[imgr["ActionNew.png"],Null],
-    paletteButton[imgr["ActionEdit.png"],Null],
-    paletteButton[imgr["ActionImport.png"],Null],
-    paletteButton[imgr["ActionExport.png"],Null],
-    paletteButton[imgr["ActionDelete.png"],Null],
-    paletteButton[imgr["ActionRefresh.png"],actionRefresh]
+    newButton,
+    editButton,
+    importButton,
+    exportButton,
+    deleteButton,
+    refreshButton
   },
     Spacings->0
   ]

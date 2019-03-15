@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     13405,        324]
+NotebookDataLength[     13750,        332]
 NotebookOptionsPosition[     11029,        260]
-NotebookOutlinePosition[     13393,        324]
-CellTagsIndexPosition[     13350,        321]
+NotebookOutlinePosition[     13738,        332]
+CellTagsIndexPosition[     13695,        329]
 WindowTitle->\:5DE5\:4F5C\:533A
 WindowFrame->Palette*)
 
@@ -256,7 +256,7 @@ Cell[BoxData[
  ShowStringCharacters->False,
  FontFamily:>CurrentValue["PanelFontFamily"],
  FontSize:>CurrentValue[
-  "PanelFontSize"],ExpressionUUID->"1d16f677-a609-44e6-bbab-eb89ef69532a"]
+  "PanelFontSize"],ExpressionUUID->"4d96751d-e94a-4d31-ac2d-91e2b09c1608"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -290,12 +290,20 @@ DockedCells->Cell[
           FrontEnd`FileName[{"MWorkspace"}, "ActionExport.png"]]], 
         ButtonFunction :> Null, Appearance -> "FramedPalette", Evaluator -> 
         Automatic, Method -> "Preemptive"], 
-       ButtonBox[
+       ActionMenuBox[
         DynamicBox[
          FEPrivate`ImportImage[
-          FrontEnd`FileName[{"MWorkspace"}, "ActionDelete.png"]]], 
-        ButtonFunction :> Null, Appearance -> "FramedPalette", Evaluator -> 
-        Automatic, Method -> "Preemptive"], 
+          FrontEnd`FileName[{"MWorkspace"}, "ActionDelete.png"]]], {
+        "\"\:6e05\:9664\"" :> Apply[Clear, 
+           CurrentValue[
+            EvaluationNotebook[], {TaggingRules, "Selected"}]], 
+         "\"\:5b8c\:5168\:6e05\:9664\"" :> Apply[ClearAll, 
+           CurrentValue[
+            EvaluationNotebook[], {TaggingRules, "Selected"}]], 
+         "\"\:5220\:9664\"" :> Apply[Remove, 
+           CurrentValue[
+            EvaluationNotebook[], {TaggingRules, "Selected"}]]}, Appearance -> 
+        "FramedPalette"], 
        ButtonBox[
         DynamicBox[
          FEPrivate`ImportImage[
@@ -323,7 +331,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[591, 21, 10434, 237, 69, InheritFromParent,ExpressionUUID->"1d16f677-a609-44e6-bbab-eb89ef69532a",
+Cell[591, 21, 10434, 237, 69, InheritFromParent,ExpressionUUID->"4d96751d-e94a-4d31-ac2d-91e2b09c1608",
  PageBreakAbove->True,
  PageBreakWithin->False]
 }

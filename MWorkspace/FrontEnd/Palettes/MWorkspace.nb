@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     13333,        322]
+NotebookDataLength[     13649,        330]
 NotebookOptionsPosition[     10966,        258]
-NotebookOutlinePosition[     13321,        322]
-CellTagsIndexPosition[     13278,        319]
+NotebookOutlinePosition[     13637,        330]
+CellTagsIndexPosition[     13594,        327]
 WindowTitle->Workspace
 WindowFrame->Palette*)
 
@@ -254,7 +254,7 @@ Cell[BoxData[
  ShowStringCharacters->False,
  FontFamily:>CurrentValue["PanelFontFamily"],
  FontSize:>CurrentValue[
-  "PanelFontSize"],ExpressionUUID->"b931a407-ca2b-418f-b734-35de852412ee"]
+  "PanelFontSize"],ExpressionUUID->"8f6bfe73-ef81-41a9-a553-294f7937297c"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -288,12 +288,20 @@ DockedCells->Cell[
           FrontEnd`FileName[{"MWorkspace"}, "ActionExport.png"]]], 
         ButtonFunction :> Null, Appearance -> "FramedPalette", Evaluator -> 
         Automatic, Method -> "Preemptive"], 
-       ButtonBox[
+       ActionMenuBox[
         DynamicBox[
          FEPrivate`ImportImage[
-          FrontEnd`FileName[{"MWorkspace"}, "ActionDelete.png"]]], 
-        ButtonFunction :> Null, Appearance -> "FramedPalette", Evaluator -> 
-        Automatic, Method -> "Preemptive"], 
+          FrontEnd`FileName[{"MWorkspace"}, "ActionDelete.png"]]], {
+        "\"Clear\"" :> Apply[Clear, 
+           CurrentValue[
+            EvaluationNotebook[], {TaggingRules, "Selected"}]], 
+         "\"ClearAll\"" :> Apply[ClearAll, 
+           CurrentValue[
+            EvaluationNotebook[], {TaggingRules, "Selected"}]], "\"Remove\"" :> 
+         Apply[Remove, 
+           CurrentValue[
+            EvaluationNotebook[], {TaggingRules, "Selected"}]]}, Appearance -> 
+        "FramedPalette"], 
        ButtonBox[
         DynamicBox[
          FEPrivate`ImportImage[
@@ -321,7 +329,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[582, 21, 10380, 235, 69, InheritFromParent,ExpressionUUID->"b931a407-ca2b-418f-b734-35de852412ee",
+Cell[582, 21, 10380, 235, 69, InheritFromParent,ExpressionUUID->"8f6bfe73-ef81-41a9-a553-294f7937297c",
  PageBreakAbove->True,
  PageBreakWithin->False]
 }

@@ -3,5 +3,7 @@
   "\[LeftSkeleton]\:672a\:5b9a\:4e49\[RightSkeleton]", 
  "\[LeftSkeleton]Other Type\[RightSkeleton]" -> 
   "\[LeftSkeleton]\:5176\:5b83\:7c7b\:578b\[RightSkeleton]", 
- "Name" -> "\:540d\:79f0", "Info" -> "\:4fe1\:606f", "Value" -> "\:503c", 
+ "Clear" -> "\:6e05\:9664", "ClearAll" -> "\:5b8c\:5168\:6e05\:9664", 
+ "Remove" -> "\:5220\:9664", "Name" -> "\:540d\:79f0", 
+ "Info" -> "\:4fe1\:606f", "Value" -> "\:503c", 
  "Workspace" -> "\:5de5\:4f5c\:533a"|>
