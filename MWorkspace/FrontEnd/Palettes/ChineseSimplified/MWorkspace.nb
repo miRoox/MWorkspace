@@ -10,239 +10,231 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     13397,        321]
-NotebookOptionsPosition[     11092,        259]
-NotebookOutlinePosition[     13384,        321]
-CellTagsIndexPosition[     13341,        318]
+NotebookDataLength[     12593,        313]
+NotebookOptionsPosition[     10290,        251]
+NotebookOutlinePosition[     12582,        313]
+CellTagsIndexPosition[     12539,        310]
 WindowTitle->\:5DE5\:4F5C\:533A
 WindowFrame->Palette*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[
- DynamicModuleBox[{MWorkspace`Palette`Private`sel$$ = {}, 
-  MWorkspace`Palette`Private`context$$ = "Global`"}, 
+ DynamicModuleBox[{}, 
   DynamicWrapperBox[
    DynamicBox[ToBoxes[
      MWorkspace`Palette`Private`symbolsPicker[
-      Dynamic[MWorkspace`Palette`Private`sel$$], 
+      Dynamic[
+       CurrentValue[
+        EvaluationNotebook[], {TaggingRules, "Selected"}]], 
       (Take[#, 
        UpTo[15]]& )[
        Names[
-        StringJoin[MWorkspace`Palette`Private`context$$, "*"]]]], 
+        StringJoin[
+         CurrentValue[
+          EvaluationNotebook[], {TaggingRules, "Context"}], "*"]]]], 
      StandardForm],
-    ImageSizeCache->{478., {82., 87.}},
-    TrackedSymbols:>{MWorkspace`Palette`Private`context$$}], 
-   MWorkspace`Palette`Private`context$$ = CurrentValue[
-      EvaluationNotebook[], {TaggingRules, "Context"}]; CurrentValue[
-      EvaluationNotebook[], {TaggingRules, "Selected"}] = 
-    MWorkspace`Palette`Private`sel$$; Null,
-   ImageSizeCache->{478., {82., 87.}}],
+    ImageSizeCache->{303., {31., 36.}},
+    TrackedSymbols:>{}], Null,
+   ImageSizeCache->{303., {31., 36.}}],
   DynamicModuleValues:>{},
-  Initialization:>({MWorkspace`Palette`Private`symbolsPicker[
-       Pattern[MWorkspace`Palette`Private`sel$, 
-        Blank[Dynamic]], 
-       Pattern[MWorkspace`Palette`Private`names$, 
-        Blank[List]]] := 
-     MWorkspace`Palette`Private`listGridPicker[
-      MWorkspace`Palette`Private`sel$, 
-       Map[{# -> MWorkspace`Palette`Private`shortName[#], # -> 
-         MWorkspace`Palette`Private`overviewInfo[#], # -> 
-         MWorkspace`Palette`Private`getValue[#]}& , 
-        MWorkspace`Palette`Private`names$], {
-       "\:540d\:79f0", "\:4fe1\:606f", "\:503c"}], 
-     MWorkspace`Palette`Private`listGridPicker[
-       Pattern[MWorkspace`Palette`Private`sel$, 
-        Blank[Dynamic]], 
-       Pattern[MWorkspace`Palette`Private`items$, {
-         RepeatedNull[{
-           Repeated[
-            Alternatives[Rule, RuleDelayed][
-             Blank[], 
-             Blank[]]]}]}], 
-       Pattern[MWorkspace`Palette`Private`headers$, 
-        Blank[List]]] := Deploy[
-       Pane[
-        Grid[
-         Prepend[
-          MWorkspace`Palette`Private`makePickerItem[
-          MWorkspace`Palette`Private`sel$, MWorkspace`Palette`Private`items$],
-           MWorkspace`Palette`Private`headers$], 
-         Frame -> {{{False}}, {True, True, {False}}}, 
-         Background -> {None, {LightGray, {None}}}, 
-         Spacings -> {Automatic, 0.5}, ItemSize -> {Automatic, All}], 
-        Scrollbars -> Automatic, AppearanceElements -> None, Alignment -> 
-        Center]], 
-     Attributes[MWorkspace`Palette`Private`makePickerItem] = {Listable}, 
-     MWorkspace`Palette`Private`makePickerItem[
-       Dynamic[
-        Pattern[MWorkspace`Palette`Private`sel$, 
-         Blank[]]], 
-       Alternatives[Rule, RuleDelayed][
-        Pattern[MWorkspace`Palette`Private`val$, 
-         Blank[]], 
-        Pattern[MWorkspace`Palette`Private`lbl$, 
-         Blank[]]]] := Item[
-       EventHandler[MWorkspace`Palette`Private`lbl$, {"MouseClicked" :> Which[
-           CurrentValue["ControlKey"], 
-           If[
-            MemberQ[
-            MWorkspace`Palette`Private`sel$, MWorkspace`Palette`Private`val$],
-             MWorkspace`Palette`Private`sel$ = 
-            DeleteCases[
-             MWorkspace`Palette`Private`sel$, 
-              MWorkspace`Palette`Private`val$], 
-            AppendTo[
-            MWorkspace`Palette`Private`sel$, 
-             MWorkspace`Palette`Private`val$]], True, 
-           MWorkspace`Palette`Private`sel$ = {
-            MWorkspace`Palette`Private`val$}]}, PassEventsDown -> True], 
-       Background -> Dynamic[
-         If[
-          MemberQ[
-          MWorkspace`Palette`Private`sel$, MWorkspace`Palette`Private`val$], 
-          LightBlue, None]]], MWorkspace`Palette`Private`shortName[
-       Pattern[MWorkspace`Palette`Private`fullname$, 
-        Blank[String]]] := Last[
-       StringSplit[MWorkspace`Palette`Private`fullname$, "`"]], 
-     MWorkspace`Palette`Private`overviewInfo[
-       Pattern[MWorkspace`Palette`Private`name$, 
-        Blank[String]]] := Row[
-       Through[
-        {MWorkspace`Palette`Private`attributeInfo, 
-         MWorkspace`Palette`Private`headInfo, 
-         MWorkspace`Palette`Private`moreOwnValueInfo}[
-        MWorkspace`Palette`Private`name$]]], 
-     MWorkspace`Palette`Private`attributeInfo[
-       Pattern[MWorkspace`Palette`Private`name$, 
-        Blank[String]]] := Row[
-       Map[MWorkspace`Palette`Private`attributeInfo1, 
-        Attributes[MWorkspace`Palette`Private`name$]], BaselinePosition -> 
-       Scaled[0.1]], MWorkspace`Palette`Private`attributeInfo1[Locked] = 
-     RawBoxes[
-       DynamicBox[
-        FEPrivate`ImportImage[
-         FrontEnd`FileName[{"MWorkspace"}, "AttributeLocked.png"]]]], 
-     MWorkspace`Palette`Private`attributeInfo1[Protect] = RawBoxes[
-       DynamicBox[
-        FEPrivate`ImportImage[
-         FrontEnd`FileName[{"MWorkspace"}, "AttributeProtect.png"]]]], 
-     MWorkspace`Palette`Private`attributeInfo1[ReadProtected] = RawBoxes[
-       DynamicBox[
-        FEPrivate`ImportImage[
-         FrontEnd`FileName[{"MWorkspace"}, "AttributeReadProtected.png"]]]], 
-     MWorkspace`Palette`Private`attributeInfo1[Temporary] = RawBoxes[
-       DynamicBox[
-        FEPrivate`ImportImage[
-         FrontEnd`FileName[{"MWorkspace"}, "AttributeTemporary.png"]]]], 
-     MWorkspace`Palette`Private`attributeInfo1[
-       Blank[]] = Nothing, 
-     Attributes[FrontEnd`FileName] = {HoldAll, ReadProtected}, 
-     MWorkspace`Palette`Private`headInfo[
-       PatternTest[
-        Pattern[MWorkspace`Palette`Private`name$, 
-         Blank[String]], MWorkspace`Palette`Private`hasOwnValueQ]] := 
-     MWorkspace`Palette`Private`getFromValue[
-      Head, MWorkspace`Palette`Private`name$], 
-     MWorkspace`Palette`Private`headInfo[
-       PatternTest[
-        Pattern[MWorkspace`Palette`Private`name$, 
-         Blank[String]], MWorkspace`Palette`Private`hasDownValueQ]] := 
-     StringJoin[
-       MWorkspace`Palette`Private`shortName[MWorkspace`Palette`Private`name$],
-        "[\[Ellipsis]]"], MWorkspace`Palette`Private`headInfo[
-       PatternTest[
-        Blank[String], MWorkspace`Palette`Private`noDefinitionsQ]] = 
-     "\[LeftSkeleton]\:672a\:5b9a\:4e49\[RightSkeleton]", 
-     MWorkspace`Palette`Private`headInfo[
-       Blank[String]] = 
-     "\[LeftSkeleton]\:5176\:5b83\:7c7b\:578b\[RightSkeleton]", 
-     MWorkspace`Palette`Private`hasOwnValueQ[
-       Pattern[MWorkspace`Palette`Private`name$, 
-        Blank[String]]] := 
-     ToExpression[
-       MWorkspace`Palette`Private`name$, StandardForm, OwnValues] =!= {}, 
-     MWorkspace`Palette`Private`getFromValue[
-       Pattern[MWorkspace`Palette`Private`f$, 
+  Initialization:>{MWorkspace`Palette`Private`symbolsPicker[
+      Pattern[MWorkspace`Palette`Private`sel, 
+       Blank[Dynamic]], 
+      Pattern[MWorkspace`Palette`Private`names, 
+       Blank[List]]] := 
+    MWorkspace`Palette`Private`listGridPicker[MWorkspace`Palette`Private`sel, 
+      Map[{# -> MWorkspace`Palette`Private`shortName[#], # -> 
+        MWorkspace`Palette`Private`overviewInfo[#], # -> 
+        MWorkspace`Palette`Private`getValue[#]}& , 
+       MWorkspace`Palette`Private`names], {
+      "\:540d\:79f0", "\:4fe1\:606f", "\:503c"}], 
+    MWorkspace`Palette`Private`listGridPicker[
+      Pattern[MWorkspace`Palette`Private`sel, 
+       Blank[Dynamic]], 
+      Pattern[MWorkspace`Palette`Private`items, {
+        RepeatedNull[{
+          Repeated[
+           Alternatives[Rule, RuleDelayed][
+            Blank[], 
+            Blank[]]]}]}], 
+      Pattern[MWorkspace`Palette`Private`headers, 
+       Blank[List]]] := Deploy[
+      Pane[
+       Grid[
+        Prepend[
+         MWorkspace`Palette`Private`makePickerItem[
+         MWorkspace`Palette`Private`sel, MWorkspace`Palette`Private`items], 
+         MWorkspace`Palette`Private`headers], 
+        Dividers -> {False, {False, 2 -> True}}, 
+        Background -> {None, {LightGray, {None}}}, 
+        Spacings -> {Automatic, 0.5}, ItemSize -> {Automatic, All}], 
+       Scrollbars -> Automatic, AppearanceElements -> None, Alignment -> 
+       Center]], 
+    Attributes[MWorkspace`Palette`Private`makePickerItem] = {Listable}, 
+    MWorkspace`Palette`Private`makePickerItem[
+      Dynamic[
+       Pattern[MWorkspace`Palette`Private`sel, 
+        Blank[]]], 
+      Alternatives[Rule, RuleDelayed][
+       Pattern[MWorkspace`Palette`Private`val, 
         Blank[]], 
-       Pattern[MWorkspace`Palette`Private`name$, 
-        Blank[String]]] := 
-     With[{MWorkspace`Palette`Private`val$1549 = 
-        MWorkspace`Palette`Private`getValue[
-         MWorkspace`Palette`Private`name$, Unevaluated]}, 
-       MWorkspace`Palette`Private`f$[MWorkspace`Palette`Private`val$1549]], 
-     MWorkspace`Palette`Private`getValue[
-       Pattern[MWorkspace`Palette`Private`name$, 
+       Pattern[MWorkspace`Palette`Private`lbl, 
+        Blank[]]]] := Item[
+      EventHandler[MWorkspace`Palette`Private`lbl, {"MouseClicked" :> Which[
+          CurrentValue["ControlKey"], 
+          If[
+           MemberQ[
+           MWorkspace`Palette`Private`sel, MWorkspace`Palette`Private`val], 
+           MWorkspace`Palette`Private`sel = 
+           DeleteCases[
+            MWorkspace`Palette`Private`sel, MWorkspace`Palette`Private`val], 
+           AppendTo[
+           MWorkspace`Palette`Private`sel, MWorkspace`Palette`Private`val]], 
+          True, MWorkspace`Palette`Private`sel = {
+           MWorkspace`Palette`Private`val}]}, PassEventsDown -> True], 
+      Background -> Dynamic[
+        If[
+         MemberQ[
+         MWorkspace`Palette`Private`sel, MWorkspace`Palette`Private`val], 
+         LightBlue, None]]], MWorkspace`Palette`Private`shortName[
+      Pattern[MWorkspace`Palette`Private`fullname, 
+       Blank[String]]] := Last[
+      StringSplit[MWorkspace`Palette`Private`fullname, "`"]], 
+    MWorkspace`Palette`Private`overviewInfo[
+      Pattern[MWorkspace`Palette`Private`name, 
+       Blank[String]]] := Row[
+      Through[
+       {MWorkspace`Palette`Private`attributeInfo, 
+        MWorkspace`Palette`Private`headInfo, 
+        MWorkspace`Palette`Private`moreOwnValueInfo}[
+       MWorkspace`Palette`Private`name]]], 
+    MWorkspace`Palette`Private`attributeInfo[
+      Pattern[MWorkspace`Palette`Private`name, 
+       Blank[String]]] := Row[
+      Map[MWorkspace`Palette`Private`attributeInfo1, 
+       Attributes[MWorkspace`Palette`Private`name]], BaselinePosition -> 
+      Scaled[0.1]], MWorkspace`Palette`Private`attributeInfo1[Locked] = 
+    RawBoxes[
+      DynamicBox[
+       FEPrivate`ImportImage[
+        FrontEnd`FileName[{"MWorkspace"}, "AttributeLocked.png"]]]], 
+    MWorkspace`Palette`Private`attributeInfo1[Protect] = RawBoxes[
+      DynamicBox[
+       FEPrivate`ImportImage[
+        FrontEnd`FileName[{"MWorkspace"}, "AttributeProtect.png"]]]], 
+    MWorkspace`Palette`Private`attributeInfo1[ReadProtected] = RawBoxes[
+      DynamicBox[
+       FEPrivate`ImportImage[
+        FrontEnd`FileName[{"MWorkspace"}, "AttributeReadProtected.png"]]]], 
+    MWorkspace`Palette`Private`attributeInfo1[Temporary] = RawBoxes[
+      DynamicBox[
+       FEPrivate`ImportImage[
+        FrontEnd`FileName[{"MWorkspace"}, "AttributeTemporary.png"]]]], 
+    MWorkspace`Palette`Private`attributeInfo1[
+      Blank[]] = Nothing, 
+    Attributes[FrontEnd`FileName] = {HoldAll, ReadProtected}, 
+    MWorkspace`Palette`Private`headInfo[
+      PatternTest[
+       Pattern[MWorkspace`Palette`Private`name, 
+        Blank[String]], MWorkspace`Palette`Private`hasOwnValueQ]] := 
+    MWorkspace`Palette`Private`getFromValue[
+     Head, MWorkspace`Palette`Private`name], 
+    MWorkspace`Palette`Private`headInfo[
+      PatternTest[
+       Pattern[MWorkspace`Palette`Private`name, 
+        Blank[String]], MWorkspace`Palette`Private`hasDownValueQ]] := 
+    StringJoin[
+      MWorkspace`Palette`Private`shortName[MWorkspace`Palette`Private`name], 
+      "[\[Ellipsis]]"], MWorkspace`Palette`Private`headInfo[
+      PatternTest[
+       Blank[String], MWorkspace`Palette`Private`noDefinitionsQ]] = 
+    "\[LeftSkeleton]\:672a\:5b9a\:4e49\[RightSkeleton]", 
+    MWorkspace`Palette`Private`headInfo[
+      Blank[String]] = 
+    "\[LeftSkeleton]\:5176\:5b83\:7c7b\:578b\[RightSkeleton]", 
+    MWorkspace`Palette`Private`hasOwnValueQ[
+      Pattern[MWorkspace`Palette`Private`name, 
+       Blank[String]]] := 
+    ToExpression[
+      MWorkspace`Palette`Private`name, StandardForm, OwnValues] =!= {}, 
+    MWorkspace`Palette`Private`getFromValue[
+      Pattern[MWorkspace`Palette`Private`f, 
+       Blank[]], 
+      Pattern[MWorkspace`Palette`Private`name, 
+       Blank[String]]] := 
+    With[{MWorkspace`Palette`Private`val = 
+       MWorkspace`Palette`Private`getValue[
+        MWorkspace`Palette`Private`name, Unevaluated]}, 
+      MWorkspace`Palette`Private`f[MWorkspace`Palette`Private`val]], 
+    MWorkspace`Palette`Private`getValue[
+      Pattern[MWorkspace`Palette`Private`name, 
+       Blank[String]], 
+      Optional[
+       Pattern[MWorkspace`Palette`Private`wrapper, 
+        Blank[]], HoldForm]] := Replace[
+      ToExpression[
+      MWorkspace`Palette`Private`name, StandardForm, 
+       MWorkspace`Palette`Private`wrapper], 
+      ToExpression[
+      MWorkspace`Palette`Private`name, StandardForm, OwnValues], -1], 
+    MWorkspace`Palette`Private`hasDownValueQ[
+      Pattern[MWorkspace`Palette`Private`name, 
+       Blank[String]]] := 
+    ToExpression[
+      MWorkspace`Palette`Private`name, StandardForm, DownValues] =!= {}, 
+    MWorkspace`Palette`Private`noDefinitionsQ[
+      Pattern[MWorkspace`Palette`Private`name, 
+       Blank[String]]] := Not[
+      GeneralUtilities`HasDefinitionsQ[MWorkspace`Palette`Private`name]], 
+    Attributes[GeneralUtilities`HasDefinitionsQ] = {HoldAll, ReadProtected}, 
+    MWorkspace`Palette`Private`moreOwnValueInfo[
+      PatternTest[
+       Pattern[MWorkspace`Palette`Private`name, 
+        Blank[String]], MWorkspace`Palette`Private`hasOwnValueQ]] := 
+    MWorkspace`Palette`Private`moreOwnValueInfo1[
+     MWorkspace`Palette`Private`name], 
+    MWorkspace`Palette`Private`moreOwnValueInfo[
+      Blank[]] = Nothing, MWorkspace`Palette`Private`moreOwnValueInfo1[
+      Condition[
+       Pattern[MWorkspace`Palette`Private`name, 
         Blank[String]], 
-       Optional[
-        Pattern[MWorkspace`Palette`Private`wrapper$, 
-         Blank[]], HoldForm]] := Replace[
-       ToExpression[
-       MWorkspace`Palette`Private`name$, StandardForm, 
-        MWorkspace`Palette`Private`wrapper$], 
-       ToExpression[
-       MWorkspace`Palette`Private`name$, StandardForm, OwnValues], -1], 
-     MWorkspace`Palette`Private`hasDownValueQ[
-       Pattern[MWorkspace`Palette`Private`name$, 
-        Blank[String]]] := 
-     ToExpression[
-       MWorkspace`Palette`Private`name$, StandardForm, DownValues] =!= {}, 
-     MWorkspace`Palette`Private`noDefinitionsQ[
-       Pattern[MWorkspace`Palette`Private`name$, 
-        Blank[String]]] := Not[
-       GeneralUtilities`HasDefinitionsQ[MWorkspace`Palette`Private`name$]], 
-     Attributes[GeneralUtilities`HasDefinitionsQ] = {HoldAll, ReadProtected}, 
-     MWorkspace`Palette`Private`moreOwnValueInfo[
-       PatternTest[
-        Pattern[MWorkspace`Palette`Private`name$, 
-         Blank[String]], MWorkspace`Palette`Private`hasOwnValueQ]] := 
-     MWorkspace`Palette`Private`moreOwnValueInfo1[
-      MWorkspace`Palette`Private`name$], 
-     MWorkspace`Palette`Private`moreOwnValueInfo[
-       Blank[]] = Nothing, MWorkspace`Palette`Private`moreOwnValueInfo1[
-       Condition[
-        Pattern[MWorkspace`Palette`Private`name$, 
-         Blank[String]], 
-        MWorkspace`Palette`Private`getFromValue[
-        ArrayQ, MWorkspace`Palette`Private`name$]]] := Row[
-       Flatten[{
-         If[
-          MWorkspace`Palette`Private`getFromValue[
-          Developer`PackedArrayQ, MWorkspace`Palette`Private`name$], 
-          "(Packed)", {}], "<", 
-         Riffle[
-          MWorkspace`Palette`Private`getFromValue[
-          Dimensions, MWorkspace`Palette`Private`name$], "\[Times]"], ">"}]], 
-     MWorkspace`Palette`Private`moreOwnValueInfo1[
-       Condition[
-        Pattern[MWorkspace`Palette`Private`name$, 
-         Blank[String]], 
-        MWorkspace`Palette`Private`getFromValue[
-        ImageQ, MWorkspace`Palette`Private`name$]]] := Row[
-       Flatten[{"<", 
-         Riffle[
-          MWorkspace`Palette`Private`getFromValue[
-          ImageDimensions, MWorkspace`Palette`Private`name$], "\[Times]"], 
-         ">"}]], MWorkspace`Palette`Private`moreOwnValueInfo1[
-       Condition[
-        Pattern[MWorkspace`Palette`Private`name, 
-         Blank[String]], 
-        MWorkspace`Palette`Private`getFromValue[
-        BooleanQ, MWorkspace`Palette`Private`name]]] := "(Bool)", 
-     MWorkspace`Palette`Private`moreOwnValueInfo1[
-       Condition[
-        Pattern[MWorkspace`Palette`Private`name$, 
-         Blank[String]], 
-        MWorkspace`Palette`Private`getFromValue[
-        StringQ, MWorkspace`Palette`Private`name$]]] := Row[{"<", 
-        MWorkspace`Palette`Private`getFromValue[
-        StringLength, MWorkspace`Palette`Private`name$], ">"}], 
-     MWorkspace`Palette`Private`moreOwnValueInfo1[
-       Blank[]] = Nothing}; (
-    MWorkspace`Palette`Private`context$$ = CurrentValue[
-       EvaluationNotebook[], {TaggingRules, "Context"}]; 
-    MWorkspace`Palette`Private`sel$$ = CurrentValue[
-       EvaluationNotebook[], {TaggingRules, "Selected"}]; Null))]],
+       MWorkspace`Palette`Private`getFromValue[
+       ArrayQ, MWorkspace`Palette`Private`name]]] := Row[
+      Flatten[{
+        If[
+         MWorkspace`Palette`Private`getFromValue[
+         Developer`PackedArrayQ, MWorkspace`Palette`Private`name], 
+         "(Packed)", {}], "<", 
+        Riffle[
+         MWorkspace`Palette`Private`getFromValue[
+         Dimensions, MWorkspace`Palette`Private`name], "\[Times]"], ">"}]], 
+    MWorkspace`Palette`Private`moreOwnValueInfo1[
+      Condition[
+       Pattern[MWorkspace`Palette`Private`name, 
+        Blank[String]], 
+       MWorkspace`Palette`Private`getFromValue[
+       ImageQ, MWorkspace`Palette`Private`name]]] := Row[
+      Flatten[{"<", 
+        Riffle[
+         MWorkspace`Palette`Private`getFromValue[
+         ImageDimensions, MWorkspace`Palette`Private`name], "\[Times]"], 
+        ">"}]], MWorkspace`Palette`Private`moreOwnValueInfo1[
+      Condition[
+       Pattern[MWorkspace`Palette`Private`name, 
+        Blank[String]], 
+       MWorkspace`Palette`Private`getFromValue[
+       BooleanQ, MWorkspace`Palette`Private`name]]] := "(Bool)", 
+    MWorkspace`Palette`Private`moreOwnValueInfo1[
+      Condition[
+       Pattern[MWorkspace`Palette`Private`name, 
+        Blank[String]], 
+       MWorkspace`Palette`Private`getFromValue[
+       StringQ, MWorkspace`Palette`Private`name]]] := Row[{"<", 
+       MWorkspace`Palette`Private`getFromValue[
+       StringLength, MWorkspace`Palette`Private`name], ">"}], 
+    MWorkspace`Palette`Private`moreOwnValueInfo1[
+      Blank[]] = Nothing}]],
  CellMargins->{{0, 0}, {0, 0}},
  CellBracketOptions->{"Color"->RGBColor[0.269993, 0.308507, 0.6]},
  CellHorizontalScrolling->True,
@@ -255,7 +247,7 @@ Cell[BoxData[
  ShowStringCharacters->False,
  FontFamily:>CurrentValue["PanelFontFamily"],
  FontSize:>CurrentValue[
-  "PanelFontSize"],ExpressionUUID->"5c44f55e-6663-46cd-8cf9-c80e99c3246d"]
+  "PanelFontSize"],ExpressionUUID->"0f927864-db74-421f-a391-12b07f223298"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -320,10 +312,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[591, 21, 10497, 236, 171, InheritFromParent,ExpressionUUID->"5c44f55e-6663-46cd-8cf9-c80e99c3246d",
+Cell[591, 21, 9695, 228, 69, InheritFromParent,ExpressionUUID->"0f927864-db74-421f-a391-12b07f223298",
  PageBreakAbove->True,
  PageBreakWithin->False]
 }
 ]
 *)
+
+(* End of internal cache information *)
 

@@ -150,7 +150,7 @@ listGridPicker[sel_Dynamic,items:{{(Rule|RuleDelayed)[_,_]..}...},headers_List]:
   Deploy@Pane[
     Grid[
       Prepend[makePickerItem[sel,items],headers],
-      Frame->{{{False}},{True,True,{False}}},Background->{None,{LightGray,{None}}},
+      Dividers->{False,{False,2->True}},Background->{None,{LightGray,{None}}},
       Spacings->{Automatic,0.5},ItemSize->{Automatic,All}
     ],
     Scrollbars->Automatic,
@@ -171,19 +171,17 @@ symbolsPicker[sel_Dynamic,names_List]:=
 
 
 mainBody:=
-  DynamicModule[{sel={},context},
+  DynamicModule[{},
     DynamicWrapper[
       Dynamic[
-        symbolsPicker[Dynamic[sel],Take[#,UpTo[15]]&@Names[context<>"*"]],(*TODO: more filter, refresh*)
-        TrackedSymbols:>{context}
+        symbolsPicker[
+          Dynamic[CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}]],
+          Take[#,UpTo[15]]&@Names[CurrentValue[EvaluationNotebook[],{TaggingRules,"Context"}]<>"*"]
+        ],(*TODO: more filter, refresh*)
+        TrackedSymbols:>{}
       ],
-      context=CurrentValue[EvaluationNotebook[],{TaggingRules,"Context"}];
-      CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}]=sel;
+      Null
     ],
-    Initialization:>(
-      context=CurrentValue[EvaluationNotebook[],{TaggingRules,"Context"}];
-      sel=CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}];
-    ),
     SaveDefinitions->True
   ]
 
