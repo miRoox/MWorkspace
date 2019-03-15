@@ -79,18 +79,18 @@ getValue[name_String,wrapper_:HoldForm]:=
 getFromValue[f_,name_String]:=With[{val=getValue[name,Unevaluated]},f[val]]
 
 
-attributeInfo1[Temporary]:=imgr["AttributeTemporary.png"]
-attributeInfo1[Protect]:=imgr["AttributeProtect.png"]
-attributeInfo1[ReadProtected]:=imgr["AttributeReadProtected.png"]
-attributeInfo1[Locked]:=imgr["AttributeLocked.png"]
-attributeInfo1[_]:=Nothing
+attributeInfo1[Temporary]=imgr["AttributeTemporary.png"]
+attributeInfo1[Protect]=imgr["AttributeProtect.png"]
+attributeInfo1[ReadProtected]=imgr["AttributeReadProtected.png"]
+attributeInfo1[Locked]=imgr["AttributeLocked.png"]
+attributeInfo1[_]=Nothing
 attributeInfo[name_String]:=Row[attributeInfo1/@Attributes[name],BaselinePosition->Scaled[0.1]]
 
 
 headInfo[name_String?hasOwnValueQ]:=getFromValue[Head,name]
 headInfo[name_String?hasDownValueQ]:=shortName[name]<>"[\[Ellipsis]]"
-headInfo[name_String?noDefinitionsQ]:=tr["\[LeftSkeleton]Undefined\[RightSkeleton]"]
-headInfo[name_String]:=tr["\[LeftSkeleton]Other Type\[RightSkeleton]"]
+headInfo[_String?noDefinitionsQ]=tr["\[LeftSkeleton]Undefined\[RightSkeleton]"]
+headInfo[_String]=tr["\[LeftSkeleton]Other Type\[RightSkeleton]"]
 
 
 moreOwnValueInfo1[name_String/;getFromValue[ArrayQ,name]]:=Row@Flatten@{
@@ -100,9 +100,9 @@ moreOwnValueInfo1[name_String/;getFromValue[ArrayQ,name]]:=Row@Flatten@{
 moreOwnValueInfo1[name_String/;getFromValue[ImageQ,name]]:=Row@Flatten@{"<",Riffle[getFromValue[ImageDimensions,name],"\[Times]"],">"}
 moreOwnValueInfo1[name_String/;getFromValue[BooleanQ,name]]:="(Bool)"
 moreOwnValueInfo1[name_String/;getFromValue[StringQ,name]]:=Row@{"<",getFromValue[StringLength,name],">"}
-moreOwnValueInfo1[_]:=Nothing
+moreOwnValueInfo1[_]=Nothing
 moreOwnValueInfo[name_String?hasOwnValueQ]:=moreOwnValueInfo1[name]
-moreOwnValueInfo[_]:=Nothing
+moreOwnValueInfo[_]=Nothing
 
 
 overviewInfo[name_String]:=Row@Through[{attributeInfo,headInfo,moreOwnValueInfo}[name]]

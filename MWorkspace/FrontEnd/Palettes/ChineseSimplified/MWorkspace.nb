@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     13513,        323]
-NotebookOptionsPosition[     11208,        261]
-NotebookOutlinePosition[     13500,        323]
-CellTagsIndexPosition[     13457,        320]
+NotebookDataLength[     13397,        321]
+NotebookOptionsPosition[     11092,        259]
+NotebookOutlinePosition[     13384,        321]
+CellTagsIndexPosition[     13341,        318]
 WindowTitle->\:5DE5\:4F5C\:533A
 WindowFrame->Palette*)
 
@@ -31,13 +31,13 @@ Cell[BoxData[
        Names[
         StringJoin[MWorkspace`Palette`Private`context$$, "*"]]]], 
      StandardForm],
-    ImageSizeCache->{396., {151., 156.}},
+    ImageSizeCache->{478., {82., 87.}},
     TrackedSymbols:>{MWorkspace`Palette`Private`context$$}], 
    MWorkspace`Palette`Private`context$$ = CurrentValue[
       EvaluationNotebook[], {TaggingRules, "Context"}]; CurrentValue[
       EvaluationNotebook[], {TaggingRules, "Selected"}] = 
     MWorkspace`Palette`Private`sel$$; Null,
-   ImageSizeCache->{396., {151., 156.}}],
+   ImageSizeCache->{478., {82., 87.}}],
   DynamicModuleValues:>{},
   Initialization:>({MWorkspace`Palette`Private`symbolsPicker[
        Pattern[MWorkspace`Palette`Private`sel$, 
@@ -118,25 +118,25 @@ Cell[BoxData[
         Blank[String]]] := Row[
        Map[MWorkspace`Palette`Private`attributeInfo1, 
         Attributes[MWorkspace`Palette`Private`name$]], BaselinePosition -> 
-       Scaled[0.1]], MWorkspace`Palette`Private`attributeInfo1[Locked] := 
+       Scaled[0.1]], MWorkspace`Palette`Private`attributeInfo1[Locked] = 
      RawBoxes[
        DynamicBox[
         FEPrivate`ImportImage[
          FrontEnd`FileName[{"MWorkspace"}, "AttributeLocked.png"]]]], 
-     MWorkspace`Palette`Private`attributeInfo1[Protect] := RawBoxes[
+     MWorkspace`Palette`Private`attributeInfo1[Protect] = RawBoxes[
        DynamicBox[
         FEPrivate`ImportImage[
          FrontEnd`FileName[{"MWorkspace"}, "AttributeProtect.png"]]]], 
-     MWorkspace`Palette`Private`attributeInfo1[ReadProtected] := RawBoxes[
+     MWorkspace`Palette`Private`attributeInfo1[ReadProtected] = RawBoxes[
        DynamicBox[
         FEPrivate`ImportImage[
          FrontEnd`FileName[{"MWorkspace"}, "AttributeReadProtected.png"]]]], 
-     MWorkspace`Palette`Private`attributeInfo1[Temporary] := RawBoxes[
+     MWorkspace`Palette`Private`attributeInfo1[Temporary] = RawBoxes[
        DynamicBox[
         FEPrivate`ImportImage[
          FrontEnd`FileName[{"MWorkspace"}, "AttributeTemporary.png"]]]], 
      MWorkspace`Palette`Private`attributeInfo1[
-       Blank[]] := Nothing, 
+       Blank[]] = Nothing, 
      Attributes[FrontEnd`FileName] = {HoldAll, ReadProtected}, 
      MWorkspace`Palette`Private`headInfo[
        PatternTest[
@@ -152,12 +152,10 @@ Cell[BoxData[
        MWorkspace`Palette`Private`shortName[MWorkspace`Palette`Private`name$],
         "[\[Ellipsis]]"], MWorkspace`Palette`Private`headInfo[
        PatternTest[
-        Pattern[MWorkspace`Palette`Private`name, 
-         Blank[String]], MWorkspace`Palette`Private`noDefinitionsQ]] := 
+        Blank[String], MWorkspace`Palette`Private`noDefinitionsQ]] = 
      "\[LeftSkeleton]\:672a\:5b9a\:4e49\[RightSkeleton]", 
      MWorkspace`Palette`Private`headInfo[
-       Pattern[MWorkspace`Palette`Private`name, 
-        Blank[String]]] := 
+       Blank[String]] = 
      "\[LeftSkeleton]\:5176\:5b83\:7c7b\:578b\[RightSkeleton]", 
      MWorkspace`Palette`Private`hasOwnValueQ[
        Pattern[MWorkspace`Palette`Private`name$, 
@@ -201,7 +199,7 @@ Cell[BoxData[
      MWorkspace`Palette`Private`moreOwnValueInfo1[
       MWorkspace`Palette`Private`name$], 
      MWorkspace`Palette`Private`moreOwnValueInfo[
-       Blank[]] := Nothing, MWorkspace`Palette`Private`moreOwnValueInfo1[
+       Blank[]] = Nothing, MWorkspace`Palette`Private`moreOwnValueInfo1[
        Condition[
         Pattern[MWorkspace`Palette`Private`name$, 
          Blank[String]], 
@@ -240,7 +238,7 @@ Cell[BoxData[
         MWorkspace`Palette`Private`getFromValue[
         StringLength, MWorkspace`Palette`Private`name$], ">"}], 
      MWorkspace`Palette`Private`moreOwnValueInfo1[
-       Blank[]] := Nothing}; (
+       Blank[]] = Nothing}; (
     MWorkspace`Palette`Private`context$$ = CurrentValue[
        EvaluationNotebook[], {TaggingRules, "Context"}]; 
     MWorkspace`Palette`Private`sel$$ = CurrentValue[
@@ -257,7 +255,7 @@ Cell[BoxData[
  ShowStringCharacters->False,
  FontFamily:>CurrentValue["PanelFontFamily"],
  FontSize:>CurrentValue[
-  "PanelFontSize"],ExpressionUUID->"4ba3b349-0dc4-493f-8825-a376895ee11a"]
+  "PanelFontSize"],ExpressionUUID->"5c44f55e-6663-46cd-8cf9-c80e99c3246d"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -322,7 +320,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[591, 21, 10613, 238, 309, InheritFromParent,ExpressionUUID->"4ba3b349-0dc4-493f-8825-a376895ee11a",
+Cell[591, 21, 10497, 236, 171, InheritFromParent,ExpressionUUID->"5c44f55e-6663-46cd-8cf9-c80e99c3246d",
  PageBreakAbove->True,
  PageBreakWithin->False]
 }

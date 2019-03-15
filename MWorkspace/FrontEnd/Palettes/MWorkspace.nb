@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     13436,        321]
-NotebookOptionsPosition[     11141,        259]
-NotebookOutlinePosition[     13424,        321]
-CellTagsIndexPosition[     13381,        318]
+NotebookDataLength[     13324,        319]
+NotebookOptionsPosition[     11029,        257]
+NotebookOutlinePosition[     13312,        319]
+CellTagsIndexPosition[     13269,        316]
 WindowTitle->Workspace
 WindowFrame->Palette*)
 
@@ -117,25 +117,25 @@ Cell[BoxData[
         Blank[String]]] := Row[
        Map[MWorkspace`Palette`Private`attributeInfo1, 
         Attributes[MWorkspace`Palette`Private`name$]], BaselinePosition -> 
-       Scaled[0.1]], MWorkspace`Palette`Private`attributeInfo1[Locked] := 
+       Scaled[0.1]], MWorkspace`Palette`Private`attributeInfo1[Locked] = 
      RawBoxes[
        DynamicBox[
         FEPrivate`ImportImage[
          FrontEnd`FileName[{"MWorkspace"}, "AttributeLocked.png"]]]], 
-     MWorkspace`Palette`Private`attributeInfo1[Protect] := RawBoxes[
+     MWorkspace`Palette`Private`attributeInfo1[Protect] = RawBoxes[
        DynamicBox[
         FEPrivate`ImportImage[
          FrontEnd`FileName[{"MWorkspace"}, "AttributeProtect.png"]]]], 
-     MWorkspace`Palette`Private`attributeInfo1[ReadProtected] := RawBoxes[
+     MWorkspace`Palette`Private`attributeInfo1[ReadProtected] = RawBoxes[
        DynamicBox[
         FEPrivate`ImportImage[
          FrontEnd`FileName[{"MWorkspace"}, "AttributeReadProtected.png"]]]], 
-     MWorkspace`Palette`Private`attributeInfo1[Temporary] := RawBoxes[
+     MWorkspace`Palette`Private`attributeInfo1[Temporary] = RawBoxes[
        DynamicBox[
         FEPrivate`ImportImage[
          FrontEnd`FileName[{"MWorkspace"}, "AttributeTemporary.png"]]]], 
      MWorkspace`Palette`Private`attributeInfo1[
-       Blank[]] := Nothing, 
+       Blank[]] = Nothing, 
      Attributes[FrontEnd`FileName] = {HoldAll, ReadProtected}, 
      MWorkspace`Palette`Private`headInfo[
        PatternTest[
@@ -151,12 +151,10 @@ Cell[BoxData[
        MWorkspace`Palette`Private`shortName[MWorkspace`Palette`Private`name$],
         "[\[Ellipsis]]"], MWorkspace`Palette`Private`headInfo[
        PatternTest[
-        Pattern[MWorkspace`Palette`Private`name, 
-         Blank[String]], MWorkspace`Palette`Private`noDefinitionsQ]] := 
+        Blank[String], MWorkspace`Palette`Private`noDefinitionsQ]] = 
      "\[LeftSkeleton]Undefined\[RightSkeleton]", 
      MWorkspace`Palette`Private`headInfo[
-       Pattern[MWorkspace`Palette`Private`name, 
-        Blank[String]]] := "\[LeftSkeleton]Other Type\[RightSkeleton]", 
+       Blank[String]] = "\[LeftSkeleton]Other Type\[RightSkeleton]", 
      MWorkspace`Palette`Private`hasOwnValueQ[
        Pattern[MWorkspace`Palette`Private`name$, 
         Blank[String]]] := 
@@ -199,7 +197,7 @@ Cell[BoxData[
      MWorkspace`Palette`Private`moreOwnValueInfo1[
       MWorkspace`Palette`Private`name$], 
      MWorkspace`Palette`Private`moreOwnValueInfo[
-       Blank[]] := Nothing, MWorkspace`Palette`Private`moreOwnValueInfo1[
+       Blank[]] = Nothing, MWorkspace`Palette`Private`moreOwnValueInfo1[
        Condition[
         Pattern[MWorkspace`Palette`Private`name$, 
          Blank[String]], 
@@ -238,7 +236,7 @@ Cell[BoxData[
         MWorkspace`Palette`Private`getFromValue[
         StringLength, MWorkspace`Palette`Private`name$], ">"}], 
      MWorkspace`Palette`Private`moreOwnValueInfo1[
-       Blank[]] := Nothing}; (
+       Blank[]] = Nothing}; (
     MWorkspace`Palette`Private`context$$ = CurrentValue[
        EvaluationNotebook[], {TaggingRules, "Context"}]; 
     MWorkspace`Palette`Private`sel$$ = CurrentValue[
@@ -255,7 +253,7 @@ Cell[BoxData[
  ShowStringCharacters->False,
  FontFamily:>CurrentValue["PanelFontFamily"],
  FontSize:>CurrentValue[
-  "PanelFontSize"],ExpressionUUID->"ace48955-fd07-4c40-936e-2cf1b058a199"]
+  "PanelFontSize"],ExpressionUUID->"a44fc2f5-3bae-4016-91e2-ad34b58a1f23"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -320,7 +318,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[582, 21, 10555, 236, 69, InheritFromParent,ExpressionUUID->"ace48955-fd07-4c40-936e-2cf1b058a199",
+Cell[582, 21, 10443, 234, 69, InheritFromParent,ExpressionUUID->"a44fc2f5-3bae-4016-91e2-ad34b58a1f23",
  PageBreakAbove->True,
  PageBreakWithin->False]
 }
