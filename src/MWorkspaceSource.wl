@@ -62,6 +62,10 @@ newSymbol[name_String,context_String]:=
 shortName[fullname_String]:=Last@StringSplit[fullname,"`"]
 
 
+filterContext[patts_,False]:=Flatten[Contexts/@patts]
+filterContext[patts_,True]:=Select[filterContext[patts,False],StringCount[#,"`"]==1&]
+
+
 (* ::Subsection::Closed:: *)
 (*Definitions/Information*)
 
@@ -130,16 +134,22 @@ actionRefresh=Null
 (*Palette Buttons*)
 
 
-newButton:=Button[imgr["ActionNew.png"],Null,Appearance->"FramedPalette"]
+newButton:=
+  Button[imgr["ActionNew.png"],Null,
+    Appearance->{Automatic,"Palette","Normal",Automatic}
+  ]
 editButton:=
   Button[imgr["ActionEdit.png"],Null,
-    Appearance->"FramedPalette",
+    Appearance->{Automatic,"Palette","Normal",Automatic},
     Enabled->Dynamic[CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}]=!={}]
   ]
-importButton:=Button[imgr["ActionImport.png"],Null,Appearance->"Palette"]
+importButton:=
+  Button[imgr["ActionImport.png"],Null,
+    Appearance->{Automatic,"Palette","Normal",Automatic}
+  ]
 exportButton:=
   Button[imgr["ActionExport.png"],Null,
-    Appearance->"FramedPalette",
+    Appearance->{Automatic,"Palette","Normal",Automatic},
     Enabled->Dynamic[CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}]=!={}]
   ]
 deleteButton:=
@@ -148,10 +158,45 @@ deleteButton:=
     tr["ClearAll"]:>ClearAll@@CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}],
     tr["Remove"]:>Remove@@CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}]
   },
-    Appearance->"FramedPalette",
+    Appearance->{Automatic,"Palette","Normal",Automatic},
     Enabled->Dynamic[CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}]=!={}]
   ]
-refreshButton:=Button[imgr["ActionRefresh.png"],actionRefresh,Appearance->"FramedPalette"]
+refreshButton:=
+  Button[imgr["ActionRefresh.png"],actionRefresh,
+    Appearance->{Automatic,"Palette","Normal",Automatic}
+  ]
+
+
+(* ::Subsection:: *)
+(*Context Selector*)
+
+
+contextPopup[Dynamic[sel_],contexts_List]:=
+  DynamicWrapper[
+    PopupMenu[Dynamic[sel],contexts,
+      tr["No selection"],
+      Appearance->"ComboBox"
+    ],
+    sel=If[MemberQ[contexts,sel],sel,First[contexts,None]]
+  ]
+
+
+contextSelector:=
+  DynamicModule[{refreshHelper},
+    DynamicWrapper[
+      Dynamic[
+        contextPopup[Dynamic[CurrentValue[EvaluationNotebook[],{TaggingRules,"Context"}]],
+          filterContext[
+            CurrentValue[EvaluationNotebook[],{TaggingRules,"ContextsFilterPatterns"}],
+            CurrentValue[EvaluationNotebook[],{TaggingRules,"ContextsFilterTopLevelOnly"}]
+          ]
+        ],
+        TrackedSymbols:>{refreshHelper}
+      ],
+      refreshHelper=CurrentValue[EvaluationNotebook[],{TaggingRules,"RefreshHelper"}]
+    ],
+    SaveDefinitions->True
+  ]
 
 
 (* ::Subsection::Closed:: *)
@@ -224,8 +269,8 @@ mainBody:=
 (*Toolbar*)
 
 
-toolbar:=
-  hBox[{(*todo: context, filter, actions, config, etc. *)
+toolbarButtons:=
+  hBox[{
     newButton,
     editButton,
     importButton,
@@ -234,6 +279,18 @@ toolbar:=
     refreshButton
   },
     Spacings->0
+  ]
+
+
+toolbar:=
+  Pane[
+    hBox[{(*todo: filter, actions, config, etc. *)
+      toolbarButtons,
+      contextSelector
+    },
+      Alignment->{{Left,Center,Right},Center}
+    ],
+    Dynamic[AbsoluteCurrentValue[EvaluationNotebook[],WindowSize][[1]]]
   ]
 
 
@@ -247,6 +304,8 @@ workspacePalette:=
     TaggingRules->{
       "Selected"->{},
       "Context"->"Global`",
+      "ContextsFilterPatterns"->{"Global*", "Notebook$*", "Cell$*"},
+      "ContextsFilterTopLevelOnly"->True,
       "RefreshHelper"->True
     },
     CellContext->"MWorkspace`Palette`Private`",

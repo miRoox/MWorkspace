@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     14265,        342]
+NotebookDataLength[     17431,        404]
 NotebookOptionsPosition[     11220,        265]
-NotebookOutlinePosition[     14253,        342]
-CellTagsIndexPosition[     14210,        339]
+NotebookOutlinePosition[     17419,        404]
+CellTagsIndexPosition[     17376,        401]
 WindowTitle->\:5DE5\:4F5C\:533A
 WindowFrame->Palette*)
 
@@ -261,7 +261,7 @@ Cell[BoxData[
  ShowStringCharacters->False,
  FontFamily:>CurrentValue["PanelFontFamily"],
  FontSize:>CurrentValue[
-  "PanelFontSize"],ExpressionUUID->"fa24747e-5f96-4bcb-ad37-3725230c087c"]
+  "PanelFontSize"],ExpressionUUID->"eb9266ed-5254-4c13-883e-a052a20d7d04"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -269,62 +269,124 @@ WindowElements->{},
 WindowTitle->"\:5de5\:4f5c\:533a",
 DockedCells->Cell[
   BoxData[
-   TagBox[
-    GridBox[{{
-       ButtonBox[
-        DynamicBox[
-         FEPrivate`ImportImage[
-          FrontEnd`FileName[{"MWorkspace"}, "ActionNew.png"]]], 
-        ButtonFunction :> Null, Appearance -> "FramedPalette", Evaluator -> 
-        Automatic, Method -> "Preemptive"], 
-       ButtonBox[
-        DynamicBox[
-         FEPrivate`ImportImage[
-          FrontEnd`FileName[{"MWorkspace"}, "ActionEdit.png"]]], 
-        ButtonFunction :> Null, Appearance -> "FramedPalette", Enabled -> 
-        Dynamic[CurrentValue[
-            EvaluationNotebook[], {TaggingRules, "Selected"}] =!= {}], 
-        Evaluator -> Automatic, Method -> "Preemptive"], 
-       ButtonBox[
-        DynamicBox[
-         FEPrivate`ImportImage[
-          FrontEnd`FileName[{"MWorkspace"}, "ActionImport.png"]]], 
-        ButtonFunction :> Null, Appearance -> "Palette", Evaluator -> 
-        Automatic, Method -> "Preemptive"], 
-       ButtonBox[
-        DynamicBox[
-         FEPrivate`ImportImage[
-          FrontEnd`FileName[{"MWorkspace"}, "ActionExport.png"]]], 
-        ButtonFunction :> Null, Appearance -> "FramedPalette", Enabled -> 
-        Dynamic[CurrentValue[
-            EvaluationNotebook[], {TaggingRules, "Selected"}] =!= {}], 
-        Evaluator -> Automatic, Method -> "Preemptive"], 
-       ActionMenuBox[
-        DynamicBox[
-         FEPrivate`ImportImage[
-          FrontEnd`FileName[{"MWorkspace"}, "ActionDelete.png"]]], {
-        "\"\:6e05\:9664\"" :> Apply[Clear, 
-           CurrentValue[
-            EvaluationNotebook[], {TaggingRules, "Selected"}]], 
-         "\"\:5b8c\:5168\:6e05\:9664\"" :> Apply[ClearAll, 
-           CurrentValue[
-            EvaluationNotebook[], {TaggingRules, "Selected"}]], 
-         "\"\:5220\:9664\"" :> Apply[Remove, 
-           CurrentValue[
-            EvaluationNotebook[], {TaggingRules, "Selected"}]]}, Appearance -> 
-        "FramedPalette", Enabled -> Dynamic[CurrentValue[
-            EvaluationNotebook[], {TaggingRules, "Selected"}] =!= {}]], 
-       ButtonBox[
-        DynamicBox[
-         FEPrivate`ImportImage[
-          FrontEnd`FileName[{"MWorkspace"}, "ActionRefresh.png"]]], 
-        ButtonFunction :> MWorkspace`Palette`Private`actionRefresh, 
-        Appearance -> "FramedPalette", Evaluator -> Automatic, Method -> 
-        "Preemptive"]}}, AutoDelete -> False, 
-     GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
-      GridBoxSpacings -> {"Columns" -> {{0}}}], "Grid"]], "DockedCells"],
+   PaneBox[
+    TagBox[
+     GridBox[{{
+        TagBox[
+         GridBox[{{
+            ButtonBox[
+             DynamicBox[
+              FEPrivate`ImportImage[
+               FrontEnd`FileName[{"MWorkspace"}, "ActionNew.png"]]], 
+             ButtonFunction :> Null, 
+             Appearance -> {Automatic, "Palette", "Normal", Automatic}, 
+             Evaluator -> Automatic, Method -> "Preemptive"], 
+            ButtonBox[
+             DynamicBox[
+              FEPrivate`ImportImage[
+               FrontEnd`FileName[{"MWorkspace"}, "ActionEdit.png"]]], 
+             ButtonFunction :> Null, 
+             Appearance -> {Automatic, "Palette", "Normal", Automatic}, 
+             Enabled -> Dynamic[CurrentValue[
+                 EvaluationNotebook[], {TaggingRules, "Selected"}] =!= {}], 
+             Evaluator -> Automatic, Method -> "Preemptive"], 
+            ButtonBox[
+             DynamicBox[
+              FEPrivate`ImportImage[
+               FrontEnd`FileName[{"MWorkspace"}, "ActionImport.png"]]], 
+             ButtonFunction :> Null, 
+             Appearance -> {Automatic, "Palette", "Normal", Automatic}, 
+             Evaluator -> Automatic, Method -> "Preemptive"], 
+            ButtonBox[
+             DynamicBox[
+              FEPrivate`ImportImage[
+               FrontEnd`FileName[{"MWorkspace"}, "ActionExport.png"]]], 
+             ButtonFunction :> Null, 
+             Appearance -> {Automatic, "Palette", "Normal", Automatic}, 
+             Enabled -> Dynamic[CurrentValue[
+                 EvaluationNotebook[], {TaggingRules, "Selected"}] =!= {}], 
+             Evaluator -> Automatic, Method -> "Preemptive"], 
+            ActionMenuBox[
+             DynamicBox[
+              FEPrivate`ImportImage[
+               FrontEnd`FileName[{"MWorkspace"}, "ActionDelete.png"]]], {
+             "\"\:6e05\:9664\"" :> Apply[Clear, 
+                CurrentValue[
+                 EvaluationNotebook[], {TaggingRules, "Selected"}]], 
+              "\"\:5b8c\:5168\:6e05\:9664\"" :> Apply[ClearAll, 
+                CurrentValue[
+                 EvaluationNotebook[], {TaggingRules, "Selected"}]], 
+              "\"\:5220\:9664\"" :> Apply[Remove, 
+                CurrentValue[
+                 EvaluationNotebook[], {TaggingRules, "Selected"}]]}, 
+             Appearance -> {Automatic, "Palette", "Normal", Automatic}, 
+             Enabled -> Dynamic[CurrentValue[
+                 EvaluationNotebook[], {TaggingRules, "Selected"}] =!= {}]], 
+            ButtonBox[
+             DynamicBox[
+              FEPrivate`ImportImage[
+               FrontEnd`FileName[{"MWorkspace"}, "ActionRefresh.png"]]], 
+             ButtonFunction :> MWorkspace`Palette`Private`actionRefresh, 
+             Appearance -> {Automatic, "Palette", "Normal", Automatic}, 
+             Evaluator -> Automatic, Method -> "Preemptive"]}}, AutoDelete -> 
+          False, GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          GridBoxSpacings -> {"Columns" -> {{0}}}], "Grid"], 
+        DynamicModuleBox[{MWorkspace`Palette`Private`refreshHelper$$}, 
+         DynamicWrapperBox[
+          DynamicBox[
+           ToBoxes[
+            MWorkspace`Palette`Private`contextPopup[
+             Dynamic[
+              CurrentValue[
+               EvaluationNotebook[], {TaggingRules, "Context"}]], 
+             MWorkspace`Palette`Private`filterContext[
+              CurrentValue[
+               EvaluationNotebook[], {
+               TaggingRules, "ContextsFilterPatterns"}], 
+              CurrentValue[
+               EvaluationNotebook[], {
+               TaggingRules, "ContextsFilterTopLevelOnly"}]]], StandardForm], 
+           TrackedSymbols :> {MWorkspace`Palette`Private`refreshHelper$$}], 
+          MWorkspace`Palette`Private`refreshHelper$$ = CurrentValue[
+            EvaluationNotebook[], {TaggingRules, "RefreshHelper"}]], 
+         Initialization :> {MWorkspace`Palette`Private`contextPopup[
+             Dynamic[
+              Pattern[MWorkspace`Palette`Private`sel, 
+               Blank[]]], 
+             Pattern[MWorkspace`Palette`Private`contexts, 
+              Blank[List]]] := DynamicWrapper[
+             PopupMenu[
+              Dynamic[MWorkspace`Palette`Private`sel], 
+              MWorkspace`Palette`Private`contexts, "\:672a\:9009\:62e9", 
+              Appearance -> "ComboBox"], MWorkspace`Palette`Private`sel = If[
+               MemberQ[
+               MWorkspace`Palette`Private`contexts, 
+                MWorkspace`Palette`Private`sel], 
+               MWorkspace`Palette`Private`sel, 
+               First[MWorkspace`Palette`Private`contexts, None]]], 
+           MWorkspace`Palette`Private`filterContext[
+             Pattern[MWorkspace`Palette`Private`patts, 
+              Blank[]], False] := Flatten[
+             Map[Contexts, MWorkspace`Palette`Private`patts]], 
+           MWorkspace`Palette`Private`filterContext[
+             Pattern[MWorkspace`Palette`Private`patts, 
+              Blank[]], True] := Select[
+             MWorkspace`Palette`Private`filterContext[
+             MWorkspace`Palette`Private`patts, False], StringCount[#, "`"] == 
+             1& ]}, DynamicModuleValues :> {}]}}, 
+      GridBoxAlignment -> {
+       "Columns" -> {Left, Center, Right}, "Rows" -> {{Center}}}, AutoDelete -> 
+      False, GridBoxItemSize -> {
+       "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Grid"], 
+    ImageSize -> Dynamic[
+      Part[
+       AbsoluteCurrentValue[
+        EvaluationNotebook[], WindowSize], 1]]]], "DockedCells"],
 TaggingRules->{
- "Selected" -> {}, "Context" -> "Global`", "RefreshHelper" -> True},
+ "Selected" -> {}, "Context" -> "Global`", 
+  "ContextsFilterPatterns" -> {"Global*", "Notebook$*", "Cell$*"}, 
+  "ContextsFilterTopLevelOnly" -> True, "RefreshHelper" -> True},
 CellContext->"MWorkspace`Palette`Private`",
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
 \:65e5)",
@@ -341,7 +403,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[591, 21, 10625, 242, 69, InheritFromParent,ExpressionUUID->"fa24747e-5f96-4bcb-ad37-3725230c087c",
+Cell[591, 21, 10625, 242, 69, InheritFromParent,ExpressionUUID->"eb9266ed-5254-4c13-883e-a052a20d7d04",
  PageBreakAbove->True,
  PageBreakWithin->False]
 }
