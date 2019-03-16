@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     13973,        335]
-NotebookOptionsPosition[     10966,        258]
-NotebookOutlinePosition[     13961,        335]
-CellTagsIndexPosition[     13918,        332]
+NotebookDataLength[     14163,        340]
+NotebookOptionsPosition[     11156,        263]
+NotebookOutlinePosition[     14151,        340]
+CellTagsIndexPosition[     14108,        337]
 WindowTitle->Workspace
 WindowFrame->Palette*)
 
@@ -41,15 +41,20 @@ Cell[BoxData[
    ImageSizeCache->{309., {31., 36.}}],
   DynamicModuleValues:>{},
   Initialization:>({MWorkspace`Palette`Private`symbolsPicker[
-       Pattern[MWorkspace`Palette`Private`sel, 
-        Blank[Dynamic]], 
+       Dynamic[
+        Pattern[MWorkspace`Palette`Private`sel, 
+         Blank[]]], 
        Pattern[MWorkspace`Palette`Private`names, 
-        Blank[List]]] := 
-     MWorkspace`Palette`Private`listGridPicker[MWorkspace`Palette`Private`sel, 
-       Map[{# -> MWorkspace`Palette`Private`shortName[#], # -> 
-         MWorkspace`Palette`Private`overviewInfo[#], # -> 
-         MWorkspace`Palette`Private`getValue[#]}& , 
-        MWorkspace`Palette`Private`names], {"Name", "Info", "Value"}], 
+        Blank[List]]] := DynamicWrapper[
+       MWorkspace`Palette`Private`listGridPicker[
+        Dynamic[MWorkspace`Palette`Private`sel], 
+        Map[{# -> MWorkspace`Palette`Private`shortName[#], # -> 
+          MWorkspace`Palette`Private`overviewInfo[#], # -> 
+          MWorkspace`Palette`Private`getValue[#]}& , 
+         MWorkspace`Palette`Private`names], {"Name", "Info", "Value"}], 
+       MWorkspace`Palette`Private`sel = 
+       Intersection[
+        MWorkspace`Palette`Private`sel, MWorkspace`Palette`Private`names]], 
      MWorkspace`Palette`Private`listGridPicker[
        Pattern[MWorkspace`Palette`Private`sel, 
         Blank[Dynamic]], 
@@ -254,7 +259,7 @@ Cell[BoxData[
  ShowStringCharacters->False,
  FontFamily:>CurrentValue["PanelFontFamily"],
  FontSize:>CurrentValue[
-  "PanelFontSize"],ExpressionUUID->"093031a3-c5f4-4c69-845d-c94423205705"]
+  "PanelFontSize"],ExpressionUUID->"192e2e23-9f0e-4e78-a24c-0bfb16cd62f4"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -334,7 +339,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[582, 21, 10380, 235, 69, InheritFromParent,ExpressionUUID->"093031a3-c5f4-4c69-845d-c94423205705",
+Cell[582, 21, 10570, 240, 69, InheritFromParent,ExpressionUUID->"192e2e23-9f0e-4e78-a24c-0bfb16cd62f4",
  PageBreakAbove->True,
  PageBreakWithin->False]
 }

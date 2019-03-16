@@ -185,10 +185,13 @@ listGridPicker[sel_Dynamic,items:{{(Rule|RuleDelayed)[_,_]..}...},headers_List]:
   ]
 
 
-symbolsPicker[sel_Dynamic,names_List]:=
-  listGridPicker[sel,
-    {#->shortName[#],#->overviewInfo[#],#->getValue[#]}&/@names,
-    {tr["Name"],tr["Info"],tr["Value"]}
+symbolsPicker[Dynamic[sel_],names_List]:=
+  DynamicWrapper[
+    listGridPicker[Dynamic[sel],
+      {#->shortName[#],#->overviewInfo[#],#->getValue[#]}&/@names,
+      {tr["Name"],tr["Info"],tr["Value"]}
+    ],
+    sel=Intersection[sel,names]
   ]
 
 
