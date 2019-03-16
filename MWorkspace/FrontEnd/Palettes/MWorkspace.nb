@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     13649,        330]
+NotebookDataLength[     13973,        335]
 NotebookOptionsPosition[     10966,        258]
-NotebookOutlinePosition[     13637,        330]
-CellTagsIndexPosition[     13594,        327]
+NotebookOutlinePosition[     13961,        335]
+CellTagsIndexPosition[     13918,        332]
 WindowTitle->Workspace
 WindowFrame->Palette*)
 
@@ -254,7 +254,7 @@ Cell[BoxData[
  ShowStringCharacters->False,
  FontFamily:>CurrentValue["PanelFontFamily"],
  FontSize:>CurrentValue[
-  "PanelFontSize"],ExpressionUUID->"8f6bfe73-ef81-41a9-a553-294f7937297c"]
+  "PanelFontSize"],ExpressionUUID->"093031a3-c5f4-4c69-845d-c94423205705"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -274,20 +274,24 @@ DockedCells->Cell[
         DynamicBox[
          FEPrivate`ImportImage[
           FrontEnd`FileName[{"MWorkspace"}, "ActionEdit.png"]]], 
-        ButtonFunction :> Null, Appearance -> "FramedPalette", Evaluator -> 
-        Automatic, Method -> "Preemptive"], 
+        ButtonFunction :> Null, Appearance -> "FramedPalette", Enabled -> 
+        Dynamic[CurrentValue[
+            EvaluationNotebook[], {TaggingRules, "Selected"}] =!= {}], 
+        Evaluator -> Automatic, Method -> "Preemptive"], 
        ButtonBox[
         DynamicBox[
          FEPrivate`ImportImage[
           FrontEnd`FileName[{"MWorkspace"}, "ActionImport.png"]]], 
-        ButtonFunction :> Null, Appearance -> "FramedPalette", Evaluator -> 
+        ButtonFunction :> Null, Appearance -> "Palette", Evaluator -> 
         Automatic, Method -> "Preemptive"], 
        ButtonBox[
         DynamicBox[
          FEPrivate`ImportImage[
           FrontEnd`FileName[{"MWorkspace"}, "ActionExport.png"]]], 
-        ButtonFunction :> Null, Appearance -> "FramedPalette", Evaluator -> 
-        Automatic, Method -> "Preemptive"], 
+        ButtonFunction :> Null, Appearance -> "FramedPalette", Enabled -> 
+        Dynamic[CurrentValue[
+            EvaluationNotebook[], {TaggingRules, "Selected"}] =!= {}], 
+        Evaluator -> Automatic, Method -> "Preemptive"], 
        ActionMenuBox[
         DynamicBox[
          FEPrivate`ImportImage[
@@ -301,7 +305,8 @@ DockedCells->Cell[
          Apply[Remove, 
            CurrentValue[
             EvaluationNotebook[], {TaggingRules, "Selected"}]]}, Appearance -> 
-        "FramedPalette"], 
+        "FramedPalette", Enabled -> Dynamic[CurrentValue[
+            EvaluationNotebook[], {TaggingRules, "Selected"}] =!= {}]], 
        ButtonBox[
         DynamicBox[
          FEPrivate`ImportImage[
@@ -329,7 +334,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[582, 21, 10380, 235, 69, InheritFromParent,ExpressionUUID->"8f6bfe73-ef81-41a9-a553-294f7937297c",
+Cell[582, 21, 10380, 235, 69, InheritFromParent,ExpressionUUID->"093031a3-c5f4-4c69-845d-c94423205705",
  PageBreakAbove->True,
  PageBreakWithin->False]
 }

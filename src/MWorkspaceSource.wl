@@ -131,16 +131,25 @@ actionRefresh=Null
 
 
 newButton:=Button[imgr["ActionNew.png"],Null,Appearance->"FramedPalette"]
-editButton:=Button[imgr["ActionEdit.png"],Null,Appearance->"FramedPalette"]
-importButton:=Button[imgr["ActionImport.png"],Null,Appearance->"FramedPalette"]
-exportButton:=Button[imgr["ActionExport.png"],Null,Appearance->"FramedPalette"]
+editButton:=
+  Button[imgr["ActionEdit.png"],Null,
+    Appearance->"FramedPalette",
+    Enabled->Dynamic[CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}]=!={}]
+  ]
+importButton:=Button[imgr["ActionImport.png"],Null,Appearance->"Palette"]
+exportButton:=
+  Button[imgr["ActionExport.png"],Null,
+    Appearance->"FramedPalette",
+    Enabled->Dynamic[CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}]=!={}]
+  ]
 deleteButton:=
   ActionMenu[imgr["ActionDelete.png"],{
     tr["Clear"]:>Clear@@CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}],
     tr["ClearAll"]:>ClearAll@@CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}],
     tr["Remove"]:>Remove@@CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}]
   },
-    Appearance->"FramedPalette"
+    Appearance->"FramedPalette",
+    Enabled->Dynamic[CurrentValue[EvaluationNotebook[],{TaggingRules,"Selected"}]=!={}]
   ]
 refreshButton:=Button[imgr["ActionRefresh.png"],actionRefresh,Appearance->"FramedPalette"]
 
