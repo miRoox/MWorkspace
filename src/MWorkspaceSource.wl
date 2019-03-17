@@ -187,8 +187,8 @@ contextSelector:=
       Dynamic[
         contextPopup[Dynamic[CurrentValue[EvaluationNotebook[],{TaggingRules,"Context"}]],
           filterContext[
-            CurrentValue[EvaluationNotebook[],{TaggingRules,"ContextsFilterPatterns"}],
-            CurrentValue[EvaluationNotebook[],{TaggingRules,"ContextsFilterTopLevelOnly"}]
+            CurrentValue[EvaluationNotebook[],{TaggingRules,"ContextsFilter","Patterns"}],
+            CurrentValue[EvaluationNotebook[],{TaggingRules,"ContextsFilter","TopLevelOnly"}]
           ]
         ],
         TrackedSymbols:>{refreshHelper}
@@ -304,8 +304,10 @@ workspacePalette:=
     TaggingRules->{
       "Selected"->{},
       "Context"->"Global`",
-      "ContextsFilterPatterns"->{"Global*", "Notebook$*", "Cell$*"},
-      "ContextsFilterTopLevelOnly"->True,
+      "ContextsFilter"->{
+        "Patterns"->{"Global*", "Notebook$*", "Cell$*"},
+        "TopLevelOnly"->True
+      },
       "RefreshHelper"->True
     },
     CellContext->"MWorkspace`Palette`Private`",

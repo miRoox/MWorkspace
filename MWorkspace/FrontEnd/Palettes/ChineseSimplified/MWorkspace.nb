@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17431,        404]
+NotebookDataLength[     17450,        406]
 NotebookOptionsPosition[     11220,        265]
-NotebookOutlinePosition[     17419,        404]
-CellTagsIndexPosition[     17376,        401]
+NotebookOutlinePosition[     17438,        406]
+CellTagsIndexPosition[     17395,        403]
 WindowTitle->\:5DE5\:4F5C\:533A
 WindowFrame->Palette*)
 
@@ -261,7 +261,7 @@ Cell[BoxData[
  ShowStringCharacters->False,
  FontFamily:>CurrentValue["PanelFontFamily"],
  FontSize:>CurrentValue[
-  "PanelFontSize"],ExpressionUUID->"eb9266ed-5254-4c13-883e-a052a20d7d04"]
+  "PanelFontSize"],ExpressionUUID->"a849b39c-5404-4152-bae5-d67e1ab103d3"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -343,10 +343,11 @@ DockedCells->Cell[
              MWorkspace`Palette`Private`filterContext[
               CurrentValue[
                EvaluationNotebook[], {
-               TaggingRules, "ContextsFilterPatterns"}], 
+               TaggingRules, "ContextsFilter", "Patterns"}], 
               CurrentValue[
                EvaluationNotebook[], {
-               TaggingRules, "ContextsFilterTopLevelOnly"}]]], StandardForm], 
+               TaggingRules, "ContextsFilter", "TopLevelOnly"}]]], 
+            StandardForm], 
            TrackedSymbols :> {MWorkspace`Palette`Private`refreshHelper$$}], 
           MWorkspace`Palette`Private`refreshHelper$$ = CurrentValue[
             EvaluationNotebook[], {TaggingRules, "RefreshHelper"}]], 
@@ -385,8 +386,9 @@ DockedCells->Cell[
         EvaluationNotebook[], WindowSize], 1]]]], "DockedCells"],
 TaggingRules->{
  "Selected" -> {}, "Context" -> "Global`", 
-  "ContextsFilterPatterns" -> {"Global*", "Notebook$*", "Cell$*"}, 
-  "ContextsFilterTopLevelOnly" -> True, "RefreshHelper" -> True},
+  "ContextsFilter" -> {
+   "Patterns" -> {"Global*", "Notebook$*", "Cell$*"}, "TopLevelOnly" -> True},
+   "RefreshHelper" -> True},
 CellContext->"MWorkspace`Palette`Private`",
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
 \:65e5)",
@@ -403,7 +405,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[591, 21, 10625, 242, 69, InheritFromParent,ExpressionUUID->"eb9266ed-5254-4c13-883e-a052a20d7d04",
+Cell[591, 21, 10625, 242, 69, InheritFromParent,ExpressionUUID->"a849b39c-5404-4152-bae5-d67e1ab103d3",
  PageBreakAbove->True,
  PageBreakWithin->False]
 }

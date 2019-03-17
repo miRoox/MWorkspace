@@ -10,17 +10,17 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17276,        401]
-NotebookOptionsPosition[     11109,        262]
-NotebookOutlinePosition[     17264,        401]
-CellTagsIndexPosition[     17221,        398]
+NotebookDataLength[     17342,        404]
+NotebookOptionsPosition[     11156,        263]
+NotebookOutlinePosition[     17330,        404]
+CellTagsIndexPosition[     17287,        401]
 WindowTitle->Workspace
 WindowFrame->Palette*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[
- DynamicModuleBox[{MWorkspace`Palette`Private`refreshHelper$$}, 
+ DynamicModuleBox[{MWorkspace`Palette`Private`refreshHelper$$ = True}, 
   DynamicWrapperBox[
    DynamicBox[ToBoxes[
      MWorkspace`Palette`Private`symbolsPicker[
@@ -34,10 +34,11 @@ Cell[BoxData[
          CurrentValue[
           EvaluationNotebook[], {TaggingRules, "Context"}], "*"]]]], 
      StandardForm],
+    ImageSizeCache->{309., {31., 36.}},
     TrackedSymbols:>{MWorkspace`Palette`Private`refreshHelper$$}], 
    MWorkspace`Palette`Private`refreshHelper$$ = CurrentValue[
      EvaluationNotebook[], {TaggingRules, "RefreshHelper"}],
-   ImageSizeCache->{106., {11., 16.}}],
+   ImageSizeCache->{309., {31., 36.}}],
   DynamicModuleValues:>{},
   Initialization:>({MWorkspace`Palette`Private`symbolsPicker[
        Dynamic[
@@ -258,7 +259,7 @@ Cell[BoxData[
  ShowStringCharacters->False,
  FontFamily:>CurrentValue["PanelFontFamily"],
  FontSize:>CurrentValue[
-  "PanelFontSize"],ExpressionUUID->"c48228b4-a93f-453d-8a24-0b5b69a99960"]
+  "PanelFontSize"],ExpressionUUID->"095ff39e-d3e5-4ec5-9d8b-77c8094bf7c2"]
 },
 WindowSize->All,
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
@@ -340,10 +341,11 @@ DockedCells->Cell[
              MWorkspace`Palette`Private`filterContext[
               CurrentValue[
                EvaluationNotebook[], {
-               TaggingRules, "ContextsFilterPatterns"}], 
+               TaggingRules, "ContextsFilter", "Patterns"}], 
               CurrentValue[
                EvaluationNotebook[], {
-               TaggingRules, "ContextsFilterTopLevelOnly"}]]], StandardForm], 
+               TaggingRules, "ContextsFilter", "TopLevelOnly"}]]], 
+            StandardForm], 
            TrackedSymbols :> {MWorkspace`Palette`Private`refreshHelper$$}], 
           MWorkspace`Palette`Private`refreshHelper$$ = CurrentValue[
             EvaluationNotebook[], {TaggingRules, "RefreshHelper"}]], 
@@ -382,8 +384,9 @@ DockedCells->Cell[
         EvaluationNotebook[], WindowSize], 1]]]], "DockedCells"],
 TaggingRules->{
  "Selected" -> {}, "Context" -> "Global`", 
-  "ContextsFilterPatterns" -> {"Global*", "Notebook$*", "Cell$*"}, 
-  "ContextsFilterTopLevelOnly" -> True, "RefreshHelper" -> True},
+  "ContextsFilter" -> {
+   "Patterns" -> {"Global*", "Notebook$*", "Cell$*"}, "TopLevelOnly" -> True},
+   "RefreshHelper" -> True},
 CellContext->"MWorkspace`Palette`Private`",
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
 \:65e5)",
@@ -400,7 +403,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[582, 21, 10523, 239, 29, InheritFromParent,ExpressionUUID->"c48228b4-a93f-453d-8a24-0b5b69a99960",
+Cell[582, 21, 10570, 240, 69, InheritFromParent,ExpressionUUID->"095ff39e-d3e5-4ec5-9d8b-77c8094bf7c2",
  PageBreakAbove->True,
  PageBreakWithin->False]
 }
